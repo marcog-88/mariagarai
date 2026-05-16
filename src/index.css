@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* María Garaí · Carreras Modernas — Design System
+   All colors HSL. Premium European consultant aesthetic.
+*/
+
+@layer base {
+  :root {
+    /* Brand: off-white #f9f9f7 */
+    --background: 50 18% 97%;
+    --foreground: 220 8% 5%;
+
+    --card: 50 18% 97%;
+    --card-foreground: 220 8% 5%;
+
+    --popover: 50 18% 97%;
+    --popover-foreground: 220 8% 5%;
+
+    /* Near-black #0c0d0e — primary surface for dark sections */
+    --primary: 220 8% 5%;
+    --primary-foreground: 50 18% 97%;
+
+    --secondary: 50 14% 93%;
+    --secondary-foreground: 220 8% 5%;
+
+    --muted: 50 12% 90%;
+    --muted-foreground: 220 6% 38%;
+
+    /* Purple accent #9378fe */
+    --accent: 252 99% 73%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Mint CTA #d0fcd0 */
+    --mint: 120 89% 90%;
+    --mint-foreground: 220 8% 5%;
+
+    /* Hot pink #ff4295 */
+    --hot-pink: 330 100% 63%;
+    --hot-pink-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 50 18% 97%;
+
+    --border: 50 8% 86%;
+    --input: 50 8% 86%;
+    --ring: 252 99% 73%;
+
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  ::selection {
+    background: hsl(var(--accent) / 0.35);
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer components {
+  .font-serif {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .font-script {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+  }
+
+  .label {
+    @apply inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/70 px-3.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.2em] backdrop-blur-sm;
+    color: hsl(var(--foreground));
+    box-shadow: 0 1px 0 hsl(var(--foreground) / 0.02);
+  }
+
+  .label svg {
+    color: hsl(var(--accent));
+  }
+
+  .feature-pill {
+    @apply flex items-center gap-3 rounded-full border border-border/70 bg-background/70 px-5 py-3 text-sm font-medium backdrop-blur-sm;
+    box-shadow: 0 1px 0 hsl(var(--foreground) / 0.02);
+  }
+
+  .feature-pill svg {
+    color: hsl(var(--accent));
+    flex-shrink: 0;
+  }
+
+  .hero-gradient {
+    background:
+      radial-gradient(ellipse 80% 60% at 15% 20%, hsl(var(--mint) / 0.55), transparent 60%),
+      radial-gradient(ellipse 70% 70% at 95% 50%, hsl(var(--accent) / 0.28), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 50% 100%, hsl(var(--accent) / 0.12), transparent 70%),
+      hsl(var(--background));
+  }
+
+  .container-tight {
+    @apply mx-auto max-w-6xl px-6 sm:px-8;
+  }
+
+  .container-narrow {
+    @apply mx-auto max-w-3xl px-6 sm:px-8;
+  }
+
+  .display {
+    @apply font-serif text-[clamp(2.5rem,7vw,5.75rem)] leading-[1.02] tracking-tight;
+  }
+
+  .display-md {
+    @apply font-serif text-[clamp(2rem,5vw,3.75rem)] leading-[1.05] tracking-tight;
+  }
+
+  .underline-accent {
+    background-image: linear-gradient(hsl(var(--accent)), hsl(var(--accent)));
+    background-size: 100% 0.18em;
+    background-position: 0 88%;
+    background-repeat: no-repeat;
+    padding: 0 0.05em;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-medium;
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+    background-image: linear-gradient(120deg, transparent 30%, hsl(0 0% 100% / 0.45) 50%, transparent 70%);
+    background-size: 220% 100%;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    transition: transform 300ms ease, box-shadow 300ms ease, background-position 700ms ease;
+    will-change: transform, background-position;
+  }
+  .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 28px -10px hsl(var(--accent) / 0.55);
+    background-position: -20% 0;
+  }
+
+  .btn-primary-lg {
+    @apply inline-flex items-center justify-center gap-3 rounded-full px-9 py-5 text-lg font-medium;
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+    background-image: linear-gradient(120deg, transparent 30%, hsl(0 0% 100% / 0.5) 50%, transparent 70%);
+    background-size: 220% 100%;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    transition: transform 300ms ease, box-shadow 300ms ease, background-position 800ms ease;
+    will-change: transform, background-position;
+  }
+  .btn-primary-lg:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 36px -12px hsl(var(--accent) / 0.6);
+    background-position: -20% 0;
+  }
+
+  .btn-mint {
+    @apply inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium;
+    background-color: #d0fcd0;
+    color: #0c0d0e;
+    background-image: linear-gradient(120deg, transparent 30%, hsl(0 0% 100% / 0.55) 50%, transparent 70%);
+    background-size: 220% 100%;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    transition: transform 300ms ease, box-shadow 300ms ease, background-position 700ms ease, background-color 300ms ease;
+    will-change: transform, background-position;
+  }
+  .btn-mint:hover {
+    background-color: #b8f5b8;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 28px -10px rgb(120 200 120 / 0.55);
+    background-position: -20% 0;
+  }
+  .btn-mint-lg {
+    @apply inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-medium;
+    background-color: #d0fcd0;
+    color: #0c0d0e;
+    background-image: linear-gradient(120deg, transparent 30%, hsl(0 0% 100% / 0.55) 50%, transparent 70%);
+    background-size: 220% 100%;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    transition: transform 300ms ease, box-shadow 300ms ease, background-position 800ms ease, background-color 300ms ease;
+    will-change: transform, background-position;
+  }
+  .btn-mint-lg:hover {
+    background-color: #b8f5b8;
+    transform: translateY(-1px);
+    box-shadow: 0 14px 36px -12px rgb(120 200 120 / 0.6);
+    background-position: -20% 0;
+  }
+
+  .badge-live {
+    @apply inline-flex items-center gap-2 rounded-full border px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em];
+    background: hsl(var(--mint) / 0.5);
+    border-color: hsl(var(--mint));
+    color: hsl(var(--foreground));
+  }
+
+  .badge-live .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: hsl(142 70% 38%);
+    box-shadow: 0 0 0 3px hsl(142 70% 38% / 0.18);
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  .check-mint {
+    @apply inline-flex items-center justify-center rounded-full;
+    width: 20px;
+    height: 20px;
+    background: hsl(var(--mint));
+    color: hsl(142 60% 22%);
+    flex-shrink: 0;
+  }
+
+  .link-arrow {
+    @apply inline-flex items-center gap-2 text-sm font-medium transition-colors;
+    color: hsl(var(--foreground));
+    border-bottom: 1px solid hsl(var(--foreground) / 0.2);
+    padding-bottom: 2px;
+  }
+  .link-arrow:hover {
+    border-bottom-color: hsl(var(--accent));
+    color: hsl(var(--accent));
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    .mobile-device-hidden {
+      display: none !important;
+    }
+  }
+
+  /* ===== /lanza-y-vende page-scoped overrides =====
+     Remap mint → hot-pink for this page only. */
+  .lanza-scope {
+    --mint: 330 100% 63%;          /* #ff4295 */
+    --mint-foreground: 0 0% 100%;
+    --accent-glow: 330 100% 63%;
+  }
+  /* btn-mint variants in lanza scope: hot-pink bg + white text. */
+  .lanza-scope .btn-mint,
+  .lanza-scope .btn-mint-lg {
+    background-color: #ff4295;
+    color: #ffffff;
+  }
+  .lanza-scope .btn-mint:hover,
+  .lanza-scope .btn-mint-lg:hover {
+    background-color: #e63785;
+    box-shadow: 0 14px 36px -12px rgb(255 66 149 / 0.5);
+  }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
