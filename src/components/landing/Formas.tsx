@@ -60,9 +60,9 @@ export const Formas = () => {
             Esto es lo que puedo hacer por ti
           </p>
           <h2 className="display-md">
-            Tres formas de{" "}
+            Así es como{" "}
             <span className="font-serif italic text-accent block md:inline">
-              trabajar conmigo.
+              te puedo ayudar.
             </span>
           </h2>
         </div>
