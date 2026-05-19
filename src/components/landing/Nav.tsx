@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const links: { label: string; href: string }[] = [
-  { label: "Escuela", href: "/escuela" },
+  { label: "Programas", href: "#formas" },
   { label: "Sobre María", href: "#about" },
 ];
 
