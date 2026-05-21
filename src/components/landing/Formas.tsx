@@ -1,4 +1,4 @@
-import construyeMockup from "@/assets/construye-mockup.png";
+import construyeMockup from "@/assets/construyes-card-black.png";
 import redesHeroMockup from "@/assets/redes-card-black.png";
 
 type Forma = {
@@ -39,6 +39,8 @@ const formas: Forma[] = [
     href: "/construye",
     image: construyeMockup,
     imageAlt: "Mockup del programa Construye — pantallas mostrando el programa completo.",
+    imageFit: "contain",
+    cardBg: "#0c0d0e",
   },
   {
     eyebrow: "PROGRAMA",
