@@ -1,50 +1,52 @@
-import escuelaMockup from "@/assets/escuela-mockup.png";
-import disenaCarreraMockup from "@/assets/disena-carrera-mockup.png";
-import corporateFounderMockup from "@/assets/corporate-founder-mockup.png";
+import construyeMockup from "@/assets/construye-mockup.png";
+import redesHeroMockup from "@/assets/redes-hero-mockup.png";
 
 type Forma = {
   eyebrow: string;
   eyebrowBadge?: string;
+  badgeColor?: "hot-pink" | "mint";
   title: string;
   subtitle: string;
   cta: string;
   href: string;
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
+  imagePlaceholderText?: string;
 };
 
 const formas: Forma[] = [
   {
-    eyebrow: "Encuentro",
-    eyebrowBadge: "A coste 0",
+    eyebrow: "WORKSHOP",
+    eyebrowBadge: "EN VIVO",
+    badgeColor: "hot-pink",
     title: "De Corporate a Founder",
     subtitle:
-      "Los primeros 90 días de tu negocio con orden y criterio. Reunión en directo a coste cero para profesionales en transición.",
+      "Encuentros en directo para profesionales en transición. Cada mes, un tema. Criterio, dirección y comunidad.",
     cta: "Apuntarme",
     href: "https://luma.com/corporateafounder",
-    image: corporateFounderMockup,
-    imageAlt: "Mockup del encuentro De Corporate a Founder — laptop mostrando una videollamada con siluetas de mujeres founders.",
+    imagePlaceholderText: "De Corporate a Founder",
   },
   {
-    eyebrow: "Herramienta",
-    eyebrowBadge: "A coste 0",
-    title: "Diseña tu Carrera",
+    eyebrow: "PROGRAMA",
+    eyebrowBadge: "COHORT · SEPT 2026",
+    badgeColor: "mint",
+    title: "Construye",
     subtitle:
-      "La herramienta que te ayuda a decidir tu dirección y convertir tu conocimiento en vías de monetización rentables.",
-    cta: "La pruebo",
-    href: "https://tunuevacarrera.lovable.app",
-    image: disenaCarreraMockup,
-    imageAlt: "Mockup de la herramienta Diseña tu Carrera — iMac, tablet y móvil mostrando worksheets y ofertas validadas.",
+      "El programa para construir tu negocio boutique con IA como infraestructura. Del conocimiento al negocio que factura.",
+    cta: "Quiero construir",
+    href: "/construye",
+    image: construyeMockup,
+    imageAlt: "Mockup del programa Construye — pantallas mostrando el programa completo.",
   },
   {
-    eyebrow: "Escuela",
-    title: "Carreras Modernas",
+    eyebrow: "PROGRAMA",
+    title: "Redes que Venden",
     subtitle:
-      "La escuela completa para construir tu negocio boutique con IA. Cuatro programas, un camino, desde la idea hasta el negocio funcionando.",
-    cta: "Ver la Escuela",
-    href: "/escuela",
-    image: escuelaMockup,
-    imageAlt: "Mockup de la Escuela Carreras Modernas — iMac, tablet y móvil mostrando los cuatro programas, comunidad y mentoría 1:1.",
+      "LinkedIn y Substack como activos de autoridad. Los escaparates que atraen clientes mientras vives.",
+    cta: "Ver el programa",
+    href: "/redes-que-venden",
+    image: redesHeroMockup,
+    imageAlt: "Mockup del programa Redes que Venden — pantallas mostrando el programa.",
   },
 ];
 
@@ -82,8 +84,11 @@ export const Formas = () => {
                     loading="lazy"
                   />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center text-xs uppercase tracking-[0.2em] text-foreground/40">
-                    Placeholder
+                  <div
+                    className="flex h-full w-full items-center justify-center text-sm font-medium text-white px-6 text-center"
+                    style={{ background: "#0c0d0e" }}
+                  >
+                    {f.imagePlaceholderText || f.title}
                   </div>
                 )}
               </div>
@@ -94,9 +99,18 @@ export const Formas = () => {
                   {f.eyebrowBadge && (
                     <>
                       <span aria-hidden className="mx-2 text-foreground/30">·</span>
-                      <span className="inline-flex items-center rounded-full bg-hot-pink text-hot-pink-foreground px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase">
-                        {f.eyebrowBadge}
-                      </span>
+                      {f.badgeColor === "mint" ? (
+                        <span
+                          className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse"
+                          style={{ background: "#d0fcd0", color: "#0c0d0e" }}
+                        >
+                          {f.eyebrowBadge}
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center rounded-full bg-hot-pink text-hot-pink-foreground px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse">
+                          {f.eyebrowBadge}
+                        </span>
+                      )}
                     </>
                   )}
                 </p>
