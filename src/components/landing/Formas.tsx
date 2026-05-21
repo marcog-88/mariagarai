@@ -12,6 +12,7 @@ type Forma = {
   image?: string;
   imageAlt?: string;
   imagePlaceholderText?: string;
+  imageFit?: "cover" | "contain";
 };
 
 const formas: Forma[] = [
@@ -47,6 +48,7 @@ const formas: Forma[] = [
     href: "/redes-que-venden",
     image: redesHeroMockup,
     imageAlt: "Mockup del programa Redes que Venden — pantallas mostrando el programa.",
+    imageFit: "contain",
   },
 ];
 
@@ -80,7 +82,7 @@ export const Formas = () => {
                   <img
                     src={f.image}
                     alt={f.imageAlt}
-                    className="h-full w-full object-cover"
+                    className={`h-full w-full ${f.imageFit === "contain" ? "object-contain" : "object-cover"}`}
                     loading="lazy"
                   />
                 ) : (
