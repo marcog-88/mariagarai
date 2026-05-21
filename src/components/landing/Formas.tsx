@@ -1,5 +1,5 @@
 import construyeMockup from "@/assets/construye-mockup.png";
-import redesHeroMockup from "@/assets/redes-card-dark.png";
+import redesHeroMockup from "@/assets/redes-black-card.png";
 
 type Forma = {
   eyebrow: string;
@@ -13,6 +13,7 @@ type Forma = {
   imageAlt?: string;
   imagePlaceholderText?: string;
   imageFit?: "cover" | "contain";
+  cardBg?: string;
 };
 
 const formas: Forma[] = [
@@ -49,6 +50,7 @@ const formas: Forma[] = [
     image: redesHeroMockup,
     imageAlt: "Mockup del programa Redes que Venden — pantallas mostrando el programa.",
     imageFit: "contain",
+    cardBg: "#0c0d0e",
   },
 ];
 
@@ -77,7 +79,7 @@ export const Formas = () => {
               key={f.title}
               className={`flex flex-col ${i > 0 ? "pt-16 md:pt-0" : ""}`}
             >
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[1.25rem] bg-secondary border border-border">
+              <div className={`relative aspect-[4/3] w-full overflow-hidden rounded-[1.25rem] border border-border ${f.cardBg ? "" : "bg-secondary"}`} style={f.cardBg ? { background: f.cardBg } : undefined}>
                 {f.image ? (
                   <img
                     src={f.image}
