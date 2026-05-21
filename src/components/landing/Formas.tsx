@@ -1,5 +1,5 @@
 import construyeMockup from "@/assets/construye-mockup.png";
-import redesHeroMockup from "@/assets/redes-hero-mockup.png";
+import redesHeroMockup from "@/assets/redes-hero.png";
 
 type Forma = {
   eyebrow: string;

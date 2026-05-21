@@ -1,4 +1,4 @@
-import heroMockup from "@/assets/redes-hero-mockup.png";
+import heroMockup from "@/assets/redes-hero.png";
 
 export const Hero = () => {
   return (
