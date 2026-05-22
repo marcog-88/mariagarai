@@ -1,3 +1,4 @@
+import talleresMockup from "@/assets/talleres-premiu-card.png";
 import construyeMockup from "@/assets/construye-premium-card.png";
 import redesHeroMockup from "@/assets/redes-premium-card.png";
 
@@ -26,7 +27,10 @@ const formas: Forma[] = [
       "Encuentros en directo para profesionales en transición. Cada mes, un tema. Criterio, dirección y comunidad.",
     cta: "Apuntarme",
     href: "https://luma.com/corporateafounder",
-    imagePlaceholderText: "Talleres",
+    image: talleresMockup,
+    imageAlt: "Talleres en vivo — sesión grupal con María Garaí.",
+    imageFit: "cover",
+    cardBg: "#0c0d0e",
   },
   {
     eyebrow: "PROGRAMA",

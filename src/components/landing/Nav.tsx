@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
-const links: { label: string; href: string; isExternal?: boolean; hasDot?: boolean }[] = [
+const links: { label: string; href: string; isExternal?: boolean }[] = [
   { label: "Programas", href: "#formas" },
-  { label: "Talleres", href: "https://luma.com/corporateafounder", isExternal: true, hasDot: true },
   { label: "Sobre María", href: "#about" },
 ];
 
@@ -55,13 +54,6 @@ export const Nav = () => {
                   rel={l.isExternal ? "noopener noreferrer" : undefined}
                   className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
                 >
-                  {l.hasDot && (
-                    <span
-                      className="inline-block w-2 h-2 rounded-full animate-pulse flex-shrink-0"
-                      style={{ background: "#ff4295" }}
-                      aria-hidden
-                    />
-                  )}
                   {l.label}
                   <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
                 </a>
@@ -128,13 +120,6 @@ export const Nav = () => {
                   className="font-serif text-3xl text-white hover:text-accent transition-colors flex items-center gap-3"
                   onClick={() => setOpen(false)}
                 >
-                  {l.hasDot && (
-                    <span
-                      className="inline-block w-2.5 h-2.5 rounded-full animate-pulse flex-shrink-0"
-                      style={{ background: "#ff4295" }}
-                      aria-hidden
-                    />
-                  )}
                   {l.label}
                 </a>
               </li>
