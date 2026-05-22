@@ -1,3 +1,5 @@
+import expoMockup from "@/assets/exponencial-premium-card.png";
+
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 
 export const Hero = () => {
@@ -51,9 +53,14 @@ export const Hero = () => {
             Para profesionales con trayectoria corporativa que quieren monetizar su conocimiento con un negocio propio que reemplace su sueldo y les dé libertad.
           </p>
 
-          {/* Hero mockup placeholder */}
+          {/* Hero mockup */}
           <div className="mt-14 mx-auto order-last md:order-none" style={{ maxWidth: "1000px" }}>
-            <div className="w-full aspect-[16/9] rounded-2xl bg-white/10" />
+            <img
+              src={expoMockup}
+              alt="Exponencial — Notion, Claude, LinkedIn y Substack como herramientas de tu negocio moderno."
+              className="w-full rounded-2xl object-cover"
+              loading="eager"
+            />
           </div>
 
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 mt-12">
