@@ -1,10 +1,10 @@
-import construyeMockup from "@/assets/construye-black.png";
-import redesHeroMockup from "@/assets/redes-card-black.png";
+import construyeMockup from "@/assets/construye-premium-card.png";
+import redesHeroMockup from "@/assets/redes-premium-card.png";
 
 type Forma = {
   eyebrow: string;
   eyebrowBadge?: string;
-  badgeColor?: "hot-pink" | "mint";
+  badgeColor?: "hot-pink" | "mint" | "orange";
   title: string;
   subtitle: string;
   cta: string;
@@ -21,12 +21,12 @@ const formas: Forma[] = [
     eyebrow: "WORKSHOP",
     eyebrowBadge: "EN VIVO",
     badgeColor: "hot-pink",
-    title: "De Corporate a Founder",
+    title: "Talleres",
     subtitle:
       "Encuentros en directo para profesionales en transición. Cada mes, un tema. Criterio, dirección y comunidad.",
     cta: "Apuntarme",
     href: "https://luma.com/corporateafounder",
-    imagePlaceholderText: "De Corporate a Founder",
+    imagePlaceholderText: "Talleres",
   },
   {
     eyebrow: "PROGRAMA",
@@ -39,11 +39,13 @@ const formas: Forma[] = [
     href: "/construye",
     image: construyeMockup,
     imageAlt: "Mockup del programa Construye — pantallas mostrando el programa completo.",
-    imageFit: "contain",
+    imageFit: "cover",
     cardBg: "#0c0d0e",
   },
   {
     eyebrow: "PROGRAMA",
+    eyebrowBadge: "·····",
+    badgeColor: "orange",
     title: "Redes que Venden",
     subtitle:
       "LinkedIn y Substack como activos de autoridad. Los escaparates que atraen clientes mientras vives.",
@@ -51,7 +53,7 @@ const formas: Forma[] = [
     href: "/redes-que-venden",
     image: redesHeroMockup,
     imageAlt: "Mockup del programa Redes que Venden — pantallas mostrando el programa.",
-    imageFit: "contain",
+    imageFit: "cover",
     cardBg: "#0c0d0e",
   },
 ];
@@ -100,27 +102,30 @@ export const Formas = () => {
               </div>
 
               <div className="mt-6 flex flex-col flex-1">
-                <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-foreground/50 flex items-center flex-wrap gap-y-1">
-                  <span>{f.eyebrow}</span>
-                  {f.eyebrowBadge && (
-                    <>
-                      <span aria-hidden className="mx-2 text-foreground/30">·</span>
-                      {f.badgeColor === "mint" ? (
-                        <span
-                          className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse"
-                          style={{ background: "#d0fcd0", color: "#0c0d0e" }}
-                        >
-                          {f.eyebrowBadge}
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center rounded-full bg-hot-pink text-hot-pink-foreground px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse">
-                          {f.eyebrowBadge}
-                        </span>
-                      )}
-                    </>
-                  )}
-                </p>
-                <h3 className="mt-3 font-serif text-3xl md:text-4xl tracking-tight">
+                {f.eyebrowBadge && (
+                  <p className="mb-3 flex items-center flex-wrap gap-y-1">
+                    {f.badgeColor === "mint" ? (
+                      <span
+                        className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse"
+                        style={{ background: "#d0fcd0", color: "#0c0d0e" }}
+                      >
+                        {f.eyebrowBadge}
+                      </span>
+                    ) : f.badgeColor === "orange" ? (
+                      <span
+                        className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase"
+                        style={{ background: "#e88f00", color: "#ffffff" }}
+                      >
+                        {f.eyebrowBadge}
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center rounded-full bg-hot-pink text-hot-pink-foreground px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse">
+                        {f.eyebrowBadge}
+                      </span>
+                    )}
+                  </p>
+                )}
+                <h3 className="font-serif text-3xl md:text-4xl tracking-tight">
                   {f.title}
                 </h3>
                 <p className="mt-3 text-base text-foreground/70 leading-relaxed">
