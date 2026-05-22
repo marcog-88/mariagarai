@@ -91,7 +91,7 @@ export const Newsletter = () => {
             <img
               src={substackCard}
               alt="Carreras Modernas en Substack — vista en escritorio y móvil"
-              className="w-full mix-blend-multiply dark:mix-blend-normal"
+              className="w-full"
               loading="lazy"
             />
           </div>
