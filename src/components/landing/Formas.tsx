@@ -1,4 +1,4 @@
-import construyeMockup from "@/assets/construyes-card-black.png";
+import construyeMockup from "@/assets/construye-black.png";
 import redesHeroMockup from "@/assets/redes-card-black.png";
 
 type Forma = {
