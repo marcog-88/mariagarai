@@ -14,6 +14,7 @@ import LanzaYVende from "./pages/LanzaYVende.tsx";
 import RedesQueVenden from "./pages/RedesQueVenden.tsx";
 import OfertaPrivadaLanza from "./pages/OfertaPrivadaLanza.tsx";
 import OfertaPrivadaConstruye from "./pages/OfertaPrivadaConstruye.tsx";
+import Exponencial from "./pages/Exponencial.tsx";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/redes-que-venden" element={<RedesQueVenden />} />
           <Route path="/oferta-privada-lanza" element={<OfertaPrivadaLanza />} />
           <Route path="/oferta-privada-construye" element={<OfertaPrivadaConstruye />} />
+          <Route path="/exponencial" element={<Exponencial />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

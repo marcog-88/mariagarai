@@ -265,6 +265,24 @@
     background-color: #e63785;
     box-shadow: 0 14px 36px -12px rgb(255 66 149 / 0.5);
   }
+
+  /* ===== /exponencial page-scoped overrides =====
+     Remap mint → purple for this page only. */
+  .exponencial-scope {
+    --mint: 252 99% 73%;          /* #9378fe */
+    --mint-foreground: 0 0% 100%;
+    --accent-glow: 252 99% 73%;
+  }
+  .exponencial-scope .btn-mint,
+  .exponencial-scope .btn-mint-lg {
+    background-color: #9378fe;
+    color: #ffffff;
+  }
+  .exponencial-scope .btn-mint:hover,
+  .exponencial-scope .btn-mint-lg:hover {
+    background-color: #7c60e8;
+    box-shadow: 0 14px 36px -12px rgb(147 120 254 / 0.5);
+  }
 }
 
 @keyframes fade-up {

@@ -1,4 +1,4 @@
-import talleresMockup from "@/assets/talleres-premiu-card.png";
+import talleresMockup from "@/assets/talleres-premium-card.png";
 import construyeMockup from "@/assets/construye-premium-card.png";
 import redesHeroMockup from "@/assets/redes-premium-card.png";
 
