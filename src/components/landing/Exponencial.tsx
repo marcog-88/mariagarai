@@ -1,4 +1,5 @@
 import { TidyCalButton } from "@/components/construye/TidyCalButton";
+import expoMockup from "@/assets/exponencial-premium-card.png";
 
 export const Exponencial = () => {
   return (
@@ -34,14 +35,14 @@ export const Exponencial = () => {
             </div>
           </div>
 
-          {/* Right — photo placeholder */}
-          <div
-            className="aspect-[4/3] rounded-[1.25rem] border border-white/10 flex items-center justify-center"
-            style={{ background: "#1a1b1c" }}
-          >
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-white/30">
-              Foto María
-            </span>
+          {/* Right — mockup image */}
+          <div className="aspect-[4/3] rounded-[1.25rem] overflow-hidden">
+            <img
+              src={expoMockup}
+              alt="Exponencial — Notion, Claude, LinkedIn y Substack."
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
