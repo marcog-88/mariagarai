@@ -87,11 +87,11 @@ export const Newsletter = () => {
           </div>
 
           {/* Device mockup */}
-          <div className="hidden md:flex md:col-span-6 items-center justify-center">
+          <div className="hidden md:flex md:col-span-6 items-start justify-start">
             <img
               src={substackCard}
               alt="Carreras Modernas en Substack — vista en escritorio y móvil"
-              className="w-full"
+              className="w-auto max-w-full max-h-[440px] object-contain"
               loading="lazy"
             />
           </div>
