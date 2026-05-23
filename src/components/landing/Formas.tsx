@@ -1,6 +1,6 @@
-import talleresMockup from "@/assets/talleres-premium-card.png";
-import construyeMockup from "@/assets/construye-premium-card.png";
-import redesHeroMockup from "@/assets/redes-premium-card.png";
+﻿import talleresMockup from "@/assets/talleres-premium-card.webp";
+import construyeMockup from "@/assets/construye-premium-card.webp";
+import redesHeroMockup from "@/assets/redes-premium-card.webp";
 
 type Forma = {
   eyebrow: string;
@@ -24,17 +24,17 @@ const formas: Forma[] = [
     badgeColor: "hot-pink",
     title: "Talleres",
     subtitle:
-      "Encuentros en directo para profesionales en transición. Cada mes, un tema. Criterio, dirección y comunidad.",
+      "Encuentros en directo para profesionales en transiciÃ³n. Cada mes, un tema. Criterio, direcciÃ³n y comunidad.",
     cta: "Apuntarme",
     href: "https://luma.com/corporateafounder",
     image: talleresMockup,
-    imageAlt: "Talleres en vivo — sesión grupal con María Garaí.",
+    imageAlt: "Talleres en vivo â€” sesiÃ³n grupal con MarÃ­a GaraÃ­.",
     imageFit: "cover",
     cardBg: "#0c0d0e",
   },
   {
     eyebrow: "PROGRAMA",
-    eyebrowBadge: "COHORT · SEPT 2026",
+    eyebrowBadge: "COHORT Â· SEPT 2026",
     badgeColor: "mint",
     title: "Construye",
     subtitle:
@@ -42,13 +42,13 @@ const formas: Forma[] = [
     cta: "Quiero construir",
     href: "/construye",
     image: construyeMockup,
-    imageAlt: "Mockup del programa Construye — pantallas mostrando el programa completo.",
+    imageAlt: "Mockup del programa Construye â€” pantallas mostrando el programa completo.",
     imageFit: "cover",
     cardBg: "#0c0d0e",
   },
   {
     eyebrow: "PROGRAMA",
-    eyebrowBadge: "·····",
+    eyebrowBadge: "Â·Â·Â·Â·Â·",
     badgeColor: "orange",
     title: "Redes que Venden",
     subtitle:
@@ -56,7 +56,7 @@ const formas: Forma[] = [
     cta: "Ver el programa",
     href: "/redes-que-venden",
     image: redesHeroMockup,
-    imageAlt: "Mockup del programa Redes que Venden — pantallas mostrando el programa.",
+    imageAlt: "Mockup del programa Redes que Venden â€” pantallas mostrando el programa.",
     imageFit: "cover",
     cardBg: "#0c0d0e",
   },
@@ -74,7 +74,7 @@ export const Formas = () => {
             Esto es lo que puedo hacer por ti
           </p>
           <h2 className="display-md">
-            Así es como{" "}
+            AsÃ­ es como{" "}
             <span className="font-serif italic text-accent block md:inline">
               te puedo ayudar.
             </span>
@@ -143,7 +143,7 @@ export const Formas = () => {
                     className="btn-primary w-[220px] justify-center"
                   >
                     {f.cta}
-                    <span aria-hidden>→</span>
+                    <span aria-hidden>â†’</span>
                   </a>
                 </div>
               </div>

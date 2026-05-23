@@ -1,4 +1,4 @@
-import expoMockup from "@/assets/exponencial-premium-card.png";
+﻿import expoMockup from "@/assets/exponencial-premium-card.webp";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 
@@ -39,7 +39,7 @@ export const Hero = () => {
               }}
               aria-hidden
             />
-            EXPONENCIAL · 4 MESES · 1:1 · POR APLICACIÓN
+            EXPONENCIAL Â· 4 MESES Â· 1:1 Â· POR APLICACIÃ“N
           </div>
           <h1 className="font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
             Construye tu Carrera Moderna.{" "}
@@ -47,17 +47,17 @@ export const Hero = () => {
             <em className="font-serif italic text-mint">Tu nuevo modelo profesional.</em>
           </h1>
           <p className="mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl">
-            Con múltiples vías de ingreso, autoridad en redes y un sistema con IA que lo sostenga.
+            Con mÃºltiples vÃ­as de ingreso, autoridad en redes y un sistema con IA que lo sostenga.
           </p>
           <p className="mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
-            Para profesionales con trayectoria corporativa que quieren monetizar su conocimiento con un negocio propio que reemplace su sueldo y les dé libertad.
+            Para profesionales con trayectoria corporativa que quieren monetizar su conocimiento con un negocio propio que reemplace su sueldo y les dÃ© libertad.
           </p>
 
           {/* Hero mockup */}
           <div className="mt-14 mx-auto order-last md:order-none" style={{ maxWidth: "1000px" }}>
             <img
               src={expoMockup}
-              alt="Exponencial — Notion, Claude, LinkedIn y Substack como herramientas de tu negocio moderno."
+              alt="Exponencial â€” Notion, Claude, LinkedIn y Substack como herramientas de tu negocio moderno."
               className="w-full rounded-2xl object-cover"
               loading="eager"
             />
@@ -70,12 +70,12 @@ export const Hero = () => {
               rel="noopener noreferrer"
               className="btn-mint-lg !text-lg self-start md:self-auto"
             >
-              Solicitar llamada de valoración
-              <span aria-hidden>→</span>
+              Solicitar llamada de valoraciÃ³n
+              <span aria-hidden>â†’</span>
             </a>
             <div>
-              <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÓN</p>
-              <p className="font-serif text-6xl font-bold text-primary-foreground">€4500</p>
+              <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÃ“N</p>
+              <p className="font-serif text-6xl font-bold text-primary-foreground">â‚¬4500</p>
             </div>
           </div>
         </div>
