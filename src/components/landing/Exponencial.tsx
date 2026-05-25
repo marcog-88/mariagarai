@@ -48,15 +48,15 @@ export const Exponencial = () => {
               {["17 sesiones 1:1", "4 meses intensivos", "Por aplicación"].map((pill) => (
                 <span
                   key={pill}
-                  className="rounded-full px-4 py-2 text-sm font-medium text-white"
-                  style={{ background: "#9378fe" }}
+                  className="rounded-full px-4 py-2 text-sm font-medium"
+                  style={{ background: "transparent", border: "1px solid #9378fe", color: "#9378fe", boxShadow: "0 0 8px #9378fe" }}
                 >
                   {pill}
                 </span>
               ))}
             </div>
             <div className="mt-8">
-              <TidyCalButton className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white border border-white bg-transparent transition-colors hover:bg-white hover:text-[#0c0d0e]">
+              <TidyCalButton className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 bg-[#9378fe]">
                 Solicitar llamada de valoración →
               </TidyCalButton>
             </div>
