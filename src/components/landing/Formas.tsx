@@ -48,7 +48,7 @@ const formas: Forma[] = [
   },
   {
     eyebrow: "PROGRAMA",
-    eyebrowBadge: "·····",
+    eyebrowBadge: "COHORT · JULIO 2026",
     badgeColor: "orange",
     title: "Redes que Venden",
     subtitle:
@@ -117,7 +117,7 @@ export const Formas = () => {
                       </span>
                     ) : f.badgeColor === "orange" ? (
                       <span
-                        className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase"
+                        className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse"
                         style={{ background: "#e88f00", color: "#ffffff" }}
                       >
                         {f.eyebrowBadge}
