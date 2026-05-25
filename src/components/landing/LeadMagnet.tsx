@@ -1,5 +1,5 @@
 import { useState } from "react";
-import mockup from "@/assets/lead-magnet final mockup.png";
+import mockup from "@/assets/lead-magnet-white.png";
 
 export const LeadMagnet = () => {
   const [email, setEmail] = useState("");
