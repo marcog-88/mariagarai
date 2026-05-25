@@ -24,7 +24,7 @@ export const About = () => {
               <span className="hidden md:inline">Y aun así, salir al mercado fue un desastre.</span>
             </span>
           </h2>
-          <div className="mt-10 space-y-6 text-lg md:text-xl text-foreground/75 leading-relaxed">
+          <div className="mt-10 space-y-6 text-lg md:text-xl lg:text-sm text-foreground/75 leading-relaxed">
             <p>
               Cuando dejé el mundo corporativo, creía que lo tenía todo a mi
               favor. Me perdí. Me saboteé. Gasté más de{" "}
@@ -51,7 +51,7 @@ export const About = () => {
         </div>
 
         {/* Right column: image fixed height on desktop, anchored to bottom */}
-        <div className="flex-shrink-0 lg:w-[45%] overflow-hidden lg:h-[580px]">
+        <div className="flex-shrink-0 lg:w-[45%] overflow-hidden lg:h-[667px]">
           <img
             src={sobreMi}
             alt="María Garaí"
