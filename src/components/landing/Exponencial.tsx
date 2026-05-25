@@ -25,38 +25,20 @@ export const Exponencial = () => {
             </p>
             <ul className="mt-4 text-base md:text-lg text-white max-w-xl">
               {[
-                { main: "Un negocio boutique funcionando en 4 meses", sub: "📅 17 sesiones 1:1 con María" },
-                { main: "Presencia digital que abre puertas mientras vives", sub: "⚡ Acompañamiento semanal intensivo" },
-                { main: "Sistemas con IA que trabajan sin ti", sub: "🔒 Por aplicación · Plazas limitadas" },
+                { main: "Un negocio boutique funcionando en 4 meses", sub: "17 sesiones 1:1 con María" },
+                { main: "Presencia digital que abre puertas mientras vives", sub: "Acompañamiento semanal intensivo" },
+                { main: "Sistemas con IA que trabajan sin ti", sub: "Por aplicación · Plazas limitadas" },
               ].map((item) => (
                 <li key={item.main} className="flex items-start gap-2 mb-4">
                   <span style={{ color: "#9378fe" }} aria-hidden className="mt-0.5">→</span>
                   <div>
                     <span>{item.main}</span>
-                    <p className="text-sm text-white/50 mt-0.5">{item.sub}</p>
+                    <p className="text-base mt-0.5" style={{ color: "#9378fe" }}>{item.sub}</p>
                   </div>
                 </li>
               ))}
             </ul>
             <div className="mt-8">
-              <style>{`@keyframes expoDotPulse{0%,100%{opacity:1}50%{opacity:.3}}`}</style>
-              <div
-                className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
-                style={{
-                  background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
-                  border: "1.5px solid #9378fe",
-                  boxShadow: "4px 0 12px rgba(147,120,254,0.5), -4px 0 12px rgba(147,120,254,0.5), inset 0 2px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)",
-                }}
-              >
-                <span
-                  className="rounded-full flex-shrink-0"
-                  style={{ width: "10px", height: "10px", background: "#9378fe", animation: "expoDotPulse 2s ease-in-out infinite" }}
-                  aria-hidden
-                />
-                Por Aplicación
-              </div>
-            </div>
-            <div className="mt-6">
               <a
                 href="/exponencial"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
@@ -64,6 +46,7 @@ export const Exponencial = () => {
               >
                 Ver el programa →
               </a>
+              <p className="mt-3 text-sm text-white/40">Plazas limitadas · Por aplicación</p>
             </div>
           </div>
 
