@@ -5,7 +5,7 @@ export const LeadMagnet = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <section className="py-24 md:py-32 border-t border-border bg-[#f9f9f7]">
+    <section className="py-24 md:py-32 border-t border-border bg-[#f0f0f0]">
       <div className="container-tight">
         <div className="flex flex-col md:flex-row md:items-center md:gap-16 lg:gap-24">
           {/* Left: text + form */}
@@ -16,7 +16,7 @@ export const LeadMagnet = () => {
             >
               EMPIEZA AQUÍ
             </p>
-            <h2 className="display-md">
+            <h2 className="display-md" style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)" }}>
               ¿Qué podrías{" "}
               <span className="font-serif italic" style={{ color: "#9378fe" }}>
                 vender mañana
