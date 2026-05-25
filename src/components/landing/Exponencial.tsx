@@ -8,13 +8,13 @@ export const Exponencial = () => {
       style={{ background: "#0c0d0e", borderTop: "1px solid rgba(147,120,254,0.2)" }}
     >
       <div className="container-tight">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           {/* Left — text */}
           <div>
             <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em]" style={{ color: "#9378fe" }}>
               El Programa Flagship
             </p>
-            <h2 className="text-5xl md:text-6xl font-serif tracking-tight leading-tight text-white">
+            <h2 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight text-white">
               Construye tu{" "}
               <span className="font-serif italic" style={{ color: "#9378fe" }}>
                 Carrera Moderna
@@ -51,7 +51,7 @@ export const Exponencial = () => {
           </div>
 
           {/* Right — mockup image */}
-          <div className="rounded-[1.25rem] overflow-hidden border border-white/10">
+          <div className="rounded-[1.25rem] overflow-hidden border border-white/10 md:mt-[9.5rem]">
             <img
               src={expoMockup}
               alt="Exponencial — Notion, Claude, LinkedIn y Substack."
