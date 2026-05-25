@@ -40,10 +40,20 @@ export const Exponencial = () => {
               </span>
             </h2>
             <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
-              Para profesionales con experiencia corporativa que quieren monetizar su
-              conocimiento con un negocio propio que reemplace su sueldo y les dé
-              libertad.
+              El programa flagship para construir tu carrera moderna desde cero.
             </p>
+            <ul className="mt-4 space-y-2 text-base md:text-lg text-white max-w-xl">
+              {[
+                "Un negocio boutique funcionando en 4 meses",
+                "Presencia digital que abre puertas mientras vives",
+                "Sistemas con IA que trabajan sin ti",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <span style={{ color: "#9378fe" }} aria-hidden>→</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
             <div className="mt-8 flex flex-wrap gap-3">
               {["17 sesiones 1:1", "4 meses intensivos", "Por aplicación"].map((pill) => (
                 <span
