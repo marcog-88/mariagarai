@@ -10,6 +10,7 @@ import { About } from "@/components/landing/About";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { CTA } from "@/components/landing/CTA";
 import { Footer } from "@/components/landing/Footer";
+import { Speaking } from "@/components/home/Speaking";
 
 const Index = () => {
   return (
@@ -25,6 +26,7 @@ const Index = () => {
       <Formas />
       <Newsletter />
       <CTA />
+      <Speaking />
       <Footer />
     </main>
   );
