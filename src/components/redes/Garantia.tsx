@@ -25,7 +25,7 @@ export const Garantia = () => {
               <div className="mt-8 max-w-3xl space-y-5 text-base md:text-lg text-primary-foreground/85 leading-relaxed">
                 <p>
                   Redes que Venden no es un curso que ves y olvidas. Es un programa de
-                  implementación acompañada. Si completas las 30 acciones y las 3 sesiones 1:1 y
+                  implementación acompañada. Si completas las 30 acciones y las 8 sesiones grupales y
                   no tienes ambos canales operativos y una estrategia de prospección activa,
                   hablamos.
                 </p>
@@ -36,7 +36,7 @@ export const Garantia = () => {
                 </p>
               </div>
               <p className="mt-8 text-sm md:text-base text-mint italic">
-                Acepto un máximo de 6 personas al mes para mantener la calidad del acompañamiento.
+                Acepto un máximo de 20 personas por cohorte para mantener la calidad del acompañamiento.
               </p>
             </div>
           </div>

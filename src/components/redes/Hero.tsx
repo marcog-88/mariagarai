@@ -69,7 +69,7 @@ export const Hero = () => {
             </a>
             <div>
               <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÓN</p>
-              <p className="font-serif text-6xl font-bold text-primary-foreground">€800</p>
+              <p className="font-serif text-6xl font-bold text-primary-foreground">€497</p>
             </div>
           </div>
         </div>

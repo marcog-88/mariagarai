@@ -6,8 +6,8 @@ const phases = [
   { n: "1", label: "Arranque", title: "FASE 0 — ARRANQUE", body: "Configuramos ambos canales. Todo a punto para arrancar sin líos técnicos ni procrastinación." },
   { n: "2", label: "Semana 1", title: "FASE 1 — ESTRATEGIA Y POSICIONAMIENTO", body: "Perfiles optimizados para autoridad y venta desde el día 1. Posicionamiento claro en ambos canales." },
   { n: "3", label: "Semana 2", title: "FASE 2 — CONSTRUCCIÓN Y CONTENIDO", body: "Pilares, formatos y estrategia de reutilización. Calendario de contenido. Activos que guían a la venta." },
-  { n: "4", label: "Semana 3", title: "FASE 3 — CRECIMIENTO Y PROSPECCIÓN", body: "Crece orgánicamente en ambos canales. Aprende a entrar en conversaciones sin parecer pesada. Tu manual de ventas para LinkedIn y Substack." },
-  { n: "5", label: "Semana 4", title: "FASE 4 — VENTAS AVANZADAS", body: "Automatizaciones exclusivas. Estrategias de prospección que solo el 1% usa en el mercado hispano." },
+  { n: "4", label: "Semana 3", title: "FASE 3 — CRECIMIENTO Y PROSPECCIÓN", body: "Estrategia de prospección activa en LinkedIn y Substack. Cómo abrir conversaciones que terminan en ventas — sin parecer spam ni una pesada. Tu manual de ventas para ambos canales." },
+  { n: "5", label: "Semana 4", title: "FASE 4 — VENTAS AVANZADAS", body: "Automatizaciones exclusivas. Email marketing básico: secuencias y broadcasts que convierten suscriptores en clientes. Estrategias de prospección que solo el 1% usa en el mercado hispano." },
 ];
 
 export const Deliverables = () => {
@@ -114,7 +114,7 @@ export const Deliverables = () => {
               {[
                 { label: "DURACIÓN", value: "30 DÍAS", sub: "Programa en vivo" },
                 { label: "FORMATO", value: "EN VIVO", sub: "Sesiones semanales" },
-                { label: "PRECIO", value: "€800", sub: "Pago único" },
+                { label: "PRECIO", value: "€497", sub: "Pago único" },
                 { label: "INICIO", value: "JUN 2026", sub: "Próxima cohorte" },
               ].map((item) => (
                 <div

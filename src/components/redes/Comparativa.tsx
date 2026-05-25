@@ -4,7 +4,7 @@ const rows: [string, string][] = [
   ["Sistema de contenido y calendario", "€300 – 500"],
   ["Manual de prospección activa", "€200 – 400"],
   ["Automatizaciones LinkedIn + Substack", "€300 – 500"],
-  ["3 sesiones 1:1 de acompañamiento", "€600 – 900"],
+  ["8 sesiones grupales en directo (2/semana)", "€400 – 600"],
 ];
 
 export const Comparativa = () => {
@@ -50,11 +50,11 @@ export const Comparativa = () => {
               <tr style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}>
                 <td className="py-8 px-6 font-serif text-xl md:text-2xl text-primary-foreground">TOTAL</td>
                 <td className="py-8 px-6 text-primary-foreground/60 line-through text-lg">
-                  €2300 – 3700
+                  €1700 – 2900
                 </td>
                 <td className="py-8 px-6">
                   <span className="font-serif text-3xl md:text-4xl font-bold text-mint">
-                    €800
+                    €497
                   </span>
                 </td>
               </tr>
@@ -90,11 +90,11 @@ export const Comparativa = () => {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <p className="text-xs uppercase tracking-wider text-primary-foreground/50 mb-1">Contratar fuera</p>
-                <p className="text-primary-foreground/60 line-through">€2300 – 3700</p>
+                <p className="text-primary-foreground/60 line-through">€1700 – 2900</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-primary-foreground/50 mb-1">En Redes que Venden</p>
-                <p className="font-serif text-3xl font-bold text-mint">€800</p>
+                <p className="font-serif text-3xl font-bold text-mint">€497</p>
               </div>
             </div>
           </div>

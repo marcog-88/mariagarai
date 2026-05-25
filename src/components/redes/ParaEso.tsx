@@ -28,7 +28,11 @@ export const ParaEso = () => {
           ))}
         </div>
 
-        <p className="mt-12 font-serif italic text-2xl md:text-4xl text-mint">
+        <p className="mt-12 text-lg md:text-xl text-primary-foreground/85 leading-relaxed max-w-3xl">
+          No es publicar a ver qué pasa. Es construir un sistema: contenido que posiciona, prospección que conecta, y email que convierte. Una máquina que funciona con 3 horas semanales.
+        </p>
+
+        <p className="mt-8 font-serif italic text-2xl md:text-4xl text-mint">
           Eso son Redes que Venden.
         </p>
       </div>

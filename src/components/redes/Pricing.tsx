@@ -1,6 +1,6 @@
 const includes = [
   "30 acciones diarias — una por día, sin pensar qué toca. 45–60 minutos al día.",
-  "3 sesiones 1:1 con María para alinear dirección, revisar progreso y estrategia",
+  "8 sesiones grupales en directo con María — 2 por semana durante 4 semanas. Estrategia, revisión y feedback en cada sesión.",
   "Tutoriales técnicos para cada paso",
   "Acceso completo y para siempre a todas las lecciones",
   "Plantillas para construir activos en minutos, no días",
@@ -44,13 +44,13 @@ export const Pricing = () => {
           >
             Cohorte 01 · Junio 2026
           </span>
-          <p className="text-primary-foreground/40 line-through text-2xl mb-2">€2735</p>
+          <p className="text-primary-foreground/40 line-through text-2xl mb-2">€2135</p>
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
-          <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€800</p>
+          <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€497</p>
           <p className="mt-2 text-primary-foreground/60">Pago único · Acceso inmediato</p>
 
           <p className="mt-12 mb-8 text-xs md:text-sm uppercase tracking-widest text-mint">
-            Máximo 6 personas al mes
+            Máximo 20 personas por cohorte
           </p>
           <a href="#" className="btn-mint-lg !text-lg mt-0 mb-4">
             UNIRME A LA LISTA DE ESPERA

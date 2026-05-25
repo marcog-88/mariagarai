@@ -26,7 +26,7 @@ const colC = {
 
 const colB = {
   header: "Redes que Venden",
-  sub: "30 días · Sistema completo · €800",
+  sub: "30 días · Sistema completo · €497",
   items: [
     "Los dos canales montados y alineados desde el día 1",
     "María contigo para corregir y empujar en cada fase",

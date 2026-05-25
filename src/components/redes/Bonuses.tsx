@@ -70,14 +70,14 @@ export const Bonuses = () => {
               Valor total en bonuses: <span className="font-medium">€1935</span>
             </p>
             <p className="text-xl font-medium text-primary-foreground/40 line-through">
-              Valor total del programa: €2735
+              Valor total del programa: €2135
             </p>
             <div className="pt-8">
               <p className="text-xs uppercase tracking-[0.24em] text-mint mb-3">
                 Tu inversión hoy
               </p>
               <p className="font-serif text-7xl md:text-8xl font-bold text-mint leading-none">
-                €800
+                €497
               </p>
             </div>
           </div>

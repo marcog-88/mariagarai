@@ -1,9 +1,9 @@
 const pillars = [
   { n: "01", title: "ESTRATEGIA", body: "Qué publicar, dónde, cuándo y para qué. Con criterio de negocio, no de influencer." },
   { n: "02", title: "POSICIONAMIENTO", body: "Perfiles que comunican qué vendes, a quién y por qué elegirte." },
-  { n: "03", title: "CONTENIDO", body: "Un sistema de 3 horas semanales que exprime cada idea al máximo." },
+  { n: "03", title: "CONTENIDO", body: "Un sistema de 3 horas semanales que exprime cada idea al máximo. Con IA como co-piloto para crear más rápido y con más criterio." },
   { n: "04", title: "PROSPECCIÓN", body: "Cómo abrir conversaciones que terminan en ventas, sin parecer pesada." },
-  { n: "05", title: "AUTOMATIZACIÓN", body: "Herramientas y flujos que publican, programan y hacen seguimiento por ti." },
+  { n: "05", title: "AUTOMATIZACIÓN", body: "Claude + herramientas que publican, programan y prospectan por ti. Automatizaciones que trabajan mientras tú no estás." },
   { n: "06", title: "RESULTADOS", body: "Mides lo que funciona y ajustas. Sin adivinar. Con datos reales de tus dos canales." },
 ];
 

@@ -25,7 +25,7 @@ export const PreguntaReal = () => {
             </span>
           </p>
           <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight text-foreground">
-            No es si puedes permitirte €800.
+            No es si puedes permitirte €497.
           </h2>
           <p className="mt-4 text-lg md:text-2xl text-foreground/70">
             Es cuánto te está costando cada mes que sigues invisible.
@@ -57,7 +57,7 @@ export const PreguntaReal = () => {
         </div>
 
         <p className="mt-12 text-center font-semibold text-lg md:text-xl text-foreground max-w-2xl mx-auto">
-          La decisión no es €800. La decisión es cuándo dejas de ser invisible.
+          La decisión no es €497. La decisión es cuándo dejas de ser invisible.
         </p>
 
         <div className="mt-8 flex justify-center">

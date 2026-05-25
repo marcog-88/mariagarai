@@ -8,7 +8,7 @@ import {
 const faqs = [
   { q: "¿Necesito tener experiencia en LinkedIn o Substack?", a: "No. El programa empieza desde cero en ambas plataformas. Si ya tienes algo montado, lo optimizamos desde donde estás." },
   { q: "¿Por qué Substack y no Instagram?", a: "Instagram pide contenido constante, formatos perfectos y diseño impecable. Cuando paras, desapareces. Substack es diferente. Las personas que están ahí buscan profundidad, no entretenimiento. Es donde se construye cercanía real — y de la cercanía nacen las ventas. Además, cada pieza que publicas en Substack se convierte en la base de todo tu contenido. Un artículo largo se convierte en diez piezas cortas. Con IA, en minutos." },
-  { q: "¿Cuánto tiempo tengo que dedicar al día?", a: "Una acción al día. Entre 45 y 60 minutos. Los días de sesión 1:1 con María, una hora más." },
+  { q: "¿Cuánto tiempo tengo que dedicar al día?", a: "Una acción al día. Entre 45 y 60 minutos. Los días de sesión grupal con María, una hora más." },
   { q: "¿En qué se diferencia de otros cursos de LinkedIn?", a: "Aquí trabajamos LinkedIn y Substack juntos como un sistema integrado. Y el objetivo no es crecer — es vender. Todo está orientado a conseguir clientes, no seguidores." },
   { q: "¿Qué pasa si ya tengo LinkedIn pero nunca he usado Substack?", a: "Perfecto. Empezamos optimizando lo que ya tienes en LinkedIn y lanzamos Substack desde cero. Las dos cosas en paralelo." },
   { q: "¿Y si ya tengo email marketing?", a: "Puedes tener los dos. Substack funciona como canal de contenido y comunidad, no solo como email. Son complementarios, no excluyentes." },
