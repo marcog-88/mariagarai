@@ -23,8 +23,7 @@ export const Exponencial = () => {
             <p className="mt-12 text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
               El programa flagship para construir tu carrera moderna desde cero.
             </p>
-            <div className="mt-4 border-l-2 border-[#9378fe] pl-4">
-              <ul className="text-base md:text-lg text-white max-w-xl">
+            <ul className="mt-4 text-base md:text-lg text-white max-w-xl">
                 {[
                   { main: "Un negocio boutique funcionando en 4 meses", sub: "📅 17 sesiones 1:1 con María" },
                   { main: "Presencia digital que abre puertas mientras vives", sub: "⚡ Acompañamiento semanal intensivo" },
@@ -38,8 +37,7 @@ export const Exponencial = () => {
                     </div>
                   </li>
                 ))}
-              </ul>
-            </div>
+            </ul>
             <div className="mt-8">
               <a
                 href="/exponencial"
