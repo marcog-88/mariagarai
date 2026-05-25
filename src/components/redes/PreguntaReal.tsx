@@ -1,4 +1,4 @@
-import { TidyCalButton } from "@/components/construye/TidyCalButton";
+import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
 
 const cardA = [
   "Sigues sin saber si lo que publicas le importa a alguien.",
@@ -61,9 +61,7 @@ export const PreguntaReal = () => {
         </p>
 
         <div className="mt-8 flex justify-center">
-          <TidyCalButton>
-            Pagar ahora <span aria-hidden>→</span>
-          </TidyCalButton>
+          <StripeBuyButton />
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { TidyCalButton } from "@/components/construye/TidyCalButton";
+import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
 
 const colA = {
   header: "Aprenderlo sola",
@@ -100,9 +100,9 @@ export const TresOpciones = () => {
                 ))}
               </ul>
               <div className="px-6 pb-6">
-                <TidyCalButton className="btn-mint-lg !text-base w-full justify-center">
-                  Pagar ahora <span aria-hidden>→</span>
-                </TidyCalButton>
+                <div className="flex justify-center">
+                  <StripeBuyButton />
+                </div>
               </div>
             </div>
           </div>

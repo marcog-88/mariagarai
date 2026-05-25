@@ -1,4 +1,5 @@
 import heroMockup from "@/assets/redes-hero-mockup.png";
+import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
 
 export const Hero = () => {
   return (
@@ -63,10 +64,7 @@ export const Hero = () => {
           </div>
 
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 mt-12">
-            <a href="#precio" className="btn-mint-lg !text-lg self-start md:self-auto">
-              Pagar ahora
-              <span aria-hidden>→</span>
-            </a>
+            <StripeBuyButton />
             <div>
               <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÓN</p>
               <p className="font-serif text-6xl font-bold text-primary-foreground">€497</p>

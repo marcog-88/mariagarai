@@ -1,3 +1,5 @@
+import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
+
 const testimonios = [
   {
     quote: "Llevaba meses publicando en LinkedIn sin ningún resultado. En 30 días con María restructuré mi perfil, empecé a escribir con intención y cerré mi primera clienta desde un mensaje directo.",
@@ -68,9 +70,7 @@ export const Testimonios = () => {
         </div>
 
         <div className="mt-12 md:mt-16 flex justify-center">
-          <a href="#precio" className="btn-mint-lg">
-            Pagar ahora →
-          </a>
+          <StripeBuyButton />
         </div>
       </div>
     </section>

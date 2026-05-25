@@ -1,4 +1,4 @@
-import { TidyCalButton } from "@/components/construye/TidyCalButton";
+import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
 import avatarElena from "@/assets/avatar-elena.jpg";
 import avatarNatalia from "@/assets/avatar-natalia.jpg";
 import avatarIsabel from "@/assets/avatar-isabel.jpg";
@@ -104,9 +104,7 @@ export const AntesDespuesProof = () => {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <TidyCalButton>
-            Quiero este resultado <span aria-hidden>→</span>
-          </TidyCalButton>
+          <StripeBuyButton />
         </div>
       </div>
     </section>

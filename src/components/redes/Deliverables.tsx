@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import { TidyCalButton } from "@/components/construye/TidyCalButton";
+import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
 import deliverablesMockup from "@/assets/redes-deliverables-mockup-animated.gif";
 
 const phases = [
@@ -140,9 +140,7 @@ export const Deliverables = () => {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <TidyCalButton>
-            Pagar ahora <span aria-hidden>→</span>
-          </TidyCalButton>
+          <StripeBuyButton />
         </div>
       </div>
     </section>

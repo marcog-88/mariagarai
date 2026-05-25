@@ -1,3 +1,5 @@
+import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
+
 const includes = [
   "30 acciones diarias — una por día, sin pensar qué toca. 45–60 minutos al día.",
   "8 sesiones grupales en directo con María — 2 por semana durante 4 semanas. Estrategia, revisión y feedback en cada sesión.",
@@ -52,10 +54,7 @@ export const Pricing = () => {
           <p className="mt-12 mb-8 text-xs md:text-sm uppercase tracking-widest text-mint">
             Máximo 20 personas por cohorte
           </p>
-          <a href="#" className="btn-mint-lg !text-lg mt-0 mb-4">
-            PAGAR AHORA
-            <span aria-hidden>→</span>
-          </a>
+          <StripeBuyButton />
 
           <a
             href={TIDYCAL}

@@ -1,4 +1,4 @@
-const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
+import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
 
 const outcomes = [
   "Dos canales activos y alineados con tu oferta en 30 días.",
@@ -34,18 +34,7 @@ export const FinalCTA = () => {
 
         <div className="mt-10 flex flex-col items-start gap-5">
           <p className="text-sm text-mint">Máximo 20 personas por cohorte.</p>
-          <a href="#" className="btn-mint-lg !text-lg">
-            PAGAR AHORA
-            <span aria-hidden>→</span>
-          </a>
-          <a
-            href={TIDYCAL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[11px] sm:text-sm whitespace-nowrap text-primary-foreground/65 hover:text-mint underline underline-offset-4"
-          >
-            ¿Tienes dudas antes de entrar? → Reservar llamada de valoración
-          </a>
+          <StripeBuyButton />
         </div>
       </div>
     </section>

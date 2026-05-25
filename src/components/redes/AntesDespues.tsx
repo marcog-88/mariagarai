@@ -1,4 +1,4 @@
-import { TidyCalButton } from "@/components/construye/TidyCalButton";
+import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
 
 const sin = [
   "Publicas de vez en cuando. Nadie reacciona.",
@@ -59,9 +59,7 @@ export const AntesDespues = () => {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <TidyCalButton>
-            Quiero este resultado <span aria-hidden>→</span>
-          </TidyCalButton>
+          <StripeBuyButton />
         </div>
       </div>
     </section>
