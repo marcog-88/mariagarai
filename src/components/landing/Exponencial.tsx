@@ -26,8 +26,8 @@ export const Exponencial = () => {
             <ul className="mt-4 text-base md:text-lg text-white max-w-xl">
                 {[
                   { main: "Un negocio boutique funcionando en 4 meses", sub: "📅 17 sesiones 1:1 con María" },
-                  { main: "Presencia digital que abre puertas mientras vives", sub: "⚡ Acompañamiento semanal intensivo" },
-                  { main: "Sistemas con IA que trabajan sin ti", sub: "🔒 Por aplicación · Plazas limitadas" },
+                  { main: "Presencia digital que abre puertas mientras vives", sub: "🛠️ LinkedIn, Substack y web incluidos" },
+                  { main: "Sistemas con IA que trabajan sin ti", sub: "🤖 Notion + Claude como infraestructura" },
                 ].map((item) => (
                   <li key={item.main} className="flex items-start gap-2 mb-4">
                     <span style={{ color: "#9378fe" }} aria-hidden className="mt-0.5">✓</span>
