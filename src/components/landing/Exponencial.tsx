@@ -43,7 +43,7 @@ export const Exponencial = () => {
               ))}
             </ul>
             <div className="mt-8">
-              <a href="/exponencial" className="btn-primary !px-6 !py-3 !text-sm min-w-[280px]">
+              <a href="/exponencial" className="btn-primary w-[220px] justify-center !py-2.5">
                 Es mi momento →
               </a>
               <p className="mt-3 text-xs text-white/40">Plazas limitadas · Por aplicación</p>
