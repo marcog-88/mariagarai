@@ -1,4 +1,4 @@
-import sobreMi from "@/assets/maria-sitting-no-background.png";
+import sobreMi from "@/assets/maria-sitting-no-background.webp";
 
 export const About = () => {
   return (
@@ -55,7 +55,7 @@ export const About = () => {
           <img
             src={sobreMi}
             alt="María Garaí"
-            className="w-full h-full object-cover block object-[78%_center] lg:object-[75%_bottom] min-h-[520px] lg:min-h-0 -translate-y-[13%] lg:translate-y-0"
+            className="w-full h-full object-cover object-[center_bottom] block min-h-[520px] lg:min-h-0"
             loading="lazy"
           />
         </div>
