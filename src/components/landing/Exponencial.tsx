@@ -31,8 +31,11 @@ export const Exponencial = () => {
                 }}
                 aria-hidden
               />
-              Programa Flagship · Por Aplicación
+              Por Aplicación
             </div>
+            <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em]" style={{ color: "#9378fe" }}>
+              El Programa Flagship
+            </p>
             <h2 className="text-5xl md:text-6xl font-serif tracking-tight leading-tight text-white">
               Construye tu{" "}
               <span className="font-serif italic" style={{ color: "#9378fe" }}>
@@ -66,9 +69,13 @@ export const Exponencial = () => {
               ))}
             </div>
             <div className="mt-8">
-              <TidyCalButton className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 bg-[#9378fe]">
-                Solicitar llamada de valoración →
-              </TidyCalButton>
+              <a
+                href="/exponencial"
+                className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+                style={{ background: "#9378fe" }}
+              >
+                Ver el programa →
+              </a>
             </div>
           </div>
 
