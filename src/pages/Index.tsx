@@ -25,8 +25,8 @@ const Index = () => {
       <Exponencial />
       <Formas />
       <Newsletter />
-      <CTA />
       <Speaking />
+      <CTA />
       <Footer />
     </main>
   );

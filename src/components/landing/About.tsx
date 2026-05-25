@@ -4,25 +4,21 @@ export const About = () => {
   return (
     <section id="about" className="py-24 md:py-32 border-t border-border">
       <div className="container-tight">
-        <div className="flex flex-col md:flex-row md:items-center md:gap-16 lg:gap-20">
+        <div className="flex flex-col md:flex-row">
 
           {/* Left column: portrait photo ~40% */}
           <div className="flex-shrink-0 w-full md:w-[40%] mb-12 md:mb-0">
             <img
               src={sobreMi}
               alt="María Garaí"
-              className="w-full h-auto object-cover object-top"
-              style={{
-                borderRadius: "12px",
-                maxHeight: "600px",
-                objectPosition: "top center",
-              }}
+              className="w-full h-auto md:h-full object-cover object-top block"
+              style={{ borderRadius: "12px" }}
               loading="lazy"
             />
           </div>
 
-          {/* Right column: existing text ~60% */}
-          <div className="flex-1 min-w-0">
+          {/* Right column: all text content ~60%, top-aligned, pl-12 on desktop */}
+          <div className="flex-1 min-w-0 md:pl-12">
             <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
               Hola, soy María
             </p>
