@@ -23,21 +23,23 @@ export const Exponencial = () => {
             <p className="mt-12 text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
               El programa flagship para construir tu carrera moderna desde cero.
             </p>
-            <ul className="mt-4 text-base md:text-lg text-white max-w-xl">
-              {[
-                { main: "Un negocio boutique funcionando en 4 meses", sub: "📅 17 sesiones 1:1 con María" },
-                { main: "Presencia digital que abre puertas mientras vives", sub: "⚡ Acompañamiento semanal intensivo" },
-                { main: "Sistemas con IA que trabajan sin ti", sub: "🔒 Por aplicación · Plazas limitadas" },
-              ].map((item) => (
-                <li key={item.main} className="flex items-start gap-2 mb-4">
-                  <span style={{ color: "#9378fe" }} aria-hidden className="mt-0.5">→</span>
-                  <div>
-                    <span>{item.main}</span>
-                    <p className="text-base mt-0.5" style={{ color: "#9378fe" }}>{item.sub}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <div className="mt-4 border-l-2 border-[#9378fe] pl-4">
+              <ul className="text-base md:text-lg text-white max-w-xl">
+                {[
+                  { main: "Un negocio boutique funcionando en 4 meses", sub: "📅 17 sesiones 1:1 con María" },
+                  { main: "Presencia digital que abre puertas mientras vives", sub: "⚡ Acompañamiento semanal intensivo" },
+                  { main: "Sistemas con IA que trabajan sin ti", sub: "🔒 Por aplicación · Plazas limitadas" },
+                ].map((item) => (
+                  <li key={item.main} className="flex items-start gap-2 mb-4">
+                    <span style={{ color: "#9378fe" }} aria-hidden className="mt-0.5">✓</span>
+                    <div>
+                      <span>{item.main}</span>
+                      <p className="text-base mt-0.5" style={{ color: "#9378fe" }}>{item.sub}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <div className="mt-8">
               <a
                 href="/exponencial"
