@@ -7,11 +7,11 @@ export const About = () => {
       className="border-t border-border"
       style={{ background: "#f9f9f7", minHeight: "600px" }}
     >
-      <div className="flex flex-col md:flex-row" style={{ minHeight: "600px" }}>
+      <div className="flex flex-col lg:flex-row" style={{ minHeight: "600px" }}>
 
         {/* Left column: all text, 55% width, vertically centered */}
         <div
-          className="flex flex-col justify-center md:w-[55%] px-6 pt-16 pb-4 md:py-20"
+          className="flex flex-col justify-center lg:w-[55%] px-6 pt-16 pb-4 lg:py-20"
           style={{ paddingLeft: "clamp(24px, 5vw, 64px)", paddingRight: "clamp(24px, 4vw, 48px)" }}
         >
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
@@ -51,11 +51,11 @@ export const About = () => {
         </div>
 
         {/* Right column: image 45% desktop / full-width mobile */}
-        <div className="flex-shrink-0 md:w-[45%] overflow-hidden">
+        <div className="flex-shrink-0 lg:w-[45%] overflow-hidden">
           <img
             src={sobreMi}
             alt="María Garaí"
-            className="w-full h-full object-cover block mx-auto object-center md:object-[75%_bottom] min-h-[520px] md:min-h-0 -translate-y-[13%] md:translate-y-0"
+            className="w-full h-full object-cover block mx-auto object-center lg:object-[75%_bottom] min-h-[520px] lg:min-h-0 -translate-y-[13%] lg:translate-y-0"
             loading="lazy"
           />
         </div>
