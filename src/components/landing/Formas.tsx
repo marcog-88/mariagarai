@@ -39,7 +39,7 @@ const formas: Forma[] = [
     title: "Construye",
     subtitle:
       "El programa para construir tu negocio boutique con IA como infraestructura. Del conocimiento al negocio que factura.",
-    cta: "Quiero construir",
+    cta: "Quiero mi negocio",
     href: "/construye",
     image: construyeMockup,
     imageAlt: "Mockup del programa Construye — pantallas mostrando el programa completo.",
@@ -53,7 +53,7 @@ const formas: Forma[] = [
     title: "Redes que Venden",
     subtitle:
       "LinkedIn y Substack como activos de autoridad. Los escaparates que atraen clientes mientras vives.",
-    cta: "Ver el programa",
+    cta: "Quiero vender",
     href: "/redes-que-venden",
     image: redesHeroMockup,
     imageAlt: "Mockup del programa Redes que Venden — pantallas mostrando el programa.",

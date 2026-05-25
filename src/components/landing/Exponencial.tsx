@@ -44,7 +44,7 @@ export const Exponencial = () => {
             </ul>
             <div className="mt-8">
               <a href="/exponencial" className="btn-primary !px-6 !py-3 !text-sm min-w-[280px]">
-                Ver el programa →
+                Es mi momento →
               </a>
               <p className="mt-3 text-xs text-white/40">Plazas limitadas · Por aplicación</p>
             </div>
