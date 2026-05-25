@@ -21,9 +21,9 @@ const Index = () => {
       <About />
       <Testimonials />
       <Thoughts />
-      <TestimonialsRow />
       <Exponencial />
       <Formas />
+      <TestimonialsRow />
       <Newsletter />
       <Speaking />
       <CTA />
