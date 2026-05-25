@@ -42,7 +42,7 @@ export const Speaking = () => {
           </div>
 
           {/* Right column: speaking photo */}
-          <div className="aspect-[4/3] rounded-lg overflow-hidden">
+          <div className="aspect-[4/3] rounded-[1.25rem] overflow-hidden">
             <img
               src={mariaSpeaker}
               alt="María Garaí hablando en un evento"
