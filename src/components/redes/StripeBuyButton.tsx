@@ -1,25 +1,16 @@
-// Stripe Buy Button web component — Redes que Venden
-// Script loaded in index.html
+// Stripe CTA button — Redes que Venden
+// Uses direct payment link so the button can be restyled freely
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      "stripe-buy-button": React.DetailedHTMLProps<
-        React.HTMLAttributes<HTMLElement> & {
-          "buy-button-id": string;
-          "publishable-key": string;
-        },
-        HTMLElement
-      >;
-    }
-  }
-}
+const STRIPE_URL = "https://buy.stripe.com/00wfZj2Ty8fe96lg8KdZ60l";
 
-import React from "react";
-
-export const StripeBuyButton = () => (
-  <stripe-buy-button
-    buy-button-id="buy_btn_1TawVKRBsnLJRgDoDOxBWAjA"
-    publishable-key="pk_live_51STKjTRBsnLJRgDoJTHHwb59zuIg0NcUEOE2bY5Id7rG73GXuY0EPASqva9RLJIKEE7bKdtn9sBnh1nwIkkBLc1P00rHqQS8y4"
-  />
+export const StripeBuyButton = ({ label = "Pagar ahora" }: { label?: string }) => (
+  <a
+    href={STRIPE_URL}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn-mint-lg !text-lg"
+  >
+    {label}
+    <span aria-hidden> →</span>
+  </a>
 );
