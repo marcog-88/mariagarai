@@ -6,7 +6,7 @@ export const About = () => {
       <div className="container-tight">
         <div className="max-w-3xl">
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
-            Sobre María
+            Hola, soy María
           </p>
           <img
             src={portrait}
