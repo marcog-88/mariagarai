@@ -1,4 +1,4 @@
-import sobreMi from "@/assets/Sobre mi.jpg";
+import sobreMi from "@/assets/maria-sitting-no-background.png";
 
 export const About = () => {
   return (
@@ -11,8 +11,8 @@ export const About = () => {
             <img
               src={sobreMi}
               alt="María Garaí"
-              className="w-full h-auto md:h-full object-cover object-top block"
-              style={{ borderRadius: "12px", objectPosition: "50% 40%" }}
+              className="w-full h-auto md:h-full object-contain block"
+              style={{ objectPosition: "center bottom" }}
               loading="lazy"
             />
           </div>
