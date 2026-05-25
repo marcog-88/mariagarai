@@ -35,18 +35,25 @@ export const Exponencial = () => {
                 </li>
               ))}
             </ul>
-            <div className="mt-8 flex flex-wrap gap-3">
-              {["17 sesiones 1:1", "4 meses intensivos", "Por aplicación"].map((pill) => (
-                <span
-                  key={pill}
-                  className="rounded-full px-4 py-2 text-sm font-medium"
-                  style={{ background: "transparent", border: "1px solid #9378fe", color: "#ffffff", boxShadow: "0 0 8px #9378fe" }}
-                >
-                  {pill}
-                </span>
-              ))}
-            </div>
             <div className="mt-8">
+              <style>{`@keyframes expoDotPulse{0%,100%{opacity:1}50%{opacity:.3}}`}</style>
+              <div
+                className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
+                style={{
+                  background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
+                  border: "1.5px solid #9378fe",
+                  boxShadow: "4px 0 12px rgba(147,120,254,0.5), -4px 0 12px rgba(147,120,254,0.5), inset 0 2px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)",
+                }}
+              >
+                <span
+                  className="rounded-full flex-shrink-0"
+                  style={{ width: "10px", height: "10px", background: "#9378fe", animation: "expoDotPulse 2s ease-in-out infinite" }}
+                  aria-hidden
+                />
+                Por Aplicación
+              </div>
+            </div>
+            <div className="mt-6">
               <a
                 href="/exponencial"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
