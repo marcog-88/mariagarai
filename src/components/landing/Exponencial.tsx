@@ -40,7 +40,7 @@ export const Exponencial = () => {
             <img
               src={expoMockup}
               alt="Exponencial — Notion, Claude, LinkedIn y Substack."
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover scale-95"
               loading="lazy"
             />
           </div>
