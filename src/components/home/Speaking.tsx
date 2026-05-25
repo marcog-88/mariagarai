@@ -13,14 +13,19 @@ export const Speaking = () => {
               className="mb-4 text-xs font-medium uppercase tracking-[0.24em]"
               style={{ color: "#9378fe" }}
             >
-              Conferencias y Ponencias
+              Conferencias y Formación
             </p>
             <h2 className="font-serif text-3xl md:text-4xl tracking-tight leading-snug" style={{ color: "#0c0d0e" }}>
-              Habla de IA y carreras modernas en tu empresa o evento.
+              Hablo en tu Evento
             </h2>
             <p className="mt-6 text-base leading-relaxed" style={{ color: "#666" }}>
-              [Descripción pendiente]
+              Disponible para eventos corporativos, conferencias y formaciones de equipo.
             </p>
+            <ul className="mt-4 space-y-2 text-base leading-relaxed" style={{ color: "#666" }}>
+              <li>— IA aplicada a negocios: cómo usar IA sin ser técnico para automatizar procesos</li>
+              <li>— Carreras modernas: el nuevo modelo profesional, múltiples ingresos, marca personal y reinvención</li>
+              <li>— Redes que venden: cómo convertir LinkedIn en tu canal de ventas</li>
+            </ul>
             <div className="mt-10">
               <a
                 href="mailto:hola@mariagarai.com"
