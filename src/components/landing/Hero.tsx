@@ -1,4 +1,4 @@
-﻿import portrait from "@/assets/maria-portrait-hero.webp";
+import portrait from "@/assets/maria-portrait-hero.webp";
 
 export const Hero = () => {
   return (
@@ -15,13 +15,13 @@ export const Hero = () => {
               <em className="font-serif italic text-accent block md:inline lg:block md:ml-3 lg:ml-0">propio negocio</em>
             </h1>
             <p className="mt-6 max-w-xl font-serif text-[clamp(1.35rem,2.2vw,1.75rem)] font-light text-foreground/85 leading-snug">
-              <span className="block font-normal text-foreground mb-4 text-[clamp(1.75rem,3vw,2.5rem)] leading-tight">Vales para mÃ¡s que para un 9 a 5.</span>
-              Ahora es el momento de construir una carrera independiente con varias vÃ­as de ingreso para vivir bien de lo tuyo.
+              <span className="block font-normal text-foreground mb-4 text-[clamp(1.75rem,3vw,2.5rem)] leading-tight">Vales para más que para un 9 a 5.</span>
+              Ahora es el momento de construir una carrera independiente con varias vías de ingreso para vivir bien de lo tuyo.
             </p>
             <div className="mt-12 sm:mt-14 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-6">
               <a href="/construye#top" className="btn-primary-lg justify-center">
                 Trabaja conmigo
-                <span aria-hidden>â†’</span>
+                <span aria-hidden>� </span>
               </a>
             </div>
           </div>
@@ -30,7 +30,7 @@ export const Hero = () => {
           <div className="hidden lg:flex order-3 lg:order-2 w-full lg:w-[50%] items-end justify-center mt-10 lg:mt-0">
             <img
               src={portrait}
-              alt="MarÃ­a GaraÃ­"
+              alt="María Garaí"
               className="animate-fade-up w-full h-auto max-w-sm lg:max-w-none mx-auto"
               loading="eager"
             />

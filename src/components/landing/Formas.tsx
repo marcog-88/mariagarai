@@ -1,4 +1,4 @@
-﻿import talleresMockup from "@/assets/talleres-premium-card.webp";
+import talleresMockup from "@/assets/talleres-premium-card.webp";
 import construyeMockup from "@/assets/construye-premium-card.webp";
 import redesHeroMockup from "@/assets/redes-premium-card.webp";
 
@@ -24,17 +24,17 @@ const formas: Forma[] = [
     badgeColor: "hot-pink",
     title: "Talleres",
     subtitle:
-      "Encuentros en directo para profesionales en transiciÃ³n. Cada mes, un tema. Criterio, direcciÃ³n y comunidad.",
+      "Encuentros en directo para profesionales en transición. Cada mes, un tema. Criterio, dirección y comunidad.",
     cta: "Apuntarme",
     href: "https://luma.com/corporateafounder",
     image: talleresMockup,
-    imageAlt: "Talleres en vivo â€” sesiÃ³n grupal con MarÃ­a GaraÃ­.",
+    imageAlt: "Talleres en vivo � sesión grupal con María Garaí.",
     imageFit: "cover",
     cardBg: "#0c0d0e",
   },
   {
     eyebrow: "PROGRAMA",
-    eyebrowBadge: "COHORT Â· SEPT 2026",
+    eyebrowBadge: "COHORT · SEPT 2026",
     badgeColor: "mint",
     title: "Construye",
     subtitle:
@@ -42,13 +42,13 @@ const formas: Forma[] = [
     cta: "Quiero construir",
     href: "/construye",
     image: construyeMockup,
-    imageAlt: "Mockup del programa Construye â€” pantallas mostrando el programa completo.",
+    imageAlt: "Mockup del programa Construye � pantallas mostrando el programa completo.",
     imageFit: "cover",
     cardBg: "#0c0d0e",
   },
   {
     eyebrow: "PROGRAMA",
-    eyebrowBadge: "Â·Â·Â·Â·Â·",
+    eyebrowBadge: "·····",
     badgeColor: "orange",
     title: "Redes que Venden",
     subtitle:
@@ -56,7 +56,7 @@ const formas: Forma[] = [
     cta: "Ver el programa",
     href: "/redes-que-venden",
     image: redesHeroMockup,
-    imageAlt: "Mockup del programa Redes que Venden â€” pantallas mostrando el programa.",
+    imageAlt: "Mockup del programa Redes que Venden � pantallas mostrando el programa.",
     imageFit: "cover",
     cardBg: "#0c0d0e",
   },
@@ -74,7 +74,7 @@ export const Formas = () => {
             Esto es lo que puedo hacer por ti
           </p>
           <h2 className="display-md">
-            AsÃ­ es como{" "}
+            Así es como{" "}
             <span className="font-serif italic text-accent block md:inline">
               te puedo ayudar.
             </span>
@@ -85,14 +85,14 @@ export const Formas = () => {
           {formas.map((f, i) => (
             <article
               key={f.title}
-              className={`flex flex-col ${i > 0 ? "pt-16 md:pt-0" : ""}`}
+              className={`flex flex-col ${i > 0 ?"pt-16 md:pt-0" : ""}`}
             >
-              <div className={`relative aspect-[4/3] w-full overflow-hidden rounded-[1.25rem] border border-border ${f.cardBg ? "" : "bg-secondary"}`} style={f.cardBg ? { background: f.cardBg } : undefined}>
-                {f.image ? (
+              <div className={`relative aspect-[4/3] w-full overflow-hidden rounded-[1.25rem] border border-border ${f.cardBg ?"" : "bg-secondary"}`} style={f.cardBg ?{ background: f.cardBg } : undefined}>
+                {f.image ?(
                   <img
                     src={f.image}
                     alt={f.imageAlt}
-                    className={`h-full w-full ${f.imageFit === "contain" ? "object-contain" : "object-cover"}`}
+                    className={`h-full w-full ${f.imageFit === "contain" ?"object-contain" : "object-cover"}`}
                     loading="lazy"
                   />
                 ) : (
@@ -108,14 +108,14 @@ export const Formas = () => {
               <div className="mt-6 flex flex-col flex-1">
                 {f.eyebrowBadge && (
                   <p className="mb-3 flex items-center flex-wrap gap-y-1">
-                    {f.badgeColor === "mint" ? (
+                    {f.badgeColor === "mint" ?(
                       <span
                         className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse"
                         style={{ background: "#d0fcd0", color: "#0c0d0e" }}
                       >
                         {f.eyebrowBadge}
                       </span>
-                    ) : f.badgeColor === "orange" ? (
+                    ) : f.badgeColor === "orange" ?(
                       <span
                         className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase"
                         style={{ background: "#e88f00", color: "#ffffff" }}
@@ -138,12 +138,12 @@ export const Formas = () => {
                 <div className="mt-auto pt-10 md:pt-6 flex justify-start">
                   <a
                     href={f.href}
-                    target={f.href.startsWith("http") ? "_blank" : undefined}
-                    rel={f.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    target={f.href.startsWith("http") ?"_blank" : undefined}
+                    rel={f.href.startsWith("http") ?"noopener noreferrer" : undefined}
                     className="btn-primary w-[220px] justify-center"
                   >
                     {f.cta}
-                    <span aria-hidden>â†’</span>
+                    <span aria-hidden>� </span>
                   </a>
                 </div>
               </div>
