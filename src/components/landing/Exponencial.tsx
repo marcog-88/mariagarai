@@ -14,7 +14,7 @@ export const Exponencial = () => {
             <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em]" style={{ color: "#9378fe" }}>
               El Programa Flagship
             </p>
-            <h2 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight text-white">
+            <h2 className="display-md text-white">
               Construye tu{" "}
               <span className="font-serif italic" style={{ color: "#9378fe" }}>
                 Carrera Moderna
