@@ -25,7 +25,7 @@ export const Exponencial = () => {
           {/* Left — body + bullets + CTA */}
           <div className="flex flex-col">
             <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
-              Exponencial — el programa flagship para construir tu carrera moderna desde cero.
+              <span style={{ color: "#9378fe" }}>Exponencial</span> — el programa flagship para construir tu carrera moderna desde cero.
             </p>
             <ul className="mt-4 text-base md:text-lg text-white max-w-xl">
               {[
