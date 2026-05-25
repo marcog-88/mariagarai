@@ -36,7 +36,7 @@ export const Exponencial = () => {
           </div>
 
           {/* Right — mockup image */}
-          <div className="aspect-[4/3] rounded-[1.25rem] overflow-hidden">
+          <div className="aspect-[4/3] rounded-[1.25rem] overflow-hidden border border-white/10">
             <img
               src={expoMockup}
               alt="Exponencial — Notion, Claude, LinkedIn y Substack."
