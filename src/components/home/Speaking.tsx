@@ -1,3 +1,5 @@
+import mariaSpeaker from "@/assets/maria-speaker.jpg";
+
 export const Speaking = () => {
   return (
     <section
@@ -39,12 +41,14 @@ export const Speaking = () => {
             </div>
           </div>
 
-          {/* Right column: image placeholder */}
-          <div
-            className="aspect-[4/3] rounded-lg flex items-center justify-center text-sm font-medium"
-            style={{ background: "#e8e8e8", border: "1px solid #d0d0d0", color: "#999" }}
-          >
-            Imagen
+          {/* Right column: speaking photo */}
+          <div className="aspect-[4/3] rounded-lg overflow-hidden">
+            <img
+              src={mariaSpeaker}
+              alt="María Garaí hablando en un evento"
+              className="w-full h-full object-cover object-center"
+              loading="lazy"
+            />
           </div>
 
         </div>
