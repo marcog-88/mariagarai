@@ -4,8 +4,8 @@ import expoMockup from "@/assets/exponencial-premium-card.webp";
 export const Exponencial = () => {
   return (
     <section
-      className="py-24 md:py-32 border-t border-white/10"
-      style={{ background: "#0c0d0e" }}
+      className="py-24 md:py-32"
+      style={{ background: "#0c0d0e", borderTop: "1px solid rgba(147,120,254,0.2)" }}
     >
       <div className="container-tight">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
@@ -39,7 +39,7 @@ export const Exponencial = () => {
                 Carrera Moderna
               </span>
             </h2>
-            <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-xl">
+            <p className="mt-6 text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
               El programa flagship para construir tu carrera moderna desde cero.
             </p>
             <ul className="mt-4 space-y-2 text-base md:text-lg text-white max-w-xl">
@@ -59,7 +59,7 @@ export const Exponencial = () => {
                 <span
                   key={pill}
                   className="rounded-full px-4 py-2 text-sm font-medium"
-                  style={{ background: "transparent", border: "1px solid #9378fe", color: "#9378fe", boxShadow: "0 0 8px #9378fe" }}
+                  style={{ background: "transparent", border: "1px solid #9378fe", color: "#ffffff", boxShadow: "0 0 8px #9378fe" }}
                 >
                   {pill}
                 </span>
