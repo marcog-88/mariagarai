@@ -55,7 +55,7 @@ export const About = () => {
           <img
             src={sobreMi}
             alt="María Garaí"
-            className="w-full object-contain md:object-cover block object-[center_top] md:object-[75%_bottom] min-h-[400px] md:min-h-0 md:h-full"
+            className="w-full h-full object-cover block object-[75%_bottom] min-h-[520px] md:min-h-0"
             loading="lazy"
           />
         </div>
