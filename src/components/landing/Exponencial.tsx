@@ -20,7 +20,7 @@ export const Exponencial = () => {
         </h2>
 
         {/* Two-column below headline: body left, image right */}
-        <div className="grid md:grid-cols-[3fr_2fr] gap-12 md:gap-16 items-stretch mt-12">
+        <div className="grid md:grid-cols-[3fr_2fr] gap-12 md:gap-16 items-center mt-12">
 
           {/* Left — body + bullets + CTA */}
           <div className="flex flex-col">
@@ -50,12 +50,12 @@ export const Exponencial = () => {
             </div>
           </div>
 
-          {/* Right — image, stretches to match left column height */}
-          <div className="rounded-[1.25rem] overflow-hidden border border-white/10 h-full">
+          {/* Right — image, natural ratio with curved corners */}
+          <div className="flex items-center">
             <img
               src={expoMockup}
               alt="Exponencial — Notion, Claude, LinkedIn y Substack."
-              className="w-full h-full object-contain object-center block"
+              className="w-full block rounded-[1.25rem]"
               loading="lazy"
             />
           </div>
