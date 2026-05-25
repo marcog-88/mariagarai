@@ -1,4 +1,4 @@
-﻿import heroMockup from "@/assets/redes-hero.webp";
+import heroMockup from "@/assets/redes-hero.webp";
 
 export const Hero = () => {
   return (
@@ -37,18 +37,18 @@ export const Hero = () => {
               }}
               aria-hidden
             />
-            PrÃ³xima cohorte Â· Junio 2026 Â· 30 dÃ­as
+            Próxima cohorte · Junio 2026 · 30 días
           </div>
           <h1 className="font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
-            La combinaciÃ³n que abre{" "}
+            La combinación que abre{" "}
             <em className="font-serif italic text-mint">carteras y oportunidades.</em>
           </h1>
           <p className="mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl">
-            En 30 dÃ­as convierte LinkedIn y Substack en tu canal de autoridad, captaciÃ³n y
+            En 30 días convierte LinkedIn y Substack en tu canal de autoridad, captación y
             ventas, aunque empieces de cero.
           </p>
           <p className="mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
-            Sin hablarle al silencio. Sin perder horas creando diseÃ±os. Sin esperar a tener
+            Sin hablarle al silencio. Sin perder horas creando diseños. Sin esperar a tener
             miles de seguidores para monetizar.
           </p>
 
@@ -56,7 +56,7 @@ export const Hero = () => {
           <div className="mt-14 mx-auto order-last md:order-none" style={{ maxWidth: "1000px" }}>
             <img
               src={heroMockup}
-              alt="Redes que Venden: LinkedIn + Substack, sesiones en vivo, prospecciÃ³n y comunidad de mujeres"
+              alt="Redes que Venden: LinkedIn + Substack, sesiones en vivo, prospección y comunidad de mujeres"
               className="w-full h-auto"
               loading="eager"
             />
@@ -65,11 +65,11 @@ export const Hero = () => {
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 mt-12">
             <a href="#precio" className="btn-mint-lg !text-lg self-start md:self-auto">
               Unirme a la lista de espera
-              <span aria-hidden>â†’</span>
+              <span aria-hidden>→</span>
             </a>
             <div>
-              <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÃ“N</p>
-              <p className="font-serif text-6xl font-bold text-primary-foreground">â‚¬800</p>
+              <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÓN</p>
+              <p className="font-serif text-6xl font-bold text-primary-foreground">€800</p>
             </div>
           </div>
         </div>

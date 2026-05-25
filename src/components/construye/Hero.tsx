@@ -1,4 +1,4 @@
-﻿import heroMockup from "@/assets/construye-hero.webp";
+import heroMockup from "@/assets/construye-hero.webp";
 
 export const Hero = () => {
   return (
@@ -37,12 +37,12 @@ export const Hero = () => {
               }}
               aria-hidden
             />
-            PrÃ³xima cohorte Â· Julio 2026 Â· 8 semanas
+            Próxima cohorte · Julio 2026 · 8 semanas
           </div>
           <h1 className="font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
             Ya vendes.
             <br />
-            Pero todo estÃ¡{" "}
+            Pero todo está{" "}
             <em className="font-serif italic text-mint">a medio montar.</em>
           </h1>
           <p className="mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl">
@@ -50,16 +50,16 @@ export const Hero = () => {
             Todo vive en tu cabeza, en WhatsApp y en un link de Calendly.
           </p>
           <p className="mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
-            En 8 semanas montamos toda la infraestructura de tu negocio â€” web, landing,
-            lead magnet, sistemas, automatizaciones â€” para que tu negocio se vea tan bueno
-            como lo que ofreces. Siendo tÃº sola. Con IA.
+            En 8 semanas montamos toda la infraestructura de tu negocio — web, landing,
+            lead magnet, sistemas, automatizaciones — para que tu negocio se vea tan bueno
+            como lo que ofreces. Siendo tú sola. Con IA.
           </p>
 
           {/* Mockup block */}
           <div className="mt-14 mx-auto order-last md:order-none" style={{ maxWidth: "1000px" }}>
             <img
               src={heroMockup}
-              alt="Construye: video calls 1:1, dashboard en Notion, automatizaciÃ³n con IA y agenda integrada"
+              alt="Construye: video calls 1:1, dashboard en Notion, automatización con IA y agenda integrada"
               className="w-full h-auto"
               loading="eager"
             />
@@ -68,11 +68,11 @@ export const Hero = () => {
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 mt-12">
             <a href="https://mariagarai.activehosted.com/f/11" target="_blank" rel="noopener noreferrer" className="btn-mint-lg !text-lg self-start md:self-auto">
               Unirme a la lista de espera
-              <span aria-hidden>â†’</span>
+              <span aria-hidden>→</span>
             </a>
             <div>
-              <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÃ“N</p>
-              <p className="font-serif text-6xl font-bold text-primary-foreground">â‚¬1997</p>
+              <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÓN</p>
+              <p className="font-serif text-6xl font-bold text-primary-foreground">€1997</p>
             </div>
           </div>
         </div>

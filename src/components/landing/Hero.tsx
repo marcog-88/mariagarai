@@ -21,7 +21,7 @@ export const Hero = () => {
             <div className="mt-12 sm:mt-14 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-6">
               <a href="/construye#top" className="btn-primary-lg justify-center">
                 Trabaja conmigo
-                <span aria-hidden>� </span>
+                <span aria-hidden>→</span>
               </a>
             </div>
           </div>

@@ -37,7 +37,7 @@ export const About = () => {
             </p>
             <p className="font-serif italic text-2xl md:text-3xl text-foreground pt-3 leading-snug">
               "Lo que cambió para mí fue ordenar y hacer solo lo que toca. Para
-              quienes venimos de corporate, el problema no es no actuar � es
+              quienes venimos de corporate, el problema no es no actuar — es
               actuar mal. Demasiado, disperso y sin criterio."
             </p>
             <p>

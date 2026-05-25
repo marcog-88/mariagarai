@@ -9,7 +9,7 @@ export const Exponencial = () => {
     >
       <div className="container-tight">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Left � text */}
+          {/* Left — text */}
           <div>
             <p
               className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
@@ -30,16 +30,16 @@ export const Exponencial = () => {
             </p>
             <div className="mt-10">
               <TidyCalButton className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 bg-[#9378fe]">
-                Solicitar llamada de valoración � 
+                Solicitar llamada de valoración →
               </TidyCalButton>
             </div>
           </div>
 
-          {/* Right � mockup image */}
+          {/* Right — mockup image */}
           <div className="aspect-[4/3] rounded-[1.25rem] overflow-hidden">
             <img
               src={expoMockup}
-              alt="Exponencial � Notion, Claude, LinkedIn y Substack."
+              alt="Exponencial — Notion, Claude, LinkedIn y Substack."
               className="w-full h-full object-cover"
               loading="lazy"
             />
