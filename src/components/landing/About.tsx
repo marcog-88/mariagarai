@@ -50,13 +50,12 @@ export const About = () => {
           </div>
         </div>
 
-        {/* Right column: image 45%, full height, flush to right edge */}
-        <div className="flex-shrink-0 md:w-[45%] h-80 md:h-auto overflow-hidden">
+        {/* Right column: image 45% desktop / full-width mobile */}
+        <div className="flex-shrink-0 md:w-[45%] overflow-hidden">
           <img
             src={sobreMi}
             alt="María Garaí"
-            className="w-full h-full object-cover block"
-            style={{ objectPosition: "75% bottom" }}
+            className="w-full object-contain md:object-cover block object-[center_top] md:object-[75%_bottom] min-h-[400px] md:min-h-0 md:h-full"
             loading="lazy"
           />
         </div>
