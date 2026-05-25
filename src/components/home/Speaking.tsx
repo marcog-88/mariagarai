@@ -30,10 +30,10 @@ export const Speaking = () => {
             </ul>
             <div className="mt-10">
               <a
-                href="mailto:hola@mariagarai.com"
+                href="https://tidycal.com/mariagarai/exploracion"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
                 style={{ background: "#9378fe" }}
               >
                 Contáctame ↗
