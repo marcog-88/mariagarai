@@ -101,7 +101,7 @@ export const TresOpciones = () => {
               </ul>
               <div className="px-6 pb-6">
                 <TidyCalButton className="btn-mint-lg !text-base w-full justify-center">
-                  Quiero entrar <span aria-hidden>→</span>
+                  Pagar ahora <span aria-hidden>→</span>
                 </TidyCalButton>
               </div>
             </div>

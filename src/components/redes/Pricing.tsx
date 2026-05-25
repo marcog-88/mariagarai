@@ -53,7 +53,7 @@ export const Pricing = () => {
             Máximo 20 personas por cohorte
           </p>
           <a href="#" className="btn-mint-lg !text-lg mt-0 mb-4">
-            UNIRME A LA LISTA DE ESPERA
+            PAGAR AHORA
             <span aria-hidden>→</span>
           </a>
 

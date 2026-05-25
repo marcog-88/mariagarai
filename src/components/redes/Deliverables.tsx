@@ -3,11 +3,11 @@ import { TidyCalButton } from "@/components/construye/TidyCalButton";
 import deliverablesMockup from "@/assets/redes-deliverables-mockup-animated.gif";
 
 const phases = [
-  { n: "1", label: "Arranque", title: "FASE 0 — ARRANQUE", body: "Configuramos ambos canales. Todo a punto para arrancar sin líos técnicos ni procrastinación." },
-  { n: "2", label: "Semana 1", title: "FASE 1 — ESTRATEGIA Y POSICIONAMIENTO", body: "Perfiles optimizados para autoridad y venta desde el día 1. Posicionamiento claro en ambos canales." },
-  { n: "3", label: "Semana 2", title: "FASE 2 — CONSTRUCCIÓN Y CONTENIDO", body: "Pilares, formatos y estrategia de reutilización. Calendario de contenido. Activos que guían a la venta." },
-  { n: "4", label: "Semana 3", title: "FASE 3 — CRECIMIENTO Y PROSPECCIÓN", body: "Estrategia de prospección activa en LinkedIn y Substack. Cómo abrir conversaciones que terminan en ventas — sin parecer spam ni una pesada. Tu manual de ventas para ambos canales." },
-  { n: "5", label: "Semana 4", title: "FASE 4 — VENTAS AVANZADAS", body: "Automatizaciones exclusivas. Email marketing básico: secuencias y broadcasts que convierten suscriptores en clientes. Estrategias de prospección que solo el 1% usa en el mercado hispano." },
+  { n: "0", label: "Arranque", title: "FASE 0 — ARRANQUE", body: "Configuramos ambos canales. Todo a punto para arrancar sin líos técnicos ni procrastinación." },
+  { n: "1", label: "Semana 1", title: "FASE 1 — ESTRATEGIA Y POSICIONAMIENTO", body: "Perfiles optimizados para autoridad y venta desde el día 1. Posicionamiento claro en ambos canales." },
+  { n: "2", label: "Semana 2", title: "FASE 2 — CONSTRUCCIÓN Y CONTENIDO", body: "Pilares, formatos y estrategia de reutilización. Calendario de contenido. Activos que guían a la venta." },
+  { n: "3", label: "Semana 3", title: "FASE 3 — CRECIMIENTO Y PROSPECCIÓN", body: "Estrategia de prospección activa en LinkedIn y Substack. Cómo abrir conversaciones que terminan en ventas — sin parecer spam ni una pesada. Tu manual de ventas para ambos canales." },
+  { n: "4", label: "Semana 4", title: "FASE 4 — VENTAS AVANZADAS", body: "Automatizaciones exclusivas. Email marketing básico: secuencias y broadcasts que convierten suscriptores en clientes. Estrategias de prospección que solo el 1% usa en el mercado hispano." },
 ];
 
 export const Deliverables = () => {
@@ -141,7 +141,7 @@ export const Deliverables = () => {
 
         <div className="mt-10 flex justify-center">
           <TidyCalButton>
-            Unirme a la lista de espera <span aria-hidden>→</span>
+            Pagar ahora <span aria-hidden>→</span>
           </TidyCalButton>
         </div>
       </div>

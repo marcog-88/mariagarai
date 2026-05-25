@@ -69,7 +69,7 @@ export const Testimonios = () => {
 
         <div className="mt-12 md:mt-16 flex justify-center">
           <a href="#precio" className="btn-mint-lg">
-            Unirme a la lista de espera →
+            Pagar ahora →
           </a>
         </div>
       </div>

@@ -62,7 +62,7 @@ export const PreguntaReal = () => {
 
         <div className="mt-8 flex justify-center">
           <TidyCalButton>
-            Quiero entrar <span aria-hidden>→</span>
+            Pagar ahora <span aria-hidden>→</span>
           </TidyCalButton>
         </div>
       </div>

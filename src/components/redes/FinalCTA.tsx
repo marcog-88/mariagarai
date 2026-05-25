@@ -35,7 +35,7 @@ export const FinalCTA = () => {
         <div className="mt-10 flex flex-col items-start gap-5">
           <p className="text-sm text-mint">Máximo 20 personas por cohorte.</p>
           <a href="#" className="btn-mint-lg !text-lg">
-            QUIERO ENTRAR
+            PAGAR AHORA
             <span aria-hidden>→</span>
           </a>
           <a

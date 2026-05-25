@@ -64,7 +64,7 @@ export const Hero = () => {
 
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 mt-12">
             <a href="#precio" className="btn-mint-lg !text-lg self-start md:self-auto">
-              Unirme a la lista de espera
+              Pagar ahora
               <span aria-hidden>→</span>
             </a>
             <div>
