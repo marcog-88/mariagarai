@@ -17,13 +17,13 @@ const Index = () => {
       <Nav />
       <Hero />
       <LeadMagnet />
-      <Thoughts />
       <About />
+      <Testimonials />
+      <Thoughts />
       <TestimonialsRow />
       <Exponencial />
       <Formas />
       <Newsletter />
-      <Testimonials />
       <CTA />
       <Footer />
     </main>
