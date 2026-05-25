@@ -1,4 +1,4 @@
-import mockup from "@/assets/escuela-mockup.jpg";
+import mockup from "@/assets/escuela-mockup.webp";
 
 export const Escuela = () => {
   return (

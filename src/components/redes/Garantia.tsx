@@ -1,4 +1,4 @@
-import mariaGarantia from "@/assets/maria-garantia.jpg";
+import mariaGarantia from "@/assets/maria-garantia.webp";
 
 export const Garantia = () => {
   return (

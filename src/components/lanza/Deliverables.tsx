@@ -1,6 +1,6 @@
 import { Check, Star } from "lucide-react";
 import { TidyCalButton } from "@/components/construye/TidyCalButton";
-import deliverablesMockup from "@/assets/lanza-deliverables-mockup-cutout.png";
+import deliverablesMockup from "@/assets/lanza-deliverables-mockup-cutout.webp";
 
 const modules = [
   { n: "1", week: "Semana 1", title: "Tu manual de marca + tu pitch", body: "Quién eres, a quién ayudas, qué problema resuelves, y cómo presentarlo en 30 segundos. La base de todo lo que viene después." },

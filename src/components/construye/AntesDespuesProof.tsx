@@ -1,7 +1,7 @@
 import { TidyCalButton } from "./TidyCalButton";
-import avatarLucia from "@/assets/avatar-lucia.jpg";
-import avatarCarmen from "@/assets/avatar-carmen.jpg";
-import avatarSofia from "@/assets/avatar-sofia.jpg";
+import avatarLucia from "@/assets/avatar-lucia.webp";
+import avatarCarmen from "@/assets/avatar-carmen.webp";
+import avatarSofia from "@/assets/avatar-sofia.webp";
 
 const rows = [
   {
