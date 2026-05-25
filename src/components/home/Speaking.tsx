@@ -12,12 +12,12 @@ export const Speaking = () => {
           {/* Left column */}
           <div>
             <p
-              className="mb-4 text-xs font-medium uppercase tracking-[0.24em]"
+              className="mb-4 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
               style={{ color: "#9378fe" }}
             >
               Conferencias y Formación
             </p>
-            <h2 className="font-serif text-3xl md:text-4xl tracking-tight leading-snug" style={{ color: "#0c0d0e" }}>
+            <h2 className="display-md" style={{ color: "#0c0d0e" }}>
               Hablo en tu Evento
             </h2>
             <p className="mt-6 text-base leading-relaxed" style={{ color: "#666" }}>
