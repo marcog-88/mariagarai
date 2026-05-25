@@ -140,7 +140,7 @@ export const Formas = () => {
                     href={f.href}
                     target={f.href.startsWith("http") ? "_blank" : undefined}
                     rel={f.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="btn-primary w-[220px] justify-center"
+                    className="btn-primary w-[220px] justify-center !py-2.5"
                   >
                     {f.cta}
                     <span aria-hidden>→</span>
