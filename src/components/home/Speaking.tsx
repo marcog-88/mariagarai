@@ -22,9 +22,9 @@ export const Speaking = () => {
               Disponible para eventos corporativos, conferencias y formaciones de equipo.
             </p>
             <ul className="mt-4 space-y-2 text-base leading-relaxed" style={{ color: "#666" }}>
-              <li>— IA aplicada a negocios: cómo usar IA sin ser técnico para automatizar procesos</li>
-              <li>— Carreras modernas: el nuevo modelo profesional, múltiples ingresos, marca personal y reinvención</li>
-              <li>— Redes que venden: cómo convertir LinkedIn en tu canal de ventas</li>
+              <li>🤖 IA aplicada a negocios: cómo usar IA sin ser técnico para automatizar procesos</li>
+              <li>🚀 Carreras modernas: el nuevo modelo profesional, múltiples ingresos, marca personal y reinvención</li>
+              <li>📲 Redes que venden: cómo convertir LinkedIn en tu canal de ventas</li>
             </ul>
             <div className="mt-10">
               <a
