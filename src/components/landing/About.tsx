@@ -51,12 +51,12 @@ export const About = () => {
         </div>
 
         {/* Right column: image 45%, full height, flush to right edge */}
-        <div className="flex-shrink-0 md:w-[45%] h-72 md:h-auto">
+        <div className="flex-shrink-0 md:w-[45%] h-80 md:h-auto overflow-hidden">
           <img
             src={sobreMi}
             alt="María Garaí"
-            className="w-full h-full object-contain block"
-            style={{ objectPosition: "bottom center" }}
+            className="w-full h-full object-cover block"
+            style={{ objectPosition: "75% bottom" }}
             loading="lazy"
           />
         </div>
