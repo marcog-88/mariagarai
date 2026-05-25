@@ -20,7 +20,7 @@ export const Exponencial = () => {
                 Carrera Moderna
               </span>
             </h2>
-            <p className="mt-6 text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
+            <p className="mt-12 text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
               El programa flagship para construir tu carrera moderna desde cero.
             </p>
             <ul className="mt-4 text-base md:text-lg text-white max-w-xl">
