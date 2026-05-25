@@ -14,7 +14,7 @@ export const Exponencial = () => {
             <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em]" style={{ color: "#9378fe" }}>
               El Programa Flagship
             </p>
-            <h2 className="display-md text-white">
+            <h2 className="display-md lg:text-3xl text-white">
               Construye tu{" "}
               <span className="font-serif italic" style={{ color: "#9378fe" }}>
                 Carrera Moderna
@@ -39,19 +39,15 @@ export const Exponencial = () => {
                 ))}
             </ul>
             <div className="mt-8">
-              <a
-                href="/exponencial"
-                className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
-                style={{ background: "#9378fe" }}
-              >
+              <a href="/exponencial" className="btn-primary !px-6 !py-3 !text-sm">
                 Ver el programa →
               </a>
-              <p className="mt-3 text-sm text-white/40">Plazas limitadas · Por aplicación</p>
+              <p className="mt-3 text-xs text-white/40">Plazas limitadas · Por aplicación</p>
             </div>
           </div>
 
           {/* Right — mockup image */}
-          <div className="rounded-[1.25rem] overflow-hidden border border-white/10 md:mt-[9.5rem]">
+          <div className="rounded-[1.25rem] overflow-hidden border border-white/10">
             <img
               src={expoMockup}
               alt="Exponencial — Notion, Claude, LinkedIn y Substack."
