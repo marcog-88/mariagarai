@@ -27,7 +27,7 @@ export const Garantia = () => {
                   Redes que Venden no es un curso que ves y olvidas. Es un programa de
                   implementación acompañada. Si completas las 30 acciones y las 8 sesiones grupales y
                   no tienes ambos canales operativos y una estrategia de prospección activa,
-                  hablamos.
+                  seguimos trabajando juntas hasta que lo tengas.
                 </p>
                 <p>
                   No doy garantías de ingresos — nadie honesto las da. Sí garantizo que si haces
@@ -36,7 +36,7 @@ export const Garantia = () => {
                 </p>
               </div>
               <p className="mt-8 text-sm md:text-base text-mint italic">
-                Acepto un máximo de 20 personas por cohorte para mantener la calidad del acompañamiento.
+                Acepto un máximo de 15 personas por cohorte para mantener la calidad del acompañamiento.
               </p>
             </div>
           </div>

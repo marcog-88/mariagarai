@@ -34,7 +34,7 @@ export const Problem = () => {
           </p>
           <p>
             Y clientes no se consiguen construyendo audiencias. Se consiguen construyendo
-            relaciones. Tengas 200 seguidores o 20.000, puedes monetizar ya. Lo que necesitas
+            sistemas y activos de venta. Tengas 200 seguidores o 20.000, puedes monetizar ya. Lo que necesitas
             es dejar de pensar como creadora de contenido y empezar a pensar como dueña de
             negocio que usa las redes como canal de venta.
           </p>

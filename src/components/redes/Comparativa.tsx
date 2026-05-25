@@ -4,7 +4,7 @@ const rows: [string, string][] = [
   ["Sistema de contenido y calendario", "€300 – 500"],
   ["Manual de prospección activa", "€200 – 400"],
   ["Automatizaciones LinkedIn + Substack", "€300 – 500"],
-  ["8 sesiones grupales en directo (2/semana)", "€400 – 600"],
+  ["Plantillas de contenido en Substack, LinkedIn y email marketing", "€300 – 500"],
 ];
 
 export const Comparativa = () => {
@@ -105,10 +105,10 @@ export const Comparativa = () => {
           style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
         >
           <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-            La regla de los 30 días
+            El momento es ahora
           </p>
           <h3 className="font-serif text-3xl md:text-4xl text-primary-foreground leading-tight max-w-3xl mb-8">
-            Lo que no construyes hoy, lo construyes en peores condiciones mañana.
+            2026 es el último año para sentarte y crecer, para hacerte un hueco y crecer en estas redes.
           </h3>
           <div className="max-w-3xl space-y-5 text-lg text-primary-foreground/85 leading-relaxed">
             <p>

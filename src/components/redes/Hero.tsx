@@ -38,7 +38,7 @@ export const Hero = () => {
               }}
               aria-hidden
             />
-            Próxima cohorte · Junio 2026 · 30 días
+            Próximo Sprint · Junio 2026 · 30 días
           </div>
           <h1 className="font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
             La combinación que abre{" "}

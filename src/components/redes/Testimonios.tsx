@@ -70,7 +70,7 @@ export const Testimonios = () => {
         </div>
 
         <div className="mt-12 md:mt-16 flex justify-center">
-          <StripeBuyButton />
+          <StripeBuyButton label="Yo también quiero" />
         </div>
       </div>
     </section>

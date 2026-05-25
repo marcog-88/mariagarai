@@ -56,13 +56,13 @@ const RedesQueVenden = () => (
     <Deliverables />
     <AntesDespues />
     <ForYou />
+    <Bonuses />
     <PorQueAhora />
     <Comparativa />
     <TresOpciones />
     <Garantia />
     <Pricing />
     <PreguntaReal />
-    <Bonuses />
     <AntesDespuesProof />
     <FAQ />
     <FinalCTA />

@@ -33,7 +33,7 @@ export const FinalCTA = () => {
         </div>
 
         <div className="mt-10 flex flex-col items-start gap-5">
-          <p className="text-sm text-mint">Máximo 20 personas por cohorte.</p>
+          <p className="text-sm text-mint">Máximo 15 personas por cohorte.</p>
           <StripeBuyButton />
         </div>
       </div>

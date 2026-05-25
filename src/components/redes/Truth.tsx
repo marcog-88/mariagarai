@@ -10,22 +10,23 @@ export const Truth = () => {
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
       <div className="container-tight">
-        <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-          La verdad
-        </p>
-        <h2 className="font-serif text-3xl md:text-5xl leading-[1.1] tracking-tight text-primary-foreground max-w-4xl">
-          LinkedIn + Substack:{" "}
-          <span className="text-mint">la combinación más inteligente que existe.</span>
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="font-serif text-[clamp(2.75rem,7vw,5rem)] leading-[1.05] tracking-tight text-primary-foreground">
+            Sprint Redes que Venden
+          </h2>
+          <p className="mt-4 text-xl md:text-2xl text-mint font-medium">
+            LinkedIn + Substack: la combinación más inteligente.
+          </p>
+        </div>
 
-        <div className="mt-10 max-w-4xl space-y-6 text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
+        <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
           <p>
             <span className="text-mint font-medium">Substack te da autoridad. LinkedIn te da clientes.</span>{" "}
             Los dos juntos se potencian.
           </p>
           <p>
             Substack es el lugar donde tus ideas viven años, no 48 horas. Donde construyes
-            cercanía real con tu audiencia — el tipo de cercanía de la que nacen las ventas.
+            cercanía real con tu audiencia, el tipo de cercanía de la que nacen las ventas.
             Personas, no personajes. Conversaciones, no likes.
           </p>
           <p>

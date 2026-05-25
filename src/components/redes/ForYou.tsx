@@ -24,7 +24,7 @@ const no = [
   "Quieres hacerte viral y vivir de vender ebooks y cursos a 27€.",
   "No estás dispuesta a mostrar tu cara ni a que te lean.",
   "Quieres estar en Instagram y TikTok.",
-  "Todavía no tienes claro qué vendes — para eso está Valida tu Oferta primero.",
+  "Todavía no tienes claro qué vendes: habla conmigo y arreglamos eso.",
 ];
 
 export const ForYou = () => {

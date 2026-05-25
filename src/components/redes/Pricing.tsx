@@ -11,8 +11,6 @@ const includes = [
   "Calendario de Contenido de 30 días reutilizable en Notion",
 ];
 
-const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
-
 export const Pricing = () => {
   return (
     <section
@@ -52,17 +50,15 @@ export const Pricing = () => {
           <p className="mt-2 text-primary-foreground/60">Pago único · Acceso inmediato</p>
 
           <p className="mt-12 mb-8 text-xs md:text-sm uppercase tracking-widest text-mint">
-            Máximo 20 personas por cohorte
+            Máximo 15 personas por cohorte
           </p>
           <StripeBuyButton />
 
           <a
-            href={TIDYCAL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:maria@mariagarai.com"
             className="block mt-10 text-[11px] md:text-sm whitespace-nowrap text-primary-foreground/75 hover:text-mint underline underline-offset-4"
           >
-            ¿Tienes dudas antes de entrar? → Reservar llamada de valoración
+            ¿Tienes dudas? Escríbeme a maria@mariagarai.com
           </a>
         </div>
       </div>

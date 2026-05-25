@@ -10,12 +10,12 @@ const sin = [
 ];
 
 const con = [
-  "Publicas con intención. Cada post tiene un propósito.",
+  "Publicas para vender. Cada contenido es estratégico.",
   "Tu LinkedIn atrae al cliente correcto semana tras semana.",
   "Substack activo y construyendo autoridad cada semana.",
   "Leads que llegan solos porque tus canales trabajan por ti.",
   "Un sistema de contenido de 3 horas semanales.",
-  "Clientes reales desde ambos canales.",
+  "Clientes reales, con la IA como infraestructura para ahorrar tiempo sin perder autenticidad.",
 ];
 
 export const AntesDespues = () => {
@@ -58,9 +58,6 @@ export const AntesDespues = () => {
           </div>
         </div>
 
-        <div className="mt-12 flex justify-center">
-          <StripeBuyButton />
-        </div>
       </div>
     </section>
   );

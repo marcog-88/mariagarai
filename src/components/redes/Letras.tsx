@@ -23,8 +23,9 @@ export const Letras = () => {
           </p>
           <p>
             Hoy tengo un negocio que funciona porque LinkedIn me trae conversaciones y
-            Substack me da autoridad. No me quema, me gusta, y tengo un sistema minimalista
-            que exprime mis ideas dedicándole no más de 3 horas a la semana.
+            Substack me da autoridad. Uso la IA no para escribir, sino para construir sistemas
+            que eliminen horas perdidas y potencien mis ideas. Todo esto sin tener una audiencia
+            masiva y siendo "de letras".
           </p>
         </div>
 
