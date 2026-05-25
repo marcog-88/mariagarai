@@ -54,11 +54,12 @@ export const LeadMagnet = () => {
           </div>
 
           {/* Right: mockup image */}
-          <div className="mt-14 md:mt-0 md:w-[56%] lg:w-[54%] flex-shrink-0">
+          <div className="mt-14 md:mt-0 md:w-[64%] lg:w-[62%] flex-shrink-0">
             <img
               src={mockup}
               alt="Tu mapa de monetización personalizado con IA"
               className="w-full h-auto"
+              style={{ boxShadow: "0 8px 40px rgba(0,0,0,0.12)" }}
               loading="lazy"
             />
           </div>
