@@ -6,13 +6,12 @@ export const About = () => {
       <div className="container-tight">
         <div className="flex flex-col md:flex-row">
 
-          {/* Left column: portrait photo ~40% */}
-          <div className="flex-shrink-0 w-full md:w-[40%] mb-12 md:mb-0">
+          {/* Left column: portrait photo ~40%, self-end so she sits at the bottom */}
+          <div className="flex-shrink-0 w-full md:w-[40%] mb-12 md:mb-0 md:self-end">
             <img
               src={sobreMi}
               alt="María Garaí"
-              className="w-full h-auto md:h-full object-contain block"
-              style={{ objectPosition: "center bottom" }}
+              className="w-full h-auto block"
               loading="lazy"
             />
           </div>
