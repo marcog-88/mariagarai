@@ -1,39 +1,39 @@
 const bonuses = [
   {
     n: "01",
-    title: "🏫 Acceso 3 meses a la comunidad de la Escuela de Carreras Modernas",
-    valor: "€497",
-    body: "Rodeada de founders en transición. Celebramos logros, compartimos aprendizajes, no estás sola en esto.",
+    title: "🧠 Tu Manual de Marca + Claude como Co-Piloto",
+    valor: "€397",
+    body: "Te ayudamos a crear tu manual de marca y a configurar Claude para que sepa todo de tu negocio. Tu co-piloto de contenido desde el día 1.",
   },
   {
     n: "02",
-    title: "👥 6 sesiones grupales quincenales de la Escuela",
-    valor: "€400",
-    body: "Sesiones en directo donde trabajamos redes, ventas y automatizaciones cada 2 semanas durante tus 3 meses de acceso.",
+    title: "📊 CRM de Notion + Mapa de Colaboraciones",
+    valor: "€297",
+    body: "Dos plantillas listas para usar: gestiona tus leads y prospectos con un CRM profesional, y organiza tus colaboraciones estratégicas en Substack y LinkedIn.",
   },
   {
     n: "03",
     title: "🤖 Sistema de Contenido y Automatizaciones con IA",
     valor: "€397",
-    body: "De un contenido largo en Substack a 10 piezas cortas para LinkedIn. Con prompts y automatizaciones listas para usar en Claude.",
+    body: "Prompts, workflows y automatizaciones para crear contenido en la mitad de tiempo. Desde la ideación hasta la publicación — con IA como motor.",
   },
   {
     n: "04",
-    title: "📋 Plantillas de contenido LinkedIn plug and play",
+    title: "📋 Plantillas LinkedIn + Substack plug and play",
     valor: "€197",
-    body: "Los 10 formatos de post que funcionan para vender sin parecer que estás vendiendo. Copia, adapta, publica.",
+    body: "Los formatos de post y newsletter que funcionan para vender sin parecer que estás vendiendo. Copia, adapta, publica.",
   },
   {
     n: "05",
-    title: "🎙️ Monta tu podcast en Substack desde cero",
-    valor: "€297",
-    body: "Tutorial paso a paso para lanzar tu podcast directamente dentro de Substack. Sin edición compleja, sin plataformas extra.",
+    title: "✉️ Plantillas de Email Marketing de Ventas",
+    valor: "€197",
+    body: "Emails de venta listos para rellenar. Sin adivinar qué escribir. Rellena los huecos y envía. Para lanzamientos, seguimiento y conversión.",
   },
   {
     n: "06",
-    title: "📅 Rutina semanal y mensual de mantenimiento",
-    valor: "€147",
-    body: "El sistema exacto para mantener ambos canales activos con mínimo esfuerzo después de los 30 días. Sin volver a caer en el silencio.",
+    title: "🎙️ Taller: Monta tu podcast en Substack",
+    valor: "€297",
+    body: "Tutorial paso a paso para lanzar tu podcast directamente dentro de Substack. Sin edición compleja, sin plataformas extra.",
   },
 ];
 
@@ -67,10 +67,10 @@ export const Bonuses = () => {
         >
           <div className="space-y-4 text-center">
             <p className="text-sm md:text-base text-primary-foreground/60">
-              Valor total en bonuses: <span className="font-medium">€1935</span>
+              Valor total en bonuses: <span className="font-medium">€1.782</span>
             </p>
             <p className="text-xl font-medium text-primary-foreground/40 line-through">
-              Valor total del programa: €2135
+              Valor total del programa: €2.279
             </p>
             <div className="pt-8">
               <p className="text-xs uppercase tracking-[0.24em] text-mint mb-3">

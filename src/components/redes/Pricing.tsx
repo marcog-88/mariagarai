@@ -46,7 +46,7 @@ export const Pricing = () => {
           >
             Cohorte 01 · Junio 2026
           </span>
-          <p className="text-primary-foreground/40 line-through text-2xl mb-2">€2135</p>
+          <p className="text-primary-foreground/40 line-through text-2xl mb-2">€2.279</p>
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€497</p>
           <p className="mt-2 text-primary-foreground/60">Pago único · Acceso inmediato</p>
