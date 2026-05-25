@@ -13,7 +13,11 @@ export const LeadMagnet = () => {
           EMPIEZA AQUÍ
         </p>
         <h2 className="display-md">
-          ¿Qué podrías vender mañana con lo que ya sabes?
+          ¿Qué podrías{" "}
+          <span className="font-serif italic" style={{ color: "#9378fe" }}>
+            vender mañana
+          </span>{" "}
+          con lo que ya sabes?
         </h2>
         <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
           Responde unas preguntas sobre tu trayectoria. La IA analiza tu perfil y te
