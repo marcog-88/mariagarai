@@ -7,11 +7,11 @@ export const About = () => {
       className="border-t border-border"
       style={{ background: "#f9f9f7" }}
     >
-      <div className="flex flex-col lg:flex-row lg:max-h-[660px]">
+      <div className="flex flex-col lg:flex-row lg:items-end">
 
-        {/* Left column: text, 55% width, vertically centered */}
+        {/* Left column: all text, 55% width */}
         <div
-          className="flex flex-col justify-center lg:w-[55%] px-6 pt-16 pb-4 lg:py-16"
+          className="flex flex-col lg:w-[55%] px-6 pt-16 pb-8 lg:pt-24 lg:pb-24"
           style={{ paddingLeft: "clamp(24px, 5vw, 96px)", paddingRight: "clamp(24px, 4vw, 64px)" }}
         >
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
@@ -24,7 +24,7 @@ export const About = () => {
               <span className="hidden md:inline">Y aun así, salir al mercado fue un desastre.</span>
             </span>
           </h2>
-          <div className="mt-10 space-y-6 text-xl md:text-[22px] text-foreground/75 leading-relaxed">
+          <div className="mt-10 space-y-6 text-lg md:text-xl text-foreground/75 leading-relaxed">
             <p>
               Cuando dejé el mundo corporativo, creía que lo tenía todo a mi
               favor. Me perdí. Me saboteé. Gasté más de{" "}
@@ -50,8 +50,8 @@ export const About = () => {
           </div>
         </div>
 
-        {/* Right column: image 45% desktop / full-width mobile */}
-        <div className="flex-shrink-0 lg:w-[45%] overflow-hidden">
+        {/* Right column: image fixed height on desktop, anchored to bottom */}
+        <div className="flex-shrink-0 lg:w-[45%] overflow-hidden lg:h-[580px]">
           <img
             src={sobreMi}
             alt="María Garaí"
