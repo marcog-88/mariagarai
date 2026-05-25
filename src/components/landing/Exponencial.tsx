@@ -15,9 +15,9 @@ export const Exponencial = () => {
               className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
               style={{ color: "#9378fe" }}
             >
-              Programa Premium 1:1 · 4 Meses · Por Aplicación
+              Programa Flagship · Por Aplicación
             </p>
-            <h2 className="display-md text-white">
+            <h2 className="text-5xl md:text-6xl font-serif tracking-tight leading-tight text-white">
               Construye tu{" "}
               <span className="font-serif italic" style={{ color: "#9378fe" }}>
                 Carrera Moderna
@@ -29,7 +29,7 @@ export const Exponencial = () => {
               libertad.
             </p>
             <div className="mt-10">
-              <TidyCalButton className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 bg-[#9378fe]">
+              <TidyCalButton className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-white border border-white bg-transparent transition-colors hover:bg-white hover:text-[#0c0d0e]">
                 Solicitar llamada de valoración →
               </TidyCalButton>
             </div>
