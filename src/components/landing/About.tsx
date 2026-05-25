@@ -12,7 +12,7 @@ export const About = () => {
               src={sobreMi}
               alt="María Garaí"
               className="w-full h-auto md:h-full object-cover object-top block"
-              style={{ borderRadius: "12px" }}
+              style={{ borderRadius: "12px", objectPosition: "top center" }}
               loading="lazy"
             />
           </div>
