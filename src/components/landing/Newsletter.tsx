@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import substackLaptop from "@/assets/substack-laptop.png";
-import substackMobile from "@/assets/substack-mobile.png";
+import substackCard from "@/assets/substack-card.webp";
 
 const IFRAME_W = 533;
 const IFRAME_H = 488;
@@ -87,72 +86,14 @@ export const Newsletter = () => {
             </div>
           </div>
 
-          {/* Device mockups */}
-          <div className="hidden md:block md:col-span-6">
-            <div className="relative w-full aspect-[5/4]">
-              {/* MacBook mockup */}
-              <div className="absolute left-0 right-[18%] top-[6%] mx-auto">
-                <div
-                  className="rounded-[14px] p-[8px] pb-[10px]"
-                  style={{
-                    background: "linear-gradient(180deg, #2a2a2c 0%, #1a1a1c 100%)",
-                    boxShadow:
-                      "0 30px 60px -25px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.04) inset",
-                  }}
-                >
-                  <div className="flex justify-center pb-[4px]">
-                    <span className="w-[3px] h-[3px] rounded-full bg-[#3a3a3c]" />
-                  </div>
-                  <div className="aspect-[16/10] overflow-hidden rounded-[4px] bg-white">
-                    <img
-                      src={substackLaptop}
-                      alt="Carreras Modernas en Substack — vista en escritorio"
-                      className="w-full h-full object-cover object-top"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                <div className="relative">
-                  <div
-                    className="h-[10px] w-[110%] -ml-[5%] rounded-b-[14px]"
-                    style={{
-                      background:
-                        "linear-gradient(180deg, #d8dadd 0%, #b6b9bd 55%, #8a8d92 100%)",
-                      boxShadow:
-                        "0 14px 22px -12px rgba(0,0,0,0.35), 0 1px 0 rgba(255,255,255,0.5) inset",
-                    }}
-                  />
-                  <div
-                    className="h-[4px] w-[14%] mx-auto rounded-b-[6px]"
-                    style={{ background: "#7e8186" }}
-                  />
-                </div>
-              </div>
-
-              {/* iPhone mockup */}
-              <div className="absolute right-0 bottom-0 w-[26%] aspect-[9/19.5] z-10">
-                <div
-                  className="h-full w-full rounded-[2.25rem] p-[3px]"
-                  style={{
-                    background:
-                      "linear-gradient(160deg, #5a5a5d 0%, #2a2a2c 50%, #4a4a4d 100%)",
-                    boxShadow:
-                      "0 25px 45px -15px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,0,0,0.3)",
-                  }}
-                >
-                  <div className="h-full w-full rounded-[2.1rem] bg-black p-[3px] relative">
-                    <div className="h-full w-full rounded-[1.95rem] overflow-hidden bg-white relative">
-                      <img
-                        src={substackMobile}
-                        alt="Carreras Modernas en Substack — vista en móvil"
-                        className="w-full h-full object-cover object-top"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          {/* Device mockup */}
+          <div className="hidden md:flex md:col-span-6 items-start justify-start">
+            <img
+              src={substackCard}
+              alt="Carreras Modernas en Substack — vista en escritorio y móvil"
+              className="w-auto max-w-full max-h-[440px] object-contain"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

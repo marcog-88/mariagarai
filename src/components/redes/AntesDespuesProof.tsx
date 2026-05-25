@@ -1,7 +1,7 @@
 import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
-import avatarElena from "@/assets/avatar-elena.jpg";
-import avatarNatalia from "@/assets/avatar-natalia.jpg";
-import avatarIsabel from "@/assets/avatar-isabel.jpg";
+import avatarElena from "@/assets/avatar-elena.webp";
+import avatarNatalia from "@/assets/avatar-natalia.webp";
+import avatarIsabel from "@/assets/avatar-isabel.webp";
 
 const ACCENT = "#e88f00";
 

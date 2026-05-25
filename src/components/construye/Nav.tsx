@@ -3,7 +3,6 @@ import { Logo } from "./Logo";
 
 const links = [
   { label: "Inicio", href: "/" },
-  { label: "Escuela", href: "/escuela" },
   { label: "Trabaja conmigo", href: "#precio" },
 ];
 

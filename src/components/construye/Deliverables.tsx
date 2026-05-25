@@ -1,6 +1,6 @@
 import { Check, Star } from "lucide-react";
 import { TidyCalButton } from "./TidyCalButton";
-import deliverablesMockup from "@/assets/construye-deliverables-mockup-keyed.png";
+import deliverablesMockup from "@/assets/construye-deliverables-mockup-keyed.webp";
 import liveSessionGif from "@/assets/live-session.gif";
 
 const timeline = [

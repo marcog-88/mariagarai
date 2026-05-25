@@ -1,50 +1,64 @@
-import escuelaMockup from "@/assets/escuela-mockup.png";
-import disenaCarreraMockup from "@/assets/disena-carrera-mockup.png";
-import corporateFounderMockup from "@/assets/corporate-founder-mockup.png";
+import talleresMockup from "@/assets/talleres-premium-card.webp";
+import construyeMockup from "@/assets/construye-premium-card.webp";
+import redesHeroMockup from "@/assets/redes-premium-card.webp";
 
 type Forma = {
   eyebrow: string;
   eyebrowBadge?: string;
+  badgeColor?: "hot-pink" | "mint" | "orange";
   title: string;
   subtitle: string;
   cta: string;
   href: string;
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
+  imagePlaceholderText?: string;
+  imageFit?: "cover" | "contain";
+  cardBg?: string;
 };
 
 const formas: Forma[] = [
   {
-    eyebrow: "Encuentro",
-    eyebrowBadge: "A coste 0",
-    title: "De Corporate a Founder",
+    eyebrow: "WORKSHOP",
+    eyebrowBadge: "EN VIVO",
+    badgeColor: "hot-pink",
+    title: "Talleres",
     subtitle:
-      "Los primeros 90 días de tu negocio con orden y criterio. Reunión en directo a coste cero para profesionales en transición.",
+      "Encuentros en directo para profesionales en transición. Cada mes, un tema. Criterio, dirección y comunidad.",
     cta: "Apuntarme",
     href: "https://luma.com/corporateafounder",
-    image: corporateFounderMockup,
-    imageAlt: "Mockup del encuentro De Corporate a Founder — laptop mostrando una videollamada con siluetas de mujeres founders.",
+    image: talleresMockup,
+    imageAlt: "Talleres en vivo — sesión grupal con María Garaí.",
+    imageFit: "cover",
+    cardBg: "#0c0d0e",
   },
   {
-    eyebrow: "Herramienta",
-    eyebrowBadge: "A coste 0",
-    title: "Diseña tu Carrera",
+    eyebrow: "PROGRAMA",
+    eyebrowBadge: "COHORT · SEPT 2026",
+    badgeColor: "mint",
+    title: "Construye",
     subtitle:
-      "La herramienta que te ayuda a decidir tu dirección y convertir tu conocimiento en vías de monetización rentables.",
-    cta: "La pruebo",
-    href: "https://tunuevacarrera.lovable.app",
-    image: disenaCarreraMockup,
-    imageAlt: "Mockup de la herramienta Diseña tu Carrera — iMac, tablet y móvil mostrando worksheets y ofertas validadas.",
+      "El programa para construir tu negocio boutique con IA como infraestructura. Del conocimiento al negocio que factura.",
+    cta: "Quiero construir",
+    href: "/construye",
+    image: construyeMockup,
+    imageAlt: "Mockup del programa Construye — pantallas mostrando el programa completo.",
+    imageFit: "cover",
+    cardBg: "#0c0d0e",
   },
   {
-    eyebrow: "Escuela",
-    title: "Carreras Modernas",
+    eyebrow: "PROGRAMA",
+    eyebrowBadge: "COHORT · JULIO 2026",
+    badgeColor: "orange",
+    title: "Redes que Venden",
     subtitle:
-      "La escuela completa para construir tu negocio boutique con IA. Cuatro programas, un camino, desde la idea hasta el negocio funcionando.",
-    cta: "Ver la Escuela",
-    href: "/escuela",
-    image: escuelaMockup,
-    imageAlt: "Mockup de la Escuela Carreras Modernas — iMac, tablet y móvil mostrando los cuatro programas, comunidad y mentoría 1:1.",
+      "LinkedIn y Substack como activos de autoridad. Los escaparates que atraen clientes mientras vives.",
+    cta: "Ver el programa",
+    href: "/redes-que-venden",
+    image: redesHeroMockup,
+    imageAlt: "Mockup del programa Redes que Venden — pantallas mostrando el programa.",
+    imageFit: "cover",
+    cardBg: "#0c0d0e",
   },
 ];
 
@@ -73,34 +87,49 @@ export const Formas = () => {
               key={f.title}
               className={`flex flex-col ${i > 0 ? "pt-16 md:pt-0" : ""}`}
             >
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[1.25rem] bg-secondary border border-border">
+              <div className={`relative aspect-[4/3] w-full overflow-hidden rounded-[1.25rem] border border-border ${f.cardBg ? "" : "bg-secondary"}`} style={f.cardBg ? { background: f.cardBg } : undefined}>
                 {f.image ? (
                   <img
                     src={f.image}
                     alt={f.imageAlt}
-                    className="h-full w-full object-cover"
+                    className={`h-full w-full ${f.imageFit === "contain" ? "object-contain" : "object-cover"}`}
                     loading="lazy"
                   />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center text-xs uppercase tracking-[0.2em] text-foreground/40">
-                    Placeholder
+                  <div
+                    className="flex h-full w-full items-center justify-center text-sm font-medium text-white px-6 text-center"
+                    style={{ background: "#0c0d0e" }}
+                  >
+                    {f.imagePlaceholderText || f.title}
                   </div>
                 )}
               </div>
 
               <div className="mt-6 flex flex-col flex-1">
-                <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-foreground/50 flex items-center flex-wrap gap-y-1">
-                  <span>{f.eyebrow}</span>
-                  {f.eyebrowBadge && (
-                    <>
-                      <span aria-hidden className="mx-2 text-foreground/30">·</span>
-                      <span className="inline-flex items-center rounded-full bg-hot-pink text-hot-pink-foreground px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase">
+                {f.eyebrowBadge && (
+                  <p className="mb-3 flex items-center flex-wrap gap-y-1">
+                    {f.badgeColor === "mint" ? (
+                      <span
+                        className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse"
+                        style={{ background: "#d0fcd0", color: "#0c0d0e" }}
+                      >
                         {f.eyebrowBadge}
                       </span>
-                    </>
-                  )}
-                </p>
-                <h3 className="mt-3 font-serif text-3xl md:text-4xl tracking-tight">
+                    ) : f.badgeColor === "orange" ? (
+                      <span
+                        className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse"
+                        style={{ background: "#e88f00", color: "#ffffff" }}
+                      >
+                        {f.eyebrowBadge}
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center rounded-full bg-hot-pink text-hot-pink-foreground px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse">
+                        {f.eyebrowBadge}
+                      </span>
+                    )}
+                  </p>
+                )}
+                <h3 className="font-serif text-3xl md:text-4xl tracking-tight">
                   {f.title}
                 </h3>
                 <p className="mt-3 text-base text-foreground/70 leading-relaxed">
@@ -111,7 +140,7 @@ export const Formas = () => {
                     href={f.href}
                     target={f.href.startsWith("http") ? "_blank" : undefined}
                     rel={f.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="btn-primary w-[220px] justify-center"
+                    className="btn-primary w-[220px] justify-center !py-2.5"
                   >
                     {f.cta}
                     <span aria-hidden>→</span>

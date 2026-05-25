@@ -1,4 +1,4 @@
-import heroMockup from "@/assets/construye-hero-mockup.png";
+import heroMockup from "@/assets/construye-hero.webp";
 
 export const Hero = () => {
   return (
