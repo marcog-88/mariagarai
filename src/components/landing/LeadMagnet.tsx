@@ -10,17 +10,15 @@ export const LeadMagnet = () => {
           className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
           style={{ color: "#9378fe" }}
         >
-          Empieza aquí
+          EMPIEZA AQUÍ
         </p>
         <h2 className="display-md">
-          Diseña tu{" "}
-          <span className="font-serif italic" style={{ color: "#9378fe" }}>
-            Carrera Moderna
-          </span>
+          ¿Qué podrías vender mañana con lo que ya sabes?
         </h2>
         <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
-          La herramienta gratuita para profesionales con trayectoria corporativa que
-          quieren monetizar su conocimiento. Descubre qué puedes vender y a quién.
+          Responde unas preguntas sobre tu trayectoria. La IA analiza tu perfil y te
+          devuelve tu mapa de monetización personalizado — qué vender, a quién, y por
+          dónde empezar.
         </p>
         <form
           className="mt-10 flex flex-col sm:flex-row gap-3 max-w-lg"
@@ -43,7 +41,7 @@ export const LeadMagnet = () => {
           </button>
         </form>
         <p className="mt-3 text-xs text-foreground/50">
-          Sin spam. Solo lo que importa.
+          ✓ Personalizado con IA  ·  ✓ Gratuito  ·  ✓ Sin spam
         </p>
       </div>
     </section>
