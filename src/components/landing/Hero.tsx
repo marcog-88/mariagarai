@@ -4,8 +4,13 @@ export const Hero = () => {
   return (
     <section
       id="top"
-      className="relative overflow-hidden hero-gradient border-b border-border pt-44 pb-24 md:pt-36 md:pb-20 lg:pb-0"
+      className="relative overflow-hidden hero-gradient pt-16 pb-24 md:pt-36 md:pb-20 lg:pb-0"
     >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-32 md:h-40 z-10"
+        style={{ background: "linear-gradient(to bottom, transparent, #f9f9f7)" }}
+      />
       <div className="container-tight px-8 sm:px-8">
         <div className="flex flex-col lg:flex-row gap-10 md:gap-12 lg:items-stretch">
           {/* Copy column */}

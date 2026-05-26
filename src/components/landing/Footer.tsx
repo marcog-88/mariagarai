@@ -8,7 +8,7 @@ export const Footer = () => {
         <a href="#top" className="flex items-center text-foreground" aria-label="María Garaí">
           <Logo className="block h-5 [&>svg]:h-full [&>svg]:w-auto" />
         </a>
-        <ul className="flex flex-wrap gap-6 text-sm text-foreground/60">
+        <ul className="flex flex-wrap gap-4 text-sm text-foreground/60">
           <li>
             <Link to="/legal" className="hover:text-foreground transition-colors">
               Aviso legal

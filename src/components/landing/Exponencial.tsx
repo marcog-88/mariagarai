@@ -25,16 +25,24 @@ export const Exponencial = () => {
           {/* Left — body + bullets + CTA */}
           <div className="flex flex-col">
             <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
-              <span style={{ color: "#9378fe" }}>Exponencial</span> — el único programa <span style={{ color: "#9378fe" }}>1:1</span> donde construyes tu negocio mientras lo aprendes.
+              <span style={{ color: "#9378fe" }}>Exponencial</span> — el único programa <span style={{ color: "#9378fe" }}>1:1</span> donde construyes<span className="hidden md:inline"> tu negocio</span> mientras<span className="hidden md:inline"> lo</span> aprendes.
             </p>
             <ul className="mt-4 text-base md:text-lg text-white max-w-xl">
               {[
                 { main: "Un negocio boutique funcionando en 4 meses", sub: "📅 17 sesiones 1:1 con María" },
                 { main: "Presencia digital que abre puertas mientras vives", sub: "🛠️ LinkedIn, Substack y web incluidos" },
-                { main: "Sistemas con IA que trabajan sin ti", sub: "🤖 Notion + Claude como infraestructura" },
+                { main: "Sistemas con IA que trabajan sin ti", sub: "🤖 Notion + Claude" },
               ].map((item) => (
                 <li key={item.main} className="flex items-start gap-2 mb-4">
-                  <span style={{ color: "#9378fe" }} aria-hidden className="mt-0.5">✓</span>
+                  <span
+                    aria-hidden
+                    className="flex-shrink-0 mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full"
+                    style={{ background: "#9378fe" }}
+                  >
+                    <svg viewBox="0 0 12 12" className="h-3 w-3" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="2.5,6.2 5,8.5 9.5,3.5" />
+                    </svg>
+                  </span>
                   <div>
                     <span>{item.main}</span>
                     <p className="text-base mt-0.5" style={{ color: "#9378fe" }}>{item.sub}</p>
@@ -46,7 +54,7 @@ export const Exponencial = () => {
               <a href="/exponencial" className="btn-primary w-[220px] justify-center !py-2.5">
                 Es mi momento →
               </a>
-              <p className="mt-3 text-xs text-white/40">Plazas limitadas · Por aplicación</p>
+              <p className="mt-3 text-xs italic text-white/40">Plazas limitadas · Por aplicación</p>
             </div>
           </div>
 
