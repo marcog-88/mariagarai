@@ -1,7 +1,7 @@
 import { Check, User } from "lucide-react";
 import { TidyCalButton } from "@/components/construye/TidyCalButton";
 import deliverablesMockup from "@/assets/lanza-deliverables-mockup-cutout.webp";
-import mariaProfileZoom from "@/assets/maria-profile-zoom-lanza.webp";
+import mariaProfileZoom from "@/assets/maria-profile-zoom-lanza.jpg";
 
 const modules = [
   { n: "1", week: "Semana 1", title: "Tu manual de marca + tu pitch", body: "Quién eres, a quién ayudas, qué problema resuelves, y cómo presentarlo en 30 segundos. La base de todo lo que viene después." },

@@ -29,7 +29,7 @@ export const Letras = () => {
           </p>
         </div>
 
-        <p className="mt-14 font-serif text-3xl md:text-4xl leading-tight max-w-3xl text-foreground font-bold">
+        <p className="mt-14 font-serif text-3xl md:text-4xl leading-tight max-w-3xl text-foreground">
           Eso es exactamente lo que te enseño aquí.
         </p>
       </div>

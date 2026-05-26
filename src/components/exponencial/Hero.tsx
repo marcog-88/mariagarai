@@ -1,4 +1,4 @@
-import expoMockup from "@/assets/exponencial-premium-card.webp";
+import expoMockup from "@/assets/exponencial-premium-card.png";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 

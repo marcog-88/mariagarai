@@ -8,7 +8,7 @@ export const StripeBuyButton = ({ label = "Pagar ahora" }: { label?: string }) =
     href={STRIPE_URL}
     target="_blank"
     rel="noopener noreferrer"
-    className="btn-mint-lg !text-lg inline-flex w-auto"
+    className="btn-mint-lg !text-lg w-full md:w-auto justify-center"
   >
     {label}
     <span aria-hidden> →</span>

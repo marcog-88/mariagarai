@@ -19,7 +19,7 @@ export const Hero = () => {
       <div className="container-tight relative">
         <div className="max-w-5xl animate-fade-up flex flex-col md:block">
           <div
-            className="mb-12 md:mb-14 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
+            className="mb-4 md:mb-14 order-[-2] md:order-none inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
             style={{
               background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
               border: "1.5px solid #e88f00",
@@ -38,9 +38,9 @@ export const Hero = () => {
               }}
               aria-hidden
             />
-            Próximo Sprint · Junio 2026 · 30 días
+            Julio 2026 · 30 días
           </div>
-          <h1 className="font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
+          <h1 className="mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
             La combinación que abre{" "}
             <em className="font-serif italic text-mint">carteras y oportunidades.</em>
           </h1>
@@ -54,7 +54,7 @@ export const Hero = () => {
           </p>
 
           {/* Mockup block */}
-          <div className="mt-14 mx-auto order-last md:order-none" style={{ maxWidth: "1000px" }}>
+          <div className="mt-14 mx-auto order-[-1] md:order-none" style={{ maxWidth: "1000px" }}>
             <img
               src={heroMockup}
               alt="Redes que Venden: LinkedIn + Substack, sesiones en vivo, prospección y comunidad de mujeres"

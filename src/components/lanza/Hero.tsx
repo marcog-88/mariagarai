@@ -1,4 +1,4 @@
-import heroMockup from "@/assets/lanza-hero-mockup.webp";
+import heroMockup from "@/assets/lanza-hero-mockup.png";
 
 export const Hero = () => {
   return (
@@ -18,7 +18,7 @@ export const Hero = () => {
       <div className="container-tight relative">
         <div className="max-w-5xl animate-fade-up flex flex-col md:block">
           <div
-            className="mb-12 md:mb-14 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
+            className="mb-4 md:mb-14 order-[-2] md:order-none inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
             style={{
               background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
               border: "1.5px solid #ff4295",
@@ -26,20 +26,18 @@ export const Hero = () => {
                 "4px 0 12px rgba(255,66,149,0.5), -4px 0 12px rgba(255,66,149,0.5), inset 0 2px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)",
             }}
           >
-            <style>{`@keyframes lanzaDotPulse{0%,100%{opacity:1}50%{opacity:.3}}`}</style>
             <span
               className="rounded-full"
               style={{
                 width: "12px",
                 height: "12px",
                 background: "#ffffff",
-                animation: "lanzaDotPulse 2s ease-in-out infinite",
               }}
               aria-hidden
             />
-            Próxima cohorte · Septiembre 2026 · 8 semanas
+            Cohorte · Próximamente
           </div>
-          <h1 className="font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
+          <h1 className="mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
             Deja de darle vueltas a qué vender.{" "}
             <br className="hidden md:inline" />
             <em className="font-serif italic text-mint">Sal a venderlo.</em>
@@ -53,7 +51,7 @@ export const Hero = () => {
           </p>
 
           {/* Mockup block */}
-          <div className="mt-14 mx-auto order-last md:order-none" style={{ maxWidth: "1000px" }}>
+          <div className="mt-14 mx-auto order-[-1] md:order-none" style={{ maxWidth: "1000px" }}>
             <img
               src={heroMockup}
               alt="Lanza y Vende: oferta validada, prospección LinkedIn, webinar en Luma, sistema LAPS, primera venta y 4 sesiones 1:1 con María"

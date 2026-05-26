@@ -137,7 +137,7 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-medium;
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 md:px-8 md:py-4 text-base font-medium;
     background-color: hsl(var(--accent));
     color: hsl(var(--accent-foreground));
     background-image: linear-gradient(120deg, transparent 30%, hsl(0 0% 100% / 0.45) 50%, transparent 70%);
@@ -154,7 +154,7 @@
   }
 
   .btn-primary-lg {
-    @apply inline-flex items-center justify-center gap-3 rounded-full px-9 py-5 text-lg font-medium;
+    @apply inline-flex items-center justify-center gap-3 rounded-full px-6 py-3 md:px-8 md:py-4 text-lg font-medium;
     background-color: hsl(var(--accent));
     color: hsl(var(--accent-foreground));
     background-image: linear-gradient(120deg, transparent 30%, hsl(0 0% 100% / 0.5) 50%, transparent 70%);
@@ -188,7 +188,7 @@
     background-position: -20% 0;
   }
   .btn-mint-lg {
-    @apply inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-medium;
+    @apply inline-flex items-center gap-2 rounded-full px-6 py-3 md:px-8 md:py-4 text-base font-medium;
     background-color: #d0fcd0;
     color: #0c0d0e;
     background-image: linear-gradient(120deg, transparent 30%, hsl(0 0% 100% / 0.55) 50%, transparent 70%);

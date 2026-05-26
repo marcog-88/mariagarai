@@ -38,11 +38,11 @@ export const LeadMagnet = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="tu@email.com"
                 required
-                className="flex-1 rounded-full border border-border bg-white px-5 py-3 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-[#9378fe]"
+                className="flex-1 rounded-full border border-border bg-white px-6 py-3 md:px-8 md:py-4 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-[#9378fe]"
               />
               <button
                 type="submit"
-                className="rounded-full px-6 py-3 text-sm font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
+                className="rounded-full px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
                 style={{ background: "#9378fe" }}
               >
                 Lo quiero gratis →

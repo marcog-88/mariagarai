@@ -103,7 +103,7 @@ export const AntesDespuesProof = () => {
           ))}
         </div>
 
-        <div className="mt-12 flex justify-center">
+        <div className="mt-12 hidden md:flex justify-center">
           <StripeBuyButton />
         </div>
       </div>

@@ -29,9 +29,9 @@ const no = [
 
 export const ForYou = () => {
   return (
-    <section className="pt-12 md:pt-16 pb-24 md:pb-32 bg-background">
+    <section className="py-24 md:py-32 bg-background">
       <div className="container-tight">
-        <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+        <p className="mb-12 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
           Este programa es para ti si...
         </p>
 

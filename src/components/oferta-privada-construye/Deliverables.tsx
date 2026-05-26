@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 import { TidyCalButton } from "@/components/construye/TidyCalButton";
 import deliverablesMockup from "@/assets/oferta-privada-construye-deliverables-mockup-keyed.webp";
-import mariaPhoto from "@/assets/maria-profile-zoom.webp";
+import mariaPhoto from "@/assets/maria-profile-zoom.jpg";
 
 const timeline = [
   {

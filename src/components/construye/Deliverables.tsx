@@ -57,7 +57,7 @@ const timeline = [
       "Secuencia de emails de bienvenida",
       "Integración completa con tu web",
     ],
-    outcome: "Tu embudo funciona solo",
+    outcome: "Tu embudo funciona",
   },
   {
     n: "5",
@@ -160,7 +160,7 @@ export const Deliverables = () => {
                     {step.bullets.map((b, i) => (
                       <li key={i} className="flex items-start gap-3 text-white/85">
                         <Check
-                          className="w-5 h-5 text-mint flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-white flex-shrink-0 mt-0.5"
                           strokeWidth={2.5}
                         />
                         <span>{b}</span>
@@ -168,12 +168,16 @@ export const Deliverables = () => {
                     ))}
                   </ul>
 
-                  <div className="pt-5 border-t border-white/10">
+                  <div className="mt-4 pt-4 border-t border-[#d0fcd0]/40 flex items-start gap-3">
+                    <Check
+                      className="w-5 h-5 text-[#d0fcd0] flex-shrink-0 mt-0.5"
+                      strokeWidth={2.5}
+                    />
                     <span
-                      className="inline-block text-xs font-medium px-3 py-1.5 rounded-full"
-                      style={{ background: "#d0fcd0", color: "#0c0d0e" }}
+                      className="text-sm font-semibold whitespace-nowrap"
+                      style={{ color: "#d0fcd0" }}
                     >
-                      ✓ {step.outcome}
+                      {step.outcome}
                     </span>
                   </div>
                 </div>
@@ -250,13 +254,13 @@ export const Deliverables = () => {
               ))}
             </div>
           </div>
-          <p className="mt-6 italic text-sm md:text-base text-center" style={{ color: "#d0fcd0" }}>
+          <p className="mt-6 italic text-sm md:text-base text-center" style={{ color: "#0c0d0e" }}>
             Tu mayor activo no es el contenido. Es el acceso directo.
           </p>
         </div>
 
         <div className="mt-10 flex justify-center">
-          <a href="https://mariagarai.activehosted.com/f/11" target="_blank" rel="noopener noreferrer" className="btn-mint-lg">
+          <a href="https://mariagarai.activehosted.com/f/11" target="_blank" rel="noopener noreferrer" className="btn-mint-lg !text-sm md:!text-lg">
             Unirme a la lista de espera <span aria-hidden>→</span>
           </a>
         </div>

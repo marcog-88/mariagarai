@@ -1,4 +1,4 @@
-import expoMockup from "@/assets/exponencial-premium-card.webp";
+import expoMockup from "@/assets/exponencial-premium-card.png";
 
 export const Exponencial = () => {
   return (
@@ -23,7 +23,7 @@ export const Exponencial = () => {
         <div className="grid md:grid-cols-[3fr_2fr] gap-12 md:gap-16 items-center mt-12">
 
           {/* Left — body + bullets + CTA */}
-          <div className="flex flex-col">
+          <div className="flex flex-col order-2 md:order-1">
             <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
               <span style={{ color: "#9378fe" }}>Exponencial</span> — el único programa <span style={{ color: "#9378fe" }}>1:1</span> donde construyes<span className="hidden md:inline"> tu negocio</span> mientras<span className="hidden md:inline"> lo</span> aprendes.
             </p>
@@ -51,7 +51,7 @@ export const Exponencial = () => {
               ))}
             </ul>
             <div className="mt-8">
-              <a href="/exponencial" className="btn-primary w-[220px] justify-center !py-2.5">
+              <a href="/exponencial" className="btn-primary w-full md:w-[220px] justify-center">
                 Es mi momento →
               </a>
               <p className="mt-3 text-xs italic text-white/40">Plazas limitadas · Por aplicación</p>
@@ -59,7 +59,7 @@ export const Exponencial = () => {
           </div>
 
           {/* Right — image, natural ratio with curved corners */}
-          <div className="flex items-center">
+          <div className="flex items-center order-1 md:order-2">
             <img
               src={expoMockup}
               alt="Exponencial — Notion, Claude, LinkedIn y Substack."

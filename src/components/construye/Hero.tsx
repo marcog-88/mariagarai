@@ -1,4 +1,4 @@
-import heroMockup from "@/assets/construye-hero.webp";
+import heroMockup from "@/assets/construye-hero.png";
 
 export const Hero = () => {
   return (
@@ -18,28 +18,23 @@ export const Hero = () => {
       <div className="container-tight relative">
         <div className="max-w-5xl animate-fade-up flex flex-col md:block">
           <div
-            className="mb-12 md:mb-14 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
+            className="mb-4 md:mb-14 order-[-2] md:order-none inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
             style={{
               background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
-              border: "1.5px solid #d0fcd0",
-              boxShadow:
-                "4px 0 12px rgba(208,252,208,0.5), -4px 0 12px rgba(208,252,208,0.5), inset 0 2px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)",
             }}
           >
-            <style>{`@keyframes construyeDotPulse{0%,100%{opacity:1}50%{opacity:.3}}`}</style>
             <span
               className="rounded-full"
               style={{
                 width: "12px",
                 height: "12px",
                 background: "#ffffff",
-                animation: "construyeDotPulse 2s ease-in-out infinite",
               }}
               aria-hidden
             />
-            Próxima cohorte · Julio 2026 · 8 semanas
+            Cohorte · Próximamente
           </div>
-          <h1 className="font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
+          <h1 className="mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
             Ya vendes.
             <br />
             Pero todo está{" "}
@@ -56,7 +51,7 @@ export const Hero = () => {
           </p>
 
           {/* Mockup block */}
-          <div className="mt-14 mx-auto order-last md:order-none" style={{ maxWidth: "1000px" }}>
+          <div className="mt-14 mx-auto order-[-1] md:order-none" style={{ maxWidth: "1000px" }}>
             <img
               src={heroMockup}
               alt="Construye: video calls 1:1, dashboard en Notion, automatización con IA y agenda integrada"

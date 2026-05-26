@@ -47,7 +47,7 @@ export const Bonuses = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {bonuses.map((b) => (
-            <div key={b.n} className="rounded-2xl bg-mint/15 border border-mint/30 p-8 text-foreground">
+            <div key={b.n} className="rounded-2xl bg-mint/15 border border-[#2d8a4e]/40 p-8 text-foreground">
               <div className="flex items-baseline justify-start md:justify-end mb-4">
                 <span className="text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-primary text-primary-foreground font-medium">
                   Valor {b.valor}

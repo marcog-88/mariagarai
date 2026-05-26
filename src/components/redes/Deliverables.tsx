@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
 import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
-import deliverablesMockup from "@/assets/redes-deliverables-mockup-animated.gif";
+import deliverablesVideo from "@/assets/redes-deliverables-animated.mp4";
+import deliverablesPoster from "@/assets/redes-deliverables-blank-mockup.png";
 
 const phases = [
   { n: "0", label: "Arranque", title: "FASE 0: ARRANQUE", body: "Configuramos ambos canales. Todo a punto para arrancar sin líos técnicos ni procrastinación." },
@@ -14,7 +15,7 @@ export const Deliverables = () => {
   return (
     <section id="metodo" className="pt-24 md:pt-32 pb-12 md:pb-16 bg-background">
       <div className="container-tight">
-        <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+        <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em]" style={{ color: "#9378fe" }}>
           Lo que montamos
         </p>
         <p className="text-base md:text-2xl text-foreground/70 mb-12 font-sans">
@@ -22,13 +23,23 @@ export const Deliverables = () => {
         </p>
 
         {/* Mockup */}
-        <div className="mb-16 rounded-2xl overflow-hidden bg-[#f9f9f7] relative max-w-[85%] mx-auto">
-          <img
-            src={deliverablesMockup}
-            alt="Lo que montamos en Redes que Venden: LinkedIn, Substack, prospección y crecimiento de suscriptoras"
-            className="w-full h-auto block"
-            loading="lazy"
-          />
+        <div
+          className="mb-12"
+          style={{ background: "radial-gradient(ellipse at center, rgba(232, 143, 0, 0.08) 0%, transparent 70%)" }}
+        >
+          <div className="mb-16 rounded-2xl overflow-hidden bg-[#f9f9f7] relative max-w-[98%] mx-auto">
+            <video
+              src={deliverablesVideo}
+              poster={deliverablesPoster}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              aria-label="Lo que montamos en Redes que Venden: LinkedIn, Substack, prospección y crecimiento de suscriptoras"
+              className="w-full h-auto block"
+            />
+          </div>
         </div>
 
         <div className="relative">

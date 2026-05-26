@@ -19,7 +19,7 @@ export const CTA = () => {
             href="https://tidycal.com/mariagarai/exploracion"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary"
+            className="btn-primary w-full md:w-auto"
           >
             Reservar llamada a coste 0
             <span aria-hidden>↗</span>
