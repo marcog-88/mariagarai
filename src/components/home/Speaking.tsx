@@ -12,7 +12,7 @@ export const Speaking = () => {
           {/* Left column */}
           <div>
             <p
-              className="mb-4 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
+              className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
               style={{ color: "#9378fe" }}
             >
               Conferencias y Formación
@@ -24,9 +24,9 @@ export const Speaking = () => {
               Disponible para eventos corporativos, conferencias y formaciones de equipo.
             </p>
             <ul className="mt-4 space-y-2 text-base leading-relaxed" style={{ color: "#666" }}>
-              <li>🤖 IA aplicada a negocios: cómo usar IA sin ser técnico para automatizar procesos</li>
-              <li>🚀 Carreras modernas: el nuevo modelo profesional, múltiples ingresos, marca personal y reinvención</li>
-              <li>📲 Redes que venden: cómo convertir LinkedIn en tu canal de ventas</li>
+              <li>🤖 IA aplicada a negocios<span className="hidden md:inline">: cómo usar IA sin ser técnico para automatizar procesos</span></li>
+              <li>🚀 Carreras modernas<span className="hidden md:inline">: el nuevo modelo profesional, múltiples ingresos, marca personal y reinvención</span></li>
+              <li>📲 Redes que venden<span className="hidden md:inline">: cómo convertir LinkedIn en tu canal de ventas</span></li>
             </ul>
             <div className="mt-10">
               <a

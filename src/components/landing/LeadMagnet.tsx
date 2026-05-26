@@ -5,7 +5,7 @@ export const LeadMagnet = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <section className="py-24 md:py-32 border-t border-border bg-[#f9f9f7]">
+    <section className="py-24 md:py-32 bg-[#f9f9f7]">
       <div className="container-tight">
         <div className="flex flex-col md:flex-row md:items-center md:gap-16 lg:gap-24">
           {/* Left: text + form */}
@@ -14,7 +14,7 @@ export const LeadMagnet = () => {
               className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
               style={{ color: "#9378fe" }}
             >
-              EMPIEZA AQUÍ
+              TU MAPA DE MONETIZACIÓN
             </p>
             <h2 className="display-md">
               ¿Qué podrías{" "}
@@ -23,7 +23,7 @@ export const LeadMagnet = () => {
               </span>{" "}
               con lo que ya sabes?
             </h2>
-            <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
+            <p className="mt-6 text-base md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
               Responde unas preguntas sobre tu trayectoria. La IA analiza tu perfil y te
               devuelve tu mapa de monetización personalizado — qué vender, a quién, y por
               dónde empezar.
@@ -48,7 +48,7 @@ export const LeadMagnet = () => {
                 Lo quiero gratis →
               </button>
             </form>
-            <p className="mt-3 text-xs text-foreground/50">
+            <p className="mt-3 text-xs italic text-foreground/50">
               ✓ Personalizado con IA  ·  ✓ Gratuito  ·  ✓ Sin spam
             </p>
           </div>

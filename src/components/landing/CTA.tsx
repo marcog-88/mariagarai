@@ -2,7 +2,7 @@ export const CTA = () => {
   return (
     <section
       id="cta"
-      className="py-28 md:py-40 border-t border-border"
+      className="pt-28 pb-12 md:py-40 border-t border-border"
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
       <div className="container-tight">
@@ -14,7 +14,7 @@ export const CTA = () => {
           Trabaja conmigo dentro de la Escuela de Carreras Modernas.
         </p>
 
-        <div className="mt-8 md:mt-10">
+        <div className="mt-16 md:mt-20">
           <a
             href="https://tidycal.com/mariagarai/exploracion"
             target="_blank"

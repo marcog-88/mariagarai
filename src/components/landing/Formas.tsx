@@ -73,9 +73,9 @@ export const Formas = () => {
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
             Esto es lo que puedo hacer por ti
           </p>
-          <h2 className="display-md">
+          <h2 className="display-md whitespace-nowrap">
             Así es como{" "}
-            <span className="font-serif italic text-accent block md:inline">
+            <span className="font-serif italic text-accent">
               te puedo ayudar.
             </span>
           </h2>
@@ -140,7 +140,7 @@ export const Formas = () => {
                     href={f.href}
                     target={f.href.startsWith("http") ? "_blank" : undefined}
                     rel={f.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="btn-primary w-[220px] justify-center !py-2.5"
+                    className={`btn-primary justify-center !py-2.5 ${f.title === "Construye" ? "w-fit whitespace-nowrap" : "w-[220px]"}`}
                   >
                     {f.cta}
                     <span aria-hidden>→</span>
