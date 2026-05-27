@@ -1,4 +1,4 @@
-import deliverablesMockup from "@/assets/exponencial-deliverables-nobg-final.png";
+import deliverablesMockup from "@/assets/exponencial-deliverables-nobg-final.webp";
 
 const phases = [
   {

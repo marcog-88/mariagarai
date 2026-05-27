@@ -1,6 +1,6 @@
-import talleresMockup from "@/assets/talleres-premium-card.png";
+import talleresMockup from "@/assets/talleres-premium-card.webp";
 import construyeMockup from "@/assets/construye-premium-card.webp";
-import redesHeroMockup from "@/assets/redes-premium-card.png";
+import redesHeroMockup from "@/assets/redes-premium-card.webp";
 
 type Forma = {
   eyebrow: string;

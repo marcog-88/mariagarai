@@ -1,7 +1,7 @@
 import { Star } from "lucide-react";
 import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
 import deliverablesVideo from "@/assets/redes-deliverable-animated-final-mockup.mp4";
-import deliverablesPoster from "@/assets/redes-deliverables-blank-mockup.png";
+import deliverablesPoster from "@/assets/redes-deliverables-blank-mockup.webp";
 
 const phases = [
   { n: "0", label: "Arranque", title: "FASE 0: ARRANQUE", body: "Configuramos ambos canales. Todo a punto para arrancar sin líos técnicos ni procrastinación." },

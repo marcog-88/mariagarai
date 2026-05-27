@@ -1,4 +1,4 @@
-import expoMockup from "@/assets/exponencial-premium-card.png";
+import expoMockup from "@/assets/exponencial-premium-card.webp";
 
 export const Exponencial = () => {
   return (
@@ -14,6 +14,7 @@ export const Exponencial = () => {
         </p>
         <h2 className="text-5xl md:text-6xl font-serif tracking-tight leading-tight text-white md:whitespace-nowrap">
           Construye tu{" "}
+          <br className="md:hidden" />
           <span className="font-serif italic" style={{ color: "#9378fe" }}>
             Carrera Moderna
           </span>
