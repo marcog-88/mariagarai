@@ -42,6 +42,7 @@ export const Hero = () => {
           </div>
           <h1 className="mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
             La combinación que abre{" "}
+            <br className="hidden md:inline" />
             <em className="font-serif italic text-mint">carteras y oportunidades.</em>
           </h1>
           <p className="mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl">

@@ -6,7 +6,12 @@ export const Hero = () => {
       id="top"
       className="relative overflow-hidden hero-gradient pt-32 pb-24 md:pt-36 md:pb-20 lg:pb-0"
     >
-      <div className="container-tight px-8 sm:px-8">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-40 md:h-56"
+        style={{ background: "linear-gradient(to bottom, transparent, #f9f9f7)" }}
+      />
+      <div className="container-tight px-8 sm:px-8 relative">
         <div className="flex flex-col lg:flex-row gap-10 md:gap-12 lg:items-stretch">
           {/* Copy column */}
           <div className="animate-fade-up order-2 lg:order-1 flex flex-col justify-center w-full lg:w-[50%] py-8 lg:py-0 lg:pb-24">

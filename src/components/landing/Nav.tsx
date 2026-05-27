@@ -1,14 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Logo } from "./Logo";
 
-const links: { label: string; href: string; isExternal?: boolean }[] = [
-  { label: "Programas", href: "#formas" },
-  { label: "Sobre María", href: "#about" },
+const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
+
+const programas = [
+  { label: "Exponencial", href: "/exponencial" },
+  { label: "Construye", href: "/construye" },
+  { label: "Redes que Venden", href: "/redes-que-venden" },
 ];
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -23,6 +29,18 @@ export const Nav = () => {
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  // Close desktop dropdown on outside click
+  useEffect(() => {
+    if (!dropdownOpen) return;
+    const onClick = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onClick);
+    return () => document.removeEventListener("mousedown", onClick);
+  }, [dropdownOpen]);
 
   return (
     <>
@@ -46,27 +64,87 @@ export const Nav = () => {
           </a>
 
           <ul className="hidden md:flex items-center gap-8">
-            {links.map((l) => (
-              <li key={l.href}>
-                <a
-                  href={l.href}
-                  target={l.isExternal ? "_blank" : undefined}
-                  rel={l.isExternal ? "noopener noreferrer" : undefined}
-                  className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
+            <li>
+              <a
+                href="#top"
+                className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
+              >
+                Inicio
+                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
+              </a>
+            </li>
+
+            {/* Programas dropdown */}
+            <li
+              ref={dropdownRef}
+              className="relative"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <button
+                type="button"
+                onClick={() => setDropdownOpen((v) => !v)}
+                aria-haspopup="true"
+                aria-expanded={dropdownOpen}
+                className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
+              >
+                Programas
+                <span
+                  aria-hidden
+                  className={`inline-block text-xs transition-transform duration-200 ${
+                    dropdownOpen ? "rotate-180" : ""
+                  }`}
                 >
-                  {l.label}
-                  <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
-                </a>
-              </li>
-            ))}
+                  ▾
+                </span>
+                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-[calc(100%-12px)] origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
+              </button>
+
+              <div
+                className={`absolute left-0 top-full pt-3 min-w-[220px] transition-opacity duration-150 ${
+                  dropdownOpen
+                    ? "opacity-100 pointer-events-auto"
+                    : "opacity-0 pointer-events-none"
+                }`}
+              >
+                <ul
+                  className="rounded-xl p-2 shadow-xl"
+                  style={{ background: "#0c0d0e" }}
+                >
+                  {programas.map((p) => (
+                    <li key={p.href}>
+                      <a
+                        href={p.href}
+                        className="block rounded-lg px-4 py-2.5 text-sm text-white transition-colors duration-150 hover:text-[#9378fe]"
+                        onClick={() => setDropdownOpen(false)}
+                      >
+                        {p.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="/construye#top"
+                className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
+              >
+                Trabaja conmigo
+                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
+              </a>
+            </li>
           </ul>
 
           <div className="flex items-center gap-3">
             <a
-              href="/construye#top"
+              href={TIDYCAL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary mobile-device-hidden hidden md:inline-flex !px-6 !py-3 !text-sm"
             >
-              Trabaja conmigo
+              Reservar llamada
             </a>
             <button
               className={`md:hidden relative p-2 group z-[60] ${
@@ -105,32 +183,83 @@ export const Nav = () => {
           aria-label="Menú móvil"
         >
           <ul className="flex-1 flex flex-col gap-7">
-            {links.map((l, i) => (
-              <li
-                key={l.href}
-                className={`transition-all duration-500 ease-out ${
-                  open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
-                }`}
-                style={{ transitionDelay: open ? `${120 + i * 60}ms` : "0ms" }}
+            <li
+              className={`transition-all duration-500 ease-out ${
+                open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+              }`}
+              style={{ transitionDelay: open ? "120ms" : "0ms" }}
+            >
+              <a
+                href="#top"
+                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
+                onClick={() => setOpen(false)}
               >
-                <a
-                  href={l.href}
-                  target={l.isExternal ? "_blank" : undefined}
-                  rel={l.isExternal ? "noopener noreferrer" : undefined}
-                  className="font-serif text-3xl text-white hover:text-accent transition-colors flex items-center gap-3"
-                  onClick={() => setOpen(false)}
+                Inicio
+              </a>
+            </li>
+
+            <li
+              className={`transition-all duration-500 ease-out ${
+                open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+              }`}
+              style={{ transitionDelay: open ? "180ms" : "0ms" }}
+            >
+              <button
+                type="button"
+                onClick={() => setMobileDropdownOpen((v) => !v)}
+                aria-expanded={mobileDropdownOpen}
+                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe] flex items-center gap-3"
+              >
+                Programas
+                <span
+                  aria-hidden
+                  className={`text-xl transition-transform duration-200 ${
+                    mobileDropdownOpen ? "rotate-180" : ""
+                  }`}
                 >
-                  {l.label}
-                </a>
-              </li>
-            ))}
+                  ▾
+                </span>
+              </button>
+              {mobileDropdownOpen && (
+                <ul className="mt-4 pl-6 flex flex-col gap-4">
+                  {programas.map((p) => (
+                    <li key={p.href}>
+                      <a
+                        href={p.href}
+                        className="font-serif text-2xl text-white transition-colors hover:text-[#9378fe]"
+                        onClick={() => setOpen(false)}
+                      >
+                        — {p.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+
+            <li
+              className={`transition-all duration-500 ease-out ${
+                open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+              }`}
+              style={{ transitionDelay: open ? "240ms" : "0ms" }}
+            >
+              <a
+                href="/construye#top"
+                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
+                onClick={() => setOpen(false)}
+              >
+                Trabaja conmigo
+              </a>
+            </li>
           </ul>
           <a
-            href="/construye#top"
+            href={TIDYCAL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary-lg w-full justify-center"
             onClick={() => setOpen(false)}
           >
-            Trabaja conmigo
+            Reservar llamada
             <span aria-hidden>→</span>
           </a>
         </nav>

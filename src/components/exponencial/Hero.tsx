@@ -20,7 +20,7 @@ export const Hero = () => {
       <div className="container-tight relative">
         <div className="max-w-5xl animate-fade-up flex flex-col md:block">
           <div
-            className="mb-12 md:mb-14 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
+            className="mb-4 md:mb-14 order-[-2] md:order-none inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
             style={{
               background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
               border: "1.5px solid #9378fe",
@@ -39,9 +39,9 @@ export const Hero = () => {
               }}
               aria-hidden
             />
-            EXPONENCIAL · 4 MESES · 1:1 · POR APLICACIÓN
+            EXPONENCIAL · 4 MESES · 1:1
           </div>
-          <h1 className="font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
+          <h1 className="mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
             Construye tu Carrera Moderna.{" "}
             <br className="hidden md:inline" />
             <em className="font-serif italic text-mint">Tu nuevo modelo profesional.</em>
@@ -54,7 +54,7 @@ export const Hero = () => {
           </p>
 
           {/* Hero mockup */}
-          <div className="mt-14 mx-auto order-last md:order-none" style={{ maxWidth: "1000px" }}>
+          <div className="mt-14 mx-auto order-[-1] md:order-none" style={{ maxWidth: "1000px" }}>
             <img
               src={expoMockup}
               alt="Exponencial — Notion, Claude, LinkedIn y Substack como herramientas de tu negocio moderno."
