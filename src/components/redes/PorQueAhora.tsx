@@ -10,6 +10,7 @@ export const PorQueAhora = () => {
         </p>
         <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-4xl">
           Cada mes invisible es un mes que{" "}
+          <br className="hidden md:inline" />
           <em className="font-serif italic text-mint">le regalas a tu competencia.</em>
         </h2>
 

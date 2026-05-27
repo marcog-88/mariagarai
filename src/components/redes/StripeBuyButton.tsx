@@ -9,6 +9,7 @@ export const StripeBuyButton = ({ label = "Pagar ahora" }: { label?: string }) =
     target="_blank"
     rel="noopener noreferrer"
     className="btn-mint-lg !text-lg w-full md:w-auto justify-center"
+    style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
   >
     {label}
     <span aria-hidden> →</span>

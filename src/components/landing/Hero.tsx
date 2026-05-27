@@ -19,7 +19,11 @@ export const Hero = () => {
               Ahora es el momento de construir una carrera independiente con varias vías de ingreso para vivir bien de lo tuyo.
             </p>
             <div className="mt-12 sm:mt-14 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-6">
-              <a href="/construye#top" className="btn-primary-lg justify-center w-full md:w-auto">
+              <a
+                href="/construye#top"
+                className="btn-primary-lg justify-center w-full md:w-auto"
+                style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
+              >
                 Trabaja conmigo
                 <span aria-hidden>→</span>
               </a>

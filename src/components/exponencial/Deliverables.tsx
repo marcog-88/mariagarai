@@ -1,3 +1,5 @@
+import deliverablesMockup from "@/assets/exponencial-deliverables-nobg-final.png";
+
 const phases = [
   {
     mes: "MES 1",
@@ -28,12 +30,22 @@ export const Deliverables = () => {
         <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
           Lo que montamos
         </p>
+
         <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight max-w-4xl">
           Cuatro meses. Cinco fases.{" "}
           <em className="font-serif italic text-mint">Un negocio boutique funcionando.</em>
         </h2>
 
-        <div className="mt-14 space-y-8">
+        <div className="mt-12 md:mt-16 -mb-16 md:-mb-24 -mx-6 sm:-mx-16 md:-mx-24 lg:-mx-32">
+          <img
+            src={deliverablesMockup}
+            alt="Lo que montamos en Exponencial: sesiones 1:1 con María, Notion como sistema operativo, newsletter, LinkedIn optimizado y dashboard de ventas"
+            className="w-full h-auto block max-w-[84rem] mx-auto"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="space-y-8">
           {phases.map((p) => (
             <div
               key={p.mes}

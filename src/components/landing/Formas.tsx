@@ -137,6 +137,7 @@ export const Formas = () => {
                     target={f.href.startsWith("http") ? "_blank" : undefined}
                     rel={f.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     className={`btn-primary justify-center w-full ${f.title === "Construye" ? "md:w-fit md:whitespace-nowrap" : "md:w-[220px]"}`}
+                    style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
                   >
                     {f.cta}
                     <span aria-hidden>→</span>

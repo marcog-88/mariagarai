@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
 import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
-import deliverablesVideo from "@/assets/redes-deliverables-animated.mp4";
+import deliverablesVideo from "@/assets/redes-deliverable-animated-final-mockup.mp4";
 import deliverablesPoster from "@/assets/redes-deliverables-blank-mockup.png";
 
 const phases = [
@@ -126,7 +126,7 @@ export const Deliverables = () => {
                 { label: "DURACIÓN", value: "30 DÍAS", sub: "Programa en vivo" },
                 { label: "FORMATO", value: "8 SESIONES", sub: "En vivo, semanales" },
                 { label: "PRECIO", value: "€497", sub: "Pago único" },
-                { label: "INICIO", value: "JUN 2026", sub: "Próximo Sprint" },
+                { label: "INICIO", value: "JUL 2026", sub: "Próximo Sprint" },
               ].map((item) => (
                 <div
                   key={item.label}

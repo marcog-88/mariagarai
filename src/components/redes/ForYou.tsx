@@ -8,7 +8,7 @@ const cards = [
     body: "Ya usas LinkedIn pero no le estás sacando todo el partido. Optimizamos lo que ya tienes y lanzamos Substack para que se potencien mutuamente.",
   },
   {
-    title: "Tienes ambas pero no te están vendiendo",
+    title: "Tienes ambas pero no venden",
     body: "Publicas, pero no ves resultados. No sabes cómo conectar ambos canales con tus ofertas. Aquí convertimos tus redes en un sistema de captación y ventas real.",
   },
 ];

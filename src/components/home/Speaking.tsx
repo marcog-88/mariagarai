@@ -34,7 +34,7 @@ export const Speaking = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full md:w-auto justify-center md:justify-start items-center gap-2 rounded-full px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white transition-opacity hover:opacity-90"
-                style={{ background: "#9378fe" }}
+                style={{ background: "#9378fe", boxShadow: "4px 4px 0 0 #0c0d0e" }}
               >
                 Contáctame ↗
               </a>
