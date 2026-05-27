@@ -1,4 +1,4 @@
-import heroMockup from "@/assets/redes-hero.webp";
+import heroMockup from "@/assets/redes-hero.png";
 import { StripeBuyButton } from "@/components/redes/StripeBuyButton";
 
 export const Hero = () => {
