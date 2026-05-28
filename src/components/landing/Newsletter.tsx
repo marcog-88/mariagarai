@@ -66,22 +66,31 @@ export const Newsletter = () => {
                   height: `${IFRAME_H * scale}px`,
                 }}
               >
-                <iframe
-                  src="https://mariagarai.substack.com/embed"
-                  width={IFRAME_W}
-                  height={IFRAME_H}
-                  title="Suscripción a Carreras Modernas en Substack"
-                  frameBorder="0"
-                  scrolling="no"
-                  className="absolute top-0 left-0 origin-top-left block"
-                  style={{
-                    border: "none",
-                    background: "transparent",
-                    width: `${IFRAME_W}px`,
-                    height: `${IFRAME_H}px`,
-                    transform: `scale(${scale})`,
-                  }}
-                />
+                {import.meta.env.DEV ? (
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 flex items-center justify-center text-foreground/40 text-sm"
+                  >
+                    Substack embed (hidden in dev)
+                  </div>
+                ) : (
+                  <iframe
+                    src="https://mariagarai.substack.com/embed"
+                    width={IFRAME_W}
+                    height={IFRAME_H}
+                    title="Suscripción a Carreras Modernas en Substack"
+                    frameBorder="0"
+                    scrolling="no"
+                    className="absolute top-0 left-0 origin-top-left block"
+                    style={{
+                      border: "none",
+                      background: "transparent",
+                      width: `${IFRAME_W}px`,
+                      height: `${IFRAME_H}px`,
+                      transform: `scale(${scale})`,
+                    }}
+                  />
+                )}
               </div>
             </div>
           </div>

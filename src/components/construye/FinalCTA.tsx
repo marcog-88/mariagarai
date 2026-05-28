@@ -39,7 +39,7 @@ export const FinalCTA = () => {
           <p className="text-sm text-mint">
             Solo acepto 2 clientes nuevos al mes.
           </p>
-          <a href="#" className="btn-mint-lg !text-lg">
+          <a href="#" className="btn-mint-lg !text-lg w-full md:w-auto justify-center">
             QUIERO ENTRAR
             <span aria-hidden>→</span>
           </a>

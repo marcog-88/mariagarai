@@ -1,7 +1,6 @@
 import { Check, Star } from "lucide-react";
 import { TidyCalButton } from "./TidyCalButton";
-import deliverablesMockup from "@/assets/construye-deliverables-mockup-keyed.webp";
-import liveSessionGif from "@/assets/live-session.gif";
+import deliverablesVideo from "@/assets/construye-delivberables-final-mockup.mp4";
 
 const timeline = [
   {
@@ -57,7 +56,7 @@ const timeline = [
       "Secuencia de emails de bienvenida",
       "Integración completa con tu web",
     ],
-    outcome: "Tu embudo funciona solo",
+    outcome: "Tu embudo funciona",
   },
   {
     n: "5",
@@ -87,24 +86,15 @@ export const Deliverables = () => {
 
         {/* Mockup */}
         <div className="mb-16 rounded-2xl overflow-hidden bg-[#f9f9f7] relative">
-          <div
-            aria-hidden
-            className="absolute pointer-events-none"
-            style={{ left: "29%", top: "23.31%", width: "43.17%", height: "44.92%", backgroundColor: "#000", zIndex: 0 }}
-          />
-          <img
-            src={liveSessionGif}
-            alt=""
-            aria-hidden
-            className="absolute pointer-events-none"
-            style={{ left: "29%", top: "23.31%", width: "43.17%", height: "44.92%", zIndex: 1, objectFit: "cover" }}
-          />
-          <img
-            src={deliverablesMockup}
-            alt="Lo que montamos en Construye: web, dashboard Notion, embudo, automatización IA, CRM y primera venta"
-            className="w-full h-auto block relative"
-            style={{ zIndex: 2 }}
-            loading="lazy"
+          <video
+            src={deliverablesVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            aria-label="Lo que montamos en Construye: web, dashboard Notion, embudo, automatización IA, CRM y primera venta"
+            className="w-full h-auto block"
           />
         </div>
 
@@ -160,7 +150,7 @@ export const Deliverables = () => {
                     {step.bullets.map((b, i) => (
                       <li key={i} className="flex items-start gap-3 text-white/85">
                         <Check
-                          className="w-5 h-5 text-mint flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-white flex-shrink-0 mt-0.5"
                           strokeWidth={2.5}
                         />
                         <span>{b}</span>
@@ -168,12 +158,16 @@ export const Deliverables = () => {
                     ))}
                   </ul>
 
-                  <div className="pt-5 border-t border-white/10">
+                  <div className="mt-4 pt-4 border-t border-[#d0fcd0]/40 flex items-start gap-3">
+                    <Check
+                      className="w-5 h-5 text-[#d0fcd0] flex-shrink-0 mt-0.5"
+                      strokeWidth={2.5}
+                    />
                     <span
-                      className="inline-block text-xs font-medium px-3 py-1.5 rounded-full"
-                      style={{ background: "#d0fcd0", color: "#0c0d0e" }}
+                      className="text-sm font-semibold whitespace-nowrap"
+                      style={{ color: "#d0fcd0" }}
                     >
-                      ✓ {step.outcome}
+                      {step.outcome}
                     </span>
                   </div>
                 </div>
@@ -231,32 +225,38 @@ export const Deliverables = () => {
                 { label: "DURACIÓN", value: "8 SEM", sub: "Programa en vivo" },
                 { label: "FORMATO", value: "EN VIVO", sub: "Sesiones quincenales" },
                 { label: "PRECIO", value: "€1997", sub: "Pago único" },
-                { label: "INICIO", value: "JUL 2026", sub: "Próxima cohorte" },
+                { label: "INICIO", value: "PRÓXIMAMENTE", sub: "", compact: true },
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="rounded-xl border bg-[#0c0d0e] p-4 flex flex-col justify-center"
+                  className="rounded-xl border bg-[#0c0d0e] p-4 flex flex-col justify-start"
                   style={{ borderColor: "rgba(255,255,255,0.08)" }}
                 >
                   <p className="text-[10px] md:text-xs uppercase tracking-widest text-white/50">{item.label}</p>
                   <p
-                    className="text-xl md:text-3xl font-black leading-none mt-2"
+                    className={`${item.compact ? "text-lg md:text-2xl" : "text-xl md:text-3xl"} font-black leading-none mt-2`}
                     style={{ color: "#d0fcd0" }}
                   >
                     {item.value}
                   </p>
-                  <p className="text-xs text-white/60 mt-1.5">{item.sub}</p>
+                  {item.sub && <p className="text-xs text-white/60 mt-1.5">{item.sub}</p>}
                 </div>
               ))}
             </div>
           </div>
-          <p className="mt-6 italic text-sm md:text-base text-center" style={{ color: "#d0fcd0" }}>
+          <p className="mt-6 italic text-sm md:text-base text-center" style={{ color: "#0c0d0e" }}>
             Tu mayor activo no es el contenido. Es el acceso directo.
           </p>
         </div>
 
         <div className="mt-10 flex justify-center">
-          <a href="https://mariagarai.activehosted.com/f/11" target="_blank" rel="noopener noreferrer" className="btn-mint-lg">
+          <a
+            href="https://mariagarai.activehosted.com/f/11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-mint-lg !text-sm md:!text-lg"
+            style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
+          >
             Unirme a la lista de espera <span aria-hidden>→</span>
           </a>
         </div>

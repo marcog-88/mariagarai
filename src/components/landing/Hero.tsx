@@ -4,9 +4,14 @@ export const Hero = () => {
   return (
     <section
       id="top"
-      className="relative overflow-hidden hero-gradient border-b border-border pt-44 pb-24 md:pt-36 md:pb-20 lg:pb-0"
+      className="relative overflow-hidden hero-gradient pt-32 pb-24 md:pt-36 md:pb-20 lg:pb-0"
     >
-      <div className="container-tight px-8 sm:px-8">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-40 md:h-56"
+        style={{ background: "linear-gradient(to bottom, transparent, #f9f9f7)" }}
+      />
+      <div className="container-tight px-8 sm:px-8 relative">
         <div className="flex flex-col lg:flex-row gap-10 md:gap-12 lg:items-stretch">
           {/* Copy column */}
           <div className="animate-fade-up order-2 lg:order-1 flex flex-col justify-center w-full lg:w-[50%] py-8 lg:py-0 lg:pb-24">
@@ -15,8 +20,10 @@ export const Hero = () => {
               <em className="font-serif italic text-accent block md:inline lg:block md:ml-3 lg:ml-0">propio negocio.</em>
             </h1>
             <p className="mt-6 max-w-xl font-serif text-[clamp(1.35rem,2.2vw,1.75rem)] font-light text-foreground/85 leading-snug">
-              <span className="block font-normal text-foreground mb-4 text-[clamp(1.75rem,3vw,2.5rem)] leading-tight">Vales más que para un 9 a 5.</span>
-              Ahora es el momento de construir una carrera independiente con múltiples vías de ingreso para vivir bien de lo tuyo.{" "}
+              <span className="block font-normal text-foreground mb-4 text-[clamp(1.75rem,3vw,2.5rem)] leading-tight">Vales más que para un trabajo de 9 a 5.</span>
+              Ahora es el momento de construir una carrera independiente con múltiples vías de ingreso para vivir bien de lo tuyo.
+            </p>
+            <p className="mt-4 max-w-xl font-sans text-sm md:text-base text-foreground/55 leading-relaxed">
               Con IA para acelerar la ejecución y escalar tu impacto.
             </p>
           </div>
@@ -26,8 +33,12 @@ export const Hero = () => {
             <img
               src={portrait}
               alt="María Garaí"
+              width={1281}
+              height={1920}
               className="animate-fade-up w-full h-auto max-w-sm lg:max-w-none mx-auto"
               loading="eager"
+              fetchpriority="high"
+              decoding="sync"
             />
           </div>
         </div>

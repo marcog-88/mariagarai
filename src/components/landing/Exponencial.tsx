@@ -24,7 +24,7 @@ export const Exponencial = () => {
         <div className="grid md:grid-cols-[3fr_2fr] gap-12 md:gap-16 items-center mt-12">
 
           {/* Left — body + bullets + CTA */}
-          <div className="flex flex-col">
+          <div className="flex flex-col order-2 md:order-1">
             <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
               Con múltiples vías de ingreso, autoridad en redes y un sistema con IA que lo sostenga. Aunque sigas en corporate y no sepas por dónde empezar.
             </p>
@@ -35,7 +35,15 @@ export const Exponencial = () => {
                 { main: "Sistemas con IA que facilitan tu trabajo", sub: "🤖 Notion + Claude como infraestructura" },
               ].map((item) => (
                 <li key={item.main} className="flex items-start gap-2 mb-4">
-                  <span style={{ color: "#9378fe" }} aria-hidden className="mt-0.5">✓</span>
+                  <span
+                    aria-hidden
+                    className="flex-shrink-0 mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full"
+                    style={{ background: "#9378fe" }}
+                  >
+                    <svg viewBox="0 0 12 12" className="h-3 w-3" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="2.5,6.2 5,8.5 9.5,3.5" />
+                    </svg>
+                  </span>
                   <div>
                     <span>{item.main}</span>
                     <p className="text-base mt-0.5" style={{ color: "#9378fe" }}>{item.sub}</p>
@@ -44,15 +52,15 @@ export const Exponencial = () => {
               ))}
             </ul>
             <div className="mt-8">
-              <a href="/exponencial" className="btn-primary w-[220px] justify-center !py-2.5">
+              <a href="/exponencial" className="btn-primary w-full md:w-[220px] justify-center">
                 Quiero saber más →
               </a>
-              <p className="mt-3 text-xs text-white/40">Plazas limitadas · Por aplicación</p>
+              <p className="mt-3 text-xs italic text-white/40">Plazas limitadas · Por aplicación</p>
             </div>
           </div>
 
           {/* Right — image, natural ratio with curved corners */}
-          <div className="flex items-center">
+          <div className="flex items-center order-1 md:order-2">
             <img
               src={expoMockup}
               alt="Exponencial — Notion, Claude, LinkedIn y Substack."

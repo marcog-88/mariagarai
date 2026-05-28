@@ -67,7 +67,13 @@ export const Testimonios = () => {
         </div>
 
         <div className="mt-12 md:mt-16 flex justify-center">
-          <a href="https://mariagarai.activehosted.com/f/11" target="_blank" rel="noopener noreferrer" className="btn-mint-lg">
+          <a
+            href="https://mariagarai.activehosted.com/f/11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-mint-lg"
+            style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
+          >
             Unirme a la lista de espera →
           </a>
         </div>

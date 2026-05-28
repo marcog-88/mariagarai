@@ -8,7 +8,7 @@ const cards = [
     body: "Ya usas LinkedIn pero no le estás sacando todo el partido. Optimizamos lo que ya tienes y lanzamos Substack para que se potencien mutuamente.",
   },
   {
-    title: "Tienes ambas pero no te están vendiendo",
+    title: "Tienes ambas pero no venden",
     body: "Publicas, pero no ves resultados. No sabes cómo conectar ambos canales con tus ofertas. Aquí convertimos tus redes en un sistema de captación y ventas real.",
   },
 ];
@@ -29,9 +29,9 @@ const no = [
 
 export const ForYou = () => {
   return (
-    <section className="pt-12 md:pt-16 pb-24 md:pb-32 bg-background">
+    <section className="py-24 md:py-32 bg-background">
       <div className="container-tight">
-        <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+        <p className="mb-12 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
           Este programa es para ti si...
         </p>
 

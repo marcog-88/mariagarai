@@ -6,9 +6,10 @@ let scriptInjected = false;
 interface Props {
   children: ReactNode;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-export const TidyCalButton = ({ children, className }: Props) => {
+export const TidyCalButton = ({ children, className, style }: Props) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -33,6 +34,7 @@ export const TidyCalButton = ({ children, className }: Props) => {
         type="button"
         onClick={() => setOpen(true)}
         className={className ?? "btn-mint-lg !text-base"}
+        style={style}
       >
         {children}
       </button>

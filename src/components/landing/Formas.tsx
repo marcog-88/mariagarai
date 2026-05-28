@@ -34,7 +34,7 @@ const formas: Forma[] = [
   },
   {
     eyebrow: "PROGRAMA",
-    eyebrowBadge: "COHORT · SEPT 2026",
+    eyebrowBadge: "ABRIENDO LISTA",
     badgeColor: "mint",
     title: "Construye",
     subtitle:
@@ -108,25 +108,21 @@ export const Formas = () => {
               <div className="mt-6 flex flex-col flex-1">
                 {f.eyebrowBadge && (
                   <p className="mb-3 flex items-center flex-wrap gap-y-1">
-                    {f.badgeColor === "mint" ? (
-                      <span
-                        className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse"
-                        style={{ background: "#d0fcd0", color: "#0c0d0e" }}
-                      >
-                        {f.eyebrowBadge}
-                      </span>
-                    ) : f.badgeColor === "orange" ? (
-                      <span
-                        className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse"
-                        style={{ background: "#e88f00", color: "#ffffff" }}
-                      >
-                        {f.eyebrowBadge}
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center rounded-full bg-hot-pink text-hot-pink-foreground px-2 py-0.5 text-[10px] font-medium tracking-[0.16em] uppercase animate-pulse">
-                        {f.eyebrowBadge}
-                      </span>
-                    )}
+                    <span
+                      className={`text-xs font-medium tracking-widest uppercase ${
+                        f.badgeColor === "mint" ? "" : "animate-pulse"
+                      }`}
+                      style={{
+                        color:
+                          f.badgeColor === "mint"
+                            ? "#2d8a4e"
+                            : f.badgeColor === "orange"
+                            ? "#e88f00"
+                            : "#ff4295",
+                      }}
+                    >
+                      {f.eyebrowBadge}
+                    </span>
                   </p>
                 )}
                 <h3 className="font-serif text-3xl md:text-4xl tracking-tight">
@@ -140,7 +136,8 @@ export const Formas = () => {
                     href={f.href}
                     target={f.href.startsWith("http") ? "_blank" : undefined}
                     rel={f.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="btn-primary w-[220px] justify-center !py-2.5"
+                    className={`btn-primary justify-center w-full ${f.title === "Construye" ? "md:w-fit md:whitespace-nowrap" : "md:w-[220px]"}`}
+                    style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
                   >
                     {f.cta}
                     <span aria-hidden>→</span>

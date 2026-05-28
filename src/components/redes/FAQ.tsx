@@ -19,7 +19,7 @@ export const FAQ = () => {
   return (
     <section
       id="faq"
-      className="pt-8 md:pt-12 lg:pt-16 pb-8 md:pb-16"
+      className="pt-24 md:pt-12 lg:pt-16 pb-8 md:pb-16"
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
       <div className="container-tight">

@@ -38,12 +38,26 @@ export const Pricing = () => {
         </ul>
 
         <div className="mt-16 max-w-2xl">
-          <span
-            className="inline-flex items-center rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] mb-4"
-            style={{ background: "#e88f00", color: "#ffffff" }}
+          <div
+            className="mb-4 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
+            style={{
+              background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
+              border: "1.5px solid #e88f00",
+              boxShadow:
+                "4px 0 12px rgba(232,143,0,0.5), -4px 0 12px rgba(232,143,0,0.5), inset 0 2px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)",
+            }}
           >
-            Cohorte 01 · Junio 2026
-          </span>
+            <span
+              className="rounded-full"
+              style={{
+                width: "12px",
+                height: "12px",
+                background: "#ffffff",
+              }}
+              aria-hidden
+            />
+            Julio 2026 · 30 días
+          </div>
           <p className="text-primary-foreground/40 line-through text-2xl mb-2">€2.279</p>
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€497</p>

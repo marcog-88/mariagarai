@@ -5,7 +5,7 @@ export const LeadMagnet = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <section className="py-24 md:py-32 border-t border-border bg-[#f9f9f7]">
+    <section className="py-24 md:py-32 bg-[#f9f9f7]">
       <div className="container-tight">
         <div className="flex flex-col md:flex-row md:items-center md:gap-16 lg:gap-24">
           {/* Left: text + form */}
@@ -25,7 +25,7 @@ export const LeadMagnet = () => {
             </h2>
             <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
               Deja de darle vueltas. Descubre cómo monetizar tu trayectoria con un negocio
-              propio: qué vender, a quién, por cuánto y por dónde empezar. En 90 segundos.
+              propio: qué vender, a quién, por cuánto y por dónde empezar. Descúbrelo en 90 segundos.
             </p>
             <form
               className="mt-10 flex flex-col sm:flex-row gap-3 max-w-lg"
@@ -37,17 +37,18 @@ export const LeadMagnet = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="tu@email.com"
                 required
-                className="flex-1 rounded-full border border-border bg-white px-5 py-3 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-[#9378fe]"
+                className="flex-1 rounded-full border border-border bg-white px-6 py-3 md:px-8 md:py-4 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-[#9378fe]"
+                style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
               />
               <button
                 type="submit"
-                className="rounded-full px-6 py-3 text-sm font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
-                style={{ background: "#9378fe" }}
+                className="rounded-full px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
+                style={{ background: "#9378fe", boxShadow: "4px 4px 0 0 #0c0d0e" }}
               >
                 Quiero probarlo →
               </button>
             </form>
-            <p className="mt-3 text-xs text-foreground/50">
+            <p className="mt-3 text-xs italic text-foreground/50">
               100% Personalizado. Gratis.
             </p>
           </div>

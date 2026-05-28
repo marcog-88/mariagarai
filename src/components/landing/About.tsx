@@ -26,7 +26,7 @@ export const About = () => {
           </h2>
           <div className="mt-10 space-y-6 text-lg md:text-xl lg:text-sm text-foreground/75 leading-relaxed">
             <p>
-              ONU. Procter &amp; Gamble. Start-up tech. Títulos rimbombantes y sueldo de
+              ONU. Procter &amp; Gamble. Startup tech. Títulos rimbombantes y sueldo de
               seis cifras. Pero cuando reuní el coraje de soltar la jaula de oro me hice
               pequeña. Me perdí. Fundí{" "}
               <span className="underline-accent">100.000 euros</span> de ahorros sin saber
@@ -55,17 +55,17 @@ export const About = () => {
             <p>
               Haberla cagado tanto tiene una ventaja: conozco tu caos, sé donde fallas y
               sé cómo ayudarte a salir de ahí. Mi misión es ayudarte a construir tu carrera
-              moderna.
+              moderna. ¿Estás lista?
             </p>
           </div>
         </div>
 
         {/* Right column: image fixed height on desktop, anchored to bottom */}
-        <div className="flex-shrink-0 lg:w-[45%] overflow-hidden lg:h-[667px]">
+        <div className="flex-shrink-0 lg:w-[45%] overflow-hidden lg:h-[667px] px-6 lg:px-0">
           <img
             src={sobreMi}
             alt="María Garaí"
-            className="w-full h-full object-cover object-[center_bottom] block min-h-[440px] lg:min-h-0 lg:object-contain lg:object-bottom"
+            className="mx-auto w-full max-w-xs sm:max-w-sm h-auto block lg:mx-0 lg:max-w-none lg:h-full lg:object-contain lg:object-bottom"
             loading="lazy"
           />
         </div>

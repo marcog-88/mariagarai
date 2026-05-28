@@ -1,13 +1,13 @@
 const bonuses = [
   {
     n: "01",
-    title: "🏫 Acceso 3 meses a la comunidad de la Escuela de Carreras Modernas",
+    title: "🏫 Acceso 3 meses a la Escuela",
     valor: "€497",
     body: "Rodeada de founders en transición. Celebramos logros, compartimos aprendizajes, te sientes arropada.",
   },
   {
     n: "02",
-    title: "🎙️ 6 sesiones grupales quincenales de la Escuela",
+    title: "🎙️ 6 sesiones quincenales",
     valor: "€400",
     body: "Sesiones en directo donde trabajamos redes, ventas y automatizaciones. Cada 2 semanas durante tus 3 meses de acceso.",
   },
@@ -25,13 +25,13 @@ const bonuses = [
   },
   {
     n: "05",
-    title: "📅 Guía de mantenimiento mensual de tu infraestructura",
+    title: "📅 Guía de mantenimiento mensual",
     valor: "€197",
     body: "Qué revisar cada mes en tu Notion, tu web, tu embudo y tu lead magnet para que todo siga funcionando. 30 minutos al mes.",
   },
   {
     n: "06",
-    title: "🤖 Biblioteca de recursos y herramientas de IA",
+    title: "🤖 Biblioteca de recursos IA",
     valor: "€297",
     body: "Acceso a la selección de herramientas, prompts y recursos de IA que María usa en su negocio. Actualizada continuamente.",
   },
@@ -47,7 +47,7 @@ export const Bonuses = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {bonuses.map((b) => (
-            <div key={b.n} className="rounded-2xl bg-mint/15 border border-mint/30 p-8 text-foreground">
+            <div key={b.n} className="rounded-2xl bg-mint/15 border border-[#2d8a4e]/40 p-8 text-foreground">
               <div className="flex items-baseline justify-start md:justify-end mb-4">
                 <span className="text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-primary text-primary-foreground font-medium">
                   Valor {b.valor}

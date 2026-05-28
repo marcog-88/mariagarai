@@ -1,37 +1,37 @@
 const bonuses = [
   {
     n: "01",
-    title: "🧠 Tu Manual de Marca + Claude como Co-Piloto",
+    title: "🧠 Manual de Marca + Claude",
     valor: "€397",
     body: "Te ayudamos a crear tu manual de marca y a configurar Claude para que sepa todo de tu negocio. Tu co-piloto de contenido desde el día 1.",
   },
   {
     n: "02",
-    title: "📊 CRM de Notion + Mapa de Colaboraciones",
+    title: "📊 CRM Notion + Colaboraciones",
     valor: "€297",
     body: "Dos plantillas listas para usar: gestiona tus leads y prospectos con un CRM profesional, y organiza tus colaboraciones estratégicas en Substack y LinkedIn.",
   },
   {
     n: "03",
-    title: "🤖 Sistema de Contenido y Automatizaciones con IA",
+    title: "🤖 Contenido y Automatizaciones IA",
     valor: "€397",
     body: "Prompts, workflows y automatizaciones para crear contenido en la mitad de tiempo. Desde la ideación hasta la publicación — con IA como motor.",
   },
   {
     n: "04",
-    title: "📋 Plantillas LinkedIn + Substack plug and play",
+    title: "📋 Plantillas LinkedIn + Substack",
     valor: "€197",
     body: "Los formatos de post y newsletter que funcionan para vender sin parecer que estás vendiendo. Copia, adapta, publica.",
   },
   {
     n: "05",
-    title: "✉️ Plantillas de Email Marketing de Ventas",
+    title: "✉️ Plantillas de Email Marketing",
     valor: "€197",
     body: "Emails de venta listos para rellenar. Sin adivinar qué escribir. Rellena los huecos y envía. Para lanzamientos, seguimiento y conversión.",
   },
   {
     n: "06",
-    title: "🎙️ Taller: Monta tu podcast en Substack",
+    title: "🎙️ Monta tu podcast en Substack",
     valor: "€297",
     body: "Tutorial paso a paso para lanzar tu podcast directamente dentro de Substack. Sin edición compleja, sin plataformas extra.",
   },

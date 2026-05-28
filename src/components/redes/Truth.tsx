@@ -10,7 +10,7 @@ export const Truth = () => {
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
       <div className="container-tight">
-        <div className="text-center mb-12">
+        <div className="mb-12">
           <h2 className="font-serif text-[clamp(2.75rem,7vw,5rem)] leading-[1.05] tracking-tight text-primary-foreground">
             Sprint Redes que Venden
           </h2>
@@ -19,7 +19,7 @@ export const Truth = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
+        <div className="max-w-4xl space-y-6 text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
           <p>
             <span className="text-mint font-medium">Substack te da autoridad. LinkedIn te da clientes.</span>{" "}
             Los dos juntos se potencian.

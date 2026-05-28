@@ -11,7 +11,7 @@ export const Comparativa = () => {
   return (
     <section className="pt-24 md:pt-32 pb-8 bg-background">
       <div className="container-tight">
-        <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+        <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em]" style={{ color: "#9378fe" }}>
           Lo que te ahorras
         </p>
         <h2 className="font-serif text-[clamp(1.25rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-3xl whitespace-nowrap md:whitespace-normal">

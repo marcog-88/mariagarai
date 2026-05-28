@@ -9,7 +9,7 @@ const pillars = [
 
 export const OnlyDifference = () => {
   return (
-    <section className="pt-0 pb-24 md:pb-32" style={{ background: "#0c0d0e", color: "#ffffff" }}>
+    <section className="py-24 md:py-32" style={{ background: "#0c0d0e", color: "#ffffff" }}>
       <div className="container-tight">
         <div className="text-center">
           <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
