@@ -1,9 +1,6 @@
-import { useState } from "react";
 import mockup from "@/assets/lead-magnet-white.webp";
 
 export const LeadMagnet = () => {
-  const [email, setEmail] = useState("");
-
   return (
     <section className="py-24 md:py-32 bg-[#f9f9f7]">
       <div className="container-tight">
@@ -28,30 +25,15 @@ export const LeadMagnet = () => {
               Deja de darle vueltas. Descubre cómo monetizar tu trayectoria con un negocio
               propio: qué vender, a quién, por cuánto y por dónde empezar. Descúbrelo en 90 segundos.
             </p>
-            <form
-              className="mt-10 flex flex-col sm:flex-row gap-3 max-w-lg"
-              onSubmit={(e) => e.preventDefault()}
+            <a
+              href="https://tunuevacarrera.lovable.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-10 inline-block rounded-full px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
+              style={{ background: "#9378fe", boxShadow: "4px 4px 0 0 #0c0d0e" }}
             >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="tu@email.com"
-                required
-                className="flex-1 rounded-full border border-[#0c0d0e]/40 bg-white px-6 py-3 md:px-8 md:py-4 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-[#9378fe]"
-                style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
-              />
-              <button
-                type="submit"
-                className="rounded-full px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
-                style={{ background: "#9378fe", boxShadow: "4px 4px 0 0 #0c0d0e" }}
-              >
-                Quiero probarlo →
-              </button>
-            </form>
-            <p className="mt-3 text-xs italic text-foreground/50">
-              100% Personalizado. Gratis.
-            </p>
+              Quiero probarlo →
+            </a>
           </div>
 
           {/* Right: mockup image */}

@@ -63,7 +63,7 @@ export const Nav = () => {
             <Logo className="block h-4 md:h-5 [&>svg]:h-full [&>svg]:w-auto" />
           </a>
 
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-10">
             <li>
               <a
                 href="/"
@@ -128,12 +128,14 @@ export const Nav = () => {
 
             <li>
               <a
-                href="#precio"
+                href="https://mariagarai.substack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group relative text-sm transition-colors duration-200 ease-out hover:text-[#9378fe] ${
                   onDark ? "text-primary-foreground/70" : "text-foreground/70"
                 }`}
               >
-                Trabaja conmigo
+                Carreras Modernas
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-mint transition-transform duration-200 ease-out group-hover:scale-x-100" />
               </a>
             </li>
@@ -243,11 +245,13 @@ export const Nav = () => {
               style={{ transitionDelay: open ? "240ms" : "0ms" }}
             >
               <a
-                href="#precio"
+                href="https://mariagarai.substack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-serif text-3xl text-white hover:text-[#9378fe] transition-colors"
                 onClick={() => setOpen(false)}
               >
-                Trabaja conmigo
+                Carreras Modernas
               </a>
             </li>
           </ul>
