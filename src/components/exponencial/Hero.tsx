@@ -43,7 +43,7 @@ export const Hero = () => {
           </div>
           <h1 className="mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
             Construye tu Carrera Moderna.{" "}
-            <br className="hidden md:inline" />
+            <br />
             <em className="font-serif italic text-mint">Tu nuevo modelo profesional.</em>
           </h1>
           <p className="mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl">
@@ -68,7 +68,7 @@ export const Hero = () => {
               href={TIDYCAL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-mint-lg !text-lg self-start md:self-auto"
+              className="btn-mint-lg !text-base md:!text-lg self-start md:self-auto whitespace-nowrap"
             >
               Solicitar llamada de valoración
               <span aria-hidden>→</span>

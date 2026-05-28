@@ -65,15 +65,15 @@ export const OnlyDifference = () => {
 
         {/* Method block */}
         <div className="mt-16 max-w-3xl">
-          <div className="border-t-2 pt-10" style={{ borderColor: "#9378fe" }}>
-            <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">
-              EL MÉTODO EXPONENCIAL · CARRERAS MODERNAS
+          <div className="pt-10">
+            <p className="text-xs uppercase tracking-[0.24em] text-mint mb-6">
+              EL MÉTODO EXPONENCIAL
             </p>
-            <p className="font-serif text-xl md:text-2xl text-white italic mb-12">
+            <p className="font-serif text-xl md:text-2xl text-white/70 italic mb-12">
               No es una lista de cosas que hacer. Es la secuencia exacta que separa a las que construyen un negocio rentable de las que llevan años intentándolo.
             </p>
 
-            <ol className="space-y-10">
+            <ol className="mt-10 md:mt-16 space-y-10">
               {pillars.map((p) => (
                 <li key={p.n} className="flex gap-6">
                   <span
@@ -85,7 +85,7 @@ export const OnlyDifference = () => {
                   <div>
                     <h3 className="font-bold text-white text-lg mb-2 tracking-wide">{p.title}</h3>
                     <p className="text-white/75 leading-relaxed">{p.body}</p>
-                    <p className="mt-2 text-white/50 text-sm italic">→ {p.result}</p>
+                    <p className="mt-2 text-sm italic text-[#9378fe]">→ {p.result}</p>
                   </div>
                 </li>
               ))}
@@ -93,10 +93,7 @@ export const OnlyDifference = () => {
           </div>
         </div>
 
-        <p
-          className="mt-16 font-serif text-xl md:text-2xl italic text-center max-w-3xl mx-auto"
-          style={{ color: "#9378fe" }}
-        >
+        <p className="mt-16 font-serif text-xl md:text-2xl italic text-center max-w-3xl mx-auto text-white">
           El efecto exponencial no viene de añadir cosas. Viene de hacer las correctas, en el orden correcto, con alguien con criterio que ya conoce el camino.
         </p>
       </div>

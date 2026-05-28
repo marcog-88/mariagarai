@@ -19,16 +19,17 @@ export const Problem = () => {
           <p>
             Todo es más fácil y más difícil que en 2017. Hoy no vale con postear algo en Instagram y esperar que te compren. Pero hoy también, con criterio, sistemas e IA, una persona sola hace en semanas lo que antes requería un equipo y varios años.
           </p>
-          <p>El mundo profesional se está dividiendo en tres:</p>
-          <p>
-            01 · Los que siguen cambiando su tiempo por un sueldo y cero libertad. Saben que hay algo más, pero no se atreven.
-          </p>
-          <p>
-            02 · Los que se han lanzado pero siguen replicando el modelo antiguo — más horas, más esfuerzo, más cursos, más herramientas. Facturan poco o se queman intentándolo.
-          </p>
-          <p>
-            03 · Los que han entendido que el juego cambió. Combinan su experiencia profesional, los sistemas correctos y la IA para construir carreras modernas que facturan en meses, no en años.
-          </p>
+          <div className="space-y-6">
+            <p className="border-l-2 border-[#9378fe] pl-4 font-medium italic">
+              😔 Los que siguen cambiando su tiempo por un sueldo y cero libertad. Saben que hay algo más, pero no se atreven.
+            </p>
+            <p className="border-l-2 border-[#9378fe] pl-4 font-medium italic">
+              🔄 Los que se han lanzado pero siguen replicando el modelo antiguo — más horas, más esfuerzo, más cursos, más herramientas. Facturan poco o se queman intentándolo.
+            </p>
+            <p className="border-l-2 border-[#9378fe] pl-4 font-medium italic">
+              🚀 Los que han entendido que el juego cambió. Combinan su experiencia profesional, los sistemas correctos y la IA para construir carreras modernas que facturan en meses, no en años.
+            </p>
+          </div>
         </div>
       </div>
     </section>

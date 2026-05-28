@@ -1,32 +1,38 @@
 export const Letras = () => {
   return (
-    <section className="py-24 md:py-32" style={{ background: "#f9f9f7" }}>
+    <section className="py-24 md:py-32 border-t border-border" style={{ background: "#f9f9f7" }}>
       <div className="container-tight">
+        <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+          Lo que nadie te cuenta
+        </p>
         <div
           className="pl-6 md:pl-8 border-l-4 mb-12"
           style={{ borderColor: "#9378fe" }}
         >
-          <p className="font-serif text-2xl md:text-3xl italic text-foreground leading-snug">
+          <p className="font-serif text-2xl md:text-3xl italic leading-snug" style={{ color: "#9378fe" }}>
             "Tardé 3 años en construir lo que enseño a hacer en 4 meses."
           </p>
         </div>
 
         <div className="max-w-3xl space-y-6 text-lg text-foreground/80 leading-relaxed">
           <p>
-            Cuando dejé la ONU después de 10 años y 8 países, pensé que la transición sería rápida. Tenía experiencia, red, criterio. Lo que no tenía era un mapa.
+            Salí del corporate con experiencia, ahorros y ganas de emprender. Los 3 años siguientes fui una mantenida.
           </p>
           <p>
-            Hice lo que hacen todas: un curso, luego otro, luego una certificación que nadie me pidió. Probé nichos que no eran los míos. Puse precios sin criterio. Tuve clientes que me drenaon la energía porque no supe decir que no. Construí presencia digital sin estrategia detrás.
+            Nada terminaba de encajar. Trabajaba más horas que en corporate. Vender era imposible. Crear contenido me abrumaba. Tardaba semanas en crear cosas que luego no me servían.
           </p>
           <p>
-            Tres años para aprender lo que ahora enseño en cuatro meses. Tres años de deudas, de dudas, de decisiones que me costaron dinero, tiempo y una paz mental que merecía tener desde el principio.
+            Te resumo el sufrimiento en 3 palabras: dudas, deudas y desesperación.
           </p>
           <p>
-            No me avergüenza haberlo vivido. Me avergonzaría no pasarlo. Porque ahora sé exactamente qué no funciona, qué sí funciona, y en qué orden. Y eso — ese conocimiento ganado con cicatrices — es lo que pongo al servicio de cada clienta que trabaja conmigo.
+            Lo que nadie me había enseñado era esto: tener el conocimiento no es suficiente. El error no era yo — era el orden. Estaba creando antes de validar, construyendo antes de vender, invirtiendo antes de ganar.
+          </p>
+          <p>
+            Cuando por fin empecé a hacer lo contrario — validar primero, vender antes de construir, sistematizar para no depender de mi tiempo cada hora — todo cambió.
           </p>
         </div>
 
-        <p className="mt-10 text-lg md:text-xl font-bold text-foreground max-w-3xl">
+        <p className="mt-14 font-serif text-3xl md:text-4xl leading-tight max-w-3xl text-foreground">
           Este camino que me costó años de sufrimiento y deudas tiene un regalo. Uno para ti.
         </p>
       </div>

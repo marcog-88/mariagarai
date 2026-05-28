@@ -1,8 +1,8 @@
 export const Truth = () => {
   const pills = [
-    "Múltiples vías de ingreso",
-    "Marca que abre puertas",
-    "Sistemas que trabajan sin ti",
+    "💰 Múltiples vías de ingreso",
+    "🚪 Marca que abre puertas",
+    "🤖 Sistemas que trabajan sin ti",
   ];
   return (
     <section
@@ -15,6 +15,7 @@ export const Truth = () => {
         </p>
         <h2 className="font-serif text-3xl md:text-5xl leading-[1.1] tracking-tight text-primary-foreground max-w-4xl">
           Una Carrera Moderna no es ser freelance. No es ser influencer.{" "}
+          <br className="md:hidden" />
           <em className="font-serif italic text-mint">No es montar una startup.</em>
         </h2>
         <p className="mt-10 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">

@@ -27,16 +27,17 @@ export const Deliverables = () => {
   return (
     <section className="py-24 md:py-32" style={{ background: "#f9f9f7" }}>
       <div className="container-tight">
-        <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+        <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
           Lo que montamos
         </p>
 
         <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight max-w-4xl">
           Cuatro meses. Cinco fases.{" "}
+          <br />
           <em className="font-serif italic text-mint">Un negocio boutique funcionando.</em>
         </h2>
 
-        <div className="mt-12 md:mt-16 -mb-16 md:-mb-24 -mx-6 sm:-mx-16 md:-mx-24 lg:-mx-32">
+        <div className="mt-12 md:mt-16 mb-0 md:-mb-24 -mx-6 sm:-mx-16 md:-mx-24 lg:-mx-32">
           <img
             src={deliverablesMockup}
             alt="Lo que montamos en Exponencial: sesiones 1:1 con María, Notion como sistema operativo, newsletter, LinkedIn optimizado y dashboard de ventas"

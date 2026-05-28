@@ -100,11 +100,14 @@ export const Deliverables = () => {
 
         {/* Timeline header */}
         <p
-          className="mt-16 md:mt-24 mb-10 text-xs md:text-xs lg:text-sm font-medium uppercase tracking-[0.24em] md:tracking-[0.08em] lg:tracking-[0.24em]"
+          className="mt-16 md:mt-24 mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
           style={{ color: "#0c0d0e" }}
         >
-          Qué pasa cada semana — los 5 sistemas que construimos juntas
+          Qué pasa cada semana
         </p>
+        <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-3xl mb-14">
+          Los 5 sistemas que construimos juntas
+        </h2>
 
         {/* Vertical timeline: 5 modules + week info combined */}
         <div className="relative">
