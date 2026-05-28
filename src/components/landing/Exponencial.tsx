@@ -31,9 +31,9 @@ export const Exponencial = () => {
             </p>
             <ul className="mt-8 md:mt-10 text-base md:text-lg text-white max-w-xl">
               {[
-                { main: "Un negocio propio facturando en 12 semanas", sub: "📅 Acompañamiento semanal 1:1 con María" },
-                { main: "Presencia digital que genera ventas y autoridad", sub: "🛠️ LinkedIn, newsletter y web montados" },
-                { main: "Sistemas con IA que facilitan tu trabajo", sub: "🤖 Notion + Claude como infraestructura" },
+                { main: "Un negocio propio facturando en 12 semanas", sub: "📅 1:1 semanal con María" },
+                { main: "Presencia digital que genera ventas y autoridad", sub: "🛠️ LinkedIn, newsletter y web" },
+                { main: "Sistemas con IA que facilitan tu trabajo", sub: "🤖 Notion + Claude" },
               ].map((item) => (
                 <li key={item.main} className="flex items-start gap-2 mb-4">
                   <span

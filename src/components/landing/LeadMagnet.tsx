@@ -20,8 +20,9 @@ export const LeadMagnet = () => {
               ¿Qué puedes{" "}
               <span className="font-serif italic" style={{ color: "#9378fe" }}>
                 vender hoy
-              </span>{" "}
-              con lo que ya sabes?
+              </span>
+              <br className="hidden md:inline" />
+              {" "}con lo que ya sabes?
             </h2>
             <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
               Deja de darle vueltas. Descubre cómo monetizar tu trayectoria con un negocio
@@ -37,7 +38,7 @@ export const LeadMagnet = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="tu@email.com"
                 required
-                className="flex-1 rounded-full border border-border bg-white px-6 py-3 md:px-8 md:py-4 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-[#9378fe]"
+                className="flex-1 rounded-full border border-[#0c0d0e]/40 bg-white px-6 py-3 md:px-8 md:py-4 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-[#9378fe]"
                 style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
               />
               <button
@@ -54,7 +55,7 @@ export const LeadMagnet = () => {
           </div>
 
           {/* Right: mockup image */}
-          <div className="mt-14 md:mt-0 md:w-[56%] lg:w-[54%] flex-shrink-0">
+          <div className="mt-14 md:mt-0 md:w-[42%] lg:w-[40%] flex-shrink-0">
             <img
               src={mockup}
               alt="Tu mapa de monetización personalizado con IA"

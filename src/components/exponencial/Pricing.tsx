@@ -49,7 +49,12 @@ export const Pricing = () => {
         <div className="mt-16 max-w-2xl">
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€4500</p>
-          <p className="mt-2 text-primary-foreground/60">Pago único o 2 pagos de €2500 · Plazas limitadas · Por aplicación</p>
+          <p className="mt-2 text-primary-foreground/60">
+            Pago único o 2 pagos de €2500
+            <span className="hidden md:inline"> · </span>
+            <br className="md:hidden" />
+            Plazas limitadas · Por aplicación
+          </p>
 
           <a
             href={TIDYCAL}
@@ -62,7 +67,7 @@ export const Pricing = () => {
             <span aria-hidden>→</span>
           </a>
           <p className="text-xs md:text-sm uppercase tracking-widest text-mint">
-            Máximo 2 clientas nuevas al mes · Por aplicación
+            Máximo 2 clientas nuevas al mes
           </p>
 
           <a

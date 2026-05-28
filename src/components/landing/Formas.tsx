@@ -48,7 +48,7 @@ const formas: Forma[] = [
   },
   {
     eyebrow: "PROGRAMA",
-    eyebrowBadge: "COHORT · JULIO 2026",
+    eyebrowBadge: "JULIO 2026",
     badgeColor: "orange",
     title: "Redes que Venden",
     subtitle:
@@ -112,20 +112,19 @@ export const Formas = () => {
               </a>
 
               <div className="mt-6 flex flex-col flex-1">
-                {f.eyebrowBadge && (
-                  <p className="mb-3 flex items-center flex-wrap gap-y-1">
+                <h3 className="font-serif text-3xl md:text-4xl tracking-tight">
+                  {f.title}
+                  {f.eyebrowBadge && (
                     <span
-                      className={`text-xs font-medium tracking-widest uppercase ${
-                        f.badgeColor === "hot-pink" ? "animate-pulse" : ""
-                      }`}
-                      style={{ color: "#9378fe" }}
+                      className={`ml-2 inline-block align-middle font-sans text-xs rounded-full px-2 py-0.5 ${
+                        f.badgeColor === "mint"
+                          ? "bg-gray-100 text-gray-400"
+                          : "bg-[#9378fe]/15 text-[#9378fe]"
+                      } ${f.badgeColor === "hot-pink" ? "animate-pulse" : ""}`}
                     >
                       {f.eyebrowBadge}
                     </span>
-                  </p>
-                )}
-                <h3 className="font-serif text-3xl md:text-4xl tracking-tight">
-                  {f.title}
+                  )}
                 </h3>
                 <p className="mt-3 text-base text-foreground/70 leading-relaxed">
                   {f.subtitle}
