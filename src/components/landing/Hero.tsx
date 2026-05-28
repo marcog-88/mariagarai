@@ -40,8 +40,12 @@ export const Hero = () => {
             <img
               src={portrait}
               alt="María Garaí"
+              width={1281}
+              height={1920}
               className="animate-fade-up w-full h-auto max-w-sm lg:max-w-none mx-auto"
               loading="eager"
+              fetchpriority="high"
+              decoding="sync"
             />
           </div>
         </div>

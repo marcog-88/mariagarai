@@ -51,11 +51,11 @@ export const About = () => {
         </div>
 
         {/* Right column: image fixed height on desktop, anchored to bottom */}
-        <div className="flex-shrink-0 lg:w-[45%] overflow-hidden lg:h-[667px]">
+        <div className="flex-shrink-0 lg:w-[45%] overflow-hidden lg:h-[667px] px-6 lg:px-0">
           <img
             src={sobreMi}
             alt="María Garaí"
-            className="w-full h-full object-cover object-[center_bottom] block min-h-[440px] lg:min-h-0 lg:object-contain lg:object-bottom"
+            className="mx-auto w-full max-w-xs sm:max-w-sm h-auto block lg:mx-0 lg:max-w-none lg:h-full lg:object-contain lg:object-bottom"
             loading="lazy"
           />
         </div>
