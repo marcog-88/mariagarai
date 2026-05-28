@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     q: "¿Qué pasa cuando compro?",
-    a: "Nada más completar el pago recibes un email con acceso inmediato al programa en la Escuela de Carreras Modernas. Dentro encontrarás un formulario de bienvenida para que me cuentes tu situación de partida. En 48 horas agendamos tu primera sesión 1:1 — la auditoría inicial de negocio — y arrancamos. Todo está pensado para que empieces a construir desde el primer día.",
+    a: "Nada más completar el pago recibes un email con acceso inmediato al programa en Carreras Modernas. Dentro encontrarás un formulario de bienvenida para que me cuentes tu situación de partida. En 48 horas agendamos tu primera sesión 1:1 — la auditoría inicial de negocio — y arrancamos. Todo está pensado para que empieces a construir desde el primer día.",
   },
   {
     q: "¿Necesito saber de tecnología o programación?",
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "¿Qué pasa cuando termina el programa?",
-    a: "Tienes 3 meses de acceso a la Escuela de Carreras Modernas — comunidad, sesiones grupales y materiales. Tu web, tu Notion, tu embudo y tu lead magnet son tuyos para siempre.",
+    a: "Tienes 3 meses de acceso a Carreras Modernas — comunidad, sesiones grupales y materiales. Tu web, tu Notion, tu embudo y tu lead magnet son tuyos para siempre.",
   },
 ];
 

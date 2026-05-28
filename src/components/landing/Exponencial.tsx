@@ -3,6 +3,7 @@ import expoMockup from "@/assets/exponencial-premium-card.webp";
 export const Exponencial = () => {
   return (
     <section
+      id="programa-estrella"
       className="py-24 md:py-32"
       style={{ background: "#0c0d0e", borderTop: "1px solid rgba(147,120,254,0.2)" }}
     >
@@ -12,7 +13,7 @@ export const Exponencial = () => {
         <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em]" style={{ color: "#9378fe" }}>
           El Programa Estrella
         </p>
-        <h2 className="text-5xl md:text-6xl font-serif tracking-tight leading-tight text-white md:whitespace-nowrap">
+        <h2 className="text-5xl md:text-6xl font-serif tracking-tight leading-tight text-white">
           Exponencial: Construye tu{" "}
           <span className="font-serif italic" style={{ color: "#9378fe" }}>
             Carrera Moderna
@@ -28,7 +29,7 @@ export const Exponencial = () => {
             <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-xl">
               Con múltiples vías de ingreso, autoridad en redes y un sistema con IA que lo sostenga. Aunque sigas en corporate y no sepas por dónde empezar.
             </p>
-            <ul className="mt-4 text-base md:text-lg text-white max-w-xl">
+            <ul className="mt-8 md:mt-10 text-base md:text-lg text-white max-w-xl">
               {[
                 { main: "Un negocio propio facturando en 12 semanas", sub: "📅 Acompañamiento semanal 1:1 con María" },
                 { main: "Presencia digital que genera ventas y autoridad", sub: "🛠️ LinkedIn, newsletter y web montados" },
@@ -61,12 +62,14 @@ export const Exponencial = () => {
 
           {/* Right — image, natural ratio with curved corners */}
           <div className="flex items-center order-1 md:order-2">
-            <img
-              src={expoMockup}
-              alt="Exponencial — Notion, Claude, LinkedIn y Substack."
-              className="w-full block rounded-[1.25rem]"
-              loading="lazy"
-            />
+            <a href="/exponencial" className="block w-full">
+              <img
+                src={expoMockup}
+                alt="Exponencial — Notion, Claude, LinkedIn y Substack."
+                className="w-full block rounded-[1.25rem]"
+                loading="lazy"
+              />
+            </a>
           </div>
 
         </div>

@@ -5,7 +5,7 @@ const includes = [
   "Tu sales page — copy, estructura y página montada",
   "Tu lead magnet en formato app — interactivo, conectado a email marketing, con vídeo de ventas",
   "Claude configurado como cofundador de tu negocio — automatizaciones y prompts",
-  "Acceso completo al programa en la Escuela de Carreras Modernas",
+  "Acceso completo al programa en Carreras Modernas",
   "3 meses de acceso a la comunidad y la academia",
 ];
 

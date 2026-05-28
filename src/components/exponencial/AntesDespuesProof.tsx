@@ -1,25 +1,40 @@
 import { TidyCalButton } from "@/components/construye/TidyCalButton";
+import avatarLaura from "@/assets/avatar-elena.webp";
+import avatarCarmen from "@/assets/avatar-natalia.webp";
+import avatarIsabel from "@/assets/avatar-isabel.webp";
 
 const stories = [
   {
+    photo: avatarLaura,
     before: "Llevaba 8 meses con mi proyecto y seguía sin saber exactamente qué vendía ni a quién.",
     beforeName: "Laura · Madrid",
     after: "En la semana 3 ya tenía mi primera clienta de pago. En el mes 4, tres clientes activos y una lista de espera.",
     afterName: "Laura · 4 meses después",
   },
   {
+    photo: avatarCarmen,
     before: "Creaba contenido todos los días y nadie me compraba nada. Estaba agotada y sin dinero.",
     beforeName: "Carmen · Barcelona",
     after: "Ahora publico tres veces por semana con criterio y cada post abre conversaciones de venta.",
     afterName: "Carmen · 3 meses después",
   },
   {
+    photo: avatarIsabel,
     before: "Sabía que tenía que usar IA pero me daba pánico. Pensaba que era para perfiles técnicos.",
     beforeName: "Isabel · México DF",
     after: "Hoy Claude es literalmente mi equipo. Creo en una hora lo que antes me costaba una semana.",
     afterName: "Isabel · 4 meses después",
   },
 ];
+
+const Avatar = ({ src, alt }: { src: string; alt: string }) => (
+  <img
+    src={src}
+    alt={alt}
+    loading="lazy"
+    className="w-12 h-12 rounded-full object-cover flex-shrink-0 border-2 border-white/20"
+  />
+);
 
 export const AntesDespuesProof = () => {
   return (
@@ -38,12 +53,18 @@ export const AntesDespuesProof = () => {
               <div className="rounded-xl p-6 bg-white/[0.04] border border-white/10">
                 <p className="text-xs uppercase tracking-widest text-white/40 mb-3">😔 ANTES</p>
                 <p className="text-white/70 italic leading-relaxed">"{s.before}"</p>
-                <p className="mt-3 text-xs text-white/40">{s.beforeName}</p>
+                <div className="mt-4 flex items-center gap-3">
+                  <Avatar src={s.photo} alt={s.beforeName} />
+                  <span className="text-xs text-white/40">{s.beforeName}</span>
+                </div>
               </div>
               <div className="rounded-xl p-6 border" style={{ background: "rgba(147,120,254,0.08)", borderColor: "rgba(147,120,254,0.3)" }}>
                 <p className="text-xs uppercase tracking-widest text-mint mb-3">✨ DESPUÉS</p>
                 <p className="text-white leading-relaxed">"{s.after}"</p>
-                <p className="mt-3 text-xs text-mint/70">{s.afterName}</p>
+                <div className="mt-4 flex items-center gap-3">
+                  <Avatar src={s.photo} alt={s.afterName} />
+                  <span className="text-xs text-mint/70">{s.afterName}</span>
+                </div>
               </div>
             </div>
           ))}
@@ -51,7 +72,7 @@ export const AntesDespuesProof = () => {
 
         <div className="mt-12 flex justify-center">
           <TidyCalButton className="btn-mint-lg">
-            Solicitar llamada de valoración <span aria-hidden>→</span>
+            Solicitar llamada <span aria-hidden>→</span>
           </TidyCalButton>
         </div>
       </div>

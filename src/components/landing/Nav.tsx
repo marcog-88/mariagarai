@@ -142,7 +142,8 @@ export const Nav = () => {
               href={TIDYCAL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary mobile-device-hidden hidden md:inline-flex !px-6 !py-3 !text-sm"
+              className="btn-primary mobile-device-hidden hidden md:inline-flex !px-6 !py-3 !text-sm transition-shadow duration-300"
+              style={scrolled ? { boxShadow: "4px 4px 0 0 #0c0d0e" } : undefined}
             >
               Reservar llamada
             </a>

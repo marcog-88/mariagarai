@@ -50,7 +50,7 @@ export const Hero = () => {
             Con múltiples vías de ingreso, autoridad en redes y un sistema con IA que lo sostenga.
           </p>
           <p className="mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
-            Para profesionales con trayectoria corporativa que quieren monetizar su conocimiento con un negocio propio que reemplace su sueldo y les dé libertad.
+            Para profesionales con trayectoria corporativa que quieren monetizar su conocimiento con un negocio propio que reemplace su sueldo y les dé libertad. Aunque sigas en corporate y no sepas por dónde empezar.
           </p>
 
           {/* Hero mockup */}
@@ -70,7 +70,7 @@ export const Hero = () => {
               rel="noopener noreferrer"
               className="btn-mint-lg !text-base md:!text-lg self-start md:self-auto whitespace-nowrap"
             >
-              Solicitar llamada de valoración
+              Solicitar llamada
               <span aria-hidden>→</span>
             </a>
             <div>

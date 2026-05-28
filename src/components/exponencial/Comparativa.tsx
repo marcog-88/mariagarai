@@ -11,20 +11,20 @@ export const Comparativa = () => {
   return (
     <section className="pt-24 md:pt-32 pb-8 bg-background">
       <div className="container-tight">
-        <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+        <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
           Lo que te ahorras
         </p>
-        <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-3xl">
+        <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight">
           Lo que montas en 4 meses, por separado, cuesta el triple.
         </h2>
 
         <div className="mt-12 overflow-x-auto">
-          <table className="w-full max-w-3xl text-sm md:text-base">
+          <table className="w-full text-sm md:text-base">
             <thead>
               <tr className="border-b border-border text-left">
-                <th className="pb-3 font-medium text-foreground/60 pr-8">Servicio</th>
-                <th className="pb-3 font-medium text-foreground/60 pr-8">Precio de mercado</th>
-                <th className="pb-3 font-medium text-mint">En Exponencial</th>
+                <th className="pb-3 pr-8 text-xs font-medium uppercase tracking-wider text-foreground/60">SERVICIO</th>
+                <th className="pb-3 pr-8 text-xs font-medium uppercase tracking-wider text-foreground/60">PRECIO DE MERCADO</th>
+                <th className="pb-3 text-xs font-medium uppercase tracking-wider text-mint">EN EXPONENCIAL</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border/50">
@@ -32,15 +32,25 @@ export const Comparativa = () => {
                 <tr key={r.item}>
                   <td className="py-4 pr-8 text-foreground/80">{r.item}</td>
                   <td className="py-4 pr-8 text-foreground/50 line-through">{r.market}</td>
-                  <td className="py-4 text-mint font-medium">{r.expo}</td>
+                  <td className="py-4 text-mint font-medium">
+                    <span className="inline-flex items-center gap-2">
+                      <span aria-hidden>✓</span>
+                      {r.expo}
+                    </span>
+                  </td>
                 </tr>
               ))}
+              <tr style={{ background: "#0c0d0e", color: "#ffffff" }}>
+                <td className="py-8 pr-8 pl-6 font-serif text-xl md:text-2xl text-white">TOTAL</td>
+                <td className="py-8 pr-8 text-white/60 line-through text-lg">€20000–€40000</td>
+                <td className="py-8 pr-6 font-serif text-3xl md:text-4xl font-bold text-mint">€4500</td>
+              </tr>
             </tbody>
           </table>
         </div>
 
         <div
-          className="mt-12 rounded-2xl p-10 md:p-16"
+          className="mt-12 md:mt-16 rounded-2xl p-10 md:p-16"
           style={{ background: "#0c0d0e", color: "#ffffff" }}
         >
           <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
@@ -53,7 +63,7 @@ export const Comparativa = () => {
             <p>
               La mayoría invierte en marketing antes de tener algo que vender. En contenido antes de tener posicionamiento. En herramientas antes de tener sistemas.
             </p>
-            <p>
+            <p className="!mt-6 text-[#9378fe] italic text-lg md:text-xl">
               En EXPONENCIAL hacemos todo en el orden correcto — y eso lo cambia todo.
             </p>
           </div>

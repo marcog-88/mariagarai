@@ -17,7 +17,7 @@ const colC = {
   header: "Contratar por separado",
   sub: "La opción más cara",
   items: [
-    "Mentora + copywriter + consultor IA + estratega = €8000–€17000",
+    "Mentora + copywriter + consultor IA + estratega = €20000–€40000",
     "Nadie integra las piezas como un todo",
     "Tú coordinas a 4 personas distintas",
     "Meses de onboarding antes de ver resultados",
@@ -60,7 +60,7 @@ export const TresOpciones = () => {
   return (
     <section className="py-24 md:py-32" style={{ background: "#f9f9f7" }}>
       <div className="container-tight">
-        <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+        <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
           Las tres opciones
         </p>
         <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight text-foreground max-w-4xl mb-16">
@@ -73,12 +73,12 @@ export const TresOpciones = () => {
           </div>
 
           <div className="order-1 md:order-2 md:-my-4 relative">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-10">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
               <span
                 className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.18em]"
                 style={{ background: "hsl(var(--mint))", color: "#ffffff" }}
               >
-                La opción inteligente
+                Recomendado
               </span>
             </div>
             <div
@@ -101,7 +101,7 @@ export const TresOpciones = () => {
               </ul>
               <div className="px-6 pb-6">
                 <TidyCalButton className="btn-mint-lg !text-base w-full justify-center">
-                  Solicitar llamada de valoración <span aria-hidden>→</span>
+                  Solicitar llamada <span aria-hidden>→</span>
                 </TidyCalButton>
               </div>
             </div>

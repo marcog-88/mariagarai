@@ -1,3 +1,5 @@
+import mariaGarantia from "@/assets/maria-garantia.webp";
+
 export const Garantia = () => {
   const items = [
     "Tu oferta validada con clientes reales",
@@ -15,8 +17,10 @@ export const Garantia = () => {
       <div className="container-tight">
         <div className="rounded-2xl border border-primary-foreground/15 bg-primary-foreground/[0.03] p-8 md:p-12">
           <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-8 md:gap-12 items-start">
-            <div
-              className="aspect-[4/5] md:w-[280px] lg:w-[300px] flex-shrink-0 rounded-2xl bg-white/10"
+            <img
+              src={mariaGarantia}
+              alt="María Garaí"
+              className="aspect-[4/5] md:w-[280px] lg:w-[300px] flex-shrink-0 rounded-2xl object-cover border border-primary-foreground/20"
               style={{ boxShadow: "0 0 32px hsl(var(--mint) / 0.4)" }}
             />
             <div>

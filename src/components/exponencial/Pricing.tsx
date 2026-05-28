@@ -56,8 +56,9 @@ export const Pricing = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-mint-lg !text-lg mt-12 mb-6 inline-flex"
+            style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
           >
-            Solicitar llamada de valoración
+            Solicitar llamada
             <span aria-hidden>→</span>
           </a>
           <p className="text-xs md:text-sm uppercase tracking-widest text-mint">

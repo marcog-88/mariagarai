@@ -149,7 +149,7 @@ export const AntesDespues = () => {
             className="btn-mint-lg !text-base md:!text-lg whitespace-nowrap"
             style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
           >
-            Solicitar llamada de valoración
+            Solicitar llamada
             <span aria-hidden>→</span>
           </a>
         </div>

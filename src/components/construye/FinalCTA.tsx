@@ -33,12 +33,10 @@ export const FinalCTA = () => {
         <div className="mt-16">
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-6xl md:text-7xl text-primary-foreground">€1997</p>
+          <p className="mt-2 text-primary-foreground/60 italic text-sm">Solo acepto 2 clientes nuevos al mes.</p>
         </div>
 
         <div className="mt-10 flex flex-col items-start gap-5">
-          <p className="text-sm text-mint">
-            Solo acepto 2 clientes nuevos al mes.
-          </p>
           <a href="#" className="btn-mint-lg !text-lg w-full md:w-auto justify-center">
             QUIERO ENTRAR
             <span aria-hidden>→</span>

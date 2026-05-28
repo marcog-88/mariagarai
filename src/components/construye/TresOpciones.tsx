@@ -80,7 +80,7 @@ export const TresOpciones = () => {
                 className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.18em]"
                 style={{ background: "#d0fcd0", color: "#0c0d0e" }}
               >
-                La opción inteligente
+                Recomendado
               </span>
             </div>
             <div

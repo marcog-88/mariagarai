@@ -5,7 +5,7 @@ const includes = [
   "Tu sales page — copy, estructura y página montada",
   "Tu lead magnet en formato app — interactivo, conectado a email marketing, con vídeo de ventas",
   "Claude configurado como cofundador de tu negocio — automatizaciones y prompts",
-  "Acceso completo al programa en la Escuela de Carreras Modernas",
+  "Acceso completo al programa en Carreras Modernas",
   "3 meses de acceso a la comunidad y la academia",
 ];
 
@@ -38,26 +38,6 @@ export const Pricing = () => {
         </ul>
 
         <div className="mt-16 max-w-2xl">
-          <div
-            className="mb-4 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
-            style={{
-              background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
-              border: "1.5px solid #d0fcd0",
-              boxShadow:
-                "4px 0 12px rgba(208,252,208,0.5), -4px 0 12px rgba(208,252,208,0.5), inset 0 2px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)",
-            }}
-          >
-            <span
-              className="rounded-full"
-              style={{
-                width: "12px",
-                height: "12px",
-                background: "#ffffff",
-              }}
-              aria-hidden
-            />
-            Cohorte · Próximamente
-          </div>
           <p className="text-primary-foreground/40 line-through text-2xl mb-2">€5882</p>
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€1997</p>

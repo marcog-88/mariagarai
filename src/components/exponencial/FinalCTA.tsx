@@ -12,10 +12,14 @@ export const FinalCTA = () => {
           <em className="font-serif italic text-mint">tú no eres la misma.</em>
         </h2>
 
+        <p className="mt-10 text-xl md:text-2xl text-primary-foreground/80">
+          <span className="text-mint">Eso cambia en 4 meses.</span>
+        </p>
+
         <ul className="mt-12 max-w-3xl space-y-4 text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
-          <li className="flex gap-3"><span>→</span><span>Un negocio boutique con clientes reales y varias vías de ingreso</span></li>
-          <li className="flex gap-3"><span>→</span><span>Una presencia digital que abre puertas mientras tú vives</span></li>
-          <li className="flex gap-3"><span>→</span><span>Sistemas con IA que trabajan sin que tú estés presente cada hora</span></li>
+          <li className="flex gap-3"><span className="text-mint">→</span><span>Un negocio boutique con clientes reales y varias vías de ingreso</span></li>
+          <li className="flex gap-3"><span className="text-mint">→</span><span>Una presencia digital que abre puertas mientras tú vives</span></li>
+          <li className="flex gap-3"><span className="text-mint">→</span><span>Sistemas con IA que trabajan sin que tú estés presente cada hora</span></li>
         </ul>
 
         <div className="mt-16">
@@ -31,7 +35,7 @@ export const FinalCTA = () => {
             rel="noopener noreferrer"
             className="btn-mint-lg !text-lg"
           >
-            Solicitar llamada de valoración
+            Solicitar llamada
             <span aria-hidden>→</span>
           </a>
           <a

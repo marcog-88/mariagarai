@@ -11,7 +11,7 @@ export const CTA = () => {
           <em className="font-serif italic text-accent md:block">algo que sea tuyo.</em>
         </h2>
         <p className="mt-10 max-w-4xl text-lg md:text-xl text-primary-foreground leading-relaxed">
-          Trabaja conmigo dentro de la Escuela de Carreras Modernas.
+          Trabaja conmigo dentro de Carreras Modernas.
         </p>
 
         <div className="mt-16 md:mt-20">

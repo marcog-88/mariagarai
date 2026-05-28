@@ -19,8 +19,10 @@ export const PreguntaReal = () => {
     <section className="pt-20 pb-24 md:py-32" style={{ background: "#ffffff" }}>
       <div className="container-tight">
         <div className="text-center mb-14">
-          <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
-            La pregunta real
+          <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em]">
+            <span className="inline-block px-3 py-1 rounded-full" style={{ background: "#9378fe", color: "#ffffff" }}>
+              La pregunta real
+            </span>
           </p>
           <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight text-foreground">
             No es si puedes permitirte entrar.
@@ -54,7 +56,7 @@ export const PreguntaReal = () => {
         </p>
 
         <div className="mt-8 flex justify-center">
-          <TidyCalButton className="btn-mint-lg">
+          <TidyCalButton className="btn-mint-lg" style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}>
             Quiero esto para mi negocio <span aria-hidden>→</span>
           </TidyCalButton>
         </div>
