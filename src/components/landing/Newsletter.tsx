@@ -32,14 +32,14 @@ export const Newsletter = () => {
             Newsletter
           </p>
           <h2 className="display-md whitespace-normal md:whitespace-nowrap">
-            Aprende a construir un<br className="md:hidden" />{" "}
-            <span className="font-serif italic text-accent">negocio boutique</span>{" "}
+            Aprende a construir tu{" "}
+            <span className="font-serif italic text-accent">negocio</span>{" "}
             con <span className="font-serif italic text-accent">IA</span>.
           </h2>
           <p className="mt-8 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-4xl">
-            Cada semana escribo sobre cómo founders ex-corporate están
-            construyendo carreras modernas — con criterio, con marca y con IA
-            como infraestructura. Gratis, en tu bandeja.
+            Cada semana escribo sobre monetización, redes que venden y herramientas que
+            ahorran tiempo. Destripo la trastienda de mi negocio y entrevisto a otros
+            founders con carreras únicas.
           </p>
         </div>
 

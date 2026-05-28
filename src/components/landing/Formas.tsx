@@ -24,7 +24,7 @@ const formas: Forma[] = [
     badgeColor: "hot-pink",
     title: "Talleres",
     subtitle:
-      "Encuentros en directo para profesionales en transición. Cada mes, un tema. Criterio, dirección y comunidad.",
+      "Para founders y profesionales en transición que quieren múltiples vías de ingreso y varios días libres a la semana.",
     cta: "Apuntarme",
     href: "https://luma.com/corporateafounder",
     image: talleresMockup,
@@ -38,8 +38,8 @@ const formas: Forma[] = [
     badgeColor: "mint",
     title: "Construye",
     subtitle:
-      "El programa para construir tu negocio boutique con IA como infraestructura. Del conocimiento al negocio que factura.",
-    cta: "Quiero mi negocio",
+      "El único programa en español para construir la infraestructura de tu negocio con IA. Aunque seas de letras.",
+    cta: "Quiero saber más",
     href: "/construye",
     image: construyeMockup,
     imageAlt: "Mockup del programa Construye — pantallas mostrando el programa completo.",
@@ -52,8 +52,8 @@ const formas: Forma[] = [
     badgeColor: "orange",
     title: "Redes que Venden",
     subtitle:
-      "LinkedIn y Substack como activos de autoridad. Los escaparates que atraen clientes mientras vives.",
-    cta: "Quiero vender",
+      "LinkedIn + Substack como activos de autoridad y ventas. La mejor combinación para founders que venden servicios online.",
+    cta: "Quiero saber más",
     href: "/redes-que-venden",
     image: redesHeroMockup,
     imageAlt: "Mockup del programa Redes que Venden — pantallas mostrando el programa.",
@@ -71,12 +71,12 @@ export const Formas = () => {
       <div className="container-tight">
         <div className="max-w-3xl">
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
-            Esto es lo que puedo hacer por ti
+            Programas Grupales
           </p>
           <h2 className="display-md">
-            Así es como{" "}
+            Otras formas de{" "}
             <span className="font-serif italic text-accent block md:inline">
-              te puedo ayudar.
+              trabajar conmigo.
             </span>
           </h2>
         </div>

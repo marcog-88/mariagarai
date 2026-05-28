@@ -15,7 +15,7 @@ export const About = () => {
           style={{ paddingLeft: "clamp(24px, 5vw, 96px)", paddingRight: "clamp(24px, 4vw, 64px)" }}
         >
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
-            Hola, soy María
+            Esta es mi historia
           </p>
           <h2 className="display-md">
             Más de una década en corporate.{" "}
@@ -26,26 +26,36 @@ export const About = () => {
           </h2>
           <div className="mt-10 space-y-6 text-lg md:text-xl lg:text-sm text-foreground/75 leading-relaxed">
             <p>
-              Cuando dejé el mundo corporativo, creía que lo tenía todo a mi
-              favor. Me perdí. Me saboteé. Gasté más de{" "}
-              <span className="underline-accent">100.000 euros</span> sin saber
-              exactamente qué estaba construyendo ni para quién. Pasé de tener
-              ahorros a tener deudas.
+              ONU. Procter &amp; Gamble. Start-up tech. Títulos rimbombantes y sueldo de
+              seis cifras. Pero cuando reuní el coraje de soltar la jaula de oro me hice
+              pequeña. Me perdí. Fundí{" "}
+              <span className="underline-accent">100.000 euros</span> de ahorros sin saber
+              cómo generar ingresos por mi cuenta.
             </p>
             <p>
-              Lo que nadie me había enseñado era esto: tener el conocimiento no
-              es suficiente. Estaba creando antes de validar, construyendo
-              antes de vender, invirtiendo antes de ganar.
-            </p>
-            <p className="font-serif italic text-2xl md:text-3xl text-foreground pt-3 leading-snug">
-              "Lo que cambió para mí fue ordenar y hacer solo lo que toca. Para
-              quienes venimos de corporate, el problema no es no actuar — es
-              actuar mal. Demasiado, disperso y sin criterio."
+              El problema: hacía de todo, sin criterio ni método. Copiaba lo que otros
+              hacían. Estaba en comunidades de emprendedores donde solo había ruido.
+              Publicaba por amor al arte. Tenía mil ideas y ninguna validada.
             </p>
             <p>
-              Hoy tengo algo que en corporate nunca tuve: una carrera que es
-              completamente mía. Independiente. Que funciona desde cualquier
-              parte. Que crece exponencialmente, en la dirección que yo marque.
+              Toqué fondo. Me endeudé. Pasé por burnout. Me desesperé. Y desde ese agujero,
+              lo entendí. Necesitaba:
+            </p>
+            <ul className="list-disc list-inside space-y-1 pl-2">
+              <li>diversificar ingresos</li>
+              <li>validar primero</li>
+              <li>potenciar mis ventajas competitivas</li>
+              <li>usar la IA para acelerar la ejecución y escalar impacto</li>
+            </ul>
+            <p>
+              En 6 meses conseguí lo que no había podido en 3 años. Hoy tengo un negocio
+              con múltiples vías de ingreso que reemplaza mi antiguo sueldo corporativo y
+              me deja varios días libres a la semana.
+            </p>
+            <p>
+              Haberla cagado tanto tiene una ventaja: conozco tu caos, sé donde fallas y
+              sé cómo ayudarte a salir de ahí. Mi misión es ayudarte a construir tu carrera
+              moderna.
             </p>
           </div>
         </div>

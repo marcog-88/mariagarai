@@ -8,13 +8,11 @@ export const Thoughts = () => {
           </p>
 
           <div className="font-serif text-3xl md:text-[2.75rem] leading-[1.3] tracking-tight text-foreground space-y-6">
-            <p>Sacar todas mis ideas locas de la cabeza.</p>
-            <p>Filtrarlas. Acotarlas. Claridad total.</p>
+            <p>Poner orden en todas las ideas locas de mi cabeza.</p>
+            <p>Claridad total.</p>
+            <p>Montar algo sólido. Que se vea profesional.</p>
             <p>Un servicio que funciona.</p>
             <p>Listo para salir y vender.</p>
-            <p>Ahorrar un montón de dinero.</p>
-            <p>No tener que contratar a 17 personas distintas para lo mismo.</p>
-            <p>Dejar de estar atascada.</p>
             <p>
               <span
                 className="px-2"
@@ -23,6 +21,10 @@ export const Thoughts = () => {
                 Algo real que me pague.
               </span>
             </p>
+            <p>Proyectos que me ilusionen.</p>
+            <p>Varios días libres a la semana.</p>
+            <p>No desperdiciar dinero ni tiempo.</p>
+            <p>Ganar más que en corporate.</p>
             <p>Independencia. Ser mi propia jefa.</p>
             <p className="font-bold text-accent">Construir algo que sea mío.</p>
           </div>
