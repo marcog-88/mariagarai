@@ -134,7 +134,7 @@ export const Formas = () => {
                     href={f.href}
                     target={f.href.startsWith("http") ? "_blank" : undefined}
                     rel={f.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className={`btn-primary justify-center w-full whitespace-nowrap !text-sm md:!text-base ${f.title === "Construye" ? "md:w-fit" : "md:w-[220px]"}`}
+                    className={`btn-primary justify-center w-full whitespace-nowrap !text-sm md:!text-base !text-white ${f.title === "Construye" ? "md:w-fit" : "md:w-[220px]"}`}
                     style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
                   >
                     {f.cta}

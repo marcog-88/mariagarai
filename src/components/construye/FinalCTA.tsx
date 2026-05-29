@@ -33,19 +33,26 @@ export const FinalCTA = () => {
         <div className="mt-16">
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-6xl md:text-7xl text-primary-foreground">€1997</p>
-          <p className="mt-2 text-primary-foreground/60 italic text-sm">Solo acepto 2 clientes nuevos al mes.</p>
+          <p className="mt-2 text-primary-foreground/60 italic text-sm">• Solo acepto 2 clientes nuevos al mes.</p>
         </div>
 
-        <div className="mt-10 flex flex-col items-start gap-5">
-          <a href="#" className="btn-mint-lg !text-lg w-full md:w-auto justify-center">
-            QUIERO ENTRAR
+        <div className="mt-10 flex flex-col items-start gap-10">
+          <a
+            href="#"
+            className="btn-mint-lg !text-lg w-full md:w-auto justify-center whitespace-nowrap border-2 border-[#0c0d0e]"
+            style={{
+              boxShadow:
+                "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(208, 252, 208, 0.6), 14px 14px 56px rgba(208, 252, 208, 0.35)",
+            }}
+          >
+            Quiero entrar
             <span aria-hidden>→</span>
           </a>
           <a
             href={TIDYCAL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[11px] sm:text-sm whitespace-nowrap text-primary-foreground/65 hover:text-mint underline underline-offset-4"
+            className="text-[11px] sm:text-sm italic whitespace-nowrap text-primary-foreground/65 hover:text-mint underline underline-offset-4"
           >
             ¿Tienes dudas antes de entrar? → Reservar llamada de valoración
           </a>

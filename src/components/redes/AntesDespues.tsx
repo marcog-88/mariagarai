@@ -22,12 +22,9 @@ export const AntesDespues = () => {
   return (
     <section className="pt-12 md:pt-16 pb-12 md:pb-16 bg-background">
       <div className="container-tight">
-        <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
-          Lo que cambia en 30 días
+        <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-[#9378fe]">
+          Antes y después en 30 días
         </p>
-        <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight max-w-4xl">
-          Antes y después de Redes que Venden.
-        </h2>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 max-w-5xl">
           <div>

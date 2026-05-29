@@ -25,15 +25,19 @@ export const FinalCTA = () => {
         <div className="mt-16">
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-6xl md:text-7xl text-primary-foreground">€4500</p>
-          <p className="mt-2 text-primary-foreground/60 italic text-sm">Máximo 2 clientas nuevas al mes · Por aplicación</p>
+          <p className="mt-2 text-primary-foreground/60 italic text-sm">• Máximo 2 clientas nuevas al mes · Por aplicación</p>
         </div>
 
-        <div className="mt-10 flex flex-col items-start gap-5">
+        <div className="mt-10 flex flex-col items-start gap-10">
           <a
             href={TIDYCAL}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-mint-lg !text-lg"
+            className="btn-mint-lg !text-lg w-full md:w-auto justify-center whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
+            style={{
+              boxShadow:
+                "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
+            }}
           >
             Solicitar llamada
             <span aria-hidden>→</span>
@@ -42,7 +46,7 @@ export const FinalCTA = () => {
             href={TIDYCAL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[11px] sm:text-sm whitespace-nowrap text-primary-foreground/65 hover:text-mint underline underline-offset-4"
+            className="text-[11px] sm:text-sm italic whitespace-nowrap text-primary-foreground/65 hover:text-mint underline underline-offset-4"
           >
             ¿Tienes dudas antes de entrar? → Reservar llamada de exploración
           </a>

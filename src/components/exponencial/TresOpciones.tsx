@@ -100,7 +100,10 @@ export const TresOpciones = () => {
                 ))}
               </ul>
               <div className="px-6 pb-6">
-                <TidyCalButton className="btn-mint-lg !text-base w-full justify-center">
+                <TidyCalButton
+                  className="btn-mint-lg !text-base w-full justify-center whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
+                  style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
+                >
                   Solicitar llamada <span aria-hidden>→</span>
                 </TidyCalButton>
               </div>

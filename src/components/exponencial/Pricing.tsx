@@ -49,32 +49,32 @@ export const Pricing = () => {
         <div className="mt-16 max-w-2xl">
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€4500</p>
-          <p className="mt-2 text-primary-foreground/60">
-            Pago único o 2 pagos de €2500
-            <span className="hidden md:inline"> · </span>
-            <br className="md:hidden" />
-            Plazas limitadas · Por aplicación
+          <p className="mt-2 italic text-primary-foreground/60">
+            • Pago único o 2 pagos de €2500
+          </p>
+          <p className="italic text-primary-foreground/60">
+            • Máximo 2 clientas nuevas al mes
           </p>
 
           <a
             href={TIDYCAL}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-mint-lg !text-lg mt-12 mb-6 inline-flex"
-            style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
+            className="btn-mint-lg !text-lg mt-12 mb-6 w-full md:w-auto justify-center whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
+            style={{
+              boxShadow:
+                "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
+            }}
           >
             Solicitar llamada
             <span aria-hidden>→</span>
           </a>
-          <p className="text-xs md:text-sm uppercase tracking-widest text-mint">
-            Máximo 2 clientas nuevas al mes
-          </p>
 
           <a
             href={TIDYCAL}
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-10 text-[11px] md:text-sm whitespace-nowrap text-primary-foreground/75 hover:text-mint underline underline-offset-4"
+            className="block mt-10 text-[11px] md:text-sm italic whitespace-nowrap text-primary-foreground/75 hover:text-mint underline underline-offset-4"
           >
             ¿Tienes dudas antes de entrar? → Reservar llamada de exploración
           </a>

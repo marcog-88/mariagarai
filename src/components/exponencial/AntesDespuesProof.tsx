@@ -71,7 +71,13 @@ export const AntesDespuesProof = () => {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <TidyCalButton className="btn-mint-lg">
+          <TidyCalButton
+            className="btn-mint-lg whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
+            style={{
+              boxShadow:
+                "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
+            }}
+          >
             Solicitar llamada <span aria-hidden>→</span>
           </TidyCalButton>
         </div>

@@ -41,12 +41,19 @@ export const Pricing = () => {
           <p className="text-primary-foreground/40 line-through text-2xl mb-2">€5882</p>
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€1997</p>
-          <p className="mt-2 text-primary-foreground/60">Pago único</p>
+          <p className="mt-2 italic text-primary-foreground/60">• Pago único</p>
+          <p className="italic text-primary-foreground/60">• Solo 2 plazas disponibles este mes</p>
 
-          <p className="mt-12 mb-8 text-xs md:text-sm uppercase tracking-widest text-mint">
-            Solo 2 plazas disponibles este mes
-          </p>
-          <a href="https://mariagarai.activehosted.com/f/11" target="_blank" rel="noopener noreferrer" className="btn-mint-lg !text-sm md:!text-lg mt-0 mb-4">
+          <a
+            href="https://mariagarai.activehosted.com/f/11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-mint-lg !text-sm md:!text-lg mt-12 mb-4 w-full md:w-auto justify-center whitespace-nowrap border-2 border-[#0c0d0e]"
+            style={{
+              boxShadow:
+                "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(208, 252, 208, 0.6), 14px 14px 56px rgba(208, 252, 208, 0.35)",
+            }}
+          >
             UNIRME A LA LISTA DE ESPERA
             <span aria-hidden>→</span>
           </a>
@@ -55,7 +62,7 @@ export const Pricing = () => {
             href={TIDYCAL}
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-10 text-[11px] md:text-sm whitespace-nowrap text-primary-foreground/75 hover:text-mint underline underline-offset-4"
+            className="block mt-10 text-[11px] md:text-sm italic whitespace-nowrap text-primary-foreground/75 hover:text-mint underline underline-offset-4"
           >
             ¿Tienes dudas antes de entrar? → Reservar llamada de valoración
           </a>

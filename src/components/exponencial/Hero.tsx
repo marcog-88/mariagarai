@@ -68,12 +68,16 @@ export const Hero = () => {
               href={TIDYCAL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-mint-lg !text-base md:!text-lg self-start md:self-auto whitespace-nowrap"
+              className="btn-mint-lg !text-base md:!text-lg w-full md:w-auto justify-center self-start md:self-auto whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
+              style={{
+                boxShadow:
+                  "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
+              }}
             >
               Solicitar llamada
               <span aria-hidden>→</span>
             </a>
-            <div>
+            <div className="text-center md:text-left">
               <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÓN</p>
               <p className="font-serif text-6xl font-bold text-primary-foreground">€4500</p>
             </div>

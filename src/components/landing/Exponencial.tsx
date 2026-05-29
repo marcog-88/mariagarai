@@ -53,10 +53,17 @@ export const Exponencial = () => {
               ))}
             </ul>
             <div className="mt-8">
-              <a href="/exponencial" className="btn-primary w-full md:w-[220px] justify-center">
+              <a
+                href="/exponencial"
+                className="btn-primary w-full md:w-[220px] justify-center whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
+                style={{
+                  boxShadow:
+                    "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
+                }}
+              >
                 Quiero saber más →
               </a>
-              <p className="mt-3 text-xs italic text-white/40">Plazas limitadas · Por aplicación</p>
+              <p className="mt-8 text-xs italic text-white/40">Plazas limitadas · Por aplicación</p>
             </div>
           </div>
 

@@ -145,7 +145,7 @@ export const Deliverables = () => {
               ))}
             </div>
           </div>
-          <p className="mt-6 italic text-sm md:text-base text-center" style={{ color: "#e88f00" }}>
+          <p className="mt-6 italic text-sm md:text-base text-center" style={{ color: "#0c0d0e" }}>
             Tu mayor activo no es el contenido. Es el acceso directo.
           </p>
         </div>

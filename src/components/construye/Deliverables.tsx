@@ -105,7 +105,7 @@ export const Deliverables = () => {
         >
           Qué pasa cada semana
         </p>
-        <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-3xl mb-14">
+        <h2 className="font-serif text-[clamp(1rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-3xl mb-14 whitespace-nowrap">
           Los 5 sistemas que construimos juntas
         </h2>
 
@@ -257,7 +257,7 @@ export const Deliverables = () => {
             href="https://mariagarai.activehosted.com/f/11"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-mint-lg !text-sm md:!text-lg"
+            className="btn-mint-lg !text-sm md:!text-lg whitespace-nowrap border-2 border-[#0c0d0e]"
             style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
           >
             Unirme a la lista de espera <span aria-hidden>→</span>

@@ -70,7 +70,7 @@ export const TresOpciones = () => {
           </div>
 
           <div className="order-1 md:order-2 md:-my-4 relative">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-10">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
               <span
                 className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.18em]"
                 style={{ background: "hsl(var(--mint))", color: "#ffffff" }}

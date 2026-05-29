@@ -104,7 +104,7 @@ export const AntesDespuesProof = () => {
         </div>
 
         <div className="mt-12 hidden md:flex justify-center">
-          <StripeBuyButton />
+          <StripeBuyButton glow />
         </div>
       </div>
     </section>

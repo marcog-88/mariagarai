@@ -29,7 +29,7 @@ export const LeadMagnet = () => {
               href="https://tunuevacarrera.lovable.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-10 inline-block rounded-full px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
+              className="mt-10 block w-full md:inline-block md:w-[235px] text-center rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
               style={{ background: "#9378fe", boxShadow: "4px 4px 0 0 #0c0d0e" }}
             >
               Quiero probarlo →

@@ -146,7 +146,7 @@ export const AntesDespues = () => {
             href="https://tidycal.com/mariagarai/exploracion"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-mint-lg !text-base md:!text-lg whitespace-nowrap"
+            className="btn-mint-lg !text-base md:!text-lg whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
             style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
           >
             Solicitar llamada

@@ -61,11 +61,20 @@ export const Hero = () => {
           </div>
 
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 mt-12">
-            <a href="https://mariagarai.activehosted.com/f/11" target="_blank" rel="noopener noreferrer" className="btn-mint-lg !text-lg self-start md:self-auto">
+            <a
+              href="https://mariagarai.activehosted.com/f/11"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-mint-lg !text-lg w-full md:w-auto justify-center self-start md:self-auto whitespace-nowrap border-2 border-[#0c0d0e]"
+              style={{
+                boxShadow:
+                  "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(208, 252, 208, 0.6), 14px 14px 56px rgba(208, 252, 208, 0.35)",
+              }}
+            >
               Unirme a la lista de espera
               <span aria-hidden>→</span>
             </a>
-            <div>
+            <div className="text-center md:text-left">
               <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÓN</p>
               <p className="font-serif text-6xl font-bold text-primary-foreground">€1997</p>
             </div>

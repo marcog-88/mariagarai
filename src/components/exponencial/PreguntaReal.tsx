@@ -56,7 +56,10 @@ export const PreguntaReal = () => {
         </p>
 
         <div className="mt-8 flex justify-center">
-          <TidyCalButton className="btn-mint-lg" style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}>
+          <TidyCalButton
+            className="btn-mint-lg whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
+            style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
+          >
             Quiero esto para mi negocio <span aria-hidden>→</span>
           </TidyCalButton>
         </div>

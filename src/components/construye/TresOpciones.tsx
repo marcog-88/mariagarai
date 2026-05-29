@@ -75,7 +75,7 @@ export const TresOpciones = () => {
 
           {/* Col B — featured */}
           <div className="order-1 md:order-2 md:-my-4 relative">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-10">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
               <span
                 className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.18em]"
                 style={{ background: "#d0fcd0", color: "#0c0d0e" }}
@@ -104,7 +104,10 @@ export const TresOpciones = () => {
                 ))}
               </ul>
               <div className="px-6 pb-6">
-                <TidyCalButton className="btn-mint-lg !text-base w-full justify-center">
+                <TidyCalButton
+                  className="btn-mint-lg !text-base w-full justify-center whitespace-nowrap border-2 border-[#0c0d0e]"
+                  style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
+                >
                   Empieza aquí <span aria-hidden>→</span>
                 </TidyCalButton>
               </div>

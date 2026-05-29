@@ -71,7 +71,7 @@ export const Testimonios = () => {
             href="https://mariagarai.activehosted.com/f/11"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-mint-lg"
+            className="btn-mint-lg whitespace-nowrap border-2 border-[#0c0d0e]"
             style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
           >
             Unirme a la lista de espera →
