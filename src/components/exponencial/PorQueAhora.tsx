@@ -24,7 +24,7 @@ export const PorQueAhora = () => {
             La ventana de ventaja competitiva con IA es ahora. Las profesionales que construyen sus sistemas este año tendrán una infraestructura que en 18 meses costará el doble de tiempo replicar.
           </p>
           <p className="font-serif italic text-2xl md:text-3xl text-mint leading-snug">
-            Máximo 2 clientas nuevas al mes. No es urgencia fabricada — es la realidad de trabajar en formato 1:1 con seguimiento semanal real.
+            Máximo 2 clientas nuevas al mes. No es urgencia fabricada, es la realidad de trabajar en formato 1:1 con seguimiento semanal real.
           </p>
         </div>
       </div>

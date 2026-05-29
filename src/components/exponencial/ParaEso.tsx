@@ -1,8 +1,8 @@
 const items = [
-  "Diseñamos la mejor forma de vender y monetizar tu conocimiento — con varias vías de ingreso que encajan con quien eres.",
-  "Construimos tu autoridad en redes — LinkedIn y Substack como activos que trabajan mientras tú vives.",
-  "Montamos la infraestructura digital que lo sostiene — web, embudo, IA, sistemas operativos en Notion.",
-  "Revisamos cada paso, cada semana, durante 4 meses — no más ruido, acompañamiento que mueve la aguja.",
+  "Diseñamos la mejor forma de vender y monetizar tu conocimiento: con varias vías de ingreso que encajan con quien eres.",
+  "Construimos tu autoridad en redes: LinkedIn y Substack como activos que trabajan mientras tú vives.",
+  "Montamos la infraestructura digital que lo sostiene: web, embudo, IA, sistemas operativos en Notion.",
+  "Revisamos cada paso, cada semana, durante 4 meses, no más ruido, acompañamiento que mueve la aguja.",
 ];
 
 export const ParaEso = () => {

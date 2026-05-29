@@ -14,13 +14,21 @@ export const Truth = () => {
           La verdad
         </p>
         <h2 className="font-serif text-3xl md:text-5xl leading-[1.1] tracking-tight text-primary-foreground max-w-4xl">
-          Antes costaba meses de trabajo o <em className="font-serif italic text-mint">€20000–€30000</em> en agencias.<br className="md:hidden" />{" "}
+          Antes, montar todo esto costaba meses de trabajo y{" "}
+          <em className="font-serif italic text-mint">20.000–30.000€</em> con agencias y freelancers.{" "}
           <span className="text-mint">Eso ya no es verdad.</span>
         </h2>
         <p className="mt-10 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-          Con las herramientas correctas — Notion, Lovable, Claude — puedes tener tu negocio
-          completamente montado en 8 semanas. Web, landing, embudo, lead magnet, sistemas
-          internos. Todo.
+          Con las herramientas correctas puedes tener tu negocio completamente montado en 8
+          semanas. Web, landing, embudo, lead magnet, sistemas internos. Todo.
+        </p>
+        <p className="mt-6 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
+          Sin perder tiempo, dinero y control en delegar lo que puedes hacer mejor tú misma.
+          Ni derrochar horas valiosas viendo tutoriales de Youtube.
+        </p>
+        <p className="mt-6 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
+          No necesitas ser una experta en IA. Tienes algo mejor: un negocio validado. Solo
+          tienes que crear los cimientos y los escaparates que merece.
         </p>
 
         <div className="mt-16 flex flex-row flex-wrap lg:flex-nowrap md:flex-nowrap gap-2 md:gap-3 mt-8">

@@ -6,15 +6,15 @@ export const Problem = () => {
           El problema
         </p>
         <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight max-w-4xl">
-          Tu negocio funciona. Pero se siente a medio montar y atado con pinzas.
+          Ya vendes. Pero todo está a medio montar.
         </h2>
 
         <div className="mt-16 max-w-3xl space-y-8 text-sm md:text-base leading-relaxed text-foreground/80">
           <p>
             Tienes clientes que te pagan. Bien. Pero cuando alguien te pregunta
-            "¿dónde puedo ver lo que haces?" no tienes una web que enseñar. Cuando quieres
-            captar nuevos clientes no tienes un embudo que los recoja. Cuando un cliente te
-            contrata no tienes un sistema detrás que lo sostenga.
+            "¿dónde puedo ver lo que haces?" no tienes una web como Dios manda que enseñar.
+            Cuando quieres captar nuevos clientes no tienes un embudo que los recoja. Cuando
+            un cliente te contrata no tienes un sistema automatizado que lo organice.
           </p>
           <p>
             Todo es manual. Todo depende de ti. Tus escaparates no están a la altura de lo que

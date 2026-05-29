@@ -24,7 +24,7 @@ export const Problem = () => {
             01 · Los que siguen cambiando su tiempo por un sueldo y cero libertad. Saben que hay algo más, pero no se atreven.
           </p>
           <p>
-            02 · Los que se han lanzado pero siguen replicando el modelo antiguo — más horas, más esfuerzo, más cursos, más herramientas. Facturan poco o se queman intentándolo.
+            02 · Los que se han lanzado pero siguen replicando el modelo antiguo: más horas, más esfuerzo, más cursos, más herramientas. Facturan poco o se queman intentándolo.
           </p>
           <p>
             03 · Los que han entendido que el juego cambió. Combinan su experiencia profesional, los sistemas correctos y la IA para construir carreras modernas que facturan en meses, no en años.

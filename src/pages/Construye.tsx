@@ -4,7 +4,6 @@ import { Problem } from "@/components/construye/Problem";
 import { Truth } from "@/components/construye/Truth";
 import { Letras } from "@/components/construye/Letras";
 import { ParaEso } from "@/components/construye/ParaEso";
-import { OnlyDifference } from "@/components/construye/OnlyDifference";
 import { Deliverables } from "@/components/construye/Deliverables";
 import { AntesDespues } from "@/components/construye/AntesDespues";
 import { ForYou } from "@/components/construye/ForYou";
@@ -31,8 +30,7 @@ const Construye = () => (
     <hr className="border-t border-[#e5e7eb] my-0 mx-0 w-full" />
     <Letras />
     <ParaEso />
-    <OnlyDifference />
-    <Deliverables />
+<Deliverables />
     <AntesDespues />
     <ForYou />
     <PorQueAhora />

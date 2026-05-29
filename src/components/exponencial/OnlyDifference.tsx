@@ -69,10 +69,6 @@ export const OnlyDifference = () => {
             <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">
               EL MÉTODO EXPONENCIAL · CARRERAS MODERNAS
             </p>
-            <p className="font-serif text-xl md:text-2xl text-white italic mb-12">
-              No es una lista de cosas que hacer. Es la secuencia exacta que separa a las que construyen un negocio rentable de las que llevan años intentándolo.
-            </p>
-
             <ol className="space-y-10">
               {pillars.map((p) => (
                 <li key={p.n} className="flex gap-6">

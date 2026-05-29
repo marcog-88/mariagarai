@@ -32,22 +32,16 @@ export const Hero = () => {
               }}
               aria-hidden
             />
-            Cohorte · Próximamente
+            Programa Grupal · Próximamente
           </div>
           <h1 className="mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
-            Ya vendes.
-            <br />
-            Pero todo está{" "}
-            <em className="font-serif italic text-mint">a medio montar.</em>
+            Un negocio digital{" "}
+            <em className="font-serif italic text-mint">tan profesional como tú.</em>
           </h1>
-          <p className="mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl">
-            Tienes clientes. Tienes una oferta. Pero no tienes web, ni embudo, ni sistemas.
-            Todo vive en tu cabeza, en WhatsApp y en un link de Calendly.
-          </p>
-          <p className="mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
+          <p className="mt-8 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
             En 8 semanas montamos toda la infraestructura de tu negocio — web, landing,
             lead magnet, sistemas, automatizaciones — para que tu negocio se vea tan bueno
-            como lo que ofreces. Siendo tú sola. Con IA.
+            como lo que ofreces. Con IA, aunque seas de letras.
           </p>
 
           {/* Mockup block */}

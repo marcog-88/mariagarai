@@ -22,7 +22,7 @@ export const Letras = () => {
             Tres años para aprender lo que ahora enseño en cuatro meses. Tres años de deudas, de dudas, de decisiones que me costaron dinero, tiempo y una paz mental que merecía tener desde el principio.
           </p>
           <p>
-            No me avergüenza haberlo vivido. Me avergonzaría no pasarlo. Porque ahora sé exactamente qué no funciona, qué sí funciona, y en qué orden. Y eso — ese conocimiento ganado con cicatrices — es lo que pongo al servicio de cada clienta que trabaja conmigo.
+            No me avergüenza haberlo vivido. Me avergonzaría no pasarlo. Porque ahora sé exactamente qué no funciona, qué sí funciona, y en qué orden. Y eso, ese conocimiento ganado con cicatrices, es lo que pongo al servicio de cada clienta que trabaja conmigo.
           </p>
         </div>
 

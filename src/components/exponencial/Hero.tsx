@@ -73,10 +73,6 @@ export const Hero = () => {
               Solicitar llamada de valoración
               <span aria-hidden>→</span>
             </a>
-            <div>
-              <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÓN</p>
-              <p className="font-serif text-6xl font-bold text-primary-foreground">€4500</p>
-            </div>
           </div>
         </div>
       </div>

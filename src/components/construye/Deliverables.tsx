@@ -5,71 +5,72 @@ import deliverablesVideo from "@/assets/construye-delivberables-final-mockup.mp4
 const timeline = [
   {
     n: "1",
-    week: "Semanas 1-2",
-    phase: "Claridad y oferta",
-    title: "Tu sistema operativo completo en Notion",
-    body: "Todo tu negocio en un solo lugar. Personalizado para ti. Plug and play.",
+    week: "Semana 1-2",
+    title: "Un sistema operativo a lo Silicon Valley",
+    body: "Nada de seguir improvisando. Mapeamos tus procesos y las tareas que implica cada uno y creamos rutinas optimizadas que te ahorren +10 horas semanales.",
     bullets: [
-      "CRM — gestiona todos tus leads y clientes en un solo tablero.",
-      "Dashboard financiero — tus ingresos, gastos y proyecciones visibles de un vistazo.",
-      "Sistema de contenido — planifica, crea y reutiliza tu contenido desde un solo lugar.",
-      "Seguimiento de clientes — cada cliente tiene su ficha con notas, sesiones y progreso.",
-      "Planificación semanal y mensual — sabes exactamente qué toca hacer cada semana.",
+      "Todos los procesos de tu negocio bajo control: CRM y gestión de clientes, calendario de lanzamientos, finanzas y 5 más.",
+      "Tu nueva oficina digital: todo tu negocio vive en un Notion estructurado, pulcro y fácil de usar.",
+      "Proyectos y agenda: tienes un proceso de planificación trimestral, mensual y semanal para saber exactamente qué toca hacer y revisar cada día.",
+      "Más contenido en menos horas: el mejor sistema para planificar y reutilizar tus ideas en tu newsletter, podcast, LinkedIn e Instagram desde un solo lugar.",
+      "La mejor combinación de herramientas: analizamos qué herramientas puedes incorporar para multiplicar tu impacto, reducir horas y escalar tu negocio.",
     ],
-    outcome: "Tu oferta está lista",
+    outcome: "Tu sistema operativo está listo",
   },
   {
     n: "2",
-    week: "Semanas 3-4",
-    phase: "Presencia online",
-    title: "Tu web personal en Lovable",
-    body: "Una web profesional que dice quién eres, qué haces y cómo trabajar contigo.",
+    week: "Semana 3-4",
+    title: "Claude como tu cofundador",
+    body: "Deja de usar la IA como una normie. Exprime Claude en todos tus procesos como tu co-fundador.",
     bullets: [
-      "Paso a paso de cómo montar tu web en Lovable",
-      "El copy completo de tu web — escrito contigo en sesión",
-      "Montada y publicada durante el programa",
-      "Sin diseñador. Sin programador.",
+      "La configuración inicial de los pros. Proyectos, artefactos, Skills, MCPs. Todos los básicos imprescindibles (que ahora te suenan a chino) explicados paso a paso.",
+      "Aprende a nutrir a Claude con tu contexto: manual de marca, branding, estrategia de productos, lanzamientos.",
+      "Claude Design y otras IAs que te ahorran horas en Canva.",
+      "Conecta Notion con Claude y déjate volar la cabeza con lo que puede hacer por ti.",
+      "Los prompts y automatizaciones que yo uso cada día.",
+    ],
+    outcome: "Claude trabaja para ti",
+  },
+  {
+    n: "3",
+    week: "Semana 5-6",
+    title: "Una web de WOW",
+    body: "Una que te posiciona y dice quién eres, qué haces y cómo trabajar contigo con claridad absoluta.",
+    bullets: [
+      "Montamos paso a paso tu web desde cero en Lovable.",
+      "El copy completo y coherente escrito y revisado (sin sonar a IA).",
+      "Una estructura profesional, minimalista y ultra eficiente que potencie sin abrumar.",
+      "Añadimos tus imágenes, branding, dominio, links y queda 100% a tu gusto.",
+      "Aprendes a hacer todos los cambios en minutos. Sin diseñador ni programador.",
     ],
     outcome: "Tu web está activa",
   },
   {
-    n: "3",
-    week: "Semanas 3-4",
-    phase: "Presencia online",
-    title: "Tu sales page",
-    body: "La página que vende mientras tú duermes.",
+    n: "4",
+    week: "Semana 7",
+    title: "Una página de ventas ultra convincente",
+    body: "Para que puedas subir los precios sin que el envoltorio te perjudique. La página que vende tu oferta por ti a todas horas.",
     bullets: [
-      "Sales page completa para tu oferta principal",
-      "Copy escrito contigo en sesión",
-      "Publicada y lista para recibir pagos",
+      "Plantilla con la estructura que usan los emprendedores anglosajones para facturar millones.",
+      "Guía y revisión del copy completo sección por sección (sin que suene a IA).",
+      "Montada en Lovable como página independiente y conectada a Stripe u otros links.",
+      "Lista para compartir, enviar después de una llamada, poner en tu LinkedIn.",
+      "Duplica y modifica el copy en 90 segundos para aprovecharla en otros programas.",
     ],
     outcome: "Tu oferta acepta pagos",
   },
   {
-    n: "4",
-    week: "Semanas 5-6",
-    phase: "Embudo y automatización",
-    title: "Tu embudo de captación",
-    body: "El sistema que capta leads y los convierte en clientes de forma automática.",
+    n: "5",
+    week: "Semana 8",
+    title: "Un lead magnet que engancha",
+    body: "Deja de mandar PDFs y ebooks que nadie lee. Crea algo interactivo que les vuela la cabeza a tus leads. Sé la primera en ofrecer algo así en tu sector. Verás la diferencia.",
     bullets: [
-      "Lead magnet creado y publicado",
-      "Secuencia de emails de bienvenida",
-      "Integración completa con tu web",
+      "Paso a paso de cómo crear tu lead magnet tipo app interactiva.",
+      "Conectado a tu Notion + email marketing para capturar leads automáticamente.",
+      "Con un vídeo de ventas que convierte — guión y estructura incluidos.",
+      "Tu embudo de captación completo montado y funcionando.",
     ],
     outcome: "Tu embudo funciona",
-  },
-  {
-    n: "5",
-    week: "Semanas 7-8",
-    phase: "Lanzamiento y primera venta",
-    title: "Tu motor de contenido con IA",
-    body: "Crea contenido de forma sistemática sin depender de la inspiración.",
-    bullets: [
-      "Sistema de repurposing: una idea, múltiples formatos",
-      "Plantillas de LinkedIn y Substack",
-      "Flujo de trabajo con IA integrado",
-    ],
-    outcome: "Primera venta cerrada",
   },
 ];
 
@@ -138,12 +139,6 @@ export const Deliverables = () => {
                       {step.title}
                     </h3>
                   </div>
-                  <p
-                    className="text-xs uppercase tracking-[0.18em] font-medium mb-5"
-                    style={{ color: "#ffffff", opacity: 0.5 }}
-                  >
-                    {step.phase}
-                  </p>
                   <p className="text-white/75 leading-relaxed mb-6">{step.body}</p>
 
                   <ul className="space-y-2.5 mb-6">

@@ -1,11 +1,13 @@
 export const Comparativa = () => {
   const rows = [
-    { item: "Mentoría de negocio 1:1 (4 meses)", market: "€3000–€8000", expo: "Incluido" },
-    { item: "Estratega de marca personal", market: "€1500–€3000", expo: "Incluido" },
-    { item: "Copywriter para sales page y web", market: "€800–€2000", expo: "Incluido" },
-    { item: "Consultor de automatización con IA", market: "€1000–€2500", expo: "Incluido" },
-    { item: "Setup de embudo y email marketing", market: "€500–€1500", expo: "Incluido" },
-    { item: "Acceso a Lanza, Redes y Construye", market: "€3800", expo: "Incluido" },
+    { item: "Estrategia de marca personal y posicionamiento", market: "€2.000 — €4.000", expo: "Incluido" },
+    { item: "Auditoría, montaje y optimización de redes (LinkedIn + Substack)", market: "€1.000 — €2.500", expo: "Incluido" },
+    { item: "Estrategia de contenidos y sistema de reutilización con IA", market: "€1.500 — €3.000", expo: "Incluido" },
+    { item: "Copy y estructura de sales page", market: "€1.500 — €3.500", expo: "Incluido" },
+    { item: "Sistema operativo completo en Notion", market: "€1.500 — €3.000", expo: "Incluido" },
+    { item: "Embudo de captación + email marketing montado", market: "€1.000 — €2.500", expo: "Incluido" },
+    { item: "Automatizaciones con IA configuradas", market: "€1.000 — €2.500", expo: "Incluido" },
+    { item: "17 horas de consultoría estratégica 1:1", market: "€3.400 — €8.500", expo: "Incluido" },
   ];
 
   return (
@@ -36,6 +38,13 @@ export const Comparativa = () => {
                 </tr>
               ))}
             </tbody>
+            <tfoot>
+              <tr className="border-t-2 border-border">
+                <td className="pt-5 pb-2 pr-8 font-bold text-foreground">TOTAL</td>
+                <td className="pt-5 pb-2 pr-8 text-foreground/50 line-through font-bold">€12.900 — €29.500</td>
+                <td className="pt-5 pb-2 text-mint font-bold text-lg">€4.500</td>
+              </tr>
+            </tfoot>
           </table>
         </div>
 
@@ -54,7 +63,7 @@ export const Comparativa = () => {
               La mayoría invierte en marketing antes de tener algo que vender. En contenido antes de tener posicionamiento. En herramientas antes de tener sistemas.
             </p>
             <p>
-              En EXPONENCIAL hacemos todo en el orden correcto — y eso lo cambia todo.
+              En EXPONENCIAL hacemos todo en el orden correcto, y eso lo cambia todo.
             </p>
           </div>
         </div>

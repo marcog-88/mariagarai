@@ -3,7 +3,7 @@ export const Letras = () => {
     <section className="py-24 md:py-32 bg-background">
       <div className="container-tight">
         <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
-          IA para gente de letras
+          Sé como te sientes
         </p>
 
         <p className="font-serif italic text-[clamp(2rem,4.5vw,3.25rem)] leading-[1.15] tracking-tight max-w-4xl text-foreground">
@@ -12,14 +12,18 @@ export const Letras = () => {
 
         <div className="mt-12 max-w-3xl space-y-8 text-lg md:text-xl leading-relaxed text-foreground/80">
           <p>
-            Hasta que me di cuenta de que no tengo que usarla para hablar con un chatbot. Tengo que usarla para construir.
+            Hasta que me di cuenta de que la IA no me quita criterio, gusto ni
+            profesionalidad. Crear, escribir y pensar sigue siendo mi tarea. La IA sirve
+            para acelerar la ejecución y escalar lo que ya funciona.
           </p>
           <p>
-            Uso la IA para construir activos de mi negocio. Para volarle la cabeza a mis
-            leads con un lead magnet interactivo en formato app. Para que llevar mi negocio
-            se sienta minimalista y sencillo en el día a día. Con menos carga operativa.
-            Con un stack de pocas herramientas que consigue que no necesite a terceras
-            personas.
+            Ahora uso la IA para construir activos y sistemas en mi negocio. Para volarle
+            la cabeza a mis leads con un lead magnet interactivo en formato app. Para
+            compartir mi web con orgullo. Para subir precios con coherencia.
+          </p>
+          <p>
+            Y sobre todo: para ahorrar +10.000€ en delegar todo esto a quien no entiende
+            lo que hago.
           </p>
         </div>
 
