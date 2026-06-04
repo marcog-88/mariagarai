@@ -38,35 +38,15 @@ export const Pricing = () => {
         </ul>
 
         <div className="mt-16 max-w-2xl">
-          <div
-            className="mb-4 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
-            style={{
-              background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
-              border: "1.5px solid #e88f00",
-              boxShadow:
-                "4px 0 12px rgba(232,143,0,0.5), -4px 0 12px rgba(232,143,0,0.5), inset 0 2px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)",
-            }}
-          >
-            <span
-              className="rounded-full"
-              style={{
-                width: "12px",
-                height: "12px",
-                background: "#ffffff",
-              }}
-              aria-hidden
-            />
-            Julio 2026 · 30 días
-          </div>
           <p className="text-primary-foreground/40 line-through text-2xl mb-2">€2.279</p>
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€497</p>
-          <p className="mt-2 text-primary-foreground/60">Pago único · Acceso inmediato</p>
+          <p className="mt-2 italic text-primary-foreground/60">• Pago único · Acceso inmediato</p>
+          <p className="italic text-primary-foreground/60">• Máximo 15 personas por cohorte</p>
 
-          <p className="mt-12 mb-8 text-xs md:text-sm uppercase tracking-widest text-mint">
-            Máximo 15 personas por cohorte
-          </p>
-          <StripeBuyButton />
+          <div className="mt-12">
+            <StripeBuyButton glow />
+          </div>
 
           <a
             href="mailto:maria@mariagarai.com"

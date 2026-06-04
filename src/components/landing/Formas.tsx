@@ -48,7 +48,7 @@ const formas: Forma[] = [
   },
   {
     eyebrow: "PROGRAMA",
-    eyebrowBadge: "COHORT · JULIO 2026",
+    eyebrowBadge: "JULIO 2026",
     badgeColor: "orange",
     title: "Redes que Venden",
     subtitle:
@@ -87,7 +87,13 @@ export const Formas = () => {
               key={f.title}
               className={`flex flex-col ${i > 0 ? "pt-16 md:pt-0" : ""}`}
             >
-              <div className={`relative aspect-[4/3] w-full overflow-hidden rounded-[1.25rem] border border-border ${f.cardBg ? "" : "bg-secondary"}`} style={f.cardBg ? { background: f.cardBg } : undefined}>
+              <a
+                href={f.href}
+                target={f.href.startsWith("http") ? "_blank" : undefined}
+                rel={f.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className={`relative aspect-[4/3] w-full overflow-hidden rounded-[1.25rem] border border-border block ${f.cardBg ? "" : "bg-secondary"}`}
+                style={f.cardBg ? { background: f.cardBg } : undefined}
+              >
                 {f.image ? (
                   <img
                     src={f.image}
@@ -103,30 +109,22 @@ export const Formas = () => {
                     {f.imagePlaceholderText || f.title}
                   </div>
                 )}
-              </div>
+              </a>
 
               <div className="mt-6 flex flex-col flex-1">
-                {f.eyebrowBadge && (
-                  <p className="mb-3 flex items-center flex-wrap gap-y-1">
+                <h3 className="font-serif text-3xl md:text-4xl tracking-tight">
+                  {f.title}
+                  {f.eyebrowBadge && (
                     <span
-                      className={`text-xs font-medium tracking-widest uppercase ${
-                        f.badgeColor === "mint" ? "" : "animate-pulse"
-                      }`}
-                      style={{
-                        color:
-                          f.badgeColor === "mint"
-                            ? "#2d8a4e"
-                            : f.badgeColor === "orange"
-                            ? "#e88f00"
-                            : "#ff4295",
-                      }}
+                      className={`ml-2 inline-block align-middle font-sans text-xs rounded-full px-2 py-0.5 ${
+                        f.badgeColor === "mint"
+                          ? "bg-gray-100 text-gray-400"
+                          : "bg-[#9378fe]/15 text-[#9378fe]"
+                      } ${f.badgeColor === "hot-pink" ? "animate-pulse" : ""}`}
                     >
                       {f.eyebrowBadge}
                     </span>
-                  </p>
-                )}
-                <h3 className="font-serif text-3xl md:text-4xl tracking-tight">
-                  {f.title}
+                  )}
                 </h3>
                 <p className="mt-3 text-base text-foreground/70 leading-relaxed">
                   {f.subtitle}
@@ -136,7 +134,7 @@ export const Formas = () => {
                     href={f.href}
                     target={f.href.startsWith("http") ? "_blank" : undefined}
                     rel={f.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className={`btn-primary justify-center w-full ${f.title === "Construye" ? "md:w-fit md:whitespace-nowrap" : "md:w-[220px]"}`}
+                    className={`btn-primary justify-center w-full whitespace-nowrap !text-sm md:!text-base !text-white ${f.title === "Construye" ? "md:w-fit" : "md:w-[220px]"}`}
                     style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
                   >
                     {f.cta}

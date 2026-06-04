@@ -63,11 +63,11 @@ export const Nav = () => {
             <Logo className="block h-4 md:h-5 [&>svg]:h-full [&>svg]:w-auto" />
           </a>
 
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-10">
             <li>
               <a
                 href="/"
-                className={`group relative text-sm transition-colors duration-200 ease-out hover:text-mint ${
+                className={`group relative text-sm transition-colors duration-200 ease-out hover:text-[#9378fe] ${
                   onDark ? "text-primary-foreground/70" : "text-foreground/70"
                 }`}
               >
@@ -87,7 +87,7 @@ export const Nav = () => {
                 onClick={() => setDropdownOpen((v) => !v)}
                 aria-haspopup="true"
                 aria-expanded={dropdownOpen}
-                className={`group relative flex items-center gap-1.5 text-sm transition-colors duration-200 ease-out hover:text-mint ${
+                className={`group relative flex items-center gap-1.5 text-sm transition-colors duration-200 ease-out hover:text-[#9378fe] ${
                   onDark ? "text-primary-foreground/70" : "text-foreground/70"
                 }`}
               >
@@ -128,12 +128,14 @@ export const Nav = () => {
 
             <li>
               <a
-                href="#precio"
-                className={`group relative text-sm transition-colors duration-200 ease-out hover:text-mint ${
+                href="https://mariagarai.substack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group relative text-sm transition-colors duration-200 ease-out hover:text-[#9378fe] ${
                   onDark ? "text-primary-foreground/70" : "text-foreground/70"
                 }`}
               >
-                Trabaja conmigo
+                Carreras Modernas
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-mint transition-transform duration-200 ease-out group-hover:scale-x-100" />
               </a>
             </li>
@@ -144,7 +146,8 @@ export const Nav = () => {
               href={TIDYCAL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-mint hidden md:inline-flex"
+              className="btn-mint hidden md:inline-flex transition-shadow duration-300"
+              style={scrolled ? { boxShadow: "4px 4px 0 0 #0c0d0e" } : undefined}
             >
               Reservar llamada
             </a>
@@ -189,7 +192,7 @@ export const Nav = () => {
             >
               <a
                 href="/"
-                className="font-serif text-3xl text-white hover:text-mint transition-colors"
+                className="font-serif text-3xl text-white hover:text-[#9378fe] transition-colors"
                 onClick={() => setOpen(false)}
               >
                 Inicio
@@ -206,7 +209,7 @@ export const Nav = () => {
                 type="button"
                 onClick={() => setMobileDropdownOpen((v) => !v)}
                 aria-expanded={mobileDropdownOpen}
-                className="font-serif text-3xl text-white transition-colors hover:text-mint flex items-center gap-3"
+                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe] flex items-center gap-3"
               >
                 Programas
                 <span
@@ -224,7 +227,7 @@ export const Nav = () => {
                     <li key={p.href}>
                       <a
                         href={p.href}
-                        className="font-serif text-2xl text-white transition-colors hover:text-mint"
+                        className="font-serif text-2xl text-white transition-colors hover:text-[#9378fe]"
                         onClick={() => setOpen(false)}
                       >
                         — {p.label}
@@ -242,11 +245,13 @@ export const Nav = () => {
               style={{ transitionDelay: open ? "240ms" : "0ms" }}
             >
               <a
-                href="#precio"
-                className="font-serif text-3xl text-white hover:text-mint transition-colors"
+                href="https://mariagarai.substack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-serif text-3xl text-white hover:text-[#9378fe] transition-colors"
                 onClick={() => setOpen(false)}
               >
-                Trabaja conmigo
+                Carreras Modernas
               </a>
             </li>
           </ul>

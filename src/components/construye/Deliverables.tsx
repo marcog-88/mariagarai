@@ -101,11 +101,14 @@ export const Deliverables = () => {
 
         {/* Timeline header */}
         <p
-          className="mt-16 md:mt-24 mb-10 text-xs md:text-xs lg:text-sm font-medium uppercase tracking-[0.24em] md:tracking-[0.08em] lg:tracking-[0.24em]"
+          className="mt-16 md:mt-24 mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
           style={{ color: "#0c0d0e" }}
         >
-          Qué pasa cada semana — los 5 sistemas que construimos juntas
+          Qué pasa cada semana
         </p>
+        <h2 className="font-serif text-[clamp(1rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-3xl mb-14 whitespace-nowrap">
+          Los 5 sistemas que construimos juntas
+        </h2>
 
         {/* Vertical timeline: 5 modules + week info combined */}
         <div className="relative">
@@ -249,7 +252,7 @@ export const Deliverables = () => {
             href="https://mariagarai.activehosted.com/f/11"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-mint-lg !text-sm md:!text-lg"
+            className="btn-mint-lg !text-sm md:!text-lg whitespace-nowrap border-2 border-[#0c0d0e]"
             style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
           >
             Unirme a la lista de espera <span aria-hidden>→</span>

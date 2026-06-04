@@ -2,12 +2,12 @@ const bonuses = [
   {
     title: "🗂️ Notion Starter Pack: Tu sistema operativo desde el día 1",
     valor: "€297",
-    body: "La plantilla de Notion completa que usa María para gestionar su negocio. CRM, tracker de contenido, finanzas, pipeline de clientes. Lista para usar desde la primera sesión.",
+    body: "La plantilla completa de Notion que usa María para gestionar su negocio. CRM, tracker de contenido, finanzas, pipeline de clientes. Lista para usar desde la primera sesión.",
   },
   {
     title: "🤖 Biblioteca de Prompts CM: Claude configurado para tu negocio",
     valor: "€197",
-    body: "Más de 50 prompts personalizados para crear contenido, escribir emails, preparar llamadas de venta y gestionar clientes. El mismo sistema que usa María cada día.",
+    body: "Más de 50 prompts personalizados para crear contenido, escribir emails, preparar llamadas de venta y gestionar clientes. Claude configurado para tu negocio.",
   },
   {
     title: "📧 Secuencia de Bienvenida: Tu embudo de email desde el día 1",
@@ -22,12 +22,12 @@ const bonuses = [
   {
     title: "🔗 LinkedIn Profile Audit: Optimización completa",
     valor: "€297",
-    body: "Revisión y reescritura de tu perfil de LinkedIn desde cero: titular, extracto, experiencia y sección destacada. Hecho durante las primeras sesiones.",
+    body: "Revisión y reescritura completa de tu perfil de LinkedIn: titular, extracto, experiencia y sección destacada. Hecho durante las primeras sesiones.",
   },
   {
-    title: "♾️ Acceso Vitalicio a Workshops Mensuales CM",
+    title: "♾️ Workshops Mensuales",
     valor: "Incluido",
-    body: "Todos los workshops mensuales de Carreras Modernas mientras el programa esté activo. Nuevas sesiones sobre ventas, IA, contenido y sistemas cada mes.",
+    body: "Todos los workshops de Carreras Modernas mientras el programa esté activo. Ventas, IA, contenido y sistemas, cada mes.",
   },
 ];
 

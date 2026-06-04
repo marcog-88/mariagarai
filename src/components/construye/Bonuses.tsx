@@ -1,7 +1,7 @@
 const bonuses = [
   {
     n: "01",
-    title: "🏫 Acceso 3 meses a la Escuela",
+    title: "🏫 Acceso 3 meses a Carreras Modernas",
     valor: "€497",
     body: "Rodeada de founders en transición. Celebramos logros, compartimos aprendizajes, te sientes arropada.",
   },

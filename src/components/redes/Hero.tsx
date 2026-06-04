@@ -65,8 +65,8 @@ export const Hero = () => {
           </div>
 
           <div className="flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 mt-12">
-            <StripeBuyButton />
-            <div>
+            <StripeBuyButton glow />
+            <div className="text-center md:text-left">
               <p className="text-xs uppercase tracking-widest text-primary-foreground/60">TU INVERSIÓN</p>
               <p className="font-serif text-6xl font-bold text-primary-foreground">€497</p>
             </div>

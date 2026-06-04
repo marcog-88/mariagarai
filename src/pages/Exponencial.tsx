@@ -6,8 +6,8 @@ import { Testimonios } from "@/components/exponencial/Testimonios";
 import { Letras } from "@/components/exponencial/Letras";
 import { ParaEso } from "@/components/exponencial/ParaEso";
 import { OnlyDifference } from "@/components/exponencial/OnlyDifference";
-import { Deliverables } from "@/components/exponencial/Deliverables";
 import { AntesDespues } from "@/components/exponencial/AntesDespues";
+import { Comparacion } from "@/components/exponencial/Comparacion";
 import { ForYou } from "@/components/exponencial/ForYou";
 import { PorQueAhora } from "@/components/exponencial/PorQueAhora";
 import { Comparativa } from "@/components/exponencial/Comparativa";
@@ -31,8 +31,8 @@ const Exponencial = () => (
     <Letras />
     <ParaEso />
     <OnlyDifference />
-    <Deliverables />
     <AntesDespues />
+    <Comparacion />
     <ForYou />
     <PorQueAhora />
     <Comparativa />

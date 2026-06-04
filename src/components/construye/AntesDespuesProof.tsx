@@ -100,7 +100,13 @@ export const AntesDespuesProof = () => {
         </div>
 
         <div className="mt-12 hidden md:flex justify-center">
-          <TidyCalButton>
+          <TidyCalButton
+            className="btn-mint-lg !text-base whitespace-nowrap border-2 border-[#0c0d0e]"
+            style={{
+              boxShadow:
+                "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(208, 252, 208, 0.6), 14px 14px 56px rgba(208, 252, 208, 0.35)",
+            }}
+          >
             Quiero este resultado <span aria-hidden>→</span>
           </TidyCalButton>
         </div>

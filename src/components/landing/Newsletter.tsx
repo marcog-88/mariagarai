@@ -29,10 +29,11 @@ export const Newsletter = () => {
         {/* Headline + subheadline — full width */}
         <div>
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
-            Newsletter
+            Carreras Modernas · Newsletter
           </p>
           <h2 className="display-md whitespace-normal md:whitespace-nowrap">
             Aprende a construir tu{" "}
+            <br className="md:hidden" />
             <span className="font-serif italic text-accent">negocio</span>{" "}
             con <span className="font-serif italic text-accent">IA</span>.
           </h2>

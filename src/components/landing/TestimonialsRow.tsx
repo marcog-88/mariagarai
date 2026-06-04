@@ -35,7 +35,7 @@ const testimonials: Testimonial[] = [
 
 export const TestimonialsRow = () => {
   return (
-    <section className="py-24 md:py-32 border-t border-border bg-[#f9f9f7]">
+    <section className="pt-12 md:pt-16 pb-24 md:pb-32 bg-[#f9f9f7]">
       <div className="container-tight">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-5 lg:gap-6">
           {testimonials.map((t) => (

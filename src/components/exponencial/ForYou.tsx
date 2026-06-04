@@ -51,7 +51,7 @@ export const ForYou = () => {
               <ul className="space-y-4">
                 {si.map((s, i) => (
                   <li key={i} className="flex gap-3 text-primary-foreground leading-relaxed">
-                    <span className="flex-shrink-0 mt-0.5" aria-hidden>✓</span>
+                    <span className="flex-shrink-0 mt-0.5" aria-hidden>✅</span>
                     <span>{s}</span>
                   </li>
                 ))}
@@ -62,7 +62,7 @@ export const ForYou = () => {
               <ul className="space-y-4">
                 {no.map((n, i) => (
                   <li key={i} className="flex gap-3 text-primary-foreground/70 leading-relaxed">
-                    <span className="flex-shrink-0 mt-0.5" aria-hidden>✗</span>
+                    <span className="flex-shrink-0 mt-0.5" aria-hidden>❌</span>
                     <span>{n}</span>
                   </li>
                 ))}

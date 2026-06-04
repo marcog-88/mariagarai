@@ -11,7 +11,7 @@ export const CTA = () => {
           <em className="font-serif italic text-accent md:block">algo que sea tuyo.</em>
         </h2>
         <p className="mt-10 max-w-4xl text-lg md:text-xl text-primary-foreground leading-relaxed">
-          Trabaja conmigo dentro de la Escuela de Carreras Modernas.
+          Trabaja conmigo dentro de Carreras Modernas.
         </p>
 
         <div className="mt-16 md:mt-20">
@@ -19,7 +19,11 @@ export const CTA = () => {
             href="https://tidycal.com/mariagarai/exploracion"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary w-full md:w-auto"
+            className="btn-primary w-full md:w-auto border-2 border-[#0c0d0e] !text-[#0c0d0e]"
+            style={{
+              boxShadow:
+                "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
+            }}
           >
             Reservar llamada a coste 0
             <span aria-hidden>↗</span>

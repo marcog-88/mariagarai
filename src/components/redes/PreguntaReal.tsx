@@ -56,7 +56,7 @@ export const PreguntaReal = () => {
           </div>
         </div>
 
-        <p className="mt-12 text-center font-semibold text-lg md:text-xl text-foreground max-w-2xl mx-auto">
+        <p className="mt-12 text-center font-semibold italic text-lg md:text-xl text-foreground max-w-2xl mx-auto">
           La decisión no es €497. La decisión es cuándo dejas de ser invisible.
         </p>
 
