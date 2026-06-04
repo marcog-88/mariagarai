@@ -128,6 +128,16 @@ export const Nav = () => {
 
             <li>
               <a
+                href="https://carrerasmodernas.com/productos"
+                className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
+              >
+                Productos
+                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
+              </a>
+            </li>
+
+            <li>
+              <a
                 href="https://mariagarai.substack.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -245,6 +255,21 @@ export const Nav = () => {
                 open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
               }`}
               style={{ transitionDelay: open ? "240ms" : "0ms" }}
+            >
+              <a
+                href="https://carrerasmodernas.com/productos"
+                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
+                onClick={() => setOpen(false)}
+              >
+                Productos
+              </a>
+            </li>
+
+            <li
+              className={`transition-all duration-500 ease-out ${
+                open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+              }`}
+              style={{ transitionDelay: open ? "300ms" : "0ms" }}
             >
               <a
                 href="https://mariagarai.substack.com/"
