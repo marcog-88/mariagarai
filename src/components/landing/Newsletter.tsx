@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import substackCard from "@/assets/substack-card.webp";
+import substackCard from "@/assets/substack-card.png";
 
 const IFRAME_W = 533;
 const IFRAME_H = 488;
