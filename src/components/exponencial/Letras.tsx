@@ -10,7 +10,7 @@ export const Letras = () => {
           style={{ borderColor: "#9378fe" }}
         >
           <p className="font-serif text-2xl md:text-3xl italic leading-snug" style={{ color: "#9378fe" }}>
-            "Tardé 3 años en construir lo que enseño a hacer en 4 meses."
+            "Tardé 3 años en construir lo que te enseño a hacer en 4 meses."
           </p>
         </div>
 
@@ -25,11 +25,22 @@ export const Letras = () => {
             Te resumo el sufrimiento en 3 palabras: dudas, deudas y desesperación.
           </p>
           <p>
-            Lo que nadie me había enseñado era esto: tener el conocimiento no es suficiente. El error no era yo, era el orden. Estaba creando antes de validar, construyendo antes de vender, invirtiendo antes de ganar.
+            Lo que nadie me había enseñado era esto: tener el conocimiento no es suficiente. Vendía poco, por debajo de mi valor y sin apalancarme en mis ventajas competitivas.
           </p>
-          <p>
-            Cuando por fin empecé a hacer lo contrario: validar primero, vender antes de construir, sistematizar para no depender de mi tiempo cada hora, todo cambió.
-          </p>
+          <p>El punto de inflexión fue cuando toqué fondo, frené e hice lo que estaba evitando:</p>
+          <ul className="space-y-3">
+            {[
+              "Crear una oferta insignia de alto valor (en vez de vender cosas sueltas y servir a todos).",
+              "Elegir el sistema de captación que encajaba conmigo (en vez de estar en todas partes sin estrategia).",
+              "Construir autoridad en redes para que los clientes llegaran a mí (en vez de perseguirlos).",
+              "Usar la IA como mi socia para acelerar y escalar (en vez de hacerlo todo a mano).",
+            ].map((item) => (
+              <li key={item} className="flex gap-3 text-foreground/80 leading-relaxed">
+                <span className="text-[#9378fe] flex-shrink-0">→</span>
+                <span className="italic">{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <p className="mt-14 font-serif text-3xl md:text-4xl leading-tight max-w-3xl text-foreground">

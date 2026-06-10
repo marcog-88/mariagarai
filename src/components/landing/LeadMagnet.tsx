@@ -23,6 +23,17 @@ export const LeadMagnet = () => {
               </span>
               {" "}Gratis.
             </h2>
+
+            <div className="mt-8 md:hidden">
+              <img
+                src={mockup}
+                alt="Taller en vivo — sesión grupal con María Garaí y participantes"
+                className="w-full h-auto rounded-2xl"
+                style={{ filter: "drop-shadow(0px 6px 20px rgba(0,0,0,0.13))" }}
+                loading="lazy"
+              />
+            </div>
+
             <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
               Cada semana abro una sesión en vivo sobre negocios boutique, ventas, IA y
               sistemas. Sin coste, sin permanencia. Entras, aprendes y sales con algo que puedes
@@ -39,8 +50,8 @@ export const LeadMagnet = () => {
             </a>
           </div>
 
-          {/* Right: mockup image */}
-          <div className="mt-14 md:mt-0 md:w-[42%] lg:w-[40%] flex-shrink-0">
+          {/* Right: mockup image (desktop) */}
+          <div className="hidden md:block md:w-[42%] lg:w-[40%] flex-shrink-0">
             <img
               src={mockup}
               alt="Taller en vivo — sesión grupal con María Garaí y participantes"

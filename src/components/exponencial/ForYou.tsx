@@ -1,30 +1,34 @@
 const cards = [
   {
-    title: "Tienes experiencia profesional sólida",
-    body: "8–15 años en empresas, consultoría o instituciones. Ya has dejado atrás el corporate o estás a punto. Tienes el conocimiento. Lo que necesitas es construir tu próximo capítulo.",
+    title: "Ya tienes algo en marcha",
+    body: "Tienes experiencia y conocimiento. Ya estás emprendiendo con un servicio, programa o consultoría. Tienes clientes, aunque vengan de tu entorno. Lo que necesitas es estructura y más impacto.",
   },
   {
-    title: "Llevas tiempo intentándolo pero no acabas de despegar",
-    body: "Tienes clientes sueltos, una idea validada o presencia en redes. Pero llevas meses dando vueltas. Necesitas acompañamiento intensivo, no más teoría.",
+    title: "Has intentado montarlo sola y te has perdido",
+    body: "Has probado Notion. Has mirado herramientas. Has jugado con Claude. Pero no has conseguido que todo funcione junto. No sabes muy bien cómo aplicar la IA a tu negocio.",
   },
   {
-    title: "Valoras tu tiempo más que tu dinero",
-    body: "Quieres acortar la curva. No quieres pasar 3 años en prueba y error. Sabes que la inversión correcta hoy se convierte en libertad mañana.",
+    title: "Tienes un negocio pero no se siente profesional",
+    body: "Tu presencia digital no refleja lo buena que eres. No tienes autoridad en redes. La parte comercial se te atasca. Quieres que te vean como referente.",
   },
 ];
 
 const si = [
-  "Tienes experiencia profesional y quieres convertirla en un negocio propio",
+  "Ya tienes una oferta o estás construyendo algo propio con clientes",
   "Quieres acompañamiento personalizado, no más cursos grupales",
+  "Estás abierta a aprender herramientas nuevas aunque no seas técnica",
+  "Quieres dejar de operar a medio montar y montar la infraestructura real",
   "Estás dispuesta a hacer el trabajo cada semana durante 4 meses",
-  "Estás abierta a usar IA como infraestructura, no solo como gadget",
+  "Quieres que tu negocio funcione como si tuvieras un equipo detrás",
 ];
 
 const no = [
-  "Estás empezando de cero sin experiencia profesional previa",
-  "Buscas un curso para consumir a tu ritmo",
-  "Esperas resultados sin hacer el trabajo cada semana",
-  "No estás abierta a usar herramientas digitales nuevas",
+  "Sigues trabajando por cuenta ajena y no vas a tener tiempo para esto",
+  "Todavía no tienes claro si quieres emprender",
+  "Solo quieres vender cursos de bajo coste",
+  "No quieres trabajar tu marca personal ni aparecer en redes",
+  "Quieres una web de diseñador perfecta (aquí ejecutamos rápido y bien, no perfeccionismo)",
+  "No estás dispuesta a usar IA como infraestructura",
 ];
 
 export const ForYou = () => {

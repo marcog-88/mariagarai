@@ -1,17 +1,17 @@
 import { TidyCalButton } from "@/components/construye/TidyCalButton";
 
 const cardA = [
-  "Otro año con ingresos esporádicos o ninguno",
-  "Otro año construyendo en la dirección equivocada",
-  "Otro año viendo cómo otras lo consiguen mientras tú esperas",
-  "La brecha con las que ya han empezado se hace más grande cada mes",
+  "Otro mes vendiendo solo a tu entorno",
+  "Otro mes con tu negocio a medio montar",
+  "Otro mes facturando menos de lo que podrías",
+  "La brecha con las que ya han empezado se hace más grande",
 ];
 
 const cardB = [
-  "Negocio boutique funcionando con clientes reales",
-  "Presencia digital profesional que atrae oportunidades",
+  "Una oferta de alto valor con clientes reales pagando",
+  "Una marca de autoridad que atrae oportunidades",
   "Sistemas con IA que trabajan sin ti cada hora",
-  "Una carrera moderna que es completamente tuya",
+  "Un negocio que se ve tan profesional como tú eres",
 ];
 
 export const PreguntaReal = () => {
@@ -37,7 +37,7 @@ export const PreguntaReal = () => {
             <p className="text-xs uppercase tracking-[0.18em] text-foreground/50 mb-3 font-medium">Si no haces nada</p>
             <ul className="space-y-3 text-foreground/70">
               {cardA.map((it) => (
-                <li key={it} className="flex gap-2"><span>—</span><span>{it}</span></li>
+                <li key={it} className="flex gap-2"><span className="text-foreground/40 font-bold flex-shrink-0">✕</span><span>{it}</span></li>
               ))}
             </ul>
           </div>
@@ -52,7 +52,7 @@ export const PreguntaReal = () => {
         </div>
 
         <p className="mt-12 text-center font-semibold text-lg md:text-xl text-foreground max-w-2xl mx-auto">
-          El dinero que inviertes hoy es el coste de no pasar otros 3 años en prueba y error.
+          El dinero que inviertes hoy es el coste de no pasar otros años en prueba y error.
         </p>
 
         <div className="mt-8 flex justify-center">
@@ -60,7 +60,7 @@ export const PreguntaReal = () => {
             className="btn-mint-lg whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
             style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
           >
-            Quiero esto para mi negocio <span aria-hidden>→</span>
+            Comprueba si encajas <span aria-hidden>→</span>
           </TidyCalButton>
         </div>
       </div>

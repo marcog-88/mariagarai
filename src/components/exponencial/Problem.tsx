@@ -6,30 +6,32 @@ export const Problem = () => {
           El problema
         </p>
         <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight max-w-4xl">
-          Tú quieres vivir bien de lo tuyo. No quieres ser una mantenida.
+          Ya vendes. Pero solo a la gente de tu entorno.
         </h2>
 
         <div className="mt-16 max-w-3xl space-y-8 text-sm md:text-base leading-relaxed text-foreground/80">
-          <p>
-            No quieres depender de tu pareja. De tus ahorros. Ni de ese trabajo que no te gusta pero te paga.
+          <p className="border-l-2 border-[#9378fe] pl-4 font-medium italic">
+            Eres una profesional con experiencia. Sabes que lo que tienes vale mucho. Pero el negocio no termina de despegar.
           </p>
-          <p>
-            Tienes el potencial. Tienes las ganas. Llevas meses con la idea en la cabeza, probando cosas. Pero no acabas de aterrizar qué vendes, a quién, ni qué pasos dar para convertir todo eso en un negocio que realmente funcione.
+          <p>Lo que sientes es esto:</p>
+          <ul className="space-y-3">
+            {[
+              "Vendes a contactos y referidos, pero no sabes cómo conseguir clientes más allá de tu círculo.",
+              "Tu negocio no se ve tan profesional como tú eres.",
+              "No tienes claro qué vender exactamente, ni cómo empaquetarlo, ni a qué precio.",
+              "Cobras por debajo de lo que vales y te da miedo subir.",
+              "Lo haces todo a mano. Sin sistemas. Dependes de tu tiempo cada hora.",
+              "Sabes que la IA debería estar ayudándote, pero no sabes cómo.",
+            ].map((item) => (
+              <li key={item} className="flex gap-3 text-foreground/75">
+                <span className="text-[#9378fe] flex-shrink-0 font-bold">✕</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="font-medium italic text-foreground/80">
+            Conclusión: haces un poco de todo, sin orden ni criterio. Pero no terminas de dar con la tecla para que tu negocio facture más sin que dependa 100% de ti.
           </p>
-          <p>
-            Todo es más fácil y más difícil que en 2017. Hoy no vale con postear algo en Instagram y esperar que te compren. Pero hoy también, con criterio, sistemas e IA, una persona sola hace en semanas lo que antes requería un equipo y varios años.
-          </p>
-          <div className="space-y-6">
-            <p className="border-l-2 border-[#9378fe] pl-4 font-medium italic">
-              😔 Los que siguen cambiando su tiempo por un sueldo y cero libertad. Saben que hay algo más, pero no se atreven.
-            </p>
-            <p className="border-l-2 border-[#9378fe] pl-4 font-medium italic">
-              🔄 Los que se han lanzado pero siguen replicando el modelo antiguo: más horas, más esfuerzo, más cursos, más herramientas. Facturan poco o se queman intentándolo.
-            </p>
-            <p className="border-l-2 border-[#9378fe] pl-4 font-medium italic">
-              🚀 Los que han entendido que el juego cambió. Combinan su experiencia profesional, los sistemas correctos y la IA para construir carreras modernas que facturan en meses, no en años.
-            </p>
-          </div>
         </div>
       </div>
     </section>

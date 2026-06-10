@@ -2,11 +2,11 @@ import mariaGarantia from "@/assets/maria-garantia.webp";
 
 export const Garantia = () => {
   const items = [
-    "Tu oferta validada con clientes reales",
-    "Tu LinkedIn y Substack activos y con seguimiento creciente",
-    "Tu web profesional publicada",
+    "Tu oferta de alto valor validada con clientes reales",
+    "Tu LinkedIn y Substack activos y con autoridad creciente",
+    "Tu web y sales page publicadas",
     "Tu lead magnet capturando leads automáticamente",
-    "Tu Notion funcionando como sistema operativo",
+    "Tu Notion y Claude funcionando como tu sistema operativo",
   ];
 
   return (
@@ -42,7 +42,10 @@ export const Garantia = () => {
                 ))}
               </ul>
               <p className="mt-8 text-sm md:text-sm lg:text-base text-primary-foreground/80 leading-relaxed">
-                Si has hecho el trabajo cada semana y algo de esto no está al final, seguimos sin coste adicional hasta que lo esté.
+                No doy garantías de ingresos: nadie honesto las da. Sí garantizo que si haces el trabajo cada semana, sales con los 4 activos montados y funcionando.
+              </p>
+              <p className="mt-4 text-sm md:text-sm lg:text-base text-primary-foreground/80 leading-relaxed">
+                Si al final algo de esto no está, seguimos trabajando juntas sin coste adicional hasta que lo esté.
               </p>
               <p className="text-sm text-primary-foreground/60 mt-4 leading-snug italic">
                 Máximo 2 clientas nuevas al mes. Cuando los huecos están llenos, la lista de espera puede durar semanas.

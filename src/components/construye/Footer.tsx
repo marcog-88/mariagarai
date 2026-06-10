@@ -34,7 +34,7 @@ export const Footer = () => {
           </li>
         </ul>
         <p className="text-xs text-foreground/40 w-full md:w-auto">
-          © 2026 María Garaí · Carreras Modernas
+          © 2026 María Garaí · Exponencial
         </p>
       </div>
     </footer>

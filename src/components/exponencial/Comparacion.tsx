@@ -1,19 +1,21 @@
 const sin = [
-  "Llevas meses dando vueltas sin avanzar de verdad",
-  "No sabes exactamente qué vender ni a quién",
-  "Creas contenido pero nadie te compra",
-  "Tu sueldo sigue dependiendo de otro",
-  "Sientes que te falta algo pero no sabes qué",
-  "Ves cómo otras lo consiguen y no entiendes por qué",
+  "Vendes solo a contactos y referidos",
+  "No sabes qué vender, cambias de enfoque",
+  "Cobras por debajo de tu valor y te da miedo subir",
+  "Lo haces todo a mano, dependes de tu tiempo cada hora",
+  "Tu negocio no se ve tan profesional como tú eres",
+  "Sabes que la IA podría ayudarte pero no sabes cómo",
+  "Ves cómo otras lo consiguen y no entiendes por qué tú no",
 ];
 
 const con = [
+  "Una oferta de alto valor validada con clientes pagando",
   "Sabes exactamente qué vendes, a quién y a qué precio",
-  "Tienes clientes reales pagando en los primeros 60 días",
-  "Tu LinkedIn y Substack trabajan mientras tú vives",
-  "Operas sola con leverage de equipo gracias a la IA",
-  "Tienes una carrera que es completamente tuya",
-  "Sales de los 4 meses con un negocio funcionando",
+  "Subes precios con criterio y los defiendes sin culpa",
+  "Tu LinkedIn y Substack te traen clientes mientras tú vives",
+  "Un negocio que se ve tan profesional como tú eres",
+  "La IA trabajando como tu socia operativa",
+  "Sistemas que venden sin que estés en cada paso",
 ];
 
 export const Comparacion = () => {

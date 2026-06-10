@@ -1,20 +1,18 @@
 const includes = [
-  "Diseño completo de tu ecosistema de ofertas: qué vendes, a quién, a qué precio",
-  "Tu manual de marca personal: quién eres, qué problema resuelves, cómo te posicionas",
-  "Tu manual de ventas adaptado 100% a ti: vender sin manipulación, con criterio",
-  "Tu sistema de prospección activa: conversaciones que terminan en ventas",
+  "Diseño completo de tu oferta de alto valor: qué vendes, a quién, a qué precio",
+  "Tu manual de marca personalizado: mensaje, posicionamiento, diferenciación",
+  "Tu manual de ventas adaptado 100% a ti, con guión de objeciones reales",
+  "Tu sistema de prospección activa más allá de tu entorno",
   "17 sesiones 1:1 con María (60 minutos, semanales)",
   "WhatsApp directo entre sesiones para dudas urgentes",
   "Tu LinkedIn optimizado y publicando con criterio de negocio",
-  "Tu Substack lanzado y creciendo desde el día 1",
+  "Tu Substack lanzado y creciendo",
+  "Tu estrategia de contenido mensual con sistema de reutilización con IA",
   "Tu web personal montada durante las sesiones",
-  "Tu sales page: copy, estructura y página publicada",
-  "Tu lead magnet interactivo con IA, conectado a email marketing",
-  "Tu embudo de captación completo: del lead a la venta automática",
   "Tu Notion como sistema operativo: CRM, finanzas, contenido, clientes",
-  "Claude configurado como cofundador: automatizaciones de contenido y gestión",
-  "Tu biblioteca de prompts personalizada para tu negocio",
-  "Acceso vitalicio a workshops mensuales de Carreras Modernas",
+  "Claude configurado como tu socia operativa",
+  "Reunión de Socias mensual (sesiones grupales en directo)",
+  "Acceso a la comunidad de founders",
 ];
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
@@ -23,7 +21,7 @@ export const Pricing = () => {
   return (
     <section
       id="precio"
-      className="pt-12 pb-8 md:pb-12 lg:pb-32"
+      className="pt-12 pb-24 md:pb-32"
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
       <div className="container-tight">
@@ -49,7 +47,7 @@ export const Pricing = () => {
           <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
           <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€4500</p>
           <p className="mt-2 italic text-primary-foreground/60">
-            • Pago único o 2 pagos de €2500
+            • Pago único o 2 pagos de €2.250
           </p>
           <p className="italic text-primary-foreground/60">
             • Máximo 2 clientas nuevas al mes
@@ -65,7 +63,7 @@ export const Pricing = () => {
                 "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
             }}
           >
-            Solicitar llamada
+            Comprueba si encajas
             <span aria-hidden>→</span>
           </a>
 
@@ -73,9 +71,9 @@ export const Pricing = () => {
             href={TIDYCAL}
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-10 text-[11px] md:text-sm italic whitespace-nowrap text-primary-foreground/75 hover:text-mint underline underline-offset-4"
+            className="block mt-3 text-[11px] md:text-sm italic whitespace-nowrap text-primary-foreground/75 hover:text-mint underline underline-offset-4"
           >
-            ¿Tienes dudas antes de entrar? → Reservar llamada de exploración
+            ¿Tienes dudas? → Llamada de exploración
           </a>
         </div>
       </div>

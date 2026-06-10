@@ -65,10 +65,10 @@ export const Nav = () => {
 
             <li>
               <a
-                href="https://carrerasmodernas.com/productos"
+                href="https://www.laexponencial.com/"
                 className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
               >
-                Productos
+                Academia
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
               </a>
             </li>
@@ -170,11 +170,11 @@ export const Nav = () => {
               style={{ transitionDelay: open ? "240ms" : "0ms" }}
             >
               <a
-                href="https://carrerasmodernas.com/productos"
+                href="https://www.laexponencial.com/"
                 className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
                 onClick={() => setOpen(false)}
               >
-                Productos
+                Academia
               </a>
             </li>
 

@@ -4,55 +4,57 @@ const months = [
   {
     n: "1",
     label: "MES 1",
-    title: "Claridad total",
-    subtitle: "Oferta",
-    intro: "El trabajo que define todo lo demás. Sin esto, nada que construyas después funciona.",
+    title: "Tu Oferta Exponencial",
+    subtitle: "Oferta de servicios y formación insignia",
+    intro: "Claridad total sobre qué vendes, a quién y a qué precio.",
     bullets: [
-      "Claridad total sobre qué vendes, a quién y a qué precio.",
-      "Manual de marca personal.",
-      "Primeras conversaciones de venta abiertas.",
+      "Tu oferta insignia de alto valor empaquetada.",
+      "Manual de marca personalizado: tu mensaje, tu posicionamiento, tu diferenciación.",
+      "Primeras conversaciones de venta abiertas y validación con clientes reales.",
     ],
-    outcome: "Ya no vas a ciegas.",
+    outcome: "La forma optimizada de facturar el máximo sin quemarte.",
   },
   {
     n: "2",
     label: "MES 2",
-    title: "Primeras ventas",
-    subtitle: "Ventas",
-    intro: "Dejamos de suponer y empezamos a cobrar. Aquí es donde el negocio se vuelve real.",
+    title: "Tu Marca de Autoridad",
+    subtitle: "LinkedIn + Substack",
+    intro: "Los clientes empiezan a llegar a ti.",
     bullets: [
-      "Primeras ventas cerradas con clientes reales.",
-      "Manual de ventas adaptado a ti.",
-      "Sistema de prospección funcionando.",
+      "Perfil de LinkedIn optimizado para autoridad y venta.",
+      "Substack lanzado y creciendo.",
+      "Estrategia de contenido mensual con criterio (no publicar por publicar).",
+      "Sistema de ideación y reutilización de contenido con IA.",
     ],
-    outcome: "El dinero empieza a moverse.",
+    outcome: "Los clientes empiezan a llegar a ti.",
   },
   {
     n: "3",
     label: "MES 3",
-    title: "Activos trabajando",
-    subtitle: "Presencia digital",
-    intro: "Construimos los escaparates que atraen mientras tú vives. Una vez montados, trabajan sin ti.",
+    title: "Tus Ventas Automatizadas",
+    subtitle: "Ventas + captación",
+    intro: "Empiezan a llegar extraños que quieren comprarte.",
     bullets: [
-      "Presencia digital profesional activa.",
-      "LinkedIn publicando.",
-      "Substack creciendo.",
-      "Web y embudo publicados.",
+      "Manual de ventas adaptado a ti y guión de llamada.",
+      "Guión de objeciones reales de tu cliente.",
+      "El embudo de captación que mejor encaja con tu caso, montado.",
+      "Sistema de prospección activa más allá de tu círculo.",
     ],
-    outcome: "Los activos trabajan mientras tú vives.",
+    outcome: "Empiezan a llegar extraños que quieren comprarte.",
   },
   {
     n: "4",
     label: "MES 4",
-    title: "Sistema completo",
-    subtitle: "Sistemas con IA",
-    intro: "La infraestructura que convierte un negocio dependiente de tu tiempo en algo exponencial.",
+    title: "Tu Infraestructura con IA",
+    subtitle: "Tus escaparates y cimientos",
+    intro: "Sales con un negocio que se ve tan profesional como tú.",
     bullets: [
-      "Infraestructura con IA montada.",
-      "Notion como cerebro del negocio.",
-      "Plan de escalado diseñado.",
+      "Notion como sistema operativo: CRM, finanzas, contenido, clientes.",
+      "Claude configurado como tu socia operativa.",
+      "Automatizaciones donde tocan.",
+      "Web y landing que sabes gestionar.",
     ],
-    outcome: "Sales con un negocio que funciona sin ti cada hora.",
+    outcome: "Sales con un negocio que se ve tan profesional como tú.",
   },
 ];
 
@@ -61,10 +63,10 @@ export const AntesDespues = () => {
     <section className="py-20 md:py-28" style={{ background: "#f9f9f7" }}>
       <div className="container-tight">
         <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
-          Qué pasa cada mes
+          Qué construimos cada mes
         </p>
-        <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-3xl mb-14">
-          Cuatro meses con una dirección clara
+        <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-none whitespace-nowrap mb-14">
+          Cuatro meses. Cuatro activos. Una dirección clara.
         </h2>
 
         {/* Vertical timeline */}
@@ -149,7 +151,7 @@ export const AntesDespues = () => {
             className="btn-mint-lg !text-base md:!text-lg whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
             style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
           >
-            Solicitar llamada
+            Comprueba si encajas
             <span aria-hidden>→</span>
           </a>
         </div>

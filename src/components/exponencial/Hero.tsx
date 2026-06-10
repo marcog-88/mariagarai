@@ -42,15 +42,14 @@ export const Hero = () => {
             EXPONENCIAL · 4 MESES · 1:1
           </div>
           <h1 className="mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
-            Construye tu Carrera Moderna.{" "}
-            <br />
-            <em className="font-serif italic text-mint">Tu nuevo modelo profesional.</em>
+            Convierte tu conocimiento en un negocio de servicios y formación{" "}
+            <em className="font-serif italic text-mint">que factura más de 10k al mes.</em>
           </h1>
           <p className="mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl">
-            Con múltiples vías de ingreso, autoridad en redes y un sistema con IA que lo sostenga.
+            En 4 meses sales con tu oferta de alto valor lanzada, tu marca posicionada, tus ventas automatizadas y tu infraestructura con IA.
           </p>
           <p className="mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
-            Para profesionales con trayectoria corporativa que quieren monetizar su conocimiento con un negocio propio que reemplace su sueldo y les dé libertad. Aunque sigas en corporate y no sepas por dónde empezar.
+            Sin perseguir seguidores y sin años de prueba y error.
           </p>
 
           {/* Hero mockup */}
@@ -74,7 +73,7 @@ export const Hero = () => {
                   "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
               }}
             >
-              Solicitar llamada
+              Comprueba si encajas
               <span aria-hidden>→</span>
             </a>
           </div>

@@ -1,33 +1,27 @@
 const bonuses = [
   {
-    title: "🗂️ Notion Starter Pack: Tu sistema operativo desde el día 1",
-    valor: "€297",
-    body: "La plantilla completa de Notion que usa María para gestionar su negocio. CRM, tracker de contenido, finanzas, pipeline de clientes. Lista para usar desde la primera sesión.",
+    emoji: "📄",
+    title: "La Sales Page que Vende Sola",
+    valor: "€1.500",
+    body: "La estructura y el copy de página de ventas de alta conversión que usan los emprendedores anglosajones para facturar millones. Montada en Lovable, lista para Stripe, lista para duplicar y reutilizar en 90 segundos. Para que subas precios sin que el envoltorio te perjudique.",
   },
   {
-    title: "🤖 Biblioteca de Prompts CM: Claude configurado para tu negocio",
-    valor: "€197",
-    body: "Más de 50 prompts personalizados para crear contenido, escribir emails, preparar llamadas de venta y gestionar clientes. Claude configurado para tu negocio.",
+    emoji: "🧲",
+    title: "El Lead Magnet que Engancha",
+    valor: "€997",
+    body: "Tu lead magnet interactivo en formato app, conectado a Notion y email marketing, con vídeo de ventas incluido. Deja de mandar PDFs que nadie lee. Sé la primera en ofrecer algo así en tu sector.",
   },
   {
-    title: "📧 Secuencia de Bienvenida: Tu embudo de email desde el día 1",
-    valor: "€397",
-    body: "La secuencia de 5 emails que convierte nuevos suscriptores en clientes potenciales. Adaptada a tu voz y tu oferta durante las sesiones.",
+    emoji: "🏛️",
+    title: "Monta tu Academia",
+    valor: "€1.200",
+    body: "Desde tu portal en Notion hasta construir tu propia plataforma con IA. Te enseño dónde y cómo alojar tu formación de alto valor, qué herramientas elegir según tu caso, y cómo montar tu propia academia con Claude. Para que vendas formación con una plataforma que se ve profesional.",
   },
   {
-    title: "🎙️ Guión de Llamada de Venta: Cierra sin presión",
-    valor: "€197",
-    body: "El guión exacto de llamada de valoración que usa María. Con preguntas, estructura y cierres que convierten, sin manipulación, con criterio.",
-  },
-  {
-    title: "🔗 LinkedIn Profile Audit: Optimización completa",
-    valor: "€297",
-    body: "Revisión y reescritura completa de tu perfil de LinkedIn: titular, extracto, experiencia y sección destacada. Hecho durante las primeras sesiones.",
-  },
-  {
-    title: "♾️ Workshops Mensuales",
-    valor: "Incluido",
-    body: "Todos los workshops de Carreras Modernas mientras el programa esté activo. Ventas, IA, contenido y sistemas, cada mes.",
+    emoji: "🤖",
+    title: "Claude como tu Cofundador",
+    valor: "€997",
+    body: "Configuración pro de Claude. Cómo nutrirlo con el contexto de tu negocio (manual de marca, branding, estrategia). Claude Design y otras IAs que te ahorran horas en Canva. Conexión Notion + Claude. Los prompts y automatizaciones que yo uso cada día.",
   },
 ];
 
@@ -42,7 +36,8 @@ export const Bonuses = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {bonuses.map((b, i) => (
             <div key={i} className="rounded-2xl bg-white border border-border p-8 text-foreground">
-              <div className="flex items-baseline justify-start md:justify-end mb-4">
+              <div className="flex items-center justify-between mb-4">
+                <p className="text-3xl leading-none">{b.emoji}</p>
                 <span className="text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-primary text-primary-foreground font-medium">
                   Valor {b.valor}
                 </span>

@@ -8,31 +8,35 @@ import {
 const faqs = [
   {
     q: "¿Quizás no estoy lista todavía?",
-    a: "Si esperas a estar lista, no vas a empezar nunca. Lista no es un estado. Es una decisión. La mitad del trabajo de los primeros meses es precisamente construir esa claridad.",
+    a: "¿Lista para qué? Llevas tiempo regalando tu valor y haciendo cosas sin dirección. Tu negocio es el mejor activo que tienes y lo estás dejando a medias. La cuestión no es si estás lista. Es cuánto más vas a esperar mientras sigues sin avanzar.",
   },
   {
     q: "No sé si tengo tiempo para dedicarle.",
-    a: "Estás dedicando tiempo a cosas que no te hacen avanzar. Aquí quitamos el ruido y solo trabajamos lo que mueve la aguja. Una hora de sesión semanal más implementación — si no tienes eso, el momento no es ahora.",
+    a: "Pierdes más tiempo del que crees haciendo cosas sin criterio: viendo vídeos en YouTube, copiando estrategias de otros, probando cosas que no funcionan. Aquí, en 4 meses, sales con todo lo que sola te costaría años montar. No es tiempo extra, es dejar de perderlo.",
   },
   {
     q: "No sé nada de IA ni se me da bien la tecnología.",
-    a: "Yo tampoco sabía. Si fuera para perfiles técnicos, no la usaría. La IA no es un don. Es una ventaja competitiva que se aprende. Te llevo paso a paso, sin jerga, sin frustración, sin necesidad de saber programar.",
+    a: "No necesitas ser técnica. Te enseño desde cero, paso a paso, con lo que de verdad sirve para tu negocio. La IA es precisamente lo que hace que no tengas que ser técnica: hace el trabajo pesado por ti. Si sabes usar WhatsApp, puedes con esto.",
   },
   {
     q: "No tengo muy claro qué vender.",
-    a: "Eso lo dejamos claro en las primeras 2 sesiones. Y luego lo validamos con clientes reales. La claridad no es un requisito de entrada — es uno de los primeros entregables del programa.",
-  },
-  {
-    q: "¿Y si ya he hecho otros programas contigo?",
-    a: "Aquí me tienes a tu lado co-lanzando tu negocio. No repetimos contenido — empezamos desde donde estás. Todo lo que has hecho hasta ahora cuenta y lo integramos.",
+    a: "Perfecto, porque el mes 1 es exactamente para eso. Aterrizamos tu oferta insignia: qué vendes, a quién y a qué precio. Salimos de la dispersión y nos centramos en una sola oferta de alto valor que puedas vender con orgullo.",
   },
   {
     q: "¿4 meses van a ser suficientes?",
-    a: "Para montar todo lo descrito, sí. Para escalar sin límites, no — pero ese no es el objetivo de estos 4 meses. El objetivo es tener un negocio funcionando con clientes reales. Muchas clientas continúan con programas de seguimiento después.",
+    a: "Sí. En 4 meses construimos los 4 activos en el orden correcto. Y para las que quieren seguir, ofrezco soporte continuado una vez terminado el programa. Eso lo vemos cuando llegue el momento, sin presión.",
+  },
+  {
+    q: "¿Y si tengo más de un programa o más de una oferta?",
+    a: "Vamos a centrarnos en consolidar y vender una oferta insignia, que es lo que de verdad mueve la aguja. Si tienes varias cosas en marcha, lo vemos caso a caso en la llamada y decidimos juntas cuál priorizar.",
+  },
+  {
+    q: "No sé si esto funcionaría para mi nicho.",
+    a: "He trabajado con profesionales de sectores muy distintos: consultoras, coaches, terapeutas, abogadas, especialistas en salud, profesionales que venden incluso en presencial. El método no depende del nicho, depende de que tengas expertise real y clientes a los que servir. Si los tienes, funciona.",
   },
   {
     q: "¿Cómo funciona el proceso para entrar?",
-    a: "Solicitas una llamada de valoración de 20–30 minutos. Hablamos, vemos si encajamos y, si es el caso, te explico cómo funciona y cuándo podemos empezar. No hay presión. Si no encajamos, te lo digo.",
+    a: "Rellenas el formulario de compatibilidad (toma 3 minutos). Si encajas, agendamos una llamada para conocernos y ver si tiene sentido trabajar juntas. Si las dos lo vemos claro, entras. Solo acepto 2 clientas nuevas al mes.",
   },
 ];
 
@@ -40,7 +44,7 @@ export const FAQ = () => {
   return (
     <section
       id="faq"
-      className="pt-8 md:pt-12 lg:pt-16 pb-8 md:pb-16"
+      className="py-24 md:py-32"
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
       <div className="container-tight">

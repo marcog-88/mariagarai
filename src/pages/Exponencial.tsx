@@ -16,7 +16,6 @@ import { Garantia } from "@/components/exponencial/Garantia";
 import { Pricing } from "@/components/exponencial/Pricing";
 import { PreguntaReal } from "@/components/exponencial/PreguntaReal";
 import { Bonuses } from "@/components/exponencial/Bonuses";
-import { AntesDespuesProof } from "@/components/exponencial/AntesDespuesProof";
 import { FAQ } from "@/components/exponencial/FAQ";
 import { FinalCTA } from "@/components/exponencial/FinalCTA";
 import { Footer } from "@/components/exponencial/Footer";
@@ -41,7 +40,6 @@ const Exponencial = () => (
     <Pricing />
     <PreguntaReal />
     <Bonuses />
-    <AntesDespuesProof />
     <FAQ />
     <FinalCTA />
     <Footer />

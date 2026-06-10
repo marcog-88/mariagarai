@@ -5,10 +5,10 @@ const colA = {
   sub: "El camino más largo",
   items: [
     "Sin nadie que revise tu dirección cada semana",
-    "Años de prueba y error que te cuestan dinero y energía",
+    "Años de prueba y error que cuestan dinero y energía",
     "Riesgo de construir lo que no vende",
-    "Contenido sin estrategia que agota sin resultados",
-    "La misma pantalla de LinkedIn dentro de 12 meses",
+    "Vendes solo a tu entorno, sin sistema",
+    "El mismo negocio a medio montar dentro de 12 meses",
   ],
   bottom: "La mayoría sigue aquí. Es la opción más cara a largo plazo.",
 };
@@ -17,7 +17,7 @@ const colC = {
   header: "Contratar por separado",
   sub: "La opción más cara",
   items: [
-    "Mentora + copywriter + consultor IA + estratega = €20000–€40000",
+    "Mentora + copywriter + consultor IA + estratega = €18.000–€38.000",
     "Nadie integra las piezas como un todo",
     "Tú coordinas a 4 personas distintas",
     "Meses de onboarding antes de ver resultados",
@@ -30,9 +30,8 @@ const colB = {
   header: "EXPONENCIAL",
   sub: "4 meses · 1:1 · Con María",
   items: [
-    "Metodología probada en el orden correcto",
-    "17 sesiones semanales con criterio y dirección",
-    "Todos los activos digitales montados durante el programa",
+    "Los 4 activos montados en el orden correcto",
+    "17 sesiones 1:1 con criterio y dirección",
     "IA integrada desde el día 1",
     "Negocio funcionando al final de los 4 meses",
   ],
@@ -104,7 +103,7 @@ export const TresOpciones = () => {
                   className="btn-mint-lg !text-base w-full justify-center whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
                   style={{ boxShadow: "4px 4px 0 0 #0c0d0e" }}
                 >
-                  Solicitar llamada <span aria-hidden>→</span>
+                  Comprueba si encajas <span aria-hidden>→</span>
                 </TidyCalButton>
               </div>
             </div>
