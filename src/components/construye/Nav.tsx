@@ -135,7 +135,7 @@ export const Nav = () => {
                   onDark ? "text-primary-foreground/70" : "text-foreground/70"
                 }`}
               >
-                Carreras Modernas
+                Newsletter
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-mint transition-transform duration-200 ease-out group-hover:scale-x-100" />
               </a>
             </li>
@@ -251,7 +251,7 @@ export const Nav = () => {
                 className="font-serif text-3xl text-white hover:text-[#9378fe] transition-colors"
                 onClick={() => setOpen(false)}
               >
-                Carreras Modernas
+                Newsletter
               </a>
             </li>
           </ul>
