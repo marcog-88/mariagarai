@@ -33,15 +33,15 @@ Deno.serve(async (req) => {
     formData.append("source", "embed");
 
     const response = await fetch(
-      "https://mariagarai.substack.com/api/v1/free",
+      "https://haztegrande.substack.com/api/v1/free",
       {
         method: "POST",
         body: formData,
         headers: {
           "User-Agent":
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-          "Origin": "https://mariagarai.substack.com",
-          "Referer": "https://mariagarai.substack.com/",
+          "Origin": "https://haztegrande.substack.com",
+          "Referer": "https://haztegrande.substack.com/",
         },
       },
     );

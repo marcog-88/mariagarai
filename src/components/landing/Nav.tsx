@@ -75,7 +75,7 @@ export const Nav = () => {
 
             <li>
               <a
-                href="https://mariagarai.substack.com/"
+                href="https://haztegrande.substack.com/embed"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
@@ -185,7 +185,7 @@ export const Nav = () => {
               style={{ transitionDelay: open ? "300ms" : "0ms" }}
             >
               <a
-                href="https://mariagarai.substack.com/"
+                href="https://haztegrande.substack.com/embed"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"

@@ -29,7 +29,7 @@ export const Newsletter = () => {
         {/* Headline + subheadline — full width */}
         <div>
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
-            Carreras Modernas · Newsletter
+            Hazte Grande · Newsletter
           </p>
           <h2 className="display-md whitespace-normal md:whitespace-nowrap">
             Aprende a construir tu{" "}
@@ -76,10 +76,10 @@ export const Newsletter = () => {
                   </div>
                 ) : (
                   <iframe
-                    src="https://mariagarai.substack.com/embed"
+                    src="https://haztegrande.substack.com/embed"
                     width={IFRAME_W}
                     height={IFRAME_H}
-                    title="Suscripción a Carreras Modernas en Substack"
+                    title="Suscripción a Hazte Grande en Substack"
                     frameBorder="0"
                     scrolling="no"
                     className="absolute top-0 left-0 origin-top-left block"
@@ -100,7 +100,7 @@ export const Newsletter = () => {
           <div className="hidden md:flex md:col-span-6 items-start justify-start">
             <img
               src={substackCard}
-              alt="Carreras Modernas en Substack — vista en escritorio y móvil"
+              alt="Hazte Grande en Substack — vista en escritorio y móvil"
               className="w-auto max-w-full max-h-[440px] object-contain"
               loading="lazy"
             />
