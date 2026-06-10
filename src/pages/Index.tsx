@@ -4,7 +4,6 @@ import { Thoughts } from "@/components/landing/Thoughts";
 import { Exponencial } from "@/components/landing/Exponencial";
 import { TestimonialsRow } from "@/components/landing/TestimonialsRow";
 import { LeadMagnet } from "@/components/landing/LeadMagnet";
-import { Formas } from "@/components/landing/Formas";
 import { Newsletter } from "@/components/landing/Newsletter";
 import { About } from "@/components/landing/About";
 import { Testimonials } from "@/components/landing/Testimonials";
@@ -22,7 +21,6 @@ const Index = () => {
       <Testimonials />
       <Thoughts />
       <Exponencial />
-      <Formas />
       <TestimonialsRow />
       <Newsletter />
       <Speaking />

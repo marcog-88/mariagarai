@@ -1,38 +1,41 @@
-import mockup from "@/assets/lead-magnet-white.webp";
+import mockup from "@/assets/talleres-live-mockup.png";
+
+const LUMA_TALLERES = "https://luma.com/corporateafounder";
 
 export const LeadMagnet = () => {
   return (
     <section className="py-24 md:py-32 bg-[#f9f9f7]">
       <div className="container-tight">
         <div className="flex flex-col md:flex-row md:items-center md:gap-16 lg:gap-24">
-          {/* Left: text + form */}
+          {/* Left: text + CTA */}
           <div className="flex-1 min-w-0">
             <p
               className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
               style={{ color: "#9378fe" }}
             >
-              Diseña tu Carrera Moderna
+              Talleres
             </p>
             <h2 className="display-md">
-              ¿Qué puedes{" "}
+              Un taller en vivo
+              <br />
               <span className="font-serif italic" style={{ color: "#9378fe" }}>
-                vender hoy
+                cada semana.
               </span>
-              <br className="hidden md:inline" />
-              {" "}con lo que ya sabes?
+              {" "}Gratis.
             </h2>
             <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
-              Deja de darle vueltas. Descubre cómo monetizar tu trayectoria con un negocio
-              propio: qué vender, a quién, por cuánto y por dónde empezar. Descúbrelo en 90 segundos.
+              Cada semana abro una sesión en vivo sobre negocios boutique, ventas, IA y
+              sistemas. Sin coste, sin permanencia. Entras, aprendes y sales con algo que puedes
+              aplicar ese mismo día.
             </p>
             <a
-              href="https://tunuevacarrera.lovable.app"
+              href={LUMA_TALLERES}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-10 block w-full md:inline-block md:w-[235px] text-center rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
               style={{ background: "#9378fe", boxShadow: "4px 4px 0 0 #0c0d0e" }}
             >
-              Quiero probarlo →
+              Apuntarme →
             </a>
           </div>
 
@@ -40,8 +43,8 @@ export const LeadMagnet = () => {
           <div className="mt-14 md:mt-0 md:w-[42%] lg:w-[40%] flex-shrink-0">
             <img
               src={mockup}
-              alt="Tu mapa de monetización personalizado con IA"
-              className="w-full h-auto"
+              alt="Taller en vivo — sesión grupal con María Garaí y participantes"
+              className="w-full h-auto rounded-2xl"
               style={{ filter: "drop-shadow(0px 6px 20px rgba(0,0,0,0.13))" }}
               loading="lazy"
             />
