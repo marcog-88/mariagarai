@@ -1,20 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 
-const programas = [
-  { label: "Exponencial", href: "/exponencial" },
-  { label: "Construye", href: "/construye" },
-  { label: "Redes que Venden", href: "/redes-que-venden" },
-];
-
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -29,18 +20,6 @@ export const Nav = () => {
       document.body.style.overflow = "";
     };
   }, [open]);
-
-  // Close desktop dropdown on outside click
-  useEffect(() => {
-    if (!dropdownOpen) return;
-    const onClick = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setDropdownOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", onClick);
-    return () => document.removeEventListener("mousedown", onClick);
-  }, [dropdownOpen]);
 
   return (
     <>
@@ -74,56 +53,14 @@ export const Nav = () => {
               </a>
             </li>
 
-            {/* Programas dropdown */}
-            <li
-              ref={dropdownRef}
-              className="relative"
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <button
-                type="button"
-                onClick={() => setDropdownOpen((v) => !v)}
-                aria-haspopup="true"
-                aria-expanded={dropdownOpen}
+            <li>
+              <a
+                href="/exponencial"
                 className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
               >
-                Programas
-                <span
-                  aria-hidden
-                  className={`inline-block text-xs transition-transform duration-200 ${
-                    dropdownOpen ? "rotate-180" : ""
-                  }`}
-                >
-                  ▾
-                </span>
-                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-[calc(100%-12px)] origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
-              </button>
-
-              <div
-                className={`absolute left-0 top-full pt-3 min-w-[220px] transition-opacity duration-150 ${
-                  dropdownOpen
-                    ? "opacity-100 pointer-events-auto"
-                    : "opacity-0 pointer-events-none"
-                }`}
-              >
-                <ul
-                  className="rounded-xl p-2 shadow-xl"
-                  style={{ background: "#0c0d0e" }}
-                >
-                  {programas.map((p) => (
-                    <li key={p.href}>
-                      <a
-                        href={p.href}
-                        className="block rounded-lg px-4 py-2.5 text-sm text-white transition-colors duration-150 hover:text-[#9378fe]"
-                        onClick={() => setDropdownOpen(false)}
-                      >
-                        {p.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                Exponencial
+                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
+              </a>
             </li>
 
             <li>
@@ -217,37 +154,13 @@ export const Nav = () => {
               }`}
               style={{ transitionDelay: open ? "180ms" : "0ms" }}
             >
-              <button
-                type="button"
-                onClick={() => setMobileDropdownOpen((v) => !v)}
-                aria-expanded={mobileDropdownOpen}
-                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe] flex items-center gap-3"
+              <a
+                href="/exponencial"
+                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
+                onClick={() => setOpen(false)}
               >
-                Programas
-                <span
-                  aria-hidden
-                  className={`text-xl transition-transform duration-200 ${
-                    mobileDropdownOpen ? "rotate-180" : ""
-                  }`}
-                >
-                  ▾
-                </span>
-              </button>
-              {mobileDropdownOpen && (
-                <ul className="mt-4 pl-6 flex flex-col gap-4">
-                  {programas.map((p) => (
-                    <li key={p.href}>
-                      <a
-                        href={p.href}
-                        className="font-serif text-2xl text-white transition-colors hover:text-[#9378fe]"
-                        onClick={() => setOpen(false)}
-                      >
-                        — {p.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              )}
+                Exponencial
+              </a>
             </li>
 
             <li
