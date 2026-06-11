@@ -1,57 +1,62 @@
+import { Reveal } from "@/components/landing/Reveal";
+
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 
 export const FinalCTA = () => {
   return (
     <section
-      className="pt-24 md:pt-32 pb-12 md:pb-16"
+      className="relative overflow-hidden pt-24 md:pt-32 pb-12 md:pb-16"
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
-      <div className="container-tight">
-        <h2 className="font-serif text-[clamp(2.25rem,5vw,4rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-5xl">
-          En 4 meses,{" "}
-          <br className="md:hidden" />
-          <em className="font-serif italic text-mint">tú no eres la misma.</em>
-        </h2>
+      <div aria-hidden className="aurora" />
+      <div className="container-tight relative">
+        <Reveal variant="blur">
+          <h2 className="font-serif text-[clamp(2.25rem,5vw,4rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-5xl">
+            En 4 meses,{" "}
+            <br className="md:hidden" />
+            <em className="font-serif italic text-mint">tú no eres la misma.</em>
+          </h2>
+        </Reveal>
 
-        <p className="mt-10 text-xl md:text-2xl text-primary-foreground/80">
-          <span className="text-mint">Eso cambia en 4 meses.</span>
-        </p>
+        <Reveal delay={150}>
+          <ul className="mt-12 max-w-3xl space-y-4 text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
+            <li className="flex gap-3"><span>✨</span><span>Una oferta de alto valor con clientes reales pagando</span></li>
+            <li className="flex gap-3"><span>🌟</span><span>Una marca de autoridad que abre puertas mientras tú vives</span></li>
+            <li className="flex gap-3"><span>⚡</span><span>Sistemas con IA que trabajan sin que estés presente cada hora</span></li>
+          </ul>
+        </Reveal>
 
-        <ul className="mt-12 max-w-3xl space-y-4 text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
-          <li className="flex gap-3"><span>✨</span><span>Una oferta de alto valor con clientes reales pagando</span></li>
-          <li className="flex gap-3"><span>🌟</span><span>Una marca de autoridad que abre puertas mientras tú vives</span></li>
-          <li className="flex gap-3"><span>⚡</span><span>Sistemas con IA que trabajan sin que estés presente cada hora</span></li>
-        </ul>
+        <Reveal delay={250}>
+          <div className="mt-16">
+            <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
+            <p className="font-serif text-6xl md:text-7xl text-primary-foreground">€4500</p>
+            <p className="mt-2 text-primary-foreground/60 italic text-sm">• Máx. 2 clientas nuevas al mes · Por aplicación</p>
+          </div>
 
-        <div className="mt-16">
-          <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
-          <p className="font-serif text-6xl md:text-7xl text-primary-foreground">€4500</p>
-          <p className="mt-2 text-primary-foreground/60 italic text-sm">• Máx. 2 clientas nuevas al mes · Por aplicación</p>
-        </div>
-
-        <div className="mt-10 flex flex-col items-start gap-10">
-          <a
-            href={TIDYCAL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-mint-lg !text-lg w-full md:w-auto justify-center whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
-            style={{
-              boxShadow:
-                "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
-            }}
-          >
-            Comprueba si encajas
-            <span aria-hidden>→</span>
-          </a>
-          <a
-            href={TIDYCAL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[11px] sm:text-sm italic whitespace-nowrap text-primary-foreground/65 hover:text-mint underline underline-offset-4"
-          >
-            ¿Tienes dudas? → Llamada de exploración
-          </a>
-        </div>
+          <div className="mt-10 flex flex-col items-start gap-10">
+            <a
+              href={TIDYCAL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-mint-lg !text-lg w-full md:w-auto justify-center whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
+              style={{
+                boxShadow:
+                  "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
+              }}
+            >
+              Reserva tu plaza
+              <span aria-hidden>→</span>
+            </a>
+            <a
+              href={TIDYCAL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] sm:text-sm italic whitespace-nowrap text-primary-foreground/65 hover:text-mint underline underline-offset-4"
+            >
+              ¿Tienes dudas? → Llamada de exploración
+            </a>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

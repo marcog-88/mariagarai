@@ -1,3 +1,6 @@
+import { useEffect, useRef, useState } from "react";
+import { Reveal } from "@/components/landing/Reveal";
+
 const activos = [
   {
     n: "1",
@@ -26,34 +29,87 @@ const activos = [
 ];
 
 const comoTrabajamos = [
-  { emoji: "🗓️", label: "17 SESIONES", desc: "Una sesión 1:1 conmigo cada semana (60 min)" },
-  { emoji: "👥", label: "REUNIÓN DE SOCIAS", desc: "Una vez al mes, en directo con todas las founders del programa" },
-  { emoji: "💬", label: "WHATSAPP DIRECTO", desc: "Acceso a mí entre sesiones para dudas urgentes" },
-  { emoji: "🎓", label: "ACADEMIA", desc: "Acceso a todo el contenido y plantillas, para siempre" },
+  { value: "17", countTo: 17, label: "sesiones 1:1", desc: "Una sesión conmigo cada semana, de 60 minutos" },
+  { value: "1×", label: "reunión de socias al mes", desc: "En directo con todas las founders del programa" },
+  { value: "24/7", label: "WhatsApp directo", desc: "Acceso a mí entre sesiones para dudas urgentes" },
+  { value: "∞", label: "academia para siempre", desc: "Todo el contenido y plantillas, acceso de por vida" },
 ];
 
+const useCountUp = (target: number, start: boolean, duration = 1200) => {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    if (!start) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setValue(target);
+      return;
+    }
+    let raf: number;
+    const t0 = performance.now();
+    const tick = (now: number) => {
+      const p = Math.min((now - t0) / duration, 1);
+      setValue(Math.round((1 - Math.pow(1 - p, 3)) * target));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [start, target, duration]);
+  return value;
+};
+
+const StatValue = ({ stat, start }: { stat: (typeof comoTrabajamos)[number]; start: boolean }) => {
+  const counted = useCountUp(stat.countTo ?? 0, start && stat.countTo !== undefined);
+  return (
+    <span className="font-serif text-6xl md:text-7xl leading-none tabular-nums" style={{ color: "#9378fe" }}>
+      {stat.countTo !== undefined ? counted : stat.value}
+    </span>
+  );
+};
+
 export const ParaEso = () => {
+  const statsRef = useRef<HTMLDivElement>(null);
+  const [statsVisible, setStatsVisible] = useState(false);
+
+  useEffect(() => {
+    const el = statsRef.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStatsVisible(true);
+          io.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
   return (
     <section
       className="py-24 md:py-32"
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
       <div className="container-tight">
-        <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-          La fórmula Exponencial
-        </p>
-        <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-5xl">
-          Donde entras con un proyecto a medio montar y sales con{" "}
-          <em className="font-serif italic text-mint">un negocio profesional que vende precios altos cada semana.</em>
-        </h2>
+        <Reveal>
+          <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
+            La fórmula Exponencial
+          </p>
+          <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-5xl">
+            Donde entras con un proyecto a medio montar y sales con{" "}
+            <em className="font-serif italic text-mint">un negocio profesional que vende precios altos cada semana.</em>
+          </h2>
+        </Reveal>
 
-        <p className="mt-10 text-lg md:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
-          La IA y yo nos convertimos en tus socias para hacer posible lo que hoy te abruma. Construimos 4 activos:
-        </p>
+        <Reveal delay={120}>
+          <p className="mt-10 text-lg md:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
+            La IA y yo nos convertimos en tus socias para hacer posible lo que hoy te abruma. Construimos 4 activos:
+          </p>
+        </Reveal>
 
         <ol className="mt-16 space-y-10">
-          {activos.map((a) => (
-            <li key={a.n} className="flex gap-6">
+          {activos.map((a, i) => (
+            <Reveal key={a.n} as="li" delay={i * 100} className="flex gap-6">
               <span className="font-serif text-3xl flex-shrink-0 leading-none" style={{ color: "#9378fe" }}>
                 0{a.n}
               </span>
@@ -62,28 +118,36 @@ export const ParaEso = () => {
                 <p className="text-primary-foreground/75 leading-relaxed">{a.body}</p>
                 <p className="mt-2 text-sm italic text-[#9378fe]">→ {a.sub}</p>
               </div>
-            </li>
+            </Reveal>
           ))}
         </ol>
 
-        <p className="mt-16 font-serif text-2xl md:text-3xl text-mint italic">
-          Tú, la IA y yo. El equipo que escala tu negocio.
-        </p>
-
-        <div className="mt-20">
-          <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-            Cómo trabajamos
+        <Reveal>
+          <p className="mt-16 font-serif text-2xl md:text-3xl text-mint italic">
+            Tú, la IA y yo. El equipo que escala tu negocio.
           </p>
-          <h3 className="font-serif text-2xl md:text-3xl text-primary-foreground mb-10">
-            4 meses, codo con codo. No un curso que ves sola.
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {comoTrabajamos.map((c) => (
-              <div key={c.label} className="rounded-xl border border-primary-foreground/15 bg-primary-foreground/[0.04] p-6">
-                <p className="text-2xl mb-3">{c.emoji}</p>
-                <p className="text-xs uppercase tracking-[0.18em] text-mint font-semibold mb-3">{c.label}</p>
-                <p className="text-sm text-primary-foreground/80 leading-relaxed">{c.desc}</p>
-              </div>
+        </Reveal>
+
+        <div className="mt-20" ref={statsRef}>
+          <Reveal>
+            <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
+              Cómo trabajamos
+            </p>
+            <h3 className="font-serif text-2xl md:text-3xl text-primary-foreground mb-12">
+              4 meses, codo con codo. No un curso que ves sola.
+            </h3>
+          </Reveal>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+            {comoTrabajamos.map((c, i) => (
+              <Reveal key={c.label} delay={i * 120} className="flex flex-col items-start">
+                <StatValue stat={c} start={statsVisible} />
+                <p className="mt-4 text-xs uppercase tracking-[0.18em] text-mint font-semibold">
+                  {c.label}
+                </p>
+                <p className="mt-2 text-sm text-primary-foreground/65 leading-relaxed max-w-[230px]">
+                  {c.desc}
+                </p>
+              </Reveal>
             ))}
           </div>
         </div>

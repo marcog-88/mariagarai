@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/landing/Reveal";
+
 const sin = [
   "Vendes solo a contactos y referidos",
   "No sabes qué vender, cambias de enfoque",
@@ -25,37 +27,51 @@ export const Comparacion = () => {
       style={{ background: "#0c0d0e", color: "#ffffff" }}
     >
       <div className="container-tight">
-        <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-          Antes y después
-        </p>
+        <Reveal>
+          <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
+            Antes y después
+          </p>
+        </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-          <div>
-            <h3 className="font-serif text-2xl md:text-3xl mb-8 text-white/60">
-              😔 SIN EXPONENCIAL
-            </h3>
-            <ul className="space-y-5">
-              {sin.map((s, i) => (
-                <li key={i} className="flex gap-3 text-white/55 leading-relaxed">
-                  <span className="text-white/40 flex-shrink-0">✕</span>
-                  <span>{s}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-serif text-2xl md:text-3xl mb-8 text-mint">
-              🚀 CON EXPONENCIAL
-            </h3>
-            <ul className="space-y-5">
-              {con.map((c, i) => (
-                <li key={i} className="flex gap-3 text-white leading-relaxed">
-                  <span className="text-mint flex-shrink-0">✓</span>
-                  <span>{c}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-stretch">
+          <Reveal variant="left">
+            <div className="h-full rounded-2xl border border-white/10 bg-white/[0.02] p-8 md:p-10">
+              <h3 className="font-serif text-2xl md:text-3xl mb-8 text-white/50">
+                Sin Exponencial
+              </h3>
+              <ul className="space-y-5">
+                {sin.map((s, i) => (
+                  <li key={i} className="flex gap-3 text-white/50 leading-relaxed">
+                    <span className="text-white/30 flex-shrink-0">✕</span>
+                    <span>{s}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+          <Reveal variant="right" delay={150}>
+            <div
+              className="card-lift h-full rounded-2xl p-8 md:p-10"
+              style={{
+                border: "1px solid rgba(147,120,254,0.5)",
+                background:
+                  "linear-gradient(160deg, rgba(147,120,254,0.14) 0%, rgba(147,120,254,0.04) 100%)",
+                boxShadow: "0 24px 60px -28px rgba(147,120,254,0.5)",
+              }}
+            >
+              <h3 className="font-serif text-2xl md:text-3xl mb-8 text-mint">
+                Con Exponencial
+              </h3>
+              <ul className="space-y-5">
+                {con.map((c, i) => (
+                  <li key={i} className="flex gap-3 text-white leading-relaxed">
+                    <span className="text-mint flex-shrink-0">✓</span>
+                    <span>{c}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>

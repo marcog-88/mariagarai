@@ -1,15 +1,19 @@
+import { Reveal } from "@/components/landing/Reveal";
+
 export const Problem = () => {
   return (
     <section className="py-24 md:py-32" style={{ background: "#f9f9f7" }}>
       <div className="container-tight">
-        <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
-          El problema
-        </p>
-        <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight max-w-4xl">
-          Ya vendes. Pero solo a la gente de tu entorno.
-        </h2>
+        <Reveal>
+          <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+            El problema
+          </p>
+          <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight max-w-4xl">
+            Ya vendes. Pero solo a la gente de tu entorno.
+          </h2>
+        </Reveal>
 
-        <div className="mt-16 max-w-3xl space-y-8 text-sm md:text-base leading-relaxed text-foreground/80">
+        <Reveal delay={150} className="mt-16 max-w-3xl space-y-8 text-sm md:text-base leading-relaxed text-foreground/80">
           <p className="border-l-2 border-[#9378fe] pl-4 font-medium italic">
             Eres una profesional con experiencia. Sabes que lo que tienes vale mucho. Pero el negocio no termina de despegar.
           </p>
@@ -32,7 +36,7 @@ export const Problem = () => {
           <p className="font-medium italic text-foreground/80">
             Conclusión: haces un poco de todo, sin orden ni criterio. Pero no terminas de dar con la tecla para que tu negocio facture más sin que dependa 100% de ti.
           </p>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

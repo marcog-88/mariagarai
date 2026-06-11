@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Reveal } from "@/components/landing/Reveal";
 
 const faqs = [
   {
@@ -48,12 +49,14 @@ export const FAQ = () => {
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
       <div className="container-tight">
-        <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-          Preguntas frecuentes
-        </p>
-        <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-4xl">
-          Lo que te estás preguntando.
-        </h2>
+        <Reveal>
+          <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
+            Preguntas frecuentes
+          </p>
+          <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-4xl">
+            Lo que te estás preguntando.
+          </h2>
+        </Reveal>
 
         <Accordion type="single" collapsible className="mt-16 border-t border-primary-foreground/15">
           {faqs.map((f, i) => (

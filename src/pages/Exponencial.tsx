@@ -19,6 +19,7 @@ import { Bonuses } from "@/components/exponencial/Bonuses";
 import { FAQ } from "@/components/exponencial/FAQ";
 import { FinalCTA } from "@/components/exponencial/FinalCTA";
 import { Footer } from "@/components/exponencial/Footer";
+import { StickyCTA } from "@/components/exponencial/StickyCTA";
 
 const Exponencial = () => (
   <main className="exponencial-scope min-h-screen bg-background text-foreground">
@@ -43,6 +44,7 @@ const Exponencial = () => (
     <FAQ />
     <FinalCTA />
     <Footer />
+    <StickyCTA />
   </main>
 );
 

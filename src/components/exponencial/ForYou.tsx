@@ -31,24 +31,30 @@ const no = [
   "No estás dispuesta a usar IA como infraestructura",
 ];
 
+import { Reveal } from "@/components/landing/Reveal";
+
 export const ForYou = () => {
   return (
     <section className="py-24 md:py-32 bg-background">
       <div className="container-tight">
-        <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
-          Este programa es para ti si...
-        </p>
+        <Reveal>
+          <p className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
+            Este programa es para ti si...
+          </p>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           {cards.map((c, i) => (
-            <div key={i} className="rounded-2xl bg-neutral-50 border-2 border-mint text-foreground p-8">
-              <h3 className="font-serif text-2xl mb-4 leading-tight">{c.title}</h3>
-              <p className="text-foreground/75 leading-relaxed">{c.body}</p>
-            </div>
+            <Reveal key={i} delay={i * 130}>
+              <div className="card-lift h-full rounded-2xl bg-neutral-50 border-2 border-mint text-foreground p-8">
+                <h3 className="font-serif text-2xl mb-4 leading-tight">{c.title}</h3>
+                <p className="text-foreground/75 leading-relaxed">{c.body}</p>
+              </div>
+            </Reveal>
           ))}
         </div>
 
-        <div className="bg-primary rounded-2xl p-10 mt-12">
+        <Reveal variant="scale" className="bg-primary rounded-2xl p-10 mt-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:divide-x md:divide-mint/30">
             <div>
               <h3 className="font-serif text-2xl font-bold mb-6 text-mint">Sí, si:</h3>
@@ -73,7 +79,7 @@ export const ForYou = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import substackCard from "@/assets/substack-card.png";
+import mariaCafe from "@/assets/maria-cafe.png";
+import { Reveal } from "./Reveal";
 
 const IFRAME_W = 533;
 const IFRAME_H = 488;
@@ -27,7 +28,7 @@ export const Newsletter = () => {
     >
       <div className="container-tight">
         {/* Headline + subheadline — full width */}
-        <div>
+        <Reveal>
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
             Hazte Grande · Newsletter
           </p>
@@ -38,15 +39,15 @@ export const Newsletter = () => {
             con <span className="font-serif italic text-accent">IA</span>.
           </h2>
           <p className="mt-8 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-4xl">
-            Cada semana escribo sobre monetización, redes que venden y herramientas que
-            ahorran tiempo. Destripo la trastienda de mi negocio y entrevisto a otros
-            founders con carreras únicas.
+            Cada semana escribo sobre monetización, redes que venden y la IA como socia.
+            Destripo la trastienda de mi negocio y entrevisto a otros founders que se
+            hacen grandes.
           </p>
-        </div>
+        </Reveal>
 
         {/* Form on left, mockups on right — beneath subheadline */}
         <div className="mt-16 grid md:grid-cols-12 gap-12 md:gap-16 items-start">
-          <div className="md:col-span-6 flex justify-center md:justify-start">
+          <Reveal variant="left" delay={120} className="md:col-span-6 flex justify-center md:justify-start">
             <div ref={wrapRef} className="w-full max-w-[480px] relative mx-auto md:mx-0">
               {/* Soft purple + mint glow */}
               <div
@@ -94,17 +95,19 @@ export const Newsletter = () => {
                 )}
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          {/* Device mockup */}
-          <div className="hidden md:flex md:col-span-6 items-start justify-start">
-            <img
-              src={substackCard}
-              alt="Hazte Grande en Substack — vista en escritorio y móvil"
-              className="w-auto max-w-full max-h-[440px] object-contain"
-              loading="lazy"
-            />
-          </div>
+          {/* María writing — real, warm, weekly */}
+          <Reveal variant="right" delay={250} className="hidden md:block md:col-span-6">
+            <div className="rounded-2xl overflow-hidden max-h-[440px]">
+              <img
+                src={mariaCafe}
+                alt="María Garaí escribiendo su newsletter desde una cafetería"
+                className="w-full h-full max-h-[440px] object-cover"
+                loading="lazy"
+              />
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>

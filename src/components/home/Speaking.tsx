@@ -1,4 +1,5 @@
-import mariaSpeaker from "@/assets/maria-speaker.jpg";
+import mariaSpeaker from "@/assets/maria-street-suit.png";
+import { Reveal } from "@/components/landing/Reveal";
 
 export const Speaking = () => {
   return (
@@ -10,7 +11,7 @@ export const Speaking = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
           {/* Left column */}
-          <div className="order-2 md:order-1">
+          <Reveal variant="left" className="order-2 md:order-1">
             <p
               className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
               style={{ color: "#9378fe" }}
@@ -39,17 +40,17 @@ export const Speaking = () => {
                 Contáctame ↗
               </a>
             </div>
-          </div>
+          </Reveal>
 
           {/* Right column: speaking photo */}
-          <div className="aspect-[4/3] rounded-[1.25rem] overflow-hidden order-1 md:order-2">
+          <Reveal variant="scale" delay={150} className="aspect-[4/3] rounded-[1.25rem] overflow-hidden order-1 md:order-2">
             <img
               src={mariaSpeaker}
-              alt="María Garaí hablando en un evento"
-              className="w-full h-full object-cover object-center"
+              alt="María Garaí, retrato profesional"
+              className="w-full h-full object-cover object-[50%_22%]"
               loading="lazy"
             />
-          </div>
+          </Reveal>
 
         </div>
       </div>

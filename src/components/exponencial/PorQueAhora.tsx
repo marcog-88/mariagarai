@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/landing/Reveal";
+
 export const PorQueAhora = () => {
   return (
     <section
@@ -5,16 +7,18 @@ export const PorQueAhora = () => {
       style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
     >
       <div className="container-tight">
-        <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-          Por qué ahora
-        </p>
-        <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-4xl">
-          Lo que antes costaba años y 30.000€{" "}
-          <br className="hidden md:block" />
-          <em className="font-serif italic text-mint">hoy con IA se construye en 4 meses.</em>
-        </h2>
+        <Reveal variant="blur">
+          <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
+            Por qué ahora
+          </p>
+          <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-4xl">
+            Lo que antes costaba años y 30.000€{" "}
+            <br className="hidden md:block" />
+            <em className="font-serif italic text-mint">hoy con IA se construye en 4 meses.</em>
+          </h2>
+        </Reveal>
 
-        <div className="mt-12 max-w-3xl space-y-6 text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
+        <Reveal delay={150} className="mt-12 max-w-3xl space-y-6 text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
           <p>
             Antes, montar todo esto costaba meses de trabajo y miles de euros en agencias y freelancers. Crear una oferta, una marca, un embudo, los sistemas. Eso ya no es cierto.
           </p>
@@ -27,7 +31,7 @@ export const PorQueAhora = () => {
           <p className="font-serif italic text-2xl md:text-3xl text-mint leading-snug">
             No es una cuestión de si el momento es perfecto. El momento perfecto no llega. Es una cuestión de cuánto más te va a costar a ti misma esperar.
           </p>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -112,6 +112,18 @@
       hsl(var(--background));
   }
 
+  /* Dark editorial hero — video-ready stage */
+  .hero-dark {
+    background: #0c0d0e;
+  }
+
+  /* Portrait rim glow — follows the silhouette of keyed images */
+  .portrait-glow {
+    filter:
+      drop-shadow(0 0 50px rgba(147, 120, 254, 0.4))
+      drop-shadow(0 0 130px rgba(147, 120, 254, 0.22));
+  }
+
   .container-tight {
     @apply mx-auto max-w-6xl px-6 sm:px-8;
   }
@@ -278,4 +290,142 @@
 
 .animate-fade-up {
   animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ===== Scroll-reveal system ===== */
+.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal-up { transform: translateY(36px); }
+.reveal-left { transform: translateX(-44px); }
+.reveal-right { transform: translateX(44px); }
+.reveal-scale { transform: scale(0.94); }
+.reveal-blur { filter: blur(10px); transform: translateY(20px); }
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+}
+
+/* ===== Marquee strip ===== */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+.marquee-strip:hover .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+/* ===== Hero ambient blobs ===== */
+@keyframes blob-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(28px, -22px) scale(1.07); }
+  66% { transform: translate(-20px, 18px) scale(0.96); }
+}
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  pointer-events: none;
+  animation: blob-drift 14s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .blob { animation: none; }
+}
+
+/* ===== Scroll cue ===== */
+@keyframes scroll-cue {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
+.scroll-cue {
+  animation: scroll-cue 2s ease-in-out infinite;
+}
+
+/* ===== Animated underline draw ===== */
+@keyframes underline-draw {
+  from { background-size: 0% 0.18em; }
+  to { background-size: 100% 0.18em; }
+}
+.underline-draw {
+  background-image: linear-gradient(hsl(var(--accent)), hsl(var(--accent)));
+  background-size: 0% 0.18em;
+  background-position: 0 90%;
+  background-repeat: no-repeat;
+  padding: 0 0.05em;
+}
+.is-visible .underline-draw,
+.underline-draw.is-visible {
+  animation: underline-draw 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+}
+
+.badge-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* ===== Timeline draw-in segment ===== */
+.timeline-seg {
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1) 0.25s;
+}
+.is-visible .timeline-seg {
+  transform: scaleY(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline-seg {
+    transform: scaleY(1) !important;
+    transition: none !important;
+  }
+}
+
+/* ===== Card hover lift ===== */
+.card-lift {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -20px hsl(var(--foreground) / 0.18), 0 0 0 1px hsl(var(--accent) / 0.25);
+}
+
+/* ===== CTA aurora background ===== */
+@keyframes aurora-shift {
+  0%, 100% { transform: translate(-10%, -5%) rotate(0deg); }
+  50% { transform: translate(10%, 8%) rotate(8deg); }
+}
+.aurora {
+  position: absolute;
+  inset: -30%;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 40% 35% at 30% 40%, rgba(147, 120, 254, 0.35), transparent 65%),
+    radial-gradient(ellipse 35% 30% at 70% 60%, rgba(255, 66, 149, 0.16), transparent 65%),
+    radial-gradient(ellipse 30% 30% at 55% 30%, rgba(208, 252, 208, 0.12), transparent 65%);
+  filter: blur(40px);
+  animation: aurora-shift 16s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .aurora { animation: none; }
 }

@@ -1,4 +1,5 @@
 import mockup from "@/assets/talleres-live-mockup.png";
+import { Reveal } from "./Reveal";
 
 const LUMA_TALLERES = "https://luma.com/corporateafounder";
 
@@ -8,26 +9,37 @@ export const LeadMagnet = () => {
       <div className="container-tight">
         <div className="flex flex-col md:flex-row md:items-center md:gap-16 lg:gap-24">
           {/* Left: text + CTA */}
-          <div className="flex-1 min-w-0">
-            <p
-              className="mb-8 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
-              style={{ color: "#9378fe" }}
-            >
-              Talleres
-            </p>
-            <h2 className="display-md">
-              Un taller en vivo
-              <br />
-              <span className="font-serif italic" style={{ color: "#9378fe" }}>
-                cada semana.
+          <Reveal variant="left" className="flex-1 min-w-0">
+            <div className="mb-8 flex flex-wrap items-center gap-2">
+              <p
+                className="text-[10px] md:text-xs font-medium uppercase tracking-[0.2em]"
+                style={{ color: "#9378fe" }}
+              >
+                En directo · Martes 6pm España
+              </p>
+              <span
+                className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] md:text-xs font-semibold uppercase tracking-widest text-white"
+                style={{ background: "#9378fe" }}
+              >
+                <span
+                  className="badge-pulse-dot rounded-full bg-white flex-shrink-0"
+                  style={{ width: 6, height: 6 }}
+                  aria-hidden
+                />
+                Gratis
               </span>
-              {" "}Gratis.
+            </div>
+            <h2 className="display-md">
+              Cada semana te enseño a conseguir{" "}
+              <span className="font-serif italic" style={{ color: "#9378fe" }}>
+                clientes con IA.
+              </span>
             </h2>
 
             <div className="mt-8 md:hidden">
               <img
                 src={mockup}
-                alt="Taller en vivo — sesión grupal con María Garaí y participantes"
+                alt="Exponencial Live — sesión grupal con María Garaí y participantes"
                 className="w-full h-auto rounded-2xl"
                 style={{ filter: "drop-shadow(0px 6px 20px rgba(0,0,0,0.13))" }}
                 loading="lazy"
@@ -35,23 +47,26 @@ export const LeadMagnet = () => {
             </div>
 
             <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
-              Cada semana abro una sesión en vivo sobre negocios boutique, ventas, IA y
-              sistemas. Sin coste, sin permanencia. Entras, aprendes y sales con algo que puedes
-              aplicar ese mismo día.
+              Una herramienta, sistema o aplicación de IA en cada sesión, para conseguir
+              más clientes y ordenar tu negocio. Es la forma más fácil de probar cómo
+              trabajo antes de Exponencial.
             </p>
             <a
               href={LUMA_TALLERES}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-10 block w-full md:inline-block md:w-[235px] text-center rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
+              className="mt-10 block w-full md:inline-block md:w-auto text-center rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
               style={{ background: "#9378fe", boxShadow: "4px 4px 0 0 #0c0d0e" }}
             >
-              Apuntarme →
+              Inscríbete gratis →
             </a>
-          </div>
+            <p className="mt-6 text-sm text-foreground/55 italic">
+              +300 founders ya han pasado por el Live.
+            </p>
+          </Reveal>
 
           {/* Right: mockup image (desktop) */}
-          <div className="hidden md:block md:w-[42%] lg:w-[40%] flex-shrink-0">
+          <Reveal variant="right" delay={150} className="hidden md:block md:w-[42%] lg:w-[40%] flex-shrink-0">
             <img
               src={mockup}
               alt="Taller en vivo — sesión grupal con María Garaí y participantes"
@@ -59,7 +74,7 @@ export const LeadMagnet = () => {
               style={{ filter: "drop-shadow(0px 6px 20px rgba(0,0,0,0.13))" }}
               loading="lazy"
             />
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

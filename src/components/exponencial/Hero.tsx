@@ -1,4 +1,5 @@
 import expoMockup from "@/assets/exponencial-hero.webp";
+import expoMockupMobile from "@/assets/exponencial-premium-card.webp";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 
@@ -18,51 +19,64 @@ export const Hero = () => {
         }}
       />
       <div className="container-tight relative">
-        <div className="max-w-5xl animate-fade-up flex flex-col md:block">
+        <div className="max-w-5xl flex flex-col md:block">
           <div
-            className="mb-4 md:mb-14 order-[-2] md:order-none inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white"
+            className="animate-fade-up mb-4 md:mb-14 order-[-2] md:order-none inline-flex items-center gap-2.5 self-start rounded-full px-4 py-1.5 text-[11px] md:text-xs uppercase tracking-[0.24em] text-white/90"
             style={{
-              background: "linear-gradient(180deg, #2a2a2a 0%, #141414 100%)",
-              border: "1.5px solid #9378fe",
-              boxShadow:
-                "4px 0 12px rgba(147,120,254,0.5), -4px 0 12px rgba(147,120,254,0.5), inset 0 2px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.3)",
+              border: "1px solid rgba(147,120,254,0.5)",
+              background: "rgba(147,120,254,0.08)",
             }}
           >
-            <style>{`@keyframes expoDotPulse{0%,100%{opacity:1}50%{opacity:.3}}`}</style>
-            <span
-              className="rounded-full"
-              style={{
-                width: "12px",
-                height: "12px",
-                background: "#ffffff",
-                animation: "expoDotPulse 2s ease-in-out infinite",
-              }}
-              aria-hidden
-            />
+            <span className="badge-pulse-dot rounded-full bg-[#9378fe]" style={{ width: 8, height: 8 }} aria-hidden />
             EXPONENCIAL · 4 MESES · 1:1
           </div>
-          <h1 className="mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground">
+          <h1
+            className="animate-fade-up mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground"
+            style={{ animationDelay: "120ms" }}
+          >
             Convierte tu conocimiento en un negocio de servicios y formación{" "}
             <em className="font-serif italic text-mint">que factura más de 10k al mes.</em>
           </h1>
-          <p className="mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl">
+          <p
+            className="animate-fade-up mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl"
+            style={{ animationDelay: "240ms" }}
+          >
             En 4 meses sales con tu oferta de alto valor lanzada, tu marca posicionada, tus ventas automatizadas y tu infraestructura con IA.
           </p>
-          <p className="mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
+          <p
+            className="animate-fade-up mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl"
+            style={{ animationDelay: "320ms" }}
+          >
             Sin perseguir seguidores y sin años de prueba y error.
           </p>
 
-          {/* Hero mockup */}
-          <div className="mt-14 mx-auto order-[-1] md:order-none" style={{ maxWidth: "1000px" }}>
+          {/* Hero mockup — last on mobile so the pitch reads uninterrupted */}
+          <div
+            className="animate-fade-up mt-12 md:mt-14 mx-auto order-1 md:order-none"
+            style={{ maxWidth: "1000px", animationDelay: "400ms" }}
+          >
+            {/* Mobile: product shot — readable at small sizes */}
+            <img
+              src={expoMockupMobile}
+              alt="Exponencial — Tu negocio en 4 meses."
+              className="md:hidden w-full rounded-2xl object-cover"
+              style={{ boxShadow: "0 30px 80px -30px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.06)" }}
+              loading="eager"
+            />
+            {/* Desktop: full collage */}
             <img
               src={expoMockup}
               alt="Exponencial — Notion, Claude, LinkedIn y Substack como herramientas de tu negocio moderno."
-              className="w-full rounded-2xl object-cover"
+              className="hidden md:block w-full rounded-2xl object-cover"
+              style={{ boxShadow: "0 30px 80px -30px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.06)" }}
               loading="eager"
             />
           </div>
 
-          <div className="flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 mt-12">
+          <div
+            className="animate-fade-up flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 mt-12"
+            style={{ animationDelay: "520ms" }}
+          >
             <a
               href={TIDYCAL}
               target="_blank"

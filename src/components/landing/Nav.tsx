@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
+const LUMA_LIVE = "https://luma.com/corporateafounder";
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -21,13 +22,19 @@ export const Nav = () => {
     };
   }, [open]);
 
+  // Over the dark hero (top of page) the nav is transparent with light text;
+  // once scrolled it becomes the standard light bar.
+  const onDark = !scrolled && !open;
+
   return (
     <>
       <header
         className={`fixed inset-x-0 top-0 z-[60] transition-all duration-300 ${
           open
             ? "bg-transparent"
-            : "bg-background/85 backdrop-blur-md border-b border-border"
+            : scrolled
+              ? "bg-background/85 backdrop-blur-md border-b border-border"
+              : "bg-transparent border-b border-transparent"
         }`}
       >
         <nav
@@ -36,7 +43,9 @@ export const Nav = () => {
         >
           <a
             href="#top"
-            className="flex items-center text-foreground"
+            className={`flex items-center transition-colors duration-300 ${
+              onDark ? "text-white" : "text-foreground"
+            }`}
             aria-label="María Garaí"
           >
             <Logo className="block h-4 md:h-5 [&>svg]:h-full [&>svg]:w-auto" />
@@ -45,18 +54,10 @@ export const Nav = () => {
           <ul className="hidden md:flex items-center gap-10">
             <li>
               <a
-                href="#top"
-                className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
-              >
-                Inicio
-                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
-              </a>
-            </li>
-
-            <li>
-              <a
                 href="/exponencial"
-                className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
+                className={`group relative flex items-center gap-1.5 text-sm transition-colors duration-200 ease-out hover:text-accent ${
+                  onDark ? "text-white/75" : "text-foreground/70"
+                }`}
               >
                 Exponencial
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
@@ -65,8 +66,29 @@ export const Nav = () => {
 
             <li>
               <a
+                href={LUMA_LIVE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group relative flex items-center gap-2 text-sm transition-colors duration-200 ease-out hover:text-accent ${
+                  onDark ? "text-white/75" : "text-foreground/70"
+                }`}
+              >
+                <span
+                  aria-hidden
+                  className="badge-pulse-dot inline-block rounded-full"
+                  style={{ width: 7, height: 7, background: "#f43f5e" }}
+                />
+                Live
+                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
+              </a>
+            </li>
+
+            <li>
+              <a
                 href="https://www.laexponencial.com/"
-                className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
+                className={`group relative flex items-center gap-1.5 text-sm transition-colors duration-200 ease-out hover:text-accent ${
+                  onDark ? "text-white/75" : "text-foreground/70"
+                }`}
               >
                 Academia
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
@@ -78,7 +100,9 @@ export const Nav = () => {
                 href="https://haztegrande.substack.com/embed"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex items-center gap-1.5 text-sm text-foreground/70 transition-colors duration-200 ease-out hover:text-accent"
+                className={`group relative flex items-center gap-1.5 text-sm transition-colors duration-200 ease-out hover:text-accent ${
+                  onDark ? "text-white/75" : "text-foreground/70"
+                }`}
               >
                 Newsletter
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
@@ -140,11 +164,11 @@ export const Nav = () => {
               style={{ transitionDelay: open ? "120ms" : "0ms" }}
             >
               <a
-                href="#top"
+                href="/exponencial"
                 className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
                 onClick={() => setOpen(false)}
               >
-                Inicio
+                Exponencial
               </a>
             </li>
 
@@ -155,11 +179,18 @@ export const Nav = () => {
               style={{ transitionDelay: open ? "180ms" : "0ms" }}
             >
               <a
-                href="/exponencial"
-                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
+                href={LUMA_LIVE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
                 onClick={() => setOpen(false)}
               >
-                Exponencial
+                <span
+                  aria-hidden
+                  className="badge-pulse-dot inline-block rounded-full"
+                  style={{ width: 9, height: 9, background: "#f43f5e" }}
+                />
+                Live
               </a>
             </li>
 

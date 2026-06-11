@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "../construye/Logo";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
+const LUMA_LIVE = "https://luma.com/corporateafounder";
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -46,12 +47,19 @@ export const Nav = () => {
           <ul className="hidden md:flex items-center gap-10">
             <li>
               <a
-                href="/"
-                className={`group relative text-sm transition-colors duration-200 ease-out hover:text-[#9378fe] ${
+                href={LUMA_LIVE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group relative flex items-center gap-2 text-sm transition-colors duration-200 ease-out hover:text-[#9378fe] ${
                   onDark ? "text-primary-foreground/70" : "text-foreground/70"
                 }`}
               >
-                Inicio
+                <span
+                  aria-hidden
+                  className="badge-pulse-dot inline-block rounded-full"
+                  style={{ width: 7, height: 7, background: "#f43f5e" }}
+                />
+                Live
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-mint transition-transform duration-200 ease-out group-hover:scale-x-100" />
               </a>
             </li>
@@ -133,11 +141,18 @@ export const Nav = () => {
               style={{ transitionDelay: open ? "120ms" : "0ms" }}
             >
               <a
-                href="/"
-                className="font-serif text-3xl text-white hover:text-[#9378fe] transition-colors"
+                href={LUMA_LIVE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 font-serif text-3xl text-white hover:text-[#9378fe] transition-colors"
                 onClick={() => setOpen(false)}
               >
-                Inicio
+                <span
+                  aria-hidden
+                  className="badge-pulse-dot inline-block rounded-full"
+                  style={{ width: 9, height: 9, background: "#f43f5e" }}
+                />
+                Live
               </a>
             </li>
 

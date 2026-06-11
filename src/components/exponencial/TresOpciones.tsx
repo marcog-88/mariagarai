@@ -1,4 +1,5 @@
 import { TidyCalButton } from "@/components/construye/TidyCalButton";
+import { Reveal } from "@/components/landing/Reveal";
 
 const colA = {
   header: "Seguir sola",
@@ -38,7 +39,7 @@ const colB = {
 };
 
 const SideCol = ({ data }: { data: typeof colA }) => (
-  <div className="rounded-xl border border-border bg-white/60 overflow-hidden flex flex-col">
+  <div className="h-full rounded-xl border border-border bg-white/60 overflow-hidden flex flex-col">
     <div className="bg-muted px-6 py-6">
       <h3 className="font-serif text-2xl text-foreground/70">{data.header}</h3>
       <p className="mt-1 text-sm text-foreground/50">{data.sub}</p>
@@ -59,19 +60,21 @@ export const TresOpciones = () => {
   return (
     <section className="py-24 md:py-32" style={{ background: "#f9f9f7" }}>
       <div className="container-tight">
-        <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-          Las tres opciones
-        </p>
-        <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight text-foreground max-w-4xl mb-16">
-          Siempre hay tres caminos. Solo uno tiene sentido.
-        </h2>
+        <Reveal>
+          <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
+            Las tres opciones
+          </p>
+          <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight text-foreground max-w-4xl mb-16">
+            Siempre hay tres caminos. Solo uno tiene sentido.
+          </h2>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-          <div className="order-2 md:order-1">
+          <Reveal variant="left" delay={150} className="order-2 md:order-1">
             <SideCol data={colA} />
-          </div>
+          </Reveal>
 
-          <div className="order-1 md:order-2 md:-my-4 relative">
+          <Reveal variant="scale" className="order-1 md:order-2 md:-my-4 relative">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
               <span
                 className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.18em]"
@@ -81,7 +84,7 @@ export const TresOpciones = () => {
               </span>
             </div>
             <div
-              className="rounded-xl overflow-hidden flex flex-col h-full shadow-2xl"
+              className="card-lift rounded-xl overflow-hidden flex flex-col h-full shadow-2xl"
               style={{ background: "#ffffff", boxShadow: "0 20px 60px -20px rgba(0,0,0,0.25)" }}
             >
               <div className="px-6 py-7" style={{ background: "#0c0d0e" }}>
@@ -107,11 +110,11 @@ export const TresOpciones = () => {
                 </TidyCalButton>
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="order-3">
+          <Reveal variant="right" delay={150} className="order-3">
             <SideCol data={colC} />
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>
