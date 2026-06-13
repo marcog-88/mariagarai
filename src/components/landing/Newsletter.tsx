@@ -46,7 +46,7 @@ export const Newsletter = () => {
         </Reveal>
 
         {/* Form on left, mockups on right — beneath subheadline */}
-        <div className="mt-16 grid md:grid-cols-12 gap-12 md:gap-16 items-start">
+        <div className="mt-16 grid md:grid-cols-12 gap-12 md:gap-16 items-stretch">
           <Reveal variant="left" delay={120} className="md:col-span-6 flex justify-center md:justify-start">
             <div ref={wrapRef} className="w-full relative mx-auto md:mx-0">
               <div
