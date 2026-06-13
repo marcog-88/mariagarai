@@ -114,6 +114,37 @@ export default async function handler(req, res) {
     uid: `${eventSlug || "evento"}-${Date.now()}@mariagarai.com`,
   });
 
+  // One-click "add to calendar" links (reliable across email clients, unlike a
+  // bare .ics which Gmail only offers as a download). The .ics stays attached
+  // for Apple Calendar / Outlook desktop.
+  const calStart = formatICSDate(eventDate);
+  const calEnd = formatICSDate(new Date(new Date(eventDate).getTime() + 60 * 60 * 1000));
+  const calDetails = eventLink ? `Tu enlace de acceso: ${eventLink}` : `Evento online · ${platform || "online"}`;
+  const calLocation = eventLink || platform || "Online";
+  const startISO = new Date(eventDate).toISOString();
+  const endISO = new Date(new Date(eventDate).getTime() + 60 * 60 * 1000).toISOString();
+
+  const googleUrl =
+    `https://calendar.google.com/calendar/render?action=TEMPLATE` +
+    `&text=${encodeURIComponent(eventTitle)}` +
+    `&dates=${calStart}/${calEnd}` +
+    `&details=${encodeURIComponent(calDetails)}` +
+    `&location=${encodeURIComponent(calLocation)}`;
+  const outlookUrl =
+    `https://outlook.office.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent` +
+    `&subject=${encodeURIComponent(eventTitle)}` +
+    `&startdt=${encodeURIComponent(startISO)}` +
+    `&enddt=${encodeURIComponent(endISO)}` +
+    `&body=${encodeURIComponent(calDetails)}` +
+    `&location=${encodeURIComponent(calLocation)}`;
+
+  const calendarBlock = `<p style="margin:20px 0 8px;font-size:14px;color:#555;">Añádelo a tu calendario:</p>
+    <p style="margin:0 0 4px;">
+      <a href="${googleUrl}" target="_blank" style="display:inline-block;margin-right:8px;padding:9px 16px;border:1px solid #ddd;border-radius:9999px;color:#0c0d0e;text-decoration:none;font-size:14px;">📅 Google Calendar</a>
+      <a href="${outlookUrl}" target="_blank" style="display:inline-block;padding:9px 16px;border:1px solid #ddd;border-radius:9999px;color:#0c0d0e;text-decoration:none;font-size:14px;">📅 Outlook</a>
+    </p>
+    <p style="margin:4px 0 0;font-size:12px;color:#999;">(Apple Calendar: abre el archivo .ics adjunto.)</p>`;
+
   const linkBlock = eventLink
     ? `<p style="margin:24px 0;">
          <a href="${eventLink}" style="background:#9378fe;color:#fff;text-decoration:none;padding:12px 24px;border-radius:9999px;display:inline-block;font-weight:600;">
@@ -128,6 +159,7 @@ export default async function handler(req, res) {
     <h2 style="font-family:Georgia,serif;font-size:22px;margin:20px 0 4px;">${eventTitle}</h2>
     <p style="color:#555;margin:0 0 8px;text-transform:capitalize;">${fechaEs}h (hora de Madrid)</p>
     <p style="color:#555;margin:0;">📍 ${platform || "Online"}</p>
+    ${calendarBlock}
     ${linkBlock}
     <p>Guarda este email — es tu acceso al evento.</p>
     <p style="color:#777;font-size:14px;">¿Preguntas? ${SUPPORT}<br/>— María</p>
