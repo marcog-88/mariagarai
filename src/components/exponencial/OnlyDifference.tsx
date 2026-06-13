@@ -3,7 +3,7 @@ import { Reveal } from "@/components/landing/Reveal";
 export const OnlyDifference = () => {
   return (
     <section
-      className="pt-0 pb-24 md:pb-32"
+      className="py-24 md:py-32"
       style={{ background: "#0c0d0e", color: "#ffffff" }}
     >
       <div className="container-tight">
