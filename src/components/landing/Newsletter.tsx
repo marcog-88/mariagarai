@@ -48,7 +48,7 @@ export const Newsletter = () => {
         {/* Form on left, mockups on right — beneath subheadline */}
         <div className="mt-16 grid md:grid-cols-12 gap-12 md:gap-16 items-start">
           <Reveal variant="left" delay={120} className="md:col-span-6 flex justify-center md:justify-start">
-            <div ref={wrapRef} className="w-full max-w-[480px] relative mx-auto md:mx-0">
+            <div ref={wrapRef} className="w-full relative mx-auto md:mx-0">
               {/* Soft purple + mint glow */}
               <div
                 aria-hidden
@@ -61,11 +61,10 @@ export const Newsletter = () => {
                 }}
               />
               <div
-                className="relative rounded-2xl overflow-hidden bg-background border border-border w-full"
+                className="relative rounded-2xl overflow-hidden bg-background border border-border w-full h-[420px]"
                 style={{
                   boxShadow:
                     "0 20px 40px -20px rgba(139,92,246,0.35), 0 8px 24px -12px rgba(139,92,246,0.2), 0 0 0 1px rgba(139,92,246,0.06)",
-                  height: `${IFRAME_H * scale}px`,
                 }}
               >
                 {import.meta.env.DEV ? (
@@ -99,11 +98,11 @@ export const Newsletter = () => {
 
           {/* María writing — real, warm, weekly */}
           <Reveal variant="right" delay={250} className="hidden md:block md:col-span-6">
-            <div className="rounded-2xl overflow-hidden max-h-[440px]">
+            <div className="rounded-2xl overflow-hidden h-[420px]">
               <img
                 src={mariaCafe}
                 alt="María Garaí escribiendo su newsletter desde una cafetería"
-                className="w-full h-full max-h-[440px] object-cover"
+                className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>

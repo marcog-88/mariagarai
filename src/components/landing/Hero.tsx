@@ -7,34 +7,36 @@ export const Hero = () => {
       className="relative overflow-hidden hero-dark pt-24 pb-24 md:pt-36 md:pb-20 lg:pb-0"
     >
       <div className="container-tight px-8 sm:px-8 relative">
-        <div className="flex flex-col lg:flex-row gap-10 md:gap-12 lg:items-stretch">
+
+        {/* Mobile + Tablet layout (hidden on lg+) */}
+        <div className="flex flex-col gap-10 md:gap-12 lg:hidden">
           {/* Copy column */}
-          <div className="order-2 lg:order-1 flex flex-col justify-center w-full lg:w-[60%] pt-0 pb-8 lg:py-0 lg:pb-24">
-            {/* Mobile avatar — human anchor without the full portrait cost */}
+          <div className="flex flex-col justify-center w-full pt-0 pb-8">
+            {/* Mobile/tablet avatar */}
             <img
               src={portrait}
               alt="María Garaí"
-              className="animate-fade-up lg:hidden mb-10 h-28 w-28 rounded-full object-cover object-top ring-2 ring-accent/60 ring-offset-2 ring-offset-[#0c0d0e]"
+              className="animate-fade-up mb-6 h-28 w-28 md:h-44 md:w-44 rounded-full object-cover object-top ring-2 ring-accent/60 ring-offset-2 ring-offset-[#0c0d0e]"
               loading="eager"
               fetchPriority="high"
               decoding="sync"
             />
             <h1
-              className="animate-fade-up font-serif text-[clamp(2.5rem,8vw,3.5rem)] md:text-[clamp(2.75rem,5vw,4.5rem)] lg:text-[clamp(2.5rem,3.5vw,3.75rem)] leading-[1.05] md:leading-[1.08] tracking-tight text-white"
+              className="animate-fade-up font-serif text-[clamp(2.5rem,8vw,3.5rem)] md:text-[clamp(2.75rem,5vw,4.5rem)] leading-[1.05] tracking-tight text-white"
               style={{ animationDelay: "0ms" }}
             >
               Tú, la IA y yo,{" "}
               <em className="font-serif italic text-accent block">el equipo que despega tu negocio.</em>
             </h1>
             <p
-              className="animate-fade-up mt-6 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-relaxed"
+              className="animate-fade-up mt-8 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "150ms" }}
             >
               Si tienes un negocio de servicios, terapia o consultoría, te ayudo a crear una oferta de alto valor, generar ventas todas las semanas y construir la infraestructura con IA que lo hace más profesional.
             </p>
 
             <div
-              className="animate-fade-up mt-10 sm:mt-12 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-6"
+              className="animate-fade-up mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-6"
               style={{ animationDelay: "300ms" }}
             >
               <a
@@ -50,9 +52,8 @@ export const Hero = () => {
               </a>
             </div>
 
-            {/* Credentials — one quiet, confident line */}
             <p
-              className="animate-fade-up mt-10 lg:mt-14 text-xs md:text-sm italic font-light text-white/35 leading-relaxed whitespace-nowrap"
+              className="animate-fade-up mt-10 text-xs md:text-sm italic font-light text-white/35 leading-relaxed whitespace-nowrap"
               style={{ animationDelay: "450ms" }}
             >
               <span className="text-white/70">ONU</span> ·{" "}
@@ -60,10 +61,62 @@ export const Hero = () => {
               <span className="text-white/70">Startups</span> · +10 años<span className="hidden md:inline"> de experiencia</span>
             </p>
           </div>
+        </div>
 
-          {/* Portrait column */}
-          <div className="hidden lg:flex relative order-3 lg:order-2 w-full lg:w-[40%] items-end justify-center mt-10 lg:mt-0">
-            {/* Purple glow — sits fully behind the cutout, so it never touches her */}
+        {/* Desktop layout (lg+) */}
+        <div className="hidden lg:flex lg:flex-row lg:gap-12 lg:items-stretch">
+
+          {/* Copy column */}
+          <div className="flex flex-col justify-between w-full lg:w-[58%] pt-0 pb-8">
+            {/* Headline group */}
+            <div>
+              <span
+                className="animate-fade-up font-serif text-[clamp(2.5rem,3.5vw,3.75rem)] leading-[1.05] tracking-tight text-white"
+                style={{ animationDelay: "0ms" }}
+              >
+                Tú, la IA y yo,
+              </span>
+              <em
+                className="animate-fade-up mt-3 font-serif italic text-accent text-[clamp(3rem,4.2vw,4.5rem)] leading-[1.02] tracking-tight block"
+                style={{ animationDelay: "80ms" }}
+              >
+                el equipo que despega tu negocio.
+              </em>
+            </div>
+            <p
+              className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
+              style={{ animationDelay: "150ms" }}
+            >
+              Si tienes un negocio de servicios, terapia o consultoría, te ayudo a crear una oferta de alto valor, generar ventas todas las semanas y construir la infraestructura con IA que lo hace más profesional.
+            </p>
+            <div
+              className="animate-fade-up flex items-center gap-6"
+              style={{ animationDelay: "300ms" }}
+            >
+              <a
+                href="#programa-estrella"
+                className="btn-primary-lg justify-center !text-white"
+                style={{
+                  boxShadow:
+                    "0 8px 28px rgba(147, 120, 254, 0.55), 0 14px 56px rgba(147, 120, 254, 0.3)",
+                }}
+              >
+                Trabaja conmigo
+                <span aria-hidden>→</span>
+              </a>
+            </div>
+            <p
+              className="animate-fade-up text-xs italic font-light text-white/35 leading-relaxed whitespace-nowrap"
+              style={{ animationDelay: "450ms" }}
+            >
+              <span className="text-white/70">ONU</span> ·{" "}
+              <span className="text-white/70">Procter &amp; Gamble</span> ·{" "}
+              <span className="text-white/70">Startups</span> · +10 años de experiencia
+            </p>
+          </div>
+
+          {/* Portrait column — full-body cutout, top-aligned */}
+          <div className="relative flex w-full lg:w-[42%] items-start justify-center lg:mt-0">
             <div
               aria-hidden
               className="absolute inset-0 pointer-events-none"
@@ -84,13 +137,13 @@ export const Hero = () => {
               fetchPriority="high"
               decoding="sync"
             />
-            {/* Intentional bottom fade into the section background */}
             <div
               aria-hidden
               className="absolute inset-x-0 bottom-0 h-32 pointer-events-none"
               style={{ background: "linear-gradient(to bottom, transparent, #0c0d0e)" }}
             />
           </div>
+
         </div>
       </div>
 

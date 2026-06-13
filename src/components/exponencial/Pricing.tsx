@@ -89,13 +89,10 @@ export const Pricing = () => {
             </p>
             <p className="mt-4 text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
             <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€4500</p>
-            <p className="mt-2 italic text-primary-foreground/60">
-              • Pago único o 2 pagos de €2.250
-            </p>
 
             {/* Scarcity — elevated from an italic whisper to a visible commitment */}
             <div
-              className="mt-8 inline-flex items-center gap-3 rounded-full px-5 py-3"
+              className="mt-6 inline-flex items-center gap-3 rounded-full px-5 py-3"
               style={{
                 border: "1px solid rgba(147,120,254,0.5)",
                 background: "rgba(147,120,254,0.08)",

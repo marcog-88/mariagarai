@@ -8,19 +8,30 @@ export const Speaking = () => {
       style={{ background: "#f9f9f7" }}
     >
       <div className="container-tight">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <Reveal>
+          <p
+            className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
+            style={{ color: "#9378fe" }}
+          >
+            Conferencias y Formación
+          </p>
+        </Reveal>
+        <div className="grid md:grid-cols-2 gap-12 items-stretch">
 
           {/* Left column */}
           <Reveal variant="left" className="order-2 md:order-1">
-            <p
-              className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
-              style={{ color: "#9378fe" }}
-            >
-              Conferencias y Formación
-            </p>
             <h2 className="display-md" style={{ color: "#0c0d0e" }}>
               Hablo en tu Evento
             </h2>
+            {/* Mobile-only image: shows between h2 and body */}
+            <div className="md:hidden mt-8 rounded-[1.25rem] overflow-hidden aspect-[4/3]">
+              <img
+                src={mariaSpeaker}
+                alt="María Garaí, retrato profesional"
+                className="w-full h-full object-cover object-[50%_22%]"
+                loading="lazy"
+              />
+            </div>
             <p className="mt-6 text-base leading-relaxed" style={{ color: "#666" }}>
               Disponible para eventos corporativos, conferencias y formaciones de equipo.
             </p>
@@ -42,12 +53,12 @@ export const Speaking = () => {
             </div>
           </Reveal>
 
-          {/* Right column: speaking photo */}
-          <Reveal variant="scale" delay={150} className="aspect-[4/3] rounded-[1.25rem] overflow-hidden order-1 md:order-2">
+          {/* Right column: speaking photo — desktop only */}
+          <Reveal variant="scale" delay={150} className="hidden md:block relative rounded-[1.25rem] overflow-hidden md:order-2 self-stretch">
             <img
               src={mariaSpeaker}
               alt="María Garaí, retrato profesional"
-              className="w-full h-full object-cover object-[50%_22%]"
+              className="absolute inset-0 w-full h-full object-cover object-[50%_22%]"
               loading="lazy"
             />
           </Reveal>
