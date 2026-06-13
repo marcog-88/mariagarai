@@ -41,7 +41,7 @@ export const Hero = () => {
             className="animate-fade-up mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl"
             style={{ animationDelay: "240ms" }}
           >
-            En 4 meses sales con tu oferta de alto valor lanzada, tu marca posicionada, tus ventas automatizadas y tu infraestructura con IA.
+            En 4 meses sales con tu oferta de alto valor lanzada, tu marca posicionada, tu sistema de ventas montado y tu infraestructura con IA.
           </p>
           <p
             className="animate-fade-up mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl"
@@ -50,9 +50,9 @@ export const Hero = () => {
             Sin perseguir seguidores y sin años de prueba y error.
           </p>
 
-          {/* Hero mockup — last on mobile so the pitch reads uninterrupted */}
+          {/* Hero mockup — below headline on mobile */}
           <div
-            className="animate-fade-up mt-12 md:mt-14 mx-auto order-1 md:order-none"
+            className="animate-fade-up mt-12 md:mt-14 mx-auto"
             style={{ maxWidth: "1000px", animationDelay: "400ms" }}
           >
             {/* Mobile: product shot — readable at small sizes */}

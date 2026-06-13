@@ -44,11 +44,16 @@ export const About = () => {
               Toqué fondo. Me endeudé. Pasé por burnout. Me desesperé. Y desde ese agujero,
               lo entendí. Necesitaba:
             </p>
-            <ul className="list-disc list-inside space-y-1 pl-2">
+            {/* Full list — desktop only */}
+            <ul className="hidden md:block list-disc list-inside space-y-1 pl-2">
               <li>aterrizar una oferta de alto valor</li>
               <li>construir autoridad en redes para que los clientes llegaran a mí</li>
               <li>usar la IA para acelerar la ejecución y escalar impacto</li>
             </ul>
+            {/* Condensed — mobile only */}
+            <p className="md:hidden">
+              Una oferta de alto valor, autoridad en redes y la IA como socia para ejecutar más rápido.
+            </p>
             <p>
               Haberla cagado tanto tiene una ventaja: conozco tu caos, sé dónde fallas y
               sé cómo ayudarte a salir de ahí. Mi misión es convertirme en la socia

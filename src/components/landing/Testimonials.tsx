@@ -1,41 +1,53 @@
 import { Reveal } from "./Reveal";
-import waPrimeraVenta from "@/assets/whatsapp-primera-venta.png";
-import waClaudeVersion from "@/assets/whatsapp-claude-version.png";
-import waVentaHecha from "@/assets/whatsapp3.jpg";
-import wa2200 from "@/assets/whatsapp6.jpg";
-import waWebMontada from "@/assets/whatsapp7.jpg";
-import waSesion90 from "@/assets/whatsapp10.jpg";
+import wa2200 from "@/assets/whatsapp-2200-euros.jpg";
+import waVentaLinkedin from "@/assets/whatsapp-venta-linkedin.jpg";
+import waDosSesiones from "@/assets/whatsapp-dos-sesiones-opciones.jpg";
+import waSesion90 from "@/assets/whatsapp-sesion-90-minutos.jpg";
+import waWebLanding from "@/assets/whatsapp-web-landing-montada.jpg";
+import waPrimeraSesion from "@/assets/whatsapp-primera-sesion-vendida.jpg";
+import waDosVersiones from "@/assets/whatsapp-dos-versiones-landing.jpg";
+import waEmpuje from "@/assets/whatsapp-empuje-aprender.png";
 
 const screenshots = [
   {
-    src: waPrimeraVenta,
-    alt: "WhatsApp de clienta: «He vendido la primera sesión, estoy muy feliz y muy agradecida.»",
+    src: wa2200,
+    alt: "WhatsApp de clienta: «Ayer cerré la primera venta con el precio alto. Al final 2.200€. Esto era impensable hace un mes.»",
     rotate: -1.5,
   },
   {
-    src: waVentaHecha,
+    src: waVentaLinkedin,
     alt: "WhatsApp de clienta: «Mariaaaa me ha contestado! Venta hecha!! Y cuatro personas preguntándome por LinkedIn.»",
     rotate: 1.2,
   },
   {
-    src: wa2200,
-    alt: "WhatsApp de clienta: «Ayer cerré la primera venta con el precio alto. Al final 2.200€. Esto era impensable hace un mes.»",
+    src: waDosSesiones,
+    alt: "WhatsApp de clienta sobre sus dos opciones de sesión.",
     rotate: -1.0,
-  },
-  {
-    src: waWebMontada,
-    alt: "WhatsApp de clienta: «Ya tengo la web y la landing montada! Flipo con cómo se ve. Esto con una agencia hubiera sido un pastizal.»",
-    rotate: 1.5,
-  },
-  {
-    src: waClaudeVersion,
-    alt: "WhatsApp de clienta: «He hecho dos versiones para la landing page usando Claude.»",
-    rotate: -0.8,
   },
   {
     src: waSesion90,
     alt: "WhatsApp de clienta: «Ya he tenido la sesión de 90 minutos con mi primera clienta y la venta ha ido genial. Primera venta hecha!»",
+    rotate: 1.5,
+  },
+  {
+    src: waWebLanding,
+    alt: "WhatsApp de clienta: «Ya tengo la web y la landing montada! Flipo con cómo se ve. Esto con una agencia hubiera sido un pastizal.»",
+    rotate: -0.8,
+  },
+  {
+    src: waPrimeraSesion,
+    alt: "WhatsApp de clienta: «He vendido la primera sesión, estoy muy feliz y muy agradecida.»",
     rotate: 1.0,
+  },
+  {
+    src: waDosVersiones,
+    alt: "WhatsApp de clienta: «He hecho dos versiones para la landing page usando Claude.»",
+    rotate: -1.2,
+  },
+  {
+    src: waEmpuje,
+    alt: "WhatsApp de clienta: «Lo que me ha venido mejor ha sido el empuje. Llevo años aprendiendo pero sin acabar de atreverme del todo.»",
+    rotate: 1.3,
   },
 ];
 

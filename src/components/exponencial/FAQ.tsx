@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -38,6 +39,25 @@ const faqs = [
   {
     q: "¿Cómo funciona el proceso para entrar?",
     a: "Rellenas el formulario de compatibilidad (toma 3 minutos). Si encajas, agendamos una llamada para conocernos y ver si tiene sentido trabajar juntas. Si las dos lo vemos claro, entras. Solo acepto 2 clientas nuevas al mes.",
+  },
+  {
+    q: "¿Voy a facturar 10.000€ con este programa?",
+    a: "10k es lo que el modelo está diseñado para alcanzar; lo que yo garantizo son los 4 activos que lo hacen posible. No te puedo garantizar ingresos, nadie puede. Pero sí te puedo garantizar que vas a tener la infraestructura, el modelo de negocio y la estrategia para conseguirlo.",
+  },
+  {
+    q: "¿Hay opción de pago fraccionado?",
+    a: (
+      <>
+        Sí. Puedes dividir tu inversión en 2, 3 o 4 pagos mensuales con un recargo del 10%:
+        <br /><br />
+        — Pago único: 4.500€ (sin recargo)<br />
+        — 2 pagos: 2.475€<br />
+        — 3 pagos: 1.650€<br />
+        — 4 pagos: 1.238€
+        <br /><br />
+        Todos los precios sin IVA. El fraccionamiento se gestiona en el momento de la aplicación.
+      </>
+    ),
   },
 ];
 

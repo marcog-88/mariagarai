@@ -89,6 +89,8 @@ export const Pricing = () => {
             </p>
             <p className="mt-4 text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
             <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€4500</p>
+            <p className="mt-1 text-xs italic text-primary-foreground/50">Precio sin IVA.</p>
+            <p className="mt-0.5 text-xs italic text-primary-foreground/50">Aplicable según legislación fiscal de tu país de residencia.</p>
 
             {/* Scarcity — elevated from an italic whisper to a visible commitment */}
             <div
@@ -98,9 +100,8 @@ export const Pricing = () => {
                 background: "rgba(147,120,254,0.08)",
               }}
             >
-              <span className="badge-pulse-dot rounded-full bg-[#9378fe] flex-shrink-0" style={{ width: 8, height: 8 }} aria-hidden />
-              <p className="text-sm text-primary-foreground/90">
-                Máximo <strong>2 clientas nuevas al mes</strong> · Solo por aplicación
+              <p className="text-xs italic text-primary-foreground/50">
+                Máx. <strong>2 clientas nuevas al mes</strong> · Por aplicación
               </p>
             </div>
 
@@ -120,14 +121,6 @@ export const Pricing = () => {
               </a>
             </div>
 
-            <a
-              href={TIDYCAL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block mt-3 text-[11px] md:text-sm italic whitespace-nowrap text-primary-foreground/75 hover:text-mint underline underline-offset-4"
-            >
-              ¿Tienes dudas? → Llamada de exploración
-            </a>
           </div>
         </Reveal>
       </div>
