@@ -4,7 +4,6 @@ import waDosVersiones from "@/assets/whatsapp-dos-versiones-landing.jpg";
 import waVentaLinkedin from "@/assets/whatsapp-venta-linkedin.jpg";
 import waHazteGrande from "@/assets/whatsapp-hazte-grande-proceso.png";
 import waWebLanding from "@/assets/whatsapp-web-landing-montada.jpg";
-// import waSubstack from "@/assets/whatsapp-substack-prospectar.jpg"; // add file to enable
 import waSesion90 from "@/assets/whatsapp-sesion-90-minutos.jpg";
 import waDosSesiones from "@/assets/whatsapp-dos-sesiones-opciones.jpg";
 import waEmpuje from "@/assets/whatsapp-empuje-aprender.png";
