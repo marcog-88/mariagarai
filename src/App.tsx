@@ -15,6 +15,8 @@ const Construye = lazy(() => import("./pages/Construye.tsx"));
 const RedesQueVenden = lazy(() => import("./pages/RedesQueVenden.tsx"));
 const OfertaPrivadaConstruye = lazy(() => import("./pages/OfertaPrivadaConstruye.tsx"));
 const Exponencial = lazy(() => import("./pages/Exponencial.tsx"));
+const Eventos = lazy(() => import("./pages/Eventos.tsx"));
+const EventoDetalle = lazy(() => import("./pages/EventoDetalle.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -35,6 +37,8 @@ const App = () => (
             <Route path="/redes-que-venden" element={<RedesQueVenden />} />
             <Route path="/oferta-privada-construye" element={<OfertaPrivadaConstruye />} />
             <Route path="/exponencial" element={<Exponencial />} />
+            <Route path="/eventos" element={<Eventos />} />
+            <Route path="/eventos/:slug" element={<EventoDetalle />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
