@@ -90,7 +90,7 @@ export const Newsletter = () => {
 
           {/* María writing — real, warm, weekly */}
           <Reveal variant="right" delay={250} className="hidden md:block md:col-span-6">
-            <div className="rounded-2xl overflow-hidden h-[420px]">
+            <div className="rounded-2xl overflow-hidden h-full">
               <img
                 src={mariaCafe}
                 alt="María Garaí escribiendo su newsletter desde una cafetería"

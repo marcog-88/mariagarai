@@ -27,9 +27,9 @@ const Exponencial = () => (
     <Hero />
     <Problem />
     <Truth />
-    <Testimonios />
     <Letras />
     <ParaEso />
+    <Testimonios />
     <OnlyDifference />
     <AntesDespues />
     <Comparacion />
