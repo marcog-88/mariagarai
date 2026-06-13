@@ -49,30 +49,22 @@ export const Newsletter = () => {
         <div className="mt-16 grid md:grid-cols-12 gap-12 md:gap-16 items-start">
           <Reveal variant="left" delay={120} className="md:col-span-6 flex justify-center md:justify-start">
             <div ref={wrapRef} className="w-full relative mx-auto md:mx-0">
-              {/* Soft purple + mint glow */}
               <div
-                aria-hidden
-                className="absolute -inset-4 rounded-3xl pointer-events-none"
+                className="relative rounded-2xl overflow-hidden bg-white border border-border w-full"
                 style={{
-                  background:
-                    "radial-gradient(55% 60% at 25% 35%, rgba(139,92,246,0.30) 0%, rgba(139,92,246,0.08) 50%, rgba(139,92,246,0) 75%), radial-gradient(55% 60% at 80% 75%, rgba(208,252,208,0.55) 0%, rgba(208,252,208,0.18) 50%, rgba(208,252,208,0) 75%)",
-                  filter: "blur(22px)",
-                  zIndex: 0,
-                }}
-              />
-              <div
-                className="relative rounded-2xl overflow-hidden bg-background border border-border w-full h-[420px]"
-                style={{
-                  boxShadow:
-                    "0 20px 40px -20px rgba(139,92,246,0.35), 0 8px 24px -12px rgba(139,92,246,0.2), 0 0 0 1px rgba(139,92,246,0.06)",
+                  height: Math.max(180, Math.round(IFRAME_H * scale) + 30),
+                  boxShadow: "0 20px 40px -20px rgba(139,92,246,0.35), 0 8px 24px -12px rgba(139,92,246,0.2), 0 0 0 1px rgba(139,92,246,0.06)",
                 }}
               >
                 {import.meta.env.DEV ? (
-                  <div
-                    aria-hidden
-                    className="absolute inset-0 flex items-center justify-center text-foreground/40 text-sm"
-                  >
-                    Substack embed (hidden in dev)
+                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-6 text-center">
+                    <p className="font-bold text-xl text-foreground">Hazte · Grande</p>
+                    <p className="text-sm text-foreground/60 max-w-xs leading-relaxed">Ponte incómoda, esto va de crecer. Guía semanal sobre negocio con IA.</p>
+                    <p className="text-xs italic text-foreground/40">By Maria Garai</p>
+                    <div className="flex gap-2 w-full max-w-xs mt-2">
+                      <div className="flex-1 rounded border border-border px-3 py-2 text-sm text-foreground/30">Escribe tu correo electrónico...</div>
+                      <div className="rounded px-4 py-2 text-sm text-white font-medium" style={{ background: "#9378fe" }}>Suscribirse</div>
+                    </div>
                   </div>
                 ) : (
                   <iframe
