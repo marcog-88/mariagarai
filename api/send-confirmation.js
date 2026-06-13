@@ -4,15 +4,16 @@
 // ENV (set in Vercel, server-side only — never VITE_ vars, never shipped to the
 // browser):
 //   RESEND_API_KEY            required to actually send; if unset, this no-ops.
-//   SUPABASE_URL              (optional) project URL for the event_link lookup.
-//   SUPABASE_SERVICE_ROLE_KEY (optional) reads the RLS-private event_link.
+//   SUPABASE_URL              project URL for the event_link lookup.
+//   SUPABASE_SERVICE_ROLE_KEY reads the RLS-private event_link (see below).
 //
-// event_link sourcing (see plan — open decision): `event_link` is RLS-private,
-// so the public client can never read it. This function reads it server-side
-// with the service-role key IF those env vars are present; otherwise it sends
-// the confirmation + .ics without the secret link (the access link can instead
-// be delivered by the Brief B admin side). Confirm the preferred path before
-// wiring keys.
+// event_link sourcing: `event_link` is RLS-private, so the public browser
+// client can never read it. Per the agreed approach, this function reads it
+// server-side using the service-role key — scoped to selecting only
+// event_link for the one event being confirmed. The key lives solely in the
+// Vercel environment (never a VITE_ var, never shipped to the browser). If the
+// service-role env vars are absent, the email still sends with the .ics but
+// without the access link.
 
 const FROM = "María Garaí <noreply@mariagarai.com>";
 const SUPPORT = "hola@mariagarai.com";
@@ -91,7 +92,9 @@ export default async function handler(req, res) {
     return res.status(200).json({ skipped: true });
   }
 
-  const eventLink = body.eventLink || (await lookupEventLink(eventSlug));
+  // Read the RLS-private link server-side (service-role). Single source of
+  // truth — the browser never sends it because it cannot read it.
+  const eventLink = await lookupEventLink(eventSlug);
 
   const fechaEs = new Intl.DateTimeFormat("es-ES", {
     weekday: "long",
