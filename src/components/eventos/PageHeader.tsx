@@ -66,12 +66,12 @@ export const PageHeader = ({ settings, now }: Props) => {
     <header className="bg-[#0c0d0e] pt-20 pb-10 text-white">
       {/* Banner — full-width relative to the page, not the content container */}
       <div className="container-tight">
-        <div className="w-full rounded-2xl overflow-hidden" style={{ aspectRatio: "3/1" }}>
+        <div className="w-full rounded-2xl overflow-hidden h-40 sm:h-56 md:h-[300px]">
           <img
             src={banner}
             alt=""
             role="presentation"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           />
         </div>
 
