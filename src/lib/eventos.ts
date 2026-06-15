@@ -35,6 +35,7 @@ export type PageSettings = {
   page_title: string | null;
   page_subtitle: string | null;
   profile_image_url: string | null;
+  banner_url: string | null;
   linkedin_url: string | null;
   website_url: string | null;
 };
@@ -68,7 +69,7 @@ export async function fetchEventBySlug(slug: string): Promise<EventRow | null> {
 export async function fetchEventosPageSettings(): Promise<PageSettings | null> {
   const { data, error } = await sb
     .from("page_settings")
-    .select("page_title,page_subtitle,profile_image_url,linkedin_url,website_url")
+    .select("page_title,page_subtitle,profile_image_url,banner_url,linkedin_url,website_url")
     .eq("page_key", "eventos")
     .maybeSingle();
   if (error) throw error;
