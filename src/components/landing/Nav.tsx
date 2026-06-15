@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
-const LUMA_LIVE = "https://luma.com/corporateafounder";
+const LUMA_LIVE = "https://www.mariagarai.com/eventos";
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -42,7 +42,7 @@ export const Nav = () => {
           aria-label="Principal"
         >
           <a
-            href="#top"
+            href="/"
             className={`flex items-center transition-colors duration-300 ${
               onDark ? "text-white" : "text-foreground"
             }`}
