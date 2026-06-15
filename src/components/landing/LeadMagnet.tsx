@@ -1,7 +1,7 @@
 import mockup from "@/assets/talleres-live-mockup.png";
 import { Reveal } from "./Reveal";
 
-const LUMA_TALLERES = "https://luma.com/corporateafounder";
+const LUMA_TALLERES = "https://www.mariagarai.com/eventos";
 
 export const LeadMagnet = () => {
   return (
