@@ -1,5 +1,6 @@
 import { useState } from "react";
 import mariaCafe from "@/assets/maria-cafe.png";
+import hgLogo from "@/assets/HG-mini logo.png";
 import { Reveal } from "./Reveal";
 
 const SUBSCRIBE_URL =
@@ -66,7 +67,10 @@ export const Newsletter = () => {
                     "0 20px 40px -20px rgba(139,92,246,0.35), 0 8px 24px -12px rgba(139,92,246,0.2), 0 0 0 1px rgba(139,92,246,0.06)",
                 }}
               >
-                <p className="font-bold text-xl text-foreground">Hazte · Grande</p>
+                <div className="flex items-center gap-2">
+                  <img src={hgLogo} alt="" className="h-8 w-auto" aria-hidden="true" />
+                  <p className="font-bold text-xl text-foreground">Hazte · Grande</p>
+                </div>
                 <p className="text-sm text-foreground/60 max-w-xs leading-relaxed">
                   Ponte incómoda, esto va de crecer. Guía semanal sobre negocio con IA.
                 </p>
