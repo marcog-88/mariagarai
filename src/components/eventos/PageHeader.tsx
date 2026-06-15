@@ -76,11 +76,11 @@ export const PageHeader = ({ settings, now }: Props) => {
         </div>
 
         {/* Profile pic overlapping lower-left of banner */}
-        <div className="-mt-10 sm:-mt-12 flex items-end">
+        <div className="-mt-10 sm:-mt-12 flex items-end pl-4">
           <img
             src={profile}
             alt={title}
-            className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl object-cover ring-2 ring-[#f9f9f7]"
+            className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl object-cover ring-4 ring-[#f9f9f7]"
           />
         </div>
 
