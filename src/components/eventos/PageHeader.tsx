@@ -2,6 +2,8 @@ import { Linkedin, Globe } from "lucide-react";
 import mariaFallback from "@/assets/maria-profile-zoom.jpg";
 import { formatHeaderTimes, type PageSettings } from "@/lib/eventos";
 
+const LINKEDIN_URL = "https://www.linkedin.com/in/mariagarai/";
+
 type Props = { settings: PageSettings | null; now: Date };
 
 /**
@@ -34,11 +36,11 @@ export const PageHeader = ({ settings, now }: Props) => {
 
         {subtitle && <p className="mt-3 max-w-2xl text-base text-white/70">{subtitle}</p>}
 
-        {(settings?.linkedin_url || settings?.website_url) && (
+        {(settings?.linkedin_url || LINKEDIN_URL || settings?.website_url) && (
           <div className="mt-5 flex items-center gap-3">
-            {settings?.linkedin_url && (
+            {(settings?.linkedin_url || LINKEDIN_URL) && (
               <a
-                href={settings.linkedin_url}
+                href={settings?.linkedin_url || LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
