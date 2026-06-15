@@ -63,10 +63,10 @@ export const PageHeader = ({ settings, now }: Props) => {
 
   // Luma layout — banner present.
   return (
-    <header className="bg-[#0c0d0e] pt-20 pb-10 text-white">
-      {/* Banner — full-width relative to the page, not the content container */}
+    <header className="bg-[#f9f9f7] pt-20 pb-10">
       <div className="container-tight">
-        <div className="w-full rounded-2xl overflow-hidden h-40 sm:h-56 md:h-[300px]">
+        {/* Banner — contained rounded image on light background */}
+        <div className="w-full rounded-2xl overflow-hidden h-40 sm:h-48 md:h-[240px]">
           <img
             src={banner}
             alt=""
@@ -80,14 +80,14 @@ export const PageHeader = ({ settings, now }: Props) => {
           <img
             src={profile}
             alt={title}
-            className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl object-cover ring-2 ring-[#0c0d0e]"
+            className="h-20 w-20 sm:h-24 sm:w-24 rounded-2xl object-cover ring-2 ring-[#f9f9f7]"
           />
         </div>
 
         {/* Content below the pic */}
-        <h1 className="mt-4 display-md text-white">{title}</h1>
-        <p className="mt-2 text-sm text-white/50">{formatHeaderTimes(now)}</p>
-        {subtitle && <p className="mt-3 max-w-2xl text-base text-white/70">{subtitle}</p>}
+        <h1 className="mt-4 display-md text-foreground">{title}</h1>
+        <p className="mt-2 text-sm text-foreground/50">{formatHeaderTimes(now)}</p>
+        {subtitle && <p className="mt-3 max-w-2xl text-base text-foreground/70">{subtitle}</p>}
 
         {(settings?.linkedin_url || LINKEDIN_URL || settings?.website_url) && (
           <div className="mt-5 flex items-center gap-3">
@@ -97,7 +97,7 @@ export const PageHeader = ({ settings, now }: Props) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="text-white/55 transition-colors hover:text-accent"
+                className="text-foreground/40 transition-colors hover:text-accent"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -108,7 +108,7 @@ export const PageHeader = ({ settings, now }: Props) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Sitio web"
-                className="text-white/55 transition-colors hover:text-accent"
+                className="text-foreground/40 transition-colors hover:text-accent"
               >
                 <Globe className="h-5 w-5" />
               </a>
