@@ -63,7 +63,7 @@ export const PageHeader = ({ settings, now }: Props) => {
 
   // Luma layout — banner present.
   return (
-    <header className="bg-[#f9f9f7] pt-20 pb-10">
+    <header className="bg-[#f9f9f7] pt-20 pb-10 border-b border-border">
       <div className="container-tight">
         {/* Banner — contained rounded image on light background */}
         <div className="w-full rounded-2xl overflow-hidden h-40 sm:h-48 md:h-[240px]">
