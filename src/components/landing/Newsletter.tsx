@@ -1,6 +1,6 @@
 import { useState } from "react";
 import mariaCafe from "@/assets/maria-cafe.png";
-import hgLogo from "@/assets/HG-mini logo.png";
+import hgLogo from "@/assets/hg-mini-logo.png";
 import { Reveal } from "./Reveal";
 
 const SUBSCRIBE_URL =
