@@ -66,7 +66,7 @@ const Eventos = () => {
 
   return (
     <div id="top" className="min-h-screen bg-background">
-      <Nav />
+      <Nav forceLight />
 
       <PageHeader settings={settings ?? null} now={now} />
 
