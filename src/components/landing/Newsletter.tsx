@@ -58,9 +58,9 @@ export const Newsletter = () => {
         {/* Form on left, mockups on right — beneath subheadline */}
         <div className="mt-16 grid md:grid-cols-12 gap-12 md:gap-16 items-stretch">
           <Reveal variant="left" delay={120} className="md:col-span-6 flex justify-center md:justify-start">
-            <div className="w-full relative mx-auto md:mx-0">
+            <div className="w-full h-full relative mx-auto md:mx-0">
               <div
-                className="relative rounded-2xl overflow-hidden bg-white border border-border w-full flex flex-col items-center justify-center gap-3 px-6 py-10 text-center min-h-[260px]"
+                className="relative rounded-2xl overflow-hidden bg-white border border-gray-200 w-full h-full flex flex-col items-center justify-center gap-3 px-6 py-10 text-center min-h-[260px]"
                 style={{
                   boxShadow:
                     "0 20px 40px -20px rgba(139,92,246,0.35), 0 8px 24px -12px rgba(139,92,246,0.2), 0 0 0 1px rgba(139,92,246,0.06)",
