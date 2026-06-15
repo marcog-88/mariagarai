@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 const LUMA_LIVE = "https://www.mariagarai.com/eventos";
 
-export const Nav = () => {
+export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -24,7 +24,8 @@ export const Nav = () => {
 
   // Over the dark hero (top of page) the nav is transparent with light text;
   // once scrolled it becomes the standard light bar.
-  const onDark = !scrolled && !open;
+  // forceLight=true (e.g. /eventos light header) always uses dark text.
+  const onDark = !forceLight && !scrolled && !open;
 
   return (
     <>
