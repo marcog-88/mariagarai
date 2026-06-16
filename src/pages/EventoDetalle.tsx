@@ -110,8 +110,8 @@ const EventoDetalle = () => {
           </Link>
 
           {/* Cover — full-width below title on mobile */}
-          <div className="mt-4 lg:hidden w-2/3 aspect-square overflow-hidden rounded-xl ring-1 ring-border">
-            <Cover event={event} />
+          <div className="mt-4 lg:hidden w-full aspect-[3/2] overflow-hidden rounded-xl ring-1 ring-border">
+            <Cover event={event} className="object-top" />
           </div>
 
           <div className="mt-6 grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_22rem]">
