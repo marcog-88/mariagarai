@@ -41,7 +41,7 @@ export const Hero = () => {
             className="animate-fade-up mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl"
             style={{ animationDelay: "240ms" }}
           >
-            Te ayudo a empaquetarlo en una sola oferta de alto valor, con método propio, sistemas de venta e infraestructura con IA. La referente que vende su conocimiento, no su tiempo — montado en 4 meses.
+            Te ayudo a empaquetarlo en tu programa insignia de alto valor: la oferta, la autoridad en redes y toda la infraestructura (web, embudo, academia, email marketing) montada contigo, llave en mano.
           </p>
 
           {/* Hero mockup — below headline on mobile */}
