@@ -139,7 +139,7 @@ const EventoDetalle = () => {
             </div>
 
             {/* Cover — desktop right column */}
-            <div className="hidden lg:block aspect-square overflow-hidden rounded-xl ring-1 ring-border">
+            <div className="hidden lg:block aspect-square max-h-72 overflow-hidden rounded-xl ring-1 ring-border">
               <Cover event={event} />
             </div>
           </div>
