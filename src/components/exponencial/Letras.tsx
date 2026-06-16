@@ -6,7 +6,7 @@ export const Letras = () => {
       <div className="container-tight">
         <Reveal>
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
-            Lo que nadie te cuenta
+            Déjame que te confiese
           </p>
           <div
             className="pl-6 md:pl-8 border-l-4 mb-12"
