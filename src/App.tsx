@@ -5,6 +5,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
+import WhatsAppBubble from "./components/WhatsAppBubble.tsx";
 
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 const Legal = lazy(() => import("./pages/Legal.tsx"));
@@ -26,6 +27,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <WhatsAppBubble />
         <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Index />} />
