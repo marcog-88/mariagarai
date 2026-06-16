@@ -98,7 +98,7 @@ export const ParaEso = () => {
 
         <Reveal delay={120}>
           <p className="mt-10 text-lg md:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
-            En 4 meses construimos tu programa de formación online altamente rentable para ganar autoridad e ingresos escalables sin depender de tu tiempo. Todo montado, ya vendiendo, sin fricción técnica.
+            En 4 meses construimos tu <strong>programa de formación online altamente rentable</strong> para ganar autoridad e ingresos escalables sin depender de tu tiempo. Todo montado, ya vendiendo, sin fricción técnica.
           </p>
           <p className="mt-6 text-lg md:text-xl font-semibold text-primary-foreground/90 leading-relaxed max-w-4xl">
             Construimos cuatro activos:

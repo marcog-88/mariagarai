@@ -9,10 +9,10 @@ const cardA = [
 ];
 
 const cardB = [
-  "Un programa insignia altamente rentable ya validado",
-  "Una marca de autoridad que atrae oportunidades",
-  "Sistemas con IA que trabajan sin ti cada hora",
-  "Un negocio digital que se ve tan profesional como tú eres",
+  <>Un <strong>programa insignia</strong> altamente rentable ya validado</>,
+  <>Una marca de autoridad que atrae oportunidades</>,
+  <>Sistemas con IA que trabajan sin ti cada hora</>,
+  <>Un negocio digital que se ve tan profesional como tú eres</>,
 ];
 
 export const PreguntaReal = () => {
@@ -76,8 +76,8 @@ export const PreguntaReal = () => {
                 En 4 meses
               </p>
               <ul className="space-y-3.5">
-                {cardB.map((it) => (
-                  <li key={it} className="text-white leading-relaxed">
+                {cardB.map((it, i) => (
+                  <li key={i} className="text-white leading-relaxed">
                     {it}
                   </li>
                 ))}
