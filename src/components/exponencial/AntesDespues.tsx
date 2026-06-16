@@ -34,8 +34,8 @@ const months = [
     title: "Tus Ventas",
     subtitle: "El sistema que vende por ti",
     bullets: [
-      "Manual de ventas adaptado a ti y guion de llamada.",
-      "Guion de objeciones reales de tu cliente.",
+      "Manual de ventas adaptado a ti y tu perfil de avatar con mayor poder de compra.",
+      "Guion de llamada de venta para derribar objeciones de tu cliente.",
       "El embudo de captación que mejor encaja con tu caso, montado.",
       "Sistema de prospección más allá de tu círculo.",
     ],
