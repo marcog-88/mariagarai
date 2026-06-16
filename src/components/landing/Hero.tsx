@@ -22,7 +22,7 @@ export const Hero = () => {
               decoding="sync"
             />
             <p
-              className="animate-fade-up mb-4 font-sans text-xs md:text-sm font-semibold uppercase tracking-widest text-accent"
+              className="animate-fade-up mb-8 font-sans text-xs md:text-sm font-semibold uppercase tracking-widest text-accent"
               style={{ animationDelay: "0ms" }}
             >
               Tu conocimiento vale oro, no tiempo
