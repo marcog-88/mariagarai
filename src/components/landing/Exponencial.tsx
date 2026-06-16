@@ -77,8 +77,8 @@ export const Exponencial = () => {
                   </svg>
                 </span>
                 <div>
-                  <span>{item.main}</span>
-                  <p className="text-base mt-0.5" style={{ color: "#9378fe" }}>{item.sub}</p>
+                  <span style={{ color: "#9378fe" }}>{item.main}</span>
+                  <p className="text-base mt-0.5 text-white/80">{item.sub}</p>
                 </div>
               </li>
             ))}
