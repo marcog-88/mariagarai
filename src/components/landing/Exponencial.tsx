@@ -64,7 +64,7 @@ export const Exponencial = () => {
               { main: "Tu Programa Insignia.", sub: "Pivotamos tu negocio hacia un modelo de formación altamente rentable. Definimos tu método propio, tu avatar y el currículum de tu programa. Lo validamos rápido con clientes reales antes de construirlo entero." },
               { main: "Tu Autoridad.", sub: "Construimos tu marca en LinkedIn y tu newsletter para que te posiciones como referente de tu tema. Dejas de ser invisible y empiezas a atraer clientes en vez de perseguirlos." },
               { main: "Tus Ventas.", sub: "Testamos hasta encontrar el sistema de ventas que mejor encaja contigo y lo automatizamos. Tu embudo, tu guión, tus objeciones resueltas. Para vender cada semana sin presión y más allá de tu entorno." },
-              { main: "Tu Infraestructura con IA.", sub: "La web que vende tu programa, tus sistemas de gestión internos, el email marketing y, por supuesto, tu academia. Todo montado, paso a paso, contigo. Sin que toques una línea técnica." },
+              { main: "Tu Infraestructura con IA.", sub: "La web que vende tu programa, tus sistemas de gestión internos, el email marketing y, por supuesto, tu academia. Todo montado, paso a paso, contigo. Sin fricción técnica ni pagar una fortuna en agencias." },
             ].map((item) => (
               <li key={item.main} className="flex items-start gap-2 mb-4">
                 <span
