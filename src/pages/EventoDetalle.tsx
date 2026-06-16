@@ -114,7 +114,7 @@ const EventoDetalle = () => {
             <Cover event={event} />
           </div>
 
-          <div className="mt-6 grid grid-cols-1 items-start gap-8 lg:grid-cols-[1.4fr_1fr]">
+          <div className="mt-6 grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_22rem]">
             <div>
               {event.tag && <TagPill tag={event.tag} />}
               <h1 className="mt-3 display-md text-foreground">{event.title}</h1>
