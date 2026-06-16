@@ -10,7 +10,7 @@ const activos = [
   {
     n: "2",
     title: "Tu Autoridad",
-    body: "Construimos tu marca en LinkedIn y tu newsletter para que te posiciones como referente de tu tema. Dejas de ser invisible y empiezas a atraer clientes en vez de perseguirlos.",
+    body: "Construimos tu marca en LinkedIn y tu newsletter para que te posiciones como referente de tu tema. Dejas de ser invisible y empiezas a atraer clientes con mayor poder de compra.",
   },
   {
     n: "3",
