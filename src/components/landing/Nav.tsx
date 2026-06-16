@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
-const LUMA_LIVE = "https://www.mariagarai.com/eventos";
+const LUMA_LIVE = "/eventos";
 
 export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
   const [scrolled, setScrolled] = useState(false);
@@ -68,8 +68,6 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
             <li>
               <a
                 href={LUMA_LIVE}
-                target="_blank"
-                rel="noopener noreferrer"
                 className={`group relative flex items-center gap-2 text-sm transition-colors duration-200 ease-out hover:text-accent ${
                   onDark ? "text-white/75" : "text-foreground/70"
                 }`}
@@ -181,8 +179,6 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
             >
               <a
                 href={LUMA_LIVE}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
                 onClick={() => setOpen(false)}
               >
