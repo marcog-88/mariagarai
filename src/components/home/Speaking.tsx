@@ -36,9 +36,9 @@ export const Speaking = () => {
               Disponible para eventos corporativos, conferencias y formaciones de equipo.
             </p>
             <ul className="mt-4 space-y-2 text-base leading-relaxed" style={{ color: "#666" }}>
+              <li>🚀 Revolucionando la formación online<span className="hidden md:inline">: el mejor modelo de negocio para expertos que venden servicios.</span></li>
               <li>🤖 IA aplicada a negocios<span className="hidden md:inline">: cómo usar IA sin ser técnico para automatizar procesos</span></li>
-              <li>🚀 Carreras modernas<span className="hidden md:inline">: el nuevo modelo profesional, múltiples ingresos, marca personal y reinvención</span></li>
-              <li>📲 Redes que venden<span className="hidden md:inline">: cómo convertir LinkedIn en tu canal de ventas</span></li>
+              <li>📲 Redes que venden<span className="hidden md:inline">: cómo convertir LinkedIn y Substack en tu canal de ventas</span></li>
             </ul>
             <div className="mt-10">
               <a

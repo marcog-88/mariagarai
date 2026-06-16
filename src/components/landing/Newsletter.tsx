@@ -43,16 +43,14 @@ export const Newsletter = () => {
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
             Hazte Grande · Newsletter
           </p>
-          <h2 className="display-md whitespace-normal md:whitespace-nowrap">
-            Aprende a construir tu{" "}
-            <br className="md:hidden" />
-            <span className="font-serif italic text-accent">negocio</span>{" "}
-            con <span className="font-serif italic text-accent">IA</span>.
+          <h2 className="display-md">
+            Crea un negocio al servicio de{" "}
+            <span className="font-serif italic text-accent">una vida grande.</span>
           </h2>
           <p className="mt-8 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-4xl">
-            Cada semana escribo sobre monetización, redes que venden y la IA como socia.
-            Destripo la trastienda de mi negocio y entrevisto a otros founders que se
-            hacen grandes.
+            Escala tus ingresos, impacto y autoridad con un modelo de negocio más sencillo y
+            altamente rentable. Artículos sobre estrategia y mentalidad para dejar de jugar en
+            pequeño y vivir de lo tuyo, sin años de prueba y error.
           </p>
         </Reveal>
 

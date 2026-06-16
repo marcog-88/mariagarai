@@ -29,35 +29,47 @@ export const About = () => {
           </Reveal>
           <Reveal delay={150} className="mt-10 space-y-6 text-lg md:text-xl lg:text-sm text-foreground/75 leading-relaxed">
             <p>
-              ONU. Procter &amp; Gamble. Startup tech. Títulos rimbombantes y sueldo de
+              ONU. Procter &amp; Gamble. Startups tech. Títulos rimbombantes y sueldo de
               seis cifras. Pero cuando reuní el coraje de soltar la jaula de oro me hice
-              pequeña. Me perdí. Fundí{" "}
-              <span className="underline-accent">100.000 euros</span> de ahorros sin saber
-              cómo generar ingresos por mi cuenta.
+              pequeña.
             </p>
             <p>
-              El problema: vendía cosas sueltas, por debajo de mi valor. Copiaba lo que
-              otros hacían. Estaba en comunidades de emprendedores donde solo había ruido.
-              Publicaba a trompicones, sin crear autoridad.
+              Tenía el conocimiento, pero vendía servicios sueltos, por debajo de mi valor.
             </p>
             <p>
-              Toqué fondo. Me endeudé. Pasé por burnout. Me desesperé. Y desde ese agujero,
-              lo entendí. Necesitaba:
+              Copiaba lo que otros hacían y probaba cosas, pero sin claridad. Me daba miedo
+              sonar como todos, pero tampoco quería ennicharme. Vivía persiguiendo clientes,
+              pero abrumada entre reuniones de Zoom.
             </p>
-            {/* Full list — desktop only */}
-            <ul className="hidden md:block list-disc list-inside space-y-1 pl-2">
-              <li>aterrizar una oferta de alto valor</li>
-              <li>construir autoridad en redes para que los clientes llegaran a mí</li>
-              <li>usar la IA para acelerar la ejecución y escalar impacto</li>
-            </ul>
-            {/* Condensed — mobile only */}
-            <p className="md:hidden">
-              Una oferta de alto valor, autoridad en redes y la IA como socia para ejecutar más rápido.
+            <p>
+              Toqué fondo. Pasé por burnout. Me desesperé.
+            </p>
+            <p>
+              El punto de inflexión llegó cuando trabajé mi mentalidad y estrategia para
+              apostar por el mejor modelo de negocio para expertos que venden servicios.
+              Dejé de vender mi tiempo y cursos a 97€ y decidí crear un solo programa de
+              formación que empaquetara mi conocimiento y resolviera un problema muy concreto
+              a un avatar específico.
+            </p>
+            <p>
+              Usando la Inteligencia artificial como mi socia, monté una infraestructura que
+              se viera profesional, sin gastar en agencias ni demorarme meses.
+            </p>
+            <p>
+              Simplifiqué mi negocio y construí un programa más transformador y altamente
+              rentable que me da más autoridad y calma, sin perseguir clientes ni publicar
+              constantemente en redes.
+            </p>
+            <p>
+              <strong className="text-foreground">Resultado: ingresos escalables, agenda más vacía, satisfacción plena.</strong>
+            </p>
+            <p>
+              Esto es exactamente lo que te enseño a hacer.
             </p>
             <p>
               Haberla cagado tanto tiene una ventaja: conozco tu caos, sé dónde fallas y
-              sé cómo ayudarte a salir de ahí. Mi misión es convertirme en la socia
-              operativa que te ayude a tomar decisiones.
+              sé cómo ayudarte a salir de ahí. Mi misión es ayudarte a pivotar a un modelo
+              de negocio donde puedas brillar y vivir de lo tuyo, sin años de prueba y error.
             </p>
           </Reveal>
         </div>

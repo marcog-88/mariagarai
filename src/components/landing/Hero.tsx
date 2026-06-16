@@ -21,18 +21,24 @@ export const Hero = () => {
               fetchPriority="high"
               decoding="sync"
             />
-            <h1
-              className="animate-fade-up font-serif text-[clamp(2.5rem,8vw,3.5rem)] md:text-[clamp(2.75rem,5vw,4.5rem)] leading-[1.05] tracking-tight text-white"
+            <p
+              className="animate-fade-up mb-4 font-sans text-xs md:text-sm font-semibold uppercase tracking-widest text-accent"
               style={{ animationDelay: "0ms" }}
             >
-              Tú, la IA y yo,{" "}
-              <em className="font-serif italic text-accent block">el equipo que despega tu negocio.</em>
+              Tu conocimiento vale oro, no tiempo
+            </p>
+            <h1
+              className="animate-fade-up font-serif text-[clamp(2.5rem,8vw,3.5rem)] md:text-[clamp(2.75rem,5vw,4.5rem)] leading-[1.05] tracking-tight text-white"
+              style={{ animationDelay: "80ms" }}
+            >
+              Vuélvete la experta referente que vende su conocimiento,{" "}
+              <em className="font-serif italic text-accent block">no su tiempo.</em>
             </h1>
             <p
               className="animate-fade-up mt-8 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "150ms" }}
             >
-              Si tienes un negocio de servicios, terapia o consultoría, te ayudo a crear una oferta de alto valor, generar ventas todas las semanas y construir la infraestructura con IA que lo hace más profesional.
+              Te guío para transformar lo que ya sabes en una sola oferta de alto valor, con la autoridad y los sistemas que la sostienen. Mi método y la IA como tu socia, para construirlo en meses, no en años.
             </p>
 
             <div
@@ -70,24 +76,30 @@ export const Hero = () => {
           <div className="flex flex-col justify-between w-full lg:w-[58%] pt-0 pb-8">
             {/* Headline group */}
             <div>
-              <span
-                className="animate-fade-up font-serif text-[clamp(2.5rem,3.5vw,3.75rem)] leading-[1.05] tracking-tight text-white"
+              <p
+                className="animate-fade-up mb-4 font-sans text-sm font-semibold uppercase tracking-widest text-accent"
                 style={{ animationDelay: "0ms" }}
               >
-                Tú, la IA y yo,
+                Tu conocimiento vale oro, no tiempo
+              </p>
+              <span
+                className="animate-fade-up font-serif text-[clamp(2.5rem,3.5vw,3.75rem)] leading-[1.05] tracking-tight text-white"
+                style={{ animationDelay: "80ms" }}
+              >
+                Vuélvete la experta referente que vende su conocimiento,
               </span>
               <em
                 className="animate-fade-up mt-3 font-serif italic text-accent text-[clamp(3rem,4.2vw,4.5rem)] leading-[1.02] tracking-tight block"
-                style={{ animationDelay: "80ms" }}
+                style={{ animationDelay: "160ms" }}
               >
-                el equipo que despega tu negocio.
+                no su tiempo.
               </em>
             </div>
             <p
               className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
-              style={{ animationDelay: "150ms" }}
+              style={{ animationDelay: "240ms" }}
             >
-              Si tienes un negocio de servicios, terapia o consultoría, te ayudo a crear una oferta de alto valor, generar ventas todas las semanas y construir la infraestructura con IA que lo hace más profesional.
+              Te guío para transformar lo que ya sabes en una sola oferta de alto valor, con la autoridad y los sistemas que la sostienen. Mi método y la IA como tu socia, para construirlo en meses, no en años.
             </p>
             <div
               className="animate-fade-up flex items-center gap-6"

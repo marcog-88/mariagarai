@@ -15,11 +15,14 @@ export const Exponencial = () => {
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
             Trabaja conmigo
           </p>
-          <h2 className="text-5xl md:text-6xl font-serif italic tracking-tight leading-tight" style={{ color: "#9378fe" }}>
-            Fórmula Exponencial
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight leading-tight text-white">
+            La fórmula{" "}
+            <em className="italic" style={{ color: "#9378fe" }}>EXPONENCIAL</em>{" "}
+            para vivir de tu conocimiento.
           </h2>
           <p className="mt-8 text-lg md:text-xl text-white/60 leading-relaxed max-w-2xl">
-            El sistema para construir el negocio de servicios, consultoría o coaching que quieres en 4 meses.
+            En 4 meses construimos tu programa de formación online altamente rentable para ganar autoridad e ingresos escalables sin depender de tu tiempo.{" "}
+            <span className="text-white/80">Todo montado, ya vendiendo, sin fricción técnica.</span>
           </p>
         </Reveal>
 
@@ -53,14 +56,15 @@ export const Exponencial = () => {
 
         {/* Body — single column, full width */}
         <Reveal delay={120} className="mt-12">
-          <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-2xl">
-            Tres activos que construimos juntas:
+          <p className="text-lg md:text-xl text-white/80 font-semibold leading-relaxed max-w-2xl">
+            Construimos cuatro activos:
           </p>
           <ul className="mt-8 md:mt-10 text-base md:text-lg text-white max-w-2xl">
             {[
-              { main: "Tu Oferta Exponencial", sub: "Aterrizamos qué vendes, a quién, a qué precio. Validamos con clientes reales, subimos precios y optimizamos el modelo para vender lo que haces." },
-              { main: "Tu Autoridad", sub: "Construimos tu marca en LinkedIn y Substack para la captación continua de clientes." },
-              { main: "Tu IA", sub: "Configuramos Notion y Claude como tu socia operativa. La infraestructura que sostiene el negocio sin que tú estés en cada hora." },
+              { main: "1. Tu Programa Insignia.", sub: "Pivotamos tu negocio hacia un modelo de formación altamente rentable. Definimos tu método propio, tu avatar y el currículum de tu programa. Lo validamos rápido con clientes reales antes de construirlo entero." },
+              { main: "2. Tu Autoridad.", sub: "Construimos tu marca en LinkedIn y tu newsletter para que te posiciones como referente de tu tema. Dejas de ser invisible y empiezas a atraer clientes en vez de perseguirlos." },
+              { main: "3. Tus Ventas.", sub: "Testamos hasta encontrar el sistema de ventas que mejor encaja contigo y lo automatizamos. Tu embudo, tu guión, tus objeciones resueltas. Para vender cada semana sin presión y más allá de tu entorno." },
+              { main: "4. Tu Infraestructura con IA.", sub: "La web que vende tu programa, tus sistemas de gestión internos, el email marketing y, por supuesto, tu academia. Todo montado, paso a paso, contigo. Sin que toques una línea técnica." },
             ].map((item) => (
               <li key={item.main} className="flex items-start gap-2 mb-4">
                 <span
@@ -79,9 +83,15 @@ export const Exponencial = () => {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-base md:text-lg text-white/80 italic">
-            Tú, la IA y yo. El equipo que escala tu negocio.
-          </p>
+          <div className="mt-10 max-w-2xl space-y-4 text-base md:text-lg text-white/60 leading-relaxed">
+            <p>
+              <span className="font-semibold text-white">Importante:</span> <em>No es una mentoría para hablar de tu negocio. No es una comunidad donde solo hay ruido. No es una agencia que te desconecta del proceso.</em>
+            </p>
+            <p>
+              <em>Exponencial es un programa de acompañamiento e implementación donde te damos la infraestructura de tu programa{" "}
+              "llave en mano" y trabajamos contigo la estrategia de autoridad y ventas.</em>
+            </p>
+          </div>
         </Reveal>
 
         {/* CTA */}

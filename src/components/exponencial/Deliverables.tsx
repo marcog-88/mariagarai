@@ -1,4 +1,78 @@
+import { useEffect, useRef, useState } from "react";
 import deliverablesMockup from "@/assets/exponencial-deliverables-nobg-final.webp";
+
+const stats = [
+  { value: "17", countTo: 17, label: "sesiones 1:1", desc: "Una sesión conmigo cada semana, de 60 minutos" },
+  { value: "1×", label: "reunión de socias al mes", desc: "En directo con todas las founders del programa" },
+  { value: "24/7", label: "WhatsApp directo", desc: "Acceso a mí entre sesiones para dudas urgentes" },
+  { value: "∞", label: "academia para siempre", desc: "Todo el contenido y plantillas, acceso de por vida" },
+];
+
+const useCountUp = (target: number, start: boolean, duration = 1200) => {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    if (!start) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { setValue(target); return; }
+    let raf: number;
+    const t0 = performance.now();
+    const tick = (now: number) => {
+      const p = Math.min((now - t0) / duration, 1);
+      setValue(Math.round((1 - Math.pow(1 - p, 3)) * target));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [start, target, duration]);
+  return value;
+};
+
+type Stat = (typeof stats)[number];
+const StatValue = ({ item, start }: { item: Stat; start: boolean }) => {
+  const counted = useCountUp(item.countTo ?? 0, start && item.countTo !== undefined);
+  return (
+    <span className="font-serif text-6xl md:text-7xl leading-none tabular-nums" style={{ color: "#9378fe" }}>
+      {item.countTo !== undefined ? counted : item.value}
+    </span>
+  );
+};
+
+const StatsBar = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [started, setStarted] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setStarted(true); io.disconnect(); } },
+      { threshold: 0.3 }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className="mt-10 rounded-2xl p-8 md:p-10"
+      style={{ background: "#0c0d0e", color: "#ffffff" }}
+    >
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+        {stats.map((item) => (
+          <div key={item.label} className="flex flex-col items-start">
+            <StatValue item={item} start={started} />
+            <p className="mt-4 text-xs uppercase tracking-[0.18em] text-mint font-semibold">
+              {item.label}
+            </p>
+            <p className="mt-2 text-sm text-white/65 leading-relaxed max-w-[230px]">
+              {item.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const phases = [
   {
@@ -64,26 +138,8 @@ export const Deliverables = () => {
           ))}
         </div>
 
-        {/* Stats bar */}
-        <div
-          className="mt-10 rounded-2xl p-8 md:p-10"
-          style={{ background: "#0c0d0e", color: "#ffffff" }}
-        >
-          <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-16">
-            <div className="flex items-center gap-4">
-              <p className="font-serif text-5xl font-bold text-mint">17</p>
-              <p className="text-base text-white/80 leading-tight">Sesiones 1:1<br />con María</p>
-            </div>
-            <div className="w-px h-12 bg-white/10 hidden md:block" />
-            <div>
-              <p className="text-base text-white/80">📞 WhatsApp directo entre sesiones</p>
-            </div>
-            <div className="w-px h-12 bg-white/10 hidden md:block" />
-            <p className="font-serif text-lg text-white/60 italic">
-              El acompañamiento más intensivo que existe en el mercado hispano.
-            </p>
-          </div>
-        </div>
+        {/* Stats bar — animated counters */}
+        <StatsBar />
       </div>
     </section>
   );

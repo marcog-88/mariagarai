@@ -1,6 +1,5 @@
 import { Nav } from "@/components/landing/Nav";
 import { Hero } from "@/components/landing/Hero";
-import { ComoTrabajamos } from "@/components/landing/ComoTrabajamos";
 import { Thoughts } from "@/components/landing/Thoughts";
 import { Exponencial } from "@/components/landing/Exponencial";
 import { LeadMagnet } from "@/components/landing/LeadMagnet";
@@ -20,7 +19,6 @@ const Index = () => {
       <About />
       <Thoughts />
       <Exponencial />
-      <ComoTrabajamos />
       <Testimonials />
       <Newsletter />
       <Speaking />

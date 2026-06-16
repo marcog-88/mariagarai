@@ -32,9 +32,9 @@ export const LeadMagnet = () => {
           {/* Left: text + CTA */}
           <Reveal variant="left" className="min-w-0">
             <h2 className="display-md">
-              Cada semana te enseño a conseguir{" "}
+              Deja de ser invisible y{" "}
               <span className="font-serif italic" style={{ color: "#9378fe" }}>
-                clientes con IA.
+                jugar en pequeño.
               </span>
             </h2>
 
@@ -49,9 +49,10 @@ export const LeadMagnet = () => {
             </div>
 
             <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
-              Una herramienta, sistema o aplicación de IA en cada sesión, para conseguir
-              más clientes y ordenar tu negocio. Es la forma más fácil de probar cómo
-              trabajo antes de Exponencial.
+              Cada semana, en directo, trabajamos una pieza concreta del modelo de formación
+              online de alto valor para consultores, terapeutas y expertos que quieren escalar
+              ingresos, impacto y autoridad: cómo diseñar tu programa, cómo conseguir clientes,
+              cómo usar la IA como tu socia. Sales con algo que aplicar ese mismo día.
             </p>
             <a
               href={LUMA_TALLERES}

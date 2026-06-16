@@ -1,17 +1,17 @@
 import { Reveal } from "./Reveal";
 
 const desires = [
-  "Poner orden en todas las ideas locas de mi cabeza.",
-  "Claridad total.",
-  "Montar algo sólido. Que se vea profesional.",
-  "Un servicio que funciona.",
-  "Listo para salir y vender.",
-  "__Algo real que me pague.__",
-  "Proyectos que me ilusionen.",
-  "Varios días libres a la semana.",
-  "No desperdiciar dinero ni tiempo.",
-  "Ganar más que en corporate.",
-  "Independencia. Ser mi propia jefa.",
+  "Un negocio que te dé calma y autoridad.",
+  "Simplificar tu caos.",
+  "Menos reuniones de Zoom.",
+  "Alta rentabilidad sin que dependa de ti.",
+  "Ser referente, no invisible.",
+  "Montar algo sólido que se vea profesional.",
+  "__Un programa que transforme vidas.__",
+  "Sentir orgullo por lo que has creado.",
+  "Vender cada semana sin presión.",
+  "Que los clientes te encuentren.",
+  "Aprovechar la IA a tu favor.",
 ];
 
 export const Thoughts = () => {
@@ -49,7 +49,7 @@ export const Thoughts = () => {
               );
             })}
             <Reveal as="p" variant="scale" className="font-bold text-accent !mt-12 text-4xl md:text-6xl">
-              Construir algo que sea mío.
+              Disfrutar trabajando. Ser dueña de tu tiempo.
             </Reveal>
           </div>
         </div>
