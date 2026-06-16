@@ -88,8 +88,7 @@ export const Exponencial = () => {
               <span className="font-semibold text-white">Importante:</span> <em>No es una mentoría para hablar de tu negocio. No es una comunidad donde solo hay ruido. No es una agencia que te desconecta del proceso.</em>
             </p>
             <p>
-              <em>Exponencial es un programa de acompañamiento e implementación donde te damos la infraestructura de tu programa{" "}
-              "llave en mano" y trabajamos contigo la estrategia de autoridad y ventas.</em>
+              <em>Exponencial es un programa de formación, acompañamiento e implementación donde te damos la infraestructura de tu programa "llave en mano" y trabajamos contigo la estrategia de autoridad y ventas. Sales con todo montado, no con apuntes.</em>
             </p>
           </div>
         </Reveal>
