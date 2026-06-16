@@ -25,20 +25,20 @@ export const Hero = () => {
               className="animate-fade-up mb-8 font-sans text-xs md:text-sm font-semibold uppercase tracking-widest text-accent"
               style={{ animationDelay: "0ms" }}
             >
-              Tu conocimiento vale oro, no tiempo
+              Tu conocimiento es exponencial
             </p>
             <h1
               className="animate-fade-up font-serif text-[clamp(2.5rem,8vw,3.5rem)] md:text-[clamp(2.75rem,5vw,4.5rem)] leading-[1.05] tracking-tight text-white"
               style={{ animationDelay: "80ms" }}
             >
-              Vuélvete la experta referente que vende su conocimiento,{" "}
-              <em className="font-serif italic text-accent block">no su tiempo.</em>
+              Multiplica tus ingresos con un programa de alto valor que te posicione como experta,{" "}
+              <em className="font-serif italic text-accent block">sin vender más horas.</em>
             </h1>
             <p
               className="animate-fade-up mt-8 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "150ms" }}
             >
-              Te guío para transformar lo que ya sabes en una sola oferta de alto valor, con la autoridad y los sistemas que la sostienen. Mi método y la IA como tu socia, para construirlo en meses, no en años.
+              Te ayudo a pivotar a un modelo de formación online altamente rentable y a montar la infraestructura que lo sostiene. Mi método y la IA, para construirlo en meses, no en años.
             </p>
 
             <div
@@ -80,26 +80,26 @@ export const Hero = () => {
                 className="animate-fade-up mb-4 font-sans text-sm font-semibold uppercase tracking-widest text-accent"
                 style={{ animationDelay: "0ms" }}
               >
-                Tu conocimiento vale oro, no tiempo
+                Tu conocimiento es exponencial
               </p>
               <span
                 className="animate-fade-up font-serif text-[clamp(2.5rem,3.5vw,3.75rem)] leading-[1.05] tracking-tight text-white"
                 style={{ animationDelay: "80ms" }}
               >
-                Vuélvete la experta referente que vende su conocimiento,
+                Multiplica tus ingresos con un programa de alto valor que te posicione como experta,
               </span>
               <em
                 className="animate-fade-up mt-3 font-serif italic text-accent text-[clamp(3rem,4.2vw,4.5rem)] leading-[1.02] tracking-tight block"
                 style={{ animationDelay: "160ms" }}
               >
-                no su tiempo.
+                sin vender más horas.
               </em>
             </div>
             <p
               className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "240ms" }}
             >
-              Te guío para transformar lo que ya sabes en una sola oferta de alto valor, con la autoridad y los sistemas que la sostienen. Mi método y la IA como tu socia, para construirlo en meses, no en años.
+              Te ayudo a pivotar a un modelo de formación online altamente rentable y a montar la infraestructura que lo sostiene. Mi método y la IA, para construirlo en meses, no en años.
             </p>
             <div
               className="animate-fade-up flex items-center gap-6"
