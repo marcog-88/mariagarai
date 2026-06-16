@@ -109,15 +109,24 @@ const EventoDetalle = () => {
             ← Todos los eventos
           </Link>
 
+          {/* Mobile: pill + title above cover */}
+          <div className="lg:hidden mt-4">
+            {event.tag && <TagPill tag={event.tag} />}
+            <h1 className="mt-3 display-md text-foreground">{event.title}</h1>
+          </div>
+
           {/* Cover — full-width below title on mobile */}
           <div className="mt-4 lg:hidden w-full aspect-[3/2] overflow-hidden rounded-xl ring-1 ring-border">
             <Cover event={event} className="object-top" />
           </div>
 
-          <div className="mt-6 grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_22rem]">
+          <div className="mt-4 grid grid-cols-1 items-start gap-8 lg:mt-6 lg:grid-cols-[1fr_22rem]">
             <div>
-              {event.tag && <TagPill tag={event.tag} />}
-              <h1 className="mt-3 display-md text-foreground">{event.title}</h1>
+              {/* Desktop: pill + title in left column */}
+              <div className="hidden lg:block">
+                {event.tag && <TagPill tag={event.tag} />}
+                <h1 className="mt-3 display-md text-foreground">{event.title}</h1>
+              </div>
 
               <p className="mt-4 text-lg text-foreground/70">{formatEventLong(event.event_date)}</p>
 
