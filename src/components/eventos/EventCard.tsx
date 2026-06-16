@@ -94,7 +94,7 @@ export const EventCard = ({ event, view }: Props) => {
           </span>
         </div>
       </div>
-      <div className="order-1 aspect-square sm:order-2 sm:aspect-square overflow-hidden">
+      <div className="order-1 aspect-square sm:order-2 sm:aspect-auto sm:h-full overflow-hidden">
         <Cover event={event} />
       </div>
     </Link>

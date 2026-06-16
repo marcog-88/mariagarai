@@ -109,15 +109,15 @@ const EventoDetalle = () => {
             ← Todos los eventos
           </Link>
 
+          {/* Cover — full-width below title on mobile */}
+          <div className="mt-4 lg:hidden w-full aspect-square overflow-hidden rounded-xl ring-1 ring-border">
+            <Cover event={event} />
+          </div>
+
           <div className="mt-6 grid grid-cols-1 items-start gap-8 lg:grid-cols-[1.4fr_1fr]">
             <div>
               {event.tag && <TagPill tag={event.tag} />}
               <h1 className="mt-3 display-md text-foreground">{event.title}</h1>
-
-              {/* Cover — below title on mobile, hidden on desktop (shown in right column) */}
-              <div className="mt-4 lg:hidden w-4/5 aspect-square overflow-hidden rounded-xl ring-1 ring-border">
-                <Cover event={event} />
-              </div>
 
               <p className="mt-4 text-lg text-foreground/70">{formatEventLong(event.event_date)}</p>
 
