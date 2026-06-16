@@ -42,7 +42,7 @@ export const Truth = () => {
           </p>
         </Reveal>
 
-        <div className="mt-16 flex flex-row flex-wrap lg:flex-nowrap md:flex-nowrap gap-2 md:gap-3">
+        <div className="mt-16 flex flex-row flex-wrap justify-center md:justify-start lg:flex-nowrap md:flex-nowrap gap-2 md:gap-3">
           {pills.map((pill, i) => (
             <Reveal key={pill} delay={i * 130} variant="scale">
               <div
