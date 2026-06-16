@@ -84,7 +84,7 @@ function FormFields({
         </span>
         <span className="flex items-center gap-1.5 text-sm text-foreground/70">
           <Bell className="h-3.5 w-3.5 text-foreground/40" />
-          Avísame cuando haya nuevos eventos
+          Avísame de nuevos eventos
         </span>
       </label>
 
