@@ -15,12 +15,12 @@ const activos = [
   {
     n: "3",
     title: "Tus Ventas",
-    body: "Testamos hasta encontrar el sistema de ventas que mejor encaja contigo y lo automatizamos. Tu embudo, tu guión, tus objeciones resueltas. Para vender cada semana sin presión y más allá de tu entorno.",
+    body: "Testamos hasta encontrar el sistema de ventas que mejor encaja contigo y lo automatizamos. Tu embudo, tu lead magnet, tu webinar de venta. Para vender cada semana sin presión y más allá de tu entorno.",
   },
   {
     n: "4",
     title: "Tu Infraestructura con IA",
-    body: "La web que vende tu programa, tus sistemas de gestión internos, el email marketing y, por supuesto, tu academia. Todo montado, paso a paso, contigo. Sin que toques una línea técnica.",
+    body: "La web que vende tu programa, tus sistemas de gestión internos, el email marketing y, por supuesto, tu academia. Todo montado, paso a paso, contigo. Sin fricción técnica ni una fortuna en agencias.",
   },
 ];
 
