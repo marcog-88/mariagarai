@@ -101,22 +101,21 @@ const EventoDetalle = () => {
 
   return (
     <div id="top" className="min-h-screen bg-background">
-      <Nav />
+      <Nav forceLight />
 
-      {/* Hero — dark band keeps the reused light-text Nav legible. */}
-      <section className="bg-[#0c0d0e] pt-24 pb-14 text-white">
+      <section className="bg-[#f9f9f7] border-b border-border pt-24 pb-14">
         <div className="container-tight">
-          <Link to="/eventos" className="text-sm text-white/55 transition-colors hover:text-white">
+          <Link to="/eventos" className="text-sm text-foreground/50 transition-colors hover:text-foreground">
             ← Todos los eventos
           </Link>
 
           <div className="mt-6 grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.4fr_1fr]">
             <div>
               {event.tag && <TagPill tag={event.tag} />}
-              <h1 className="mt-3 display-md text-white">{event.title}</h1>
-              <p className="mt-3 text-lg text-white/80">{formatEventLong(event.event_date)}</p>
+              <h1 className="mt-3 display-md text-foreground">{event.title}</h1>
+              <p className="mt-3 text-lg text-foreground/70">{formatEventLong(event.event_date)}</p>
 
-              <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/65">
+              <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-foreground/55">
                 {event.platform && (
                   <span className="inline-flex items-center gap-1.5">
                     <Video className="h-4 w-4" /> {event.platform} — online
@@ -133,7 +132,7 @@ const EventoDetalle = () => {
               </div>
             </div>
 
-            <div className="aspect-square overflow-hidden rounded-xl ring-1 ring-white/10">
+            <div className="aspect-square overflow-hidden rounded-xl ring-1 ring-border">
               <Cover event={event} />
             </div>
           </div>
