@@ -133,7 +133,7 @@ const EventoDetalle = () => {
               </div>
             </div>
 
-            <div className="aspect-video overflow-hidden rounded-xl ring-1 ring-white/10">
+            <div className="aspect-square overflow-hidden rounded-xl ring-1 ring-white/10">
               <Cover event={event} />
             </div>
           </div>
