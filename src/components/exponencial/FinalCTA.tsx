@@ -20,9 +20,9 @@ export const FinalCTA = () => {
 
         <Reveal delay={150}>
           <ul className="mt-12 max-w-3xl space-y-4 text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
-            <li className="flex gap-3"><span>✨</span><span>Una oferta de alto valor con clientes reales pagando</span></li>
+            <li className="flex gap-3"><span>✨</span><span>Un programa de formación altamente rentable con clientes reales pagando</span></li>
             <li className="flex gap-3"><span>🌟</span><span>Una marca de autoridad que abre puertas mientras tú vives</span></li>
-            <li className="flex gap-3"><span>⚡</span><span>Sistemas con IA que trabajan sin que estés presente cada hora</span></li>
+            <li className="flex gap-3"><span>⚡</span><span>Infraestructura y sistemas con IA que trabajan sin que estés presente cada hora</span></li>
           </ul>
         </Reveal>
 
