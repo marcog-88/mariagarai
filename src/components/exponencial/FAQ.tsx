@@ -45,6 +45,10 @@ const faqs = [
     a: "10k es lo que el modelo está diseñado para alcanzar; lo que yo garantizo son los 4 activos que lo hacen posible. No te puedo garantizar ingresos, nadie puede. Pero sí te puedo garantizar que vas a tener la infraestructura, el modelo de negocio y la estrategia para conseguirlo.",
   },
   {
+    q: "¿Y la academia? ¿En qué plataforma la monto?",
+    a: "Te enseño a montar tu academia y te doy mi sistema para hacerlo. Y te asesoro en qué herramienta encaja mejor contigo según tu caso: tu propia plataforma, Circle, School o la que sea. No te dejo sola con lo técnico, pero tampoco te obligo a una herramienta concreta.",
+  },
+  {
     q: "¿Hay opción de pago fraccionado?",
     a: (
       <>
