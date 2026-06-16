@@ -32,10 +32,7 @@ export const LeadMagnet = () => {
           {/* Left: text + CTA */}
           <Reveal variant="left" className="min-w-0">
             <h2 className="display-md">
-              Deja de ser invisible y{" "}
-              <span className="font-serif italic" style={{ color: "#9378fe" }}>
-                jugar en pequeño.
-              </span>
+              Aprende a montar tu negocio de alto valor
             </h2>
 
             <div className="mt-8 md:hidden">
