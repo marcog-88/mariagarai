@@ -36,7 +36,7 @@ export const Letras = () => {
             {[
               "Dejar de vender mi tiempo en trozos y cursos sueltos a 97€, y crear un solo programa de formación de alto valor (en vez de servir a todos con cosas sueltas).",
               "Elegir el sistema de captación que encajaba conmigo (en vez de estar en todas partes sin estrategia).",
-              "Construir autoridad en redes para que los clientes llegaran a mí (en vez de perseguirlos).",
+              "Construir autoridad en redes hablando a un avatar con más poder de compra (sin perseguir seguidores).",
               "Usar la IA como mi socia para montar la infraestructura sin gastar en agencias ni demorarme meses (en vez de hacerlo todo a mano).",
             ].map((item) => (
               <li key={item} className="flex gap-3 text-foreground/80 leading-relaxed">
