@@ -162,18 +162,24 @@ export function formatHeaderTimes(now: Date, tz = getVisitorTimeZone()): string 
   return `Horarios en ${timeZoneCity(tz)} · ${time}`;
 }
 
-/** Per-event long form: "mar 16 jun · 17:00h (tu hora)". */
+function capWords(s: string) {
+  return s.replace(/\b[a-záéíóúüñ]/gi, (c) => c.toUpperCase());
+}
+
+/** Per-event long form: "Mar 16 Jun · 17:00h (tu hora)". */
 export function formatEventLong(iso: string, tz = getVisitorTimeZone()): string {
   const d = new Date(iso);
-  const day = new Intl.DateTimeFormat("es-ES", {
-    weekday: "short",
-    day: "numeric",
-    month: "short",
-    timeZone: tz,
-  })
-    .format(d)
-    .replace(/,/g, "")
-    .replace(/\.$/, "");
+  const day = capWords(
+    new Intl.DateTimeFormat("es-ES", {
+      weekday: "short",
+      day: "numeric",
+      month: "short",
+      timeZone: tz,
+    })
+      .format(d)
+      .replace(/,/g, "")
+      .replace(/\.$/, "")
+  );
   const time = new Intl.DateTimeFormat("es-ES", {
     hour: "2-digit",
     minute: "2-digit",
@@ -211,9 +217,11 @@ export function dayLabel(iso: string, tz = getVisitorTimeZone()): DayLabel {
   const d = new Date(iso);
   const weekday = new Intl.DateTimeFormat("es-ES", { weekday: "long", timeZone: tz }).format(d);
   const dayNum = new Intl.DateTimeFormat("es-ES", { day: "numeric", timeZone: tz }).format(d);
-  const month = new Intl.DateTimeFormat("es-ES", { month: "short", timeZone: tz })
-    .format(d)
-    .replace(/\.$/, "");
+  const month = capWords(
+    new Intl.DateTimeFormat("es-ES", { month: "short", timeZone: tz })
+      .format(d)
+      .replace(/\.$/, "")
+  );
   return { weekday, dayNum, month };
 }
 

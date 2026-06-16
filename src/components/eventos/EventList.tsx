@@ -41,7 +41,7 @@ export const EventList = ({ events, view, highlightKey }: Props) => {
               className="absolute left-[4px] top-5 h-[calc(100%+1.5rem)] w-px bg-border"
             />
             <span className="font-serif text-2xl text-foreground">{group.label.dayNum}</span>
-            <span className="text-sm uppercase tracking-wide text-foreground/50">{group.label.month}</span>
+            <span className="text-sm tracking-wide text-foreground/50">{group.label.month}</span>
             <span className="text-sm capitalize text-foreground/50">{group.label.weekday}</span>
           </div>
 
