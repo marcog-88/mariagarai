@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
-const LUMA_LIVE = "https://luma.com/corporateafounder";
+const LUMA_LIVE = "/eventos";
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
