@@ -46,10 +46,7 @@ export const LeadMagnet = () => {
             </div>
 
             <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
-              Cada semana, en directo, trabajamos una pieza concreta del modelo de formación
-              online de alto valor para consultores, terapeutas y expertos que quieren escalar
-              ingresos, impacto y autoridad: cómo diseñar tu programa, cómo conseguir clientes,
-              cómo usar la IA como tu socia. Sales con algo que aplicar ese mismo día.
+              Cada semana, en directo, trabajamos una pieza del modelo de formación online altamente rentable para escalar ingresos, impacto y autoridad: cómo diseñar tu oferta, cómo conseguir clientes que pagen más, cómo usar la IA como tu socia. Sales con algo que aplicar ese mismo día.
             </p>
             <a
               href={LUMA_TALLERES}
