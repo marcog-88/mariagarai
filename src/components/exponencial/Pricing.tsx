@@ -2,33 +2,35 @@ import { Reveal } from "@/components/landing/Reveal";
 
 const groups = [
   {
-    title: "01 · Tu Oferta Exponencial",
+    title: "01 · Tu Programa Insignia",
     items: [
-      "Diseño completo de tu oferta de alto valor: qué vendes, a quién, a qué precio",
+      "Diseño completo de tu programa de formación de alto valor: qué enseñas, a quién, a qué precio",
+      "Mi paso a paso exacto para crear tu currículum y estructurar tus lecciones",
       "Tu manual de marca personalizado: mensaje, posicionamiento, diferenciación",
     ],
   },
   {
     title: "02 · Tu Marca de Autoridad",
     items: [
-      "Tu LinkedIn optimizado y publicando con criterio de negocio",
-      "Tu Substack lanzado y creciendo",
+      "Tu LinkedIn optimizado para abrir carteras y oportunidades",
+      "Tu newsletter en Substack lanzado y creciendo",
       "Tu estrategia de contenido mensual con sistema de reutilización con IA",
     ],
   },
   {
-    title: "03 · Tus Ventas Automatizadas",
+    title: "03 · Tus Ventas",
     items: [
-      "Tu manual de ventas adaptado 100% a ti, con guión de objeciones reales",
-      "Tu sistema de prospección activa más allá de tu entorno",
+      "Tu manual de ventas adaptado 100% a ti, con guion de objeciones reales",
+      "Tu embudo de captación montado y tu sistema de prospección más allá de tu entorno",
+      "Sistema de webinar de venta: primer webinar lanzado paso a paso",
     ],
   },
   {
     title: "04 · Tu Infraestructura con IA",
     items: [
-      "Tu web personal montada durante las sesiones",
+      "Tu web y tu sales page que venden el programa",
+      "Tu academia montada (te enseño a montarla y te doy el sistema)",
       "Tu Notion como sistema operativo: CRM, finanzas, contenido, clientes",
-      "Claude configurado como tu socia operativa",
     ],
   },
   {
@@ -36,8 +38,7 @@ const groups = [
     items: [
       "17 sesiones 1:1 con María (60 minutos, semanales)",
       "WhatsApp directo entre sesiones para dudas urgentes",
-      "Reunión de Socias mensual (sesiones grupales en directo)",
-      "Acceso a la comunidad de founders",
+      "Reunión de Socias mensual (comunidad de founders)",
     ],
   },
 ];
@@ -54,7 +55,7 @@ export const Pricing = () => {
       <div className="container-tight">
         <Reveal>
           <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-            Qué incluye exactamente
+            Qué incluye exactamente <span className="normal-case">(entregables, recortado y reenfocado)</span>
           </p>
           <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-tight tracking-tight text-primary-foreground">
             EXPONENCIAL · 4 MESES · 1:1

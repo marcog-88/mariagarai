@@ -5,14 +5,15 @@ const months = [
   {
     n: "1",
     label: "MES 1",
-    title: "Tu Oferta Exponencial",
-    subtitle: "Oferta de servicios y formación insignia",
+    title: "Tu Programa Insignia",
+    subtitle: "El modelo de negocio que lo cambia todo",
     bullets: [
-      "Tu oferta insignia de alto valor empaquetada.",
-      "Manual de marca personalizado: tu mensaje, tu posicionamiento, tu diferenciación.",
-      "Primeras conversaciones de venta abiertas y validación con clientes reales.",
+      "Pivotamos tu negocio: de vender tiempo y servicios sueltos a un solo programa de formación de alto valor.",
+      "Definimos tu método propio, tu avatar ideal y el currículum de tu programa.",
+      "Manual de marca: tu mensaje, tu posicionamiento, tu diferenciación.",
+      "Validamos rápido con clientes reales antes de construir nada.",
     ],
-    outcome: "Claridad total sobre qué vendes, a quién y a qué precio.",
+    outcome: "Tienes el modelo correcto y un programa que vende, no mil ideas sueltas.",
   },
   {
     n: "2",
@@ -22,36 +23,36 @@ const months = [
     bullets: [
       "Perfil de LinkedIn optimizado para autoridad y venta.",
       "Substack lanzado y creciendo.",
-      "Estrategia de contenido mensual con criterio (no publicar por publicar).",
+      "Estrategia de contenido con criterio (no publicar por publicar).",
       "Sistema de ideación y reutilización de contenido con IA.",
     ],
-    outcome: "Los clientes empiezan a llegar a ti.",
+    outcome: "Dejas de ser invisible. Los clientes empiezan a llegar a ti.",
   },
   {
     n: "3",
     label: "MES 3",
-    title: "Tus Ventas Automatizadas",
-    subtitle: "Ventas + captación",
+    title: "Tus Ventas",
+    subtitle: "El sistema que vende por ti",
     bullets: [
-      "Manual de ventas adaptado a ti y guión de llamada.",
-      "Guión de objeciones reales de tu cliente.",
+      "Manual de ventas adaptado a ti y guion de llamada.",
+      "Guion de objeciones reales de tu cliente.",
       "El embudo de captación que mejor encaja con tu caso, montado.",
-      "Sistema de prospección activa más allá de tu círculo.",
+      "Sistema de prospección más allá de tu círculo.",
     ],
-    outcome: "Empiezan a llegar extraños que quieren comprarte.",
+    outcome: "Vendes cada semana, sin presión y más allá de tu entorno.",
   },
   {
     n: "4",
     label: "MES 4",
     title: "Tu Infraestructura con IA",
-    subtitle: "Tus escaparates y cimientos",
+    subtitle: "Tu máquina, llave en mano",
     bullets: [
+      "Tu web y tu sales page que venden el programa.",
+      "Tu academia montada, donde alojas tu formación.",
       "Notion como sistema operativo: CRM, finanzas, contenido, clientes.",
-      "Claude configurado como tu socia operativa.",
-      "Automatizaciones donde tocan.",
-      "Web y landing que sabes gestionar.",
+      "Claude configurado como tu socia operativa y las automatizaciones donde tocan.",
     ],
-    outcome: "Sales con un negocio que se ve tan profesional como tú.",
+    outcome: "Sales siendo dueña de toda la máquina. Sin atascarte con lo técnico.",
   },
 ];
 
@@ -64,7 +65,7 @@ export const AntesDespues = () => {
             Qué construimos cada mes
           </p>
           <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-none md:whitespace-nowrap mb-14">
-            Cuatro meses. Cuatro activos. Una dirección clara.
+            Cuatro meses. Cuatro activos. <em className="font-serif italic text-[#9378fe]">Montados, no hablados.</em>
           </h2>
         </Reveal>
 

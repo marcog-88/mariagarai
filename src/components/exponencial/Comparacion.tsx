@@ -1,23 +1,23 @@
 import { Reveal } from "@/components/landing/Reveal";
 
 const sin = [
-  "Vendes solo a contactos y referidos",
-  "No sabes qué vender, cambias de enfoque",
+  "Cada venta es más trabajo, más reuniones, más carga mental",
+  "Cambias tu tiempo por dinero y eso tiene un techo",
   "Cobras por debajo de tu valor y te da miedo subir",
-  "Lo haces todo a mano, dependes de tu tiempo cada hora",
+  "Sirves a todos por miedo a sonar específica",
   "Tu negocio no se ve tan profesional como tú eres",
-  "Sabes que la IA podría ayudarte pero no sabes cómo",
-  "Ves cómo otras lo consiguen y no entiendes por qué tú no",
+  "Lo técnico te abruma y te paraliza",
+  "Lo haces todo a mano, sabes que la IA podría ayudarte pero no sabes cómo",
 ];
 
 const con = [
-  "Una oferta de alto valor validada con clientes pagando",
-  "Sabes exactamente qué vendes, a quién y a qué precio",
+  "Un solo programa de alto valor que escala sin devorarte",
+  "Ingresos escalables que no dependen de tu tiempo cada hora",
   "Subes precios con criterio y los defiendes sin culpa",
-  "Tu LinkedIn y Substack te traen clientes mientras tú vives",
+  "Eres referente de un tema concreto, no una más",
   "Un negocio que se ve tan profesional como tú eres",
+  "Tu web, tu academia y tus sistemas montados, llave en mano",
   "La IA trabajando como tu socia operativa",
-  "Sistemas que venden sin que estés en cada paso",
 ];
 
 export const Comparacion = () => {

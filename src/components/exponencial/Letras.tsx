@@ -23,21 +23,21 @@ export const Letras = () => {
             Salí del corporate con experiencia, ahorros y ganas de emprender. Los 3 años siguientes fui una mantenida.
           </p>
           <p>
-            Nada terminaba de encajar. Trabajaba más horas que en corporate. Vender era imposible. Crear contenido me abrumaba. Tardaba semanas en crear cosas que luego no me servían.
+            Nada terminaba de encajar. Trabajaba más horas que por cuenta ajena. Vendía de todo, por debajo de mi valor y luchándolo mucho. Cambiaba de estrategia cada mes y nada se veía claro o profesional.
+          </p>
+          <p>
+            Quería ser madre, pero ¿cómo iba a compaginar la maternidad con un negocio que me devoraba entera?
           </p>
           <p>
             Te resumo el sufrimiento en 3 palabras: dudas, deudas y desesperación.
           </p>
-          <p>
-            Lo que nadie me había enseñado era esto: tener el conocimiento no es suficiente. Vendía poco, por debajo de mi valor y sin apalancarme en mis ventajas competitivas.
-          </p>
           <p>El punto de inflexión fue cuando toqué fondo, frené e hice lo que estaba evitando:</p>
           <ul className="space-y-3">
             {[
-              "Crear una oferta insignia de alto valor (en vez de vender cosas sueltas y servir a todos).",
+              "Dejar de vender mi tiempo en trozos y cursos sueltos a 97€, y crear un solo programa de formación de alto valor (en vez de servir a todos con cosas sueltas).",
               "Elegir el sistema de captación que encajaba conmigo (en vez de estar en todas partes sin estrategia).",
               "Construir autoridad en redes para que los clientes llegaran a mí (en vez de perseguirlos).",
-              "Usar la IA como mi socia para acelerar y escalar (en vez de hacerlo todo a mano).",
+              "Usar la IA como mi socia para montar la infraestructura sin gastar en agencias ni demorarme meses (en vez de hacerlo todo a mano).",
             ].map((item) => (
               <li key={item} className="flex gap-3 text-foreground/80 leading-relaxed">
                 <span className="text-[#9378fe] flex-shrink-0">→</span>
@@ -45,6 +45,9 @@ export const Letras = () => {
               </li>
             ))}
           </ul>
+          <p>
+            Resultado: ingresos escalables, flexibilidad, más disfrute trabajando.
+          </p>
         </Reveal>
 
         <Reveal variant="blur">

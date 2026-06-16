@@ -1,33 +1,32 @@
 const cards = [
   {
     title: "Ya tienes algo en marcha",
-    body: "Tienes experiencia y conocimiento. Ya estás emprendiendo con un servicio, programa o consultoría. Tienes clientes, aunque vengan de tu entorno. Lo que necesitas es estructura y más impacto.",
+    body: "Eres experto en lo tuyo y ya vendes: coaching, terapia, consultoría, servicios, formación. Tienes clientes, online u offline, aunque vengan de tu entorno. Lo que necesitas es pivotar al modelo correcto y escalar.",
   },
   {
     title: "Has intentado montarlo sola y te has perdido",
-    body: "Has probado Notion. Has mirado herramientas. Has jugado con Claude. Pero no has conseguido que todo funcione junto. No sabes muy bien cómo aplicar la IA a tu negocio.",
+    body: "Has creado algún curso o programa. Has mirado herramientas. Has jugado con Claude. Pero no has conseguido que funcione, ni sabes cómo aplicar la IA para dejar de hacer tareas manuales.",
   },
   {
-    title: "Tienes un negocio pero no se siente profesional",
-    body: "Tu presencia digital no refleja lo buena que eres. No tienes autoridad en redes. La parte comercial se te atasca. Quieres que te vean como referente.",
+    title: "Vendes tu tiempo y no escala",
+    body: "Cada cliente es más horas, más reuniones, más carga. Sabes que tu conocimiento vale para algo más grande que sesiones sueltas, pero no sabes cómo empaquetarlo ni cómo dar el salto.",
   },
 ];
 
 const si = [
-  "Ya tienes una oferta o estás construyendo algo propio con clientes",
+  "Ya vendes servicios, coaching o consultoría (online u offline)",
+  "Quieres dejar de vender tu tiempo y crear un programa de formación de alto valor",
   "Quieres acompañamiento personalizado, no más cursos grupales",
   "Estás abierta a aprender herramientas nuevas aunque no seas técnica",
-  "Quieres dejar de operar a medio montar y montar la infraestructura real",
   "Estás dispuesta a hacer el trabajo cada semana durante 4 meses",
-  "Quieres que tu negocio funcione como si tuvieras un equipo detrás",
 ];
 
 const no = [
-  "Sigues trabajando por cuenta ajena y no vas a tener tiempo para esto",
-  "Todavía no tienes claro si quieres emprender",
+  "Sigues por cuenta ajena y no vas a tener tiempo para esto",
+  "No tienes muy claro que quieras emprender y estás explorando",
+  "No tienes conocimiento o experiencia que enseñar",
   "Solo quieres vender cursos de bajo coste",
-  "No quieres trabajar tu marca personal ni aparecer en redes",
-  "Quieres una web de diseñador perfecta (aquí ejecutamos rápido y bien, no perfeccionismo)",
+  "No quieres trabajar tu marca personal ni ser referente",
   "No estás dispuesta a usar IA como infraestructura",
 ];
 

@@ -34,20 +34,14 @@ export const Hero = () => {
             className="animate-fade-up mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground"
             style={{ animationDelay: "120ms" }}
           >
-            Convierte tu conocimiento en un negocio de servicios y formación{" "}
-            <em className="font-serif italic text-mint">que factura más de 10k al mes.</em>
+            Tienes el conocimiento. Te falta la oferta que lo convierte en{" "}
+            <em className="font-serif italic text-mint">ingresos que escalan.</em>
           </h1>
           <p
-            className="animate-fade-up mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-snug max-w-4xl"
+            className="animate-fade-up mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl"
             style={{ animationDelay: "240ms" }}
           >
-            En 4 meses sales con tu oferta de alto valor lanzada, tu marca posicionada, tu sistema de ventas montado y tu infraestructura con IA.
-          </p>
-          <p
-            className="animate-fade-up mt-8 hidden lg:block text-base md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl"
-            style={{ animationDelay: "320ms" }}
-          >
-            Sin perseguir seguidores y sin años de prueba y error.
+            Te ayudo a empaquetarlo en una sola oferta de alto valor, con método propio, sistemas de venta e infraestructura con IA. La referente que vende su conocimiento, no su tiempo — montado en 4 meses.
           </p>
 
           {/* Hero mockup — below headline on mobile */}

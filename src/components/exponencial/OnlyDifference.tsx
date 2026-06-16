@@ -17,7 +17,7 @@ export const OnlyDifference = () => {
         </Reveal>
         <Reveal delay={150} className="mt-10 max-w-3xl space-y-6 text-lg text-white/80 leading-relaxed">
           <p>
-            Te podría decir que trabajé 10 años en la ONU y el mundo corporativo en 8 países. Que he acompañado a profesionales a montar su negocio. O que mi forma de trabajar integra la IA como infraestructura, algo que casi nadie hace en el mercado hispano.
+            Te podría decir que trabajé 10 años en la ONU y el mundo corporativo en 8 países. Que he ayudado a expertas a convertir su conocimiento en su programa de formación de alto valor. O que este programa es una revolución: no te dice qué hacer, te entrega toda la infraestructura lista para adaptar, lanzar y vender.
           </p>
           <p>Pero si me preguntas "por qué yo", te diré esto:</p>
           <p>

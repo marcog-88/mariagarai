@@ -2,17 +2,17 @@ import { TidyCalButton } from "@/components/construye/TidyCalButton";
 import { Reveal } from "@/components/landing/Reveal";
 
 const cardA = [
-  "Otro mes vendiendo solo a tu entorno",
-  "Otro mes con tu negocio a medio montar",
-  "Otro mes facturando menos de lo que podrías",
-  "La brecha con las que ya han empezado se hace más grande",
+  "Otro mes cambiando tu tiempo por dinero",
+  "Otro mes disperso, sin un modelo claro",
+  "Otro mes invisible mientras otros se posicionan",
+  "El mismo techo dentro de 12 meses",
 ];
 
 const cardB = [
-  "Una oferta de alto valor con clientes reales pagando",
+  "Un programa insignia altamente rentable ya validado",
   "Una marca de autoridad que atrae oportunidades",
   "Sistemas con IA que trabajan sin ti cada hora",
-  "Un negocio que se ve tan profesional como tú eres",
+  "Un negocio digital que se ve tan profesional como tú eres",
 ];
 
 export const PreguntaReal = () => {
@@ -27,10 +27,10 @@ export const PreguntaReal = () => {
               </span>
             </p>
             <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight text-foreground">
-              No es si puedes permitirte entrar.
+              No es si puedes permitírtelo.
             </h2>
             <p className="mt-4 text-lg md:text-2xl text-foreground/70">
-              Es si puedes permitirte no hacerlo. Cada mes que esperas tiene un coste real.
+              Es cuándo vas a dejar de estar ocupada e invisible. Mientras tú lo aplazas, dejas de ocupar el lugar que mereces.
             </p>
           </div>
         </Reveal>
@@ -87,8 +87,8 @@ export const PreguntaReal = () => {
         </div>
 
         <Reveal>
-          <p className="mt-12 text-center font-semibold text-lg md:text-xl text-foreground max-w-2xl mx-auto">
-            El dinero que inviertes hoy es el coste de no pasar otros años en prueba y error.
+          <p className="mt-12 text-center font-serif italic text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto">
+            No es cuestión de si el momento es perfecto. Es cuestión de cuánto más te va a costar a ti misma esperar.
           </p>
 
           <div className="mt-8 flex justify-center">

@@ -9,23 +9,26 @@ export const Problem = () => {
             El problema
           </p>
           <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight max-w-4xl">
-            Ya vendes. Pero solo a la gente de tu entorno.
+            Ya vendes. Pero no te hace tan feliz como te gustaría.
           </h2>
         </Reveal>
 
         <Reveal delay={150} className="mt-16 max-w-3xl space-y-8 text-sm md:text-base leading-relaxed text-foreground/80">
           <p className="border-l-2 border-[#9378fe] pl-4 font-medium italic">
-            Eres una profesional con experiencia. Sabes que lo que tienes vale mucho. Pero el negocio no termina de despegar.
+            Cada venta es más trabajo, más reuniones, más carga mental.
           </p>
-          <p>Lo que sientes es esto:</p>
+          <p>Sientes que:</p>
           <ul className="space-y-3">
             {[
-              "Vendes a contactos y referidos, pero no sabes cómo conseguir clientes más allá de tu círculo.",
-              "Tu negocio no se ve tan profesional como tú eres.",
-              "No tienes claro qué vender exactamente, ni cómo empaquetarlo, ni a qué precio.",
+              "Quieres salir del modelo de vender tu tiempo, pero no sabes cómo.",
               "Cobras por debajo de lo que vales y te da miedo subir.",
-              "Lo haces todo a mano. Sin sistemas. Dependes de tu tiempo cada hora.",
-              "Sabes que la IA debería estar ayudándote, pero no sabes cómo.",
+              "Sirves a todos porque te da miedo sonar específica y ahuyentar clientes.",
+              "Tu negocio no se ve tan profesional como tú eres.",
+              "Vendes a contactos y referidos, pero te cuesta conseguir clientes más allá de tu círculo.",
+              "Tienes ideas de productos, membresías, grupales… pero no sabes cuál es el mejor formato ni cómo crearlo.",
+              "Sabes que necesitas web, sistemas, una academia, pero lo técnico te abruma y te paraliza.",
+              "No sabes cuál es el mejor formato para escalar tus ingresos sin que dependa de ti.",
+              "Lo haces todo a mano. Sabes que la IA debería ayudarte, pero no sabes cómo.",
             ].map((item) => (
               <li key={item} className="flex gap-3 text-foreground/75">
                 <span className="text-[#9378fe] flex-shrink-0 font-bold">✕</span>
@@ -34,7 +37,7 @@ export const Problem = () => {
             ))}
           </ul>
           <p className="font-medium italic text-foreground/80">
-            Conclusión: haces un poco de todo, sin orden ni criterio. Pero no terminas de dar con la tecla para que tu negocio facture más sin que dependa 100% de ti.
+            Conclusión: haces un poco de todo, sin orden ni criterio. Pero no consigues salir de la rueda para que tu negocio facture más sin que dependa 100% de ti.
           </p>
         </Reveal>
       </div>

@@ -77,23 +77,51 @@ const StatsBar = () => {
 const phases = [
   {
     mes: "MES 1",
-    title: "Claridad y Posicionamiento",
-    body: "Tu mapa de carrera moderna — qué vendes, a quién, a qué precio. Tu manual de marca personal. Tu propuesta que se vende sola en 10 segundos. Primeras conversaciones de venta abiertas.",
+    title: "Tu Programa Insignia",
+    sub: "El modelo de negocio que lo cambia todo",
+    items: [
+      "Pivotamos tu negocio: de vender tiempo y servicios sueltos a un solo programa de formación de alto valor.",
+      "Definimos tu método propio, tu avatar ideal y el currículum de tu programa.",
+      "Manual de marca: tu mensaje, tu posicionamiento, tu diferenciación.",
+      "Validamos rápido con clientes reales antes de construir nada.",
+    ],
+    resultado: "Tienes el modelo correcto y un programa que vende, no mil ideas sueltas.",
   },
   {
     mes: "MES 2",
-    title: "Ventas y Primeros Clientes",
-    body: "Tu manual de ventas 100% adaptado a ti. Tu sistema de prospección activa. Primeras ventas cerradas con clientes reales. Proceso de captación documentado y replicable.",
+    title: "Tu Marca de Autoridad",
+    sub: "LinkedIn + Substack",
+    items: [
+      "Perfil de LinkedIn optimizado para autoridad y venta.",
+      "Substack lanzado y creciendo.",
+      "Estrategia de contenido con criterio (no publicar por publicar).",
+      "Sistema de ideación y reutilización de contenido con IA.",
+    ],
+    resultado: "Dejas de ser invisible. Los clientes empiezan a llegar a ti.",
   },
   {
     mes: "MES 3",
-    title: "Activos Digitales",
-    body: "LinkedIn optimizado y publicando con criterio. Substack lanzado y creciendo. Tu web personal publicada. Tu sales page con copy y estructura. Tu lead magnet interactivo con IA. Tu embudo de captación completo.",
+    title: "Tus Ventas",
+    sub: "El sistema que vende por ti",
+    items: [
+      "Manual de ventas adaptado a ti y guion de llamada.",
+      "Guion de objeciones reales de tu cliente.",
+      "El embudo de captación que mejor encaja con tu caso, montado.",
+      "Sistema de prospección más allá de tu círculo.",
+    ],
+    resultado: "Vendes cada semana, sin presión y más allá de tu entorno.",
   },
   {
     mes: "MES 4",
-    title: "Infraestructura y Escalado",
-    body: "Tu Notion completo como sistema operativo. Claude configurado como cofundador. Tu biblioteca de prompts personalizada. Tu sistema de contenido con IA. Plan de escalado diseñado para el siguiente nivel.",
+    title: "Tu Infraestructura con IA",
+    sub: "Tu máquina, llave en mano",
+    items: [
+      "Tu web y tu sales page que venden el programa.",
+      "Tu academia montada, donde alojas tu formación.",
+      "Notion como sistema operativo: CRM, finanzas, contenido, clientes.",
+      "Claude configurado como tu socia operativa y las automatizaciones donde tocan.",
+    ],
+    resultado: "Sales siendo dueña de toda la máquina. Sin atascarte con lo técnico.",
   },
 ];
 
@@ -106,9 +134,8 @@ export const Deliverables = () => {
         </p>
 
         <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05] tracking-tight max-w-4xl">
-          Cuatro meses. Cinco fases.{" "}
-          <br />
-          <em className="font-serif italic text-mint">Un negocio boutique funcionando.</em>
+          Cuatro meses. Cuatro activos.{" "}
+          <em className="font-serif italic text-mint">Montados, no hablados.</em>
         </h2>
 
         <div className="mt-12 md:mt-16 mb-0 md:-mb-24 -mx-6 sm:-mx-16 md:-mx-24 lg:-mx-32">
@@ -133,7 +160,19 @@ export const Deliverables = () => {
                 {p.mes}
               </span>
               <h3 className="font-serif text-2xl md:text-3xl text-foreground pr-24">{p.title}</h3>
-              <p className="mt-4 text-base md:text-lg text-foreground/75 leading-relaxed max-w-3xl">{p.body}</p>
+              <p className="mt-1 text-sm italic text-foreground/50">{p.sub}</p>
+              <ul className="mt-4 space-y-2">
+                {p.items.map((item) => (
+                  <li key={item} className="flex gap-2 text-base md:text-lg text-foreground/75 leading-relaxed">
+                    <span className="flex-shrink-0 text-[#9378fe] font-bold">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-sm font-medium text-foreground/60">
+                <span className="uppercase tracking-widest text-xs text-[#9378fe] mr-2">Resultado</span>
+                <em>{p.resultado}</em>
+              </p>
             </div>
           ))}
         </div>

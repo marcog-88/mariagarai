@@ -17,13 +17,25 @@ const bonuses = [
     emoji: "🏛️",
     title: "Monta tu Academia",
     valor: "€1.200",
-    body: "Desde tu portal en Notion hasta construir tu propia plataforma con IA. Te enseño dónde y cómo alojar tu formación de alto valor, qué herramientas elegir según tu caso, y cómo montar tu propia academia con Claude. Para que vendas formación con una plataforma que se ve profesional.",
+    body: "Te enseño a montar tu academia paso a paso y te doy mi sistema para hacerlo: el portal, la estructura, los SOPs. Te asesoro en qué herramienta encaja contigo (la tuya propia, Circle, School) según tu caso. Para que vendas tu formación con una plataforma que se ve profesional.",
   },
   {
     emoji: "🤖",
     title: "Claude como tu Cofundador",
     valor: "€997",
     body: "Configuración pro de Claude. Cómo nutrirlo con el contexto de tu negocio (manual de marca, branding, estrategia). Claude Design y otras IAs que te ahorran horas en Canva. Conexión Notion + Claude. Los prompts y automatizaciones que yo uso cada día.",
+  },
+  {
+    emoji: "🎬",
+    title: "Graba sin Complicaciones",
+    valor: "€497",
+    body: "Todo lo que necesitas para grabar tu formación sin ser técnica: qué herramientas usar, cómo montar un setup simple de vídeo y audio, cómo crear tus slides, qué grabar y cómo. Para que no te atasques en lo técnico, que es donde la mayoría se queda parada.",
+  },
+  {
+    emoji: "🚀",
+    title: "Lanzamiento Copia y Pega",
+    valor: "€390",
+    body: "Checklist de acciones diarias. Plantillas de emails de venta. El sistema completo para no abrumarte al lanzar tu nueva oferta. Replicable las veces que quieras.",
   },
 ];
 
@@ -36,7 +48,7 @@ export const Bonuses = () => {
             🎁 Bonuses incluidos
           </p>
           <h2 className="font-serif text-[clamp(1.75rem,4vw,2.75rem)] leading-tight tracking-tight text-foreground max-w-3xl mb-12">
-            €4.694 en bonuses.{" "}
+            €5.581 en bonuses.{" "}
             <em className="font-serif italic" style={{ color: "#9378fe" }}>
               Más que el precio del programa.
             </em>
