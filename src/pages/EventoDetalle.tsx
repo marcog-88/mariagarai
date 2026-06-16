@@ -36,7 +36,7 @@ const ShareButtons = ({ title }: { title: string }) => {
   };
 
   const cls =
-    "inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white/80 transition-colors hover:bg-white/20 hover:text-white";
+    "inline-flex h-9 w-9 items-center justify-center rounded-full bg-foreground/8 text-foreground/50 transition-colors hover:bg-foreground/12 hover:text-foreground";
 
   return (
     <div className="flex items-center gap-2">
@@ -103,7 +103,7 @@ const EventoDetalle = () => {
     <div id="top" className="min-h-screen bg-background">
       <Nav forceLight />
 
-      <section className="bg-[#f9f9f7] border-b border-border pt-24 pb-14">
+      <section className="bg-[#f9f9f7] border-b border-border pt-24 pb-6 lg:pb-14">
         <div className="container-tight">
           <Link to="/eventos" className="text-sm text-foreground/50 transition-colors hover:text-foreground">
             ← Todos los eventos
@@ -133,7 +133,7 @@ const EventoDetalle = () => {
                 </span>
               </div>
 
-              <div className="mt-6">
+              <div className="mt-4 hidden lg:flex">
                 <ShareButtons title={event.title} />
               </div>
             </div>
