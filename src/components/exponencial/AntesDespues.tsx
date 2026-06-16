@@ -121,10 +121,10 @@ export const AntesDespues = () => {
                     ))}
                   </ul>
 
-                  <div className="mt-6 pt-5 border-t border-[#9378fe]/30 flex items-start gap-3">
+                  <div className="mt-6 pt-5 border-t border-[#9378fe]/30 flex flex-col gap-1">
                     <span
-                      className="text-[10px] uppercase tracking-[0.18em] font-bold mt-1 flex-shrink-0"
-                      style={{ color: "#9378fe" }}
+                      className="text-[10px] uppercase tracking-[0.18em] font-bold"
+                      style={{ color: "#d0fcd0" }}
                     >
                       Resultado
                     </span>
