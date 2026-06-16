@@ -35,7 +35,9 @@ export const Truth = () => {
             Este es el mejor modelo para consultores, terapeutas y expertos que quieren dejar de vender servicios sueltos y ser reconocidos como referentes.
           </p>
           <p className="mt-8 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            Y aquí está lo que cambia todo: montar esto ya no es lo que era. Antes, tener tu programa, tu web, tu academia y tus sistemas costaba meses de trabajo y miles de euros en agencias y freelancers. Hoy, usando la IA como tu socia, lo montamos contigo en 4 meses. Profesional, sin gastar una fortuna, sin demoras.
+            Y aquí está lo que cambia todo: montar esto ya no es lo que era. Antes, tener tu programa, tu web, tu academia y tus sistemas costaba meses de trabajo y miles de euros en agencias y freelancers. Hoy, usando la IA como tu socia, lo puedes montar en meses, no años. Profesional, sin gastar una fortuna, sin demoras.{" "}
+            <br className="hidden md:block" />
+            Un negocio con más ingresos, autoridad y calma.
           </p>
           <p className="mt-8 font-serif text-2xl md:text-3xl text-mint italic max-w-4xl">
             Sales con todo funcionando, llave en mano.
