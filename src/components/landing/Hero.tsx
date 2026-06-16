@@ -77,7 +77,7 @@ export const Hero = () => {
             {/* Headline group */}
             <div>
               <p
-                className="animate-fade-up mb-4 font-sans text-sm font-semibold uppercase tracking-widest text-accent"
+                className="animate-fade-up mb-10 font-sans text-sm font-semibold uppercase tracking-widest text-accent"
                 style={{ animationDelay: "0ms" }}
               >
                 Tu conocimiento es exponencial
