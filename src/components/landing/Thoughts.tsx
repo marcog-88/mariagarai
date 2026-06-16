@@ -4,7 +4,7 @@ const desires = [
   "Un negocio que te dé calma y autoridad.",
   "Simplificar tu caos.",
   "Menos reuniones de Zoom.",
-  "Alta rentabilidad sin que dependa de ti.",
+  "Simplicidad y alta rentabilidad.",
   "Ser referente, no invisible.",
   "Montar algo sólido que se vea profesional.",
   "__Un programa que transforme vidas.__",
