@@ -49,6 +49,14 @@ const faqs = [
     a: "Te enseño a montar tu academia y te doy mi sistema para hacerlo. Y te asesoro en qué herramienta encaja mejor contigo según tu caso: tu propia plataforma, Circle, School o la que sea. No te dejo sola con lo técnico, pero tampoco te obligo a una herramienta concreta.",
   },
   {
+    q: "¿Voy a tener que grabarme en video para mi programa?",
+    a: "Sí, pero en el momento oportuno. Primero tenemos que validar con un producto mínimo viable que no te cueste meses crear, sino días. Una vez validado, incorporaremos los elementos (videos, ejercicios, plantillas, herramientas de IA) que crean un efecto WOW en tu cliente. Todo está pensado para que no te atasques.",
+  },
+  {
+    q: "¿Tengo que pagar otras aplicaciones aparte?",
+    a: "Sí, yo te asesoraré. Vas a necesitar Claude Pro o Max y alguna otra para alojar tu email marketing, academia etc. Esto es un modelo de negocio altamente rentable, en el que tus gastos recurrentes no deberían ser más del 5-10% de tus ingresos.",
+  },
+  {
     q: "¿Hay opción de pago fraccionado?",
     a: (
       <>
