@@ -13,7 +13,7 @@ export const Letras = () => {
             style={{ borderColor: "#9378fe" }}
           >
             <p className="font-serif text-2xl md:text-3xl italic leading-snug" style={{ color: "#9378fe" }}>
-              "Tardé 3 años en construir lo que te enseño a hacer en 4 meses."
+              Tardé 3 años en construir lo que te enseño a hacer en 4 meses."
             </p>
           </div>
         </Reveal>
