@@ -55,7 +55,7 @@ export const Pricing = () => {
       <div className="container-tight">
         <Reveal>
           <p className="mb-6 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-mint">
-            Qué incluye exactamente <span className="normal-case">(entregables, recortado y reenfocado)</span>
+            Qué incluye exactamente
           </p>
           <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-tight tracking-tight text-primary-foreground">
             EXPONENCIAL · 4 MESES · 1:1
