@@ -18,6 +18,7 @@ const OfertaPrivadaConstruye = lazy(() => import("./pages/OfertaPrivadaConstruye
 const Exponencial = lazy(() => import("./pages/Exponencial.tsx"));
 const Eventos = lazy(() => import("./pages/Eventos.tsx"));
 const EventoDetalle = lazy(() => import("./pages/EventoDetalle.tsx"));
+const DisenatuOferta = lazy(() => import("./pages/DisenatuOferta.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,8 @@ const App = () => (
             <Route path="/exponencial" element={<Exponencial />} />
             <Route path="/eventos" element={<Eventos />} />
             <Route path="/eventos/:slug" element={<EventoDetalle />} />
+            {/* Unlisted lead magnet — not in nav or sitemap */}
+            <Route path="/disena-tu-oferta" element={<DisenatuOferta />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
