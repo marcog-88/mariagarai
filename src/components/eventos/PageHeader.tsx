@@ -14,21 +14,10 @@ type Props = { settings: PageSettings | null; now: Date };
 export const PageHeader = ({ settings, now }: Props) => {
   const profile = settings?.profile_image_url || mariaFallback;
   const banner = settings?.banner_url || null;
-  const title = settings?.page_title || "Taller semanal en vivo";
+  const title = settings?.page_title || "Encuentros en vivo";
   const subtitle = settings?.page_subtitle;
 
-  // Show a light placeholder while settings are loading to avoid dark→light flash.
-  const settingsLoaded = settings !== undefined;
-
   if (!banner) {
-    // Dark fallback only when settings loaded and explicitly have no banner.
-    if (!settingsLoaded) {
-      return (
-        <header className="bg-[#f9f9f7] pt-24 pb-12 border-b border-border">
-          <div className="container-tight" />
-        </header>
-      );
-    }
     // Banner-less fallback — original layout, unchanged.
     return (
       <header className="bg-[#0c0d0e] pt-24 pb-12 text-white">

@@ -103,19 +103,6 @@ export class RegistrationError extends Error {
  * We never insert into contacts/event_registrations directly and never send a
  * status from the client.
  */
-export async function subscribeToEventNotifications(
-  email: string,
-  name: string,
-  whatsapp?: string | null
-): Promise<void> {
-  const { error } = await sb.rpc("subscribe_to_events", {
-    p_email: email,
-    p_name: name || null,
-    p_whatsapp: whatsapp || null,
-  });
-  if (error) throw error;
-}
-
 export async function registerForEvent(input: RegistrationInput) {
   const { data, error } = await sb.rpc("register_for_event", {
     p_event_slug: input.eventSlug,

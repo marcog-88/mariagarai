@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Bell, Check, Loader2, X } from "lucide-react";
-import { formatEventLong, registerForEvent, subscribeToEventNotifications, RegistrationError, type EventRow } from "@/lib/eventos";
+import { Check, Loader2, X } from "lucide-react";
+import { formatEventLong, registerForEvent, RegistrationError, type EventRow } from "@/lib/eventos";
 
 type Props = { event: EventRow };
 type Status = "idle" | "submitting" | "success" | "error";
@@ -12,7 +12,6 @@ function FormFields({
   name, setName,
   email, setEmail,
   whatsapp, setWhatsapp,
-  notify, setNotify,
   status,
   errorMsg,
   submitting,
@@ -22,7 +21,6 @@ function FormFields({
   name: string; setName: (v: string) => void;
   email: string; setEmail: (v: string) => void;
   whatsapp: string; setWhatsapp: (v: string) => void;
-  notify: boolean; setNotify: (v: boolean) => void;
   status: Status;
   errorMsg: string;
   submitting: boolean;
@@ -71,23 +69,6 @@ function FormFields({
         </div>
       </div>
 
-      {/* Notify bell */}
-      <label className="mt-4 flex cursor-pointer items-center gap-2.5 select-none">
-        <input
-          type="checkbox"
-          checked={notify}
-          onChange={(e) => setNotify(e.target.checked)}
-          className="sr-only"
-        />
-        <span className={`flex h-5 w-5 shrink-0 items-center justify-center rounded border transition-colors ${notify ? "bg-accent border-accent text-accent-foreground" : "border-input bg-background text-transparent"}`}>
-          <Check className="h-3 w-3" />
-        </span>
-        <span className="flex items-center gap-1.5 text-sm text-foreground/70">
-          <Bell className="h-3.5 w-3.5 text-foreground/40" />
-          Avísame de nuevos eventos
-        </span>
-      </label>
-
       {status === "error" && <p className="mt-3 text-sm text-destructive">{errorMsg}</p>}
 
       <button type="submit" disabled={submitting} className="btn-primary mt-5 w-full disabled:opacity-70">
@@ -105,7 +86,6 @@ export const RegistrationForm = ({ event }: Props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
-  const [notify, setNotify] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [sheetOpen, setSheetOpen] = useState(false);
@@ -143,12 +123,6 @@ export const RegistrationForm = ({ event }: Props) => {
         });
       } catch { /* non-blocking */ }
 
-      if (notify) {
-        try {
-          await subscribeToEventNotifications(email.trim(), name.trim(), whatsapp.trim() || null);
-        } catch { /* non-blocking */ }
-      }
-
       setStatus("success");
     } catch (err) {
       setStatus("error");
@@ -160,7 +134,7 @@ export const RegistrationForm = ({ event }: Props) => {
     }
   };
 
-  const formProps = { event, name, setName, email, setEmail, whatsapp, setWhatsapp, notify, setNotify, status, errorMsg, submitting, onSubmit: handleSubmit };
+  const formProps = { event, name, setName, email, setEmail, whatsapp, setWhatsapp, status, errorMsg, submitting, onSubmit: handleSubmit };
 
   return (
     <>
