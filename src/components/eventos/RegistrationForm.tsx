@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Bell, Check, Loader2, X } from "lucide-react";
 import { formatEventLong, registerForEvent, subscribeToEventNotifications, RegistrationError, type EventRow } from "@/lib/eventos";
+import { AnadirAlCalendario } from "./AnadirAlCalendario";
 
 type Props = { event: EventRow };
 type Status = "idle" | "submitting" | "success" | "error";
@@ -29,6 +30,12 @@ function FormFields({
   onSubmit: (e: React.FormEvent) => void;
 }) {
   if (status === "success") {
+    const calEvent = {
+      title: event.title,
+      startIso: event.event_date,
+      location: event.event_link || undefined,
+      description: event.description || undefined,
+    };
     return (
       <div className="rounded-xl border border-accent/40 bg-accent/5 p-6 text-center">
         <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-accent text-accent-foreground">
@@ -36,6 +43,7 @@ function FormFields({
         </span>
         <p className="mt-4 font-serif text-xl text-foreground">¡Estás dentro!</p>
         <p className="mt-1 text-sm text-foreground/65">Revisa tu email para el enlace.</p>
+        <AnadirAlCalendario event={calEvent} />
       </div>
     );
   }

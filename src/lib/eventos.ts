@@ -50,6 +50,7 @@ export async function fetchEvents(): Promise<EventRow[]> {
     .from("events")
     .select(EVENT_COLUMNS)
     .eq("active", true)
+    .eq("visibility", "publico")
     .order("event_date", { ascending: true });
   if (error) throw error;
   return (data ?? []) as EventRow[];
@@ -61,6 +62,7 @@ export async function fetchEventBySlug(slug: string): Promise<EventRow | null> {
     .select(EVENT_COLUMNS)
     .eq("slug", slug)
     .eq("active", true)
+    .eq("visibility", "publico")
     .maybeSingle();
   if (error) throw error;
   return (data ?? null) as EventRow | null;
