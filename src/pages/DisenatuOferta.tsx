@@ -197,10 +197,10 @@ export default function DisenatuOferta() {
             >
               <div className="grid gap-4 md:grid-cols-2">
                 <Field label="Nombre">
-                  <Input required maxLength={80} value={form.firstName} onChange={(e) => setForm({ ...form, firstName: e.target.value })} placeholder="María" />
+                  <Input required maxLength={80} value={form.firstName} onChange={(e) => setForm({ ...form, firstName: e.target.value })} placeholder="Tu nombre" />
                 </Field>
                 <Field label="Apellido">
-                  <Input required maxLength={80} value={form.lastName} onChange={(e) => setForm({ ...form, lastName: e.target.value })} placeholder="Garai" />
+                  <Input required maxLength={80} value={form.lastName} onChange={(e) => setForm({ ...form, lastName: e.target.value })} placeholder="Tu apellido" />
                 </Field>
               </div>
 
