@@ -116,7 +116,7 @@ const EventoDetalle = () => {
           </div>
 
           {/* Cover — full-width below title on mobile */}
-          <div className="mt-4 lg:hidden w-full aspect-[3/2] overflow-hidden rounded-xl ring-1 ring-border">
+          <div className="mt-4 lg:hidden w-full aspect-[2/1] overflow-hidden rounded-xl ring-1 ring-border">
             <Cover event={event} className="object-top" />
           </div>
 
