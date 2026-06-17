@@ -78,6 +78,19 @@ export async function fetchEventosPageSettings(): Promise<PageSettings | null> {
 
 // ── Registration (RPC only — never raw inserts) ──────────────────────────────
 
+export async function subscribeToEventNotifications(
+  email: string,
+  name: string,
+  whatsapp?: string | null
+): Promise<void> {
+  const { error } = await sb.rpc("subscribe_to_events", {
+    p_email: email,
+    p_name: name || null,
+    p_whatsapp: whatsapp || null,
+  });
+  if (error) throw error;
+}
+
 export type RegistrationInput = {
   eventSlug: string;
   name: string;
