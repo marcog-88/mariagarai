@@ -142,7 +142,7 @@ const EventoDetalle = () => {
                 </span>
               </div>
 
-              <div className="mt-4 hidden lg:flex">
+              <div className="mt-4 flex">
                 <ShareButtons title={event.title} />
               </div>
             </div>
