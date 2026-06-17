@@ -21,7 +21,7 @@ export const Exponencial = () => {
             para vivir de tu conocimiento.
           </h2>
           <p className="mt-8 text-lg md:text-xl text-white/60 leading-relaxed max-w-2xl">
-            En 4 meses construimos tu programa de formación online altamente rentable para ganar autoridad e ingresos escalables sin depender de tu tiempo.{" "}
+            En 4 meses construimos tu <strong className="text-white/80 font-semibold">programa online altamente rentable</strong> para ganar autoridad e ingresos escalables sin depender de tu tiempo.{" "}
             <span className="text-white/80">Todo montado, ya vendiendo, sin fricción técnica.</span>
           </p>
         </Reveal>
@@ -61,7 +61,7 @@ export const Exponencial = () => {
           </p>
           <ul className="mt-8 md:mt-10 text-base md:text-lg text-white max-w-2xl">
             {[
-              { main: "Tu Programa Insignia.", sub: "Pivotamos tu negocio hacia un modelo de formación altamente rentable. Definimos tu método propio, tu avatar y el currículum de tu programa. Lo validamos rápido con clientes reales antes de construirlo entero." },
+              { main: "Tu Programa Insignia.", sub: "Diseñamos una oferta que incluye formación, acompañamiento e implementación. Definimos tu método propio, tu avatar y el currículum de tu programa. Lo validamos rápido con clientes reales antes de construirlo entero." },
               { main: "Tu Autoridad.", sub: "Construimos tu marca en LinkedIn y tu newsletter para que te posiciones como referente de tu tema. Dejas de ser invisible y empiezas a atraer clientes en vez de perseguirlos." },
               { main: "Tus Ventas.", sub: "Testamos hasta encontrar el sistema de ventas que mejor encaja contigo y lo automatizamos. Tu embudo, tu guión, tus objeciones resueltas. Para vender cada semana sin presión y más allá de tu entorno." },
               { main: "Tu Infraestructura con IA.", sub: "La web que vende tu programa, tus sistemas de gestión internos, el email marketing y, por supuesto, tu academia. Todo montado, paso a paso, contigo. Sin fricción técnica ni pagar una fortuna en agencias." },

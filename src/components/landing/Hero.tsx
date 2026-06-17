@@ -31,14 +31,14 @@ export const Hero = () => {
               className="animate-fade-up font-serif text-[clamp(2.5rem,8vw,3.5rem)] md:text-[clamp(2.75rem,5vw,4.5rem)] leading-[1.05] tracking-tight text-white"
               style={{ animationDelay: "80ms" }}
             >
-              Multiplica tus ingresos con un programa de alto valor que te posicione como experta,{" "}
-              <em className="font-serif italic text-accent block">sin vender más horas.</em>
+              Monetiza tu conocimiento{" "}
+              <em className="font-serif italic text-accent block">sin vender solo tu tiempo</em>
             </h1>
             <p
               className="animate-fade-up mt-8 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "150ms" }}
             >
-              Te ayudo a pivotar a un modelo de formación online altamente rentable y a montar la infraestructura que lo sostiene. Mi método y la IA, para construirlo en meses, no en años.
+              Ayudo a emprendedoras y profesionales independientes a crear un <strong className="text-white font-semibold">programa online altamente rentable</strong> que les de ingresos escalables y autoridad consolidada, sin vender más horas. Mi método y la IA, para construirlo en meses, no en años.
             </p>
 
             <div
@@ -86,20 +86,20 @@ export const Hero = () => {
                 className="animate-fade-up font-serif text-[clamp(2.5rem,3.5vw,3.75rem)] leading-[1.05] tracking-tight text-white"
                 style={{ animationDelay: "80ms" }}
               >
-                Multiplica tus ingresos con un programa de alto valor que te posicione como experta,
+                Monetiza tu conocimiento
               </span>
               <em
                 className="animate-fade-up mt-3 font-serif italic text-accent text-[clamp(3rem,4.2vw,4.5rem)] leading-[1.02] tracking-tight block"
                 style={{ animationDelay: "160ms" }}
               >
-                sin vender más horas.
+                sin vender solo tu tiempo
               </em>
             </div>
             <p
               className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "240ms" }}
             >
-              Te ayudo a pivotar a un modelo de formación online altamente rentable y a montar la infraestructura que lo sostiene. Mi método y la IA, para construirlo en meses, no en años.
+              Ayudo a emprendedoras y profesionales independientes a crear un <strong className="text-white font-semibold">programa online altamente rentable</strong> que les de ingresos escalables y autoridad consolidada, sin vender más horas. Mi método y la IA, para construirlo en meses, no en años.
             </p>
             <div
               className="animate-fade-up flex items-center gap-6"
