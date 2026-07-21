@@ -2,40 +2,40 @@ import { Reveal } from "@/components/landing/Reveal";
 
 const bonuses = [
   {
-    emoji: "📄",
-    title: "La Sales Page que Vende Sola",
-    valor: "€1.500",
-    body: "La estructura y el copy de página de ventas de alta conversión que usan los emprendedores anglosajones para facturar millones. Montada en Lovable, lista para Stripe, lista para duplicar y reutilizar en 90 segundos. Para que subas precios sin que el envoltorio te perjudique.",
+    emoji: "✅",
+    title: "Kit de Validación",
+    valor: "497€",
+    body: "Templates y scripts para validar y prevender tu programa antes de construirlo.",
   },
   {
-    emoji: "🧲",
-    title: "El Lead Magnet que Engancha",
-    valor: "€997",
-    body: "Tu lead magnet interactivo en formato app, conectado a Notion y email marketing, con vídeo de ventas incluido. Deja de mandar PDFs que nadie lee. Sé la primera en ofrecer algo así en tu sector.",
-  },
-  {
-    emoji: "🏛️",
-    title: "Monta tu Academia",
-    valor: "€1.200",
-    body: "Te enseño a montar tu academia paso a paso y te doy mi sistema para hacerlo: el portal, la estructura, los SOPs. Te asesoro en qué herramienta encaja contigo (la tuya propia, Circle, School) según tu caso. Para que vendas tu formación con una plataforma que se ve profesional.",
-  },
-  {
-    emoji: "🤖",
-    title: "Claude como tu Cofundador",
-    valor: "€997",
-    body: "Configuración pro de Claude. Cómo nutrirlo con el contexto de tu negocio (manual de marca, branding, estrategia). Claude Design y otras IAs que te ahorran horas en Canva. Conexión Notion + Claude. Los prompts y automatizaciones que yo uso cada día.",
+    emoji: "💬",
+    title: "Kit de Ventas",
+    valor: "997€",
+    body: "Tu manual de ventas, guion de llamada y objeciones resueltas.",
   },
   {
     emoji: "🎬",
-    title: "Graba sin Complicaciones",
-    valor: "€497",
-    body: "Todo lo que necesitas para grabar tu formación sin ser técnica: qué herramientas usar, cómo montar un setup simple de vídeo y audio, cómo crear tus slides, qué grabar y cómo. Para que no te atasques en lo técnico, que es donde la mayoría se queda parada.",
+    title: "Kit de Lecciones",
+    valor: "697€",
+    body: "Crea tus lecciones con IA y Claude Design, paso a paso.",
   },
   {
-    emoji: "🚀",
-    title: "Lanzamiento Copia y Pega",
-    valor: "€390",
-    body: "Checklist de acciones diarias. Plantillas de emails de venta. El sistema completo para no abrumarte al lanzar tu nueva oferta. Replicable las veces que quieras.",
+    emoji: "🗂️",
+    title: "Kit Notion",
+    valor: "497€",
+    body: "El sistema operativo de tu negocio: gestión, planificación y plantillas de María.",
+  },
+  {
+    emoji: "🤖",
+    title: "Kit Claude",
+    valor: "997€",
+    body: "Conviértete en una pro de Claude: configuración, prompts y automatizaciones.",
+  },
+  {
+    emoji: "🌐",
+    title: "Kit Web",
+    valor: "597€",
+    body: "Tu landing page adicional para lo que necesites.",
   },
 ];
 
@@ -48,7 +48,7 @@ export const Bonuses = () => {
             🎁 Bonuses incluidos
           </p>
           <h2 className="font-serif text-[clamp(1.75rem,4vw,2.75rem)] leading-tight tracking-tight text-foreground max-w-3xl mb-12">
-            €5.581 en bonuses.{" "}
+            4.282€ en bonuses incluidos.{" "}
             <em className="font-serif italic" style={{ color: "#9378fe" }}>
               Más que el precio del programa.
             </em>

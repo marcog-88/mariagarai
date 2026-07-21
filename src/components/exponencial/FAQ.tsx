@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "No sé si tengo tiempo para dedicarle.",
-    a: "Pierdes más tiempo del que crees haciendo cosas sin criterio: viendo vídeos en YouTube, copiando estrategias de otros, probando cosas que no funcionan. Aquí, en 4 meses, sales con todo lo que sola te costaría años montar. No es tiempo extra, es dejar de perderlo.",
+    a: "Pierdes más tiempo del que crees haciendo cosas sin criterio: viendo vídeos en YouTube, copiando estrategias de otros, probando cosas que no funcionan. Aquí, en 90 días, sales con todo lo que sola te costaría años montar. Dejas de perder tiempo, no le añades más.",
   },
   {
     q: "No sé nada de IA ni se me da bien la tecnología.",
@@ -22,11 +22,19 @@ const faqs = [
   },
   {
     q: "No tengo muy claro qué vender.",
-    a: "Perfecto, porque el mes 1 es exactamente para eso. Aterrizamos tu oferta insignia: qué vendes, a quién y a qué precio. Salimos de la dispersión y nos centramos en una sola oferta de alto valor que puedas vender con orgullo.",
+    a: "Perfecto, porque la Fórmula es exactamente para eso. Empezamos por tu Plan de Negocio y tu Oferta: qué vendes, a quién y a qué precio. Salimos de la dispersión y nos centramos en un solo programa de más de 2.000€ que puedas vender con orgullo.",
   },
   {
-    q: "¿4 meses van a ser suficientes?",
-    a: "Sí. En 4 meses construimos los 4 activos en el orden correcto. Y para las que quieren seguir, ofrezco soporte continuado una vez terminado el programa. Eso lo vemos cuando llegue el momento, sin presión.",
+    q: "¿90 días van a ser suficientes?",
+    a: "Sí, porque el orden está resuelto. La Fórmula define y valida tu programa en las primeras semanas, y la Máquina lo monta a partir de ahí. El trabajo semanal es constante, pero va guiado paso a paso: tu asesora experta bloquea contigo cada activo y la sesión grupal semanal te mantiene en ritmo. Además tienes mínimo 3 meses de soporte tras la construcción.",
+  },
+  {
+    q: "¿En qué se diferencia de Skool, Systeme o Kajabi?",
+    a: "Esas plataformas te alquilan una habitación: pagas cada mes, montas tú sola y el espacio nunca es tuyo. En Exponencial construyes tu casa: tu academia, tu web y tu embudo, con ayuda paso a paso, en propiedad y sin comisiones. Y además sales con tu programa validado y vendido, que es lo que ninguna plataforma hace por ti.",
+  },
+  {
+    q: "¿Qué pasa cuando acaban los 90 días y el soporte?",
+    a: "Tienes mínimo 3 meses de soporte tras la construcción, y después puedes renovar y quedarte todo el tiempo que quieras, con soporte técnico y estratégico y la comunidad. El objetivo es que te vuelvas autosuficiente y no nos necesites. Y que, aun así, estemos cerca siempre que quieras.",
   },
   {
     q: "¿Y si tengo más de un programa o más de una oferta?",
@@ -38,11 +46,11 @@ const faqs = [
   },
   {
     q: "¿Cómo funciona el proceso para entrar?",
-    a: "Rellenas el formulario de compatibilidad (toma 3 minutos). Si encajas, agendamos una llamada para conocernos y ver si tiene sentido trabajar juntas. Si las dos lo vemos claro, entras. Solo acepto 2 clientas nuevas al mes.",
+    a: "Rellenas el formulario de compatibilidad (toma 3 minutos). Si encajas, agendamos una llamada para conocernos y ver si tiene sentido trabajar juntas. Si las dos lo vemos claro, entras.",
   },
   {
     q: "¿Voy a facturar 10.000€ con este programa?",
-    a: "10k es lo que el modelo está diseñado para alcanzar; lo que yo garantizo son los 4 activos que lo hacen posible. No te puedo garantizar ingresos, nadie puede. Pero sí te puedo garantizar que vas a tener la infraestructura, el modelo de negocio y la estrategia para conseguirlo.",
+    a: "No te puedo garantizar cifras, nadie honesto lo hace. Lo que garantizo es el activo: tu programa de más de 2.000€ montado y validado con clientes reales, con las primeras ventas que consigues durante el proceso de validación. A partir de ahí tienes la infraestructura, el modelo y la estrategia para escalarlo.",
   },
   {
     q: "¿Y la academia? ¿En qué plataforma la monto?",
@@ -62,10 +70,10 @@ const faqs = [
       <>
         Sí. Puedes dividir tu inversión en 2, 3 o 4 pagos mensuales con un recargo del 10%:
         <br /><br />
-        — Pago único: 4.500€ (sin recargo)<br />
-        — 2 pagos: 2.475€<br />
-        — 3 pagos: 1.650€<br />
-        — 4 pagos: 1.238€
+        · Pago único: 3.000€ (sin recargo)<br />
+        · 2 pagos: 1.650€<br />
+        · 3 pagos: 1.100€<br />
+        · 4 pagos: 825€
         <br /><br />
         Todos los precios sin IVA. El fraccionamiento se gestiona en el momento de la aplicación.
       </>

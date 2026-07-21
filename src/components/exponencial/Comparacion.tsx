@@ -8,16 +8,16 @@ const sin = [
   "Tu negocio no se ve tan profesional como tú eres",
   "Lo técnico te abruma y te paraliza",
   "Lo haces todo a mano, sabes que la IA podría ayudarte pero no sabes cómo",
+  "Atada a plataformas de alquiler que se quedan comisión de cada venta",
 ];
 
 const con = [
-  "Un solo programa de alto valor que escala sin devorarte",
-  "Ingresos escalables que no dependen de tu tiempo cada hora",
+  "Un solo programa de más de 2.000€ que escala sin devorarte",
+  "Tu programa validado y vendido antes de construirlo entero",
+  "Tu academia, tu web, tu embudo y tu CRM montados, tuyos, sin comisiones",
   "Subes precios con criterio y los defiendes sin culpa",
-  "Eres referente de un tema concreto, no una más",
   "Un negocio que se ve tan profesional como tú eres",
-  "Tu web, tu academia y tus sistemas montados, llave en mano",
-  "La IA trabajando como tu socia operativa",
+  "Eres una pro de la IA: sabes mantener y hacer crecer tu infraestructura sin depender de nadie",
 ];
 
 export const Comparacion = () => {

@@ -2,17 +2,15 @@ import { Reveal } from "@/components/landing/Reveal";
 
 export const Comparativa = () => {
   const rows = [
-    { item: "Estrategia de marca personal y posicionamiento", market: "€2.000 – €4.000" },
-    { item: "Definición y validación de oferta de alto valor", market: "€1.500 – €3.000" },
-    { item: "Auditoría, montaje y optimización de redes (LinkedIn + Substack)", market: "€1.000 – €2.500" },
-    { item: "Estrategia de contenidos y sistema de reutilización con IA", market: "€1.500 – €3.000" },
-    { item: "Manual de ventas y sistema de prospección", market: "€1.000 – €2.500" },
+    { item: "Definición y validación de oferta de más de 2.000€", market: "€1.500 – €3.000" },
+    { item: "Copy y estructura de página de venta de alta conversión", market: "€1.500 – €3.500" },
+    { item: "Web profesional con tu marca", market: "€1.500 – €3.000" },
+    { item: "Academia montada con tus lecciones (plataforma propia)", market: "€2.000 – €4.000" },
+    { item: "Lead magnet interactivo de diagnóstico con IA", market: "€2.000 – €3.000" },
     { item: "Embudo de captación + email marketing montado", market: "€1.000 – €2.500" },
-    { item: "Copy y estructura de sales page", market: "€1.500 – €3.500" },
-    { item: "Lead magnet interactivo tipo app", market: "€2.000 – €3.000" },
-    { item: "Sistema operativo completo en Notion", market: "€1.500 – €3.000" },
-    { item: "Claude configurado + automatizaciones con IA", market: "€1.000 – €2.500" },
-    { item: "17 sesiones de consultoría estratégica 1:1", market: "€3.400 – €8.500" },
+    { item: "Sistema de webinar de venta", market: "€1.000 – €2.000" },
+    { item: "CRM y sistema operativo del negocio", market: "€1.500 – €3.000" },
+    { item: "Acompañamiento experto 1:1 y grupal durante 90 días", market: "€2.000 – €5.000" },
   ];
 
   return (
@@ -23,7 +21,7 @@ export const Comparativa = () => {
             Lo que te ahorras
           </p>
           <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight">
-            Lo que montas en 4 meses, por separado, cuesta el triple.
+            Lo que montas en 90 días, por separado, cuesta cinco veces más.
           </h2>
         </Reveal>
 
@@ -67,7 +65,7 @@ export const Comparativa = () => {
                 Contratado por separado
               </p>
               <p className="font-serif text-3xl md:text-4xl text-white/45 line-through decoration-[#9378fe]/70 decoration-2">
-                €18.400 – €38.000
+                €14.000 – €29.000
               </p>
             </div>
             <div
@@ -81,8 +79,16 @@ export const Comparativa = () => {
               <p className="text-xs uppercase tracking-[0.24em] mb-2" style={{ color: "#b7a5ff" }}>
                 En Exponencial, todo incluido
               </p>
-              <p className="font-serif text-5xl md:text-6xl" style={{ color: "#9378fe" }}>
-                €4500
+              <div className="flex items-baseline gap-3">
+                <span className="font-serif text-2xl md:text-3xl text-white/40 line-through decoration-white/40">
+                  €4500
+                </span>
+                <span className="font-serif text-5xl md:text-6xl" style={{ color: "#9378fe" }}>
+                  €3000
+                </span>
+              </div>
+              <p className="mt-2 text-xs uppercase tracking-[0.18em]" style={{ color: "#d0fcd0" }}>
+                Precio de lanzamiento
               </p>
             </div>
           </div>

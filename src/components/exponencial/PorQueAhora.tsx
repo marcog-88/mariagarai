@@ -22,8 +22,8 @@ export const PorQueAhora = () => {
         <Reveal delay={150} className="mt-12 max-w-3xl space-y-10 text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
           {[
             { n: "1", title: "Antes se pagaba por información, ahora por transformación.", body: "Hoy la información es gratis: está en Google, en YouTube, en la IA. La gente paga transformación, acompañamiento, resultados. Eso es exactamente lo que vende un programa de formación de alto valor, y lo que ningún curso de 97€ puede dar." },
-            { n: "2", title: "Ser genérico cada vez vende menos.", body: "Quien tiene impacto exponencial —autoridad e ingresos que escalan— es quien se vuelve muy claro: un dolor, un avatar, un programa. Operativamente más simple, más fácil de escalar, y que no depende de ti cada hora." },
-            { n: "3", title: "Montarlo ya no cuesta lo que costaba.", body: "Lo que antes costaba años, un equipo y 30.000€ en agencias hoy con IA se construye en 4 meses." },
+            { n: "2", title: "Ser genérico cada vez vende menos.", body: "Quien tiene impacto exponencial (autoridad e ingresos que escalan) es quien se vuelve muy claro: un dolor, un avatar, un programa. Operativamente más simple, más fácil de escalar, y que no depende de ti cada hora." },
+            { n: "3", title: "Montarlo ya no cuesta lo que costaba.", body: "Lo que antes costaba años, un equipo y 30.000€ en agencias hoy con IA se construye en 90 días." },
           ].map((item) => (
             <div key={item.n}>
               <h3 className="font-serif text-xl md:text-2xl text-primary-foreground mb-3 flex items-center gap-3">

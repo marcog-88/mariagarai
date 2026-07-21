@@ -13,7 +13,7 @@ export const Letras = () => {
             style={{ borderColor: "#9378fe" }}
           >
             <p className="font-serif text-2xl md:text-3xl italic leading-snug" style={{ color: "#9378fe" }}>
-              "Tardé 3 años en construir lo que te enseño a hacer en 4 meses."
+              "Tardé 3 años en construir lo que te enseño a hacer en 90 días."
             </p>
           </div>
         </Reveal>
@@ -36,7 +36,6 @@ export const Letras = () => {
             {[
               "Dejar de vender mi tiempo en trozos y cursos sueltos a 97€, y crear un solo programa de formación de alto valor (en vez de servir a todos con cosas sueltas).",
               "Elegir el sistema de captación que encajaba conmigo (en vez de estar en todas partes sin estrategia).",
-              "Construir autoridad en redes hablando a un avatar con más poder de compra (sin perseguir seguidores).",
               "Usar la IA como mi socia para montar la infraestructura sin gastar en agencias ni demorarme meses (en vez de hacerlo todo a mano).",
             ].map((item) => (
               <li key={item} className="flex gap-3 text-foreground/80 leading-relaxed">
@@ -47,6 +46,9 @@ export const Letras = () => {
           </ul>
           <p>
             Resultado: ingresos escalables, flexibilidad, más disfrute trabajando.
+          </p>
+          <p>
+            Hoy mi objetivo es más grande: revolucionar la formación online en español. Que crear un programa de calidad, venderlo bien y vivir de tu conocimiento deje de ser un privilegio de unos pocos, y que no nos frenemos a nosotras mismas con un mindset que el mercado anglosajón superó hace años.
           </p>
         </Reveal>
 

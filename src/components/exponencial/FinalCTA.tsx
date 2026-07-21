@@ -12,7 +12,7 @@ export const FinalCTA = () => {
       <div className="container-tight relative">
         <Reveal variant="blur">
           <h2 className="font-serif text-[clamp(2.25rem,5vw,4rem)] leading-[1.05] tracking-tight text-primary-foreground max-w-5xl">
-            En 4 meses,{" "}
+            En 90 días,{" "}
             <br className="md:hidden" />
             <em className="font-serif italic text-mint">tú no eres la misma.</em>
           </h2>
@@ -20,17 +20,23 @@ export const FinalCTA = () => {
 
         <Reveal delay={150}>
           <ul className="mt-12 max-w-3xl space-y-4 text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
-            <li className="flex gap-3"><span>✨</span><span>Un programa de formación altamente rentable con clientes reales pagando</span></li>
-            <li className="flex gap-3"><span>🌟</span><span>Una marca de autoridad que abre puertas mientras tú vives</span></li>
-            <li className="flex gap-3"><span>⚡</span><span>Infraestructura y sistemas con IA que trabajan sin que estés presente cada hora</span></li>
+            <li className="flex gap-3"><span>✨</span><span>Tu programa online de más de 2.000€ con clientes reales pagando</span></li>
+            <li className="flex gap-3"><span>🌟</span><span>Tu academia, tu web y tu embudo montados, tuyos, sin comisiones</span></li>
+            <li className="flex gap-3"><span>⚡</span><span>La IA trabajando como tu socia operativa, y tú sabiendo manejarla como una pro</span></li>
           </ul>
         </Reveal>
 
         <Reveal delay={250}>
           <div className="mt-16">
             <p className="text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
-            <p className="font-serif text-6xl md:text-7xl text-primary-foreground">€4500</p>
-            <p className="mt-2 text-primary-foreground/60 italic text-sm">Máx. 2 clientas nuevas al mes · Por aplicación</p>
+            <div className="flex items-baseline gap-4 flex-wrap">
+              <span className="font-serif text-3xl md:text-4xl text-primary-foreground/40 line-through decoration-primary-foreground/40">
+                €4500
+              </span>
+              <span className="font-serif text-6xl md:text-7xl text-primary-foreground">€3000</span>
+            </div>
+            <p className="mt-2 text-xs uppercase tracking-[0.18em] text-mint font-semibold">Precio de lanzamiento</p>
+            <p className="mt-2 text-primary-foreground/60 italic text-sm">Pago único o fraccionado · Por aplicación</p>
           </div>
 
           <div className="mt-10 flex flex-col items-start gap-10">

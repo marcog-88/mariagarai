@@ -27,6 +27,7 @@ export const Problem = () => {
               "Vendes a contactos y referidos, pero te cuesta conseguir clientes más allá de tu círculo.",
               "Tienes ideas de productos, membresías, grupales… pero no sabes cuál es el mejor formato ni cómo crearlo.",
               "Sabes que necesitas web, sistemas, una academia, pero lo técnico te abruma y te paraliza.",
+              "Pagas cuotas a plataformas que no entiendes del todo y que nunca serán tuyas.",
               "No sabes cuál es el mejor formato para escalar tus ingresos sin que dependa de ti.",
               "Lo haces todo a mano. Sabes que la IA debería ayudarte, pero no sabes cómo.",
             ].map((item) => (

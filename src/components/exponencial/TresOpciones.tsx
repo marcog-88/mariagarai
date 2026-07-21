@@ -9,6 +9,7 @@ const colA = {
     "Años de prueba y error que cuestan dinero y energía",
     "Riesgo de construir lo que no vende",
     "Vendes solo a tu entorno, sin sistema",
+    "Intentar montarlo por tu cuenta en una plataforma de alquiler y atarte a pagar comisiones para siempre",
     "El mismo negocio a medio montar dentro de 12 meses",
   ],
   bottom: "La mayoría sigue aquí. Es la opción más cara a largo plazo.",
@@ -18,23 +19,23 @@ const colC = {
   header: "Contratar por separado",
   sub: "La opción más cara",
   items: [
-    "Mentora + copywriter + consultor IA + estratega = €18.000–€38.000",
+    "Mentora + copywriter + consultor IA + estratega = €14.000–€29.000",
     "Nadie integra las piezas como un todo",
     "Tú coordinas a 4 personas distintas",
     "Meses de onboarding antes de ver resultados",
     "Sin garantía de que las piezas funcionen juntas",
   ],
-  bottom: "Funciona. Pero cuesta el triple y tarda el doble.",
+  bottom: "Funciona. Pero cuesta cinco veces más y tarda el doble.",
 };
 
 const colB = {
   header: "EXPONENCIAL",
-  sub: "4 meses · 1:1 · Con María",
+  sub: "90 días · Todo montado · En propiedad",
   items: [
-    "Los 4 activos montados en el orden correcto",
-    "17 sesiones 1:1 con criterio y dirección",
-    "IA integrada desde el día 1",
-    "Negocio funcionando al final de los 4 meses",
+    "Tu programa definido, validado y vendido con la Fórmula",
+    "Tu academia, tu web y tu embudo montados con la Máquina",
+    "Asesoría experta 1:1 y apoyo diario en comunidad",
+    "Todo tuyo y funcionando en 90 días",
   ],
 };
 

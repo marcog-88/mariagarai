@@ -1,58 +1,61 @@
 import { Check } from "lucide-react";
 import { Reveal } from "@/components/landing/Reveal";
 
-const months = [
+const formula = [
   {
     n: "1",
-    label: "MES 1",
-    title: "Tu Programa Insignia",
-    subtitle: "El modelo de negocio que lo cambia todo",
+    label: "La Fórmula",
+    title: "Tu Plan de Negocio",
+    subtitle: "Qué vendes, a quién y por qué a ti",
     bullets: [
-      "Pivotamos tu negocio: de vender tiempo y servicios sueltos a un solo programa de formación de alto valor.",
-      "Definimos tu método propio, tu avatar ideal y el currículum de tu programa.",
-      "Manual de marca: tu mensaje, tu posicionamiento, tu diferenciación.",
-      "Validamos rápido con clientes reales antes de construir nada.",
+      "Tu nicho, tu avatar con capacidad de compra y tu propuesta de valor, definidos con criterio y por escrito.",
     ],
-    outcome: "Tienes el modelo correcto y un programa que vende, no mil ideas sueltas.",
+    outcome: "Sabes exactamente qué vendes, a quién y por qué a ti.",
   },
   {
     n: "2",
-    label: "MES 2",
-    title: "Tu Marca de Autoridad",
-    subtitle: "LinkedIn + Substack",
+    label: "La Fórmula",
+    title: "Tu Oferta de más de 2.000€",
+    subtitle: "Tu método propio, empaquetado",
     bullets: [
-      "Perfil de LinkedIn optimizado para autoridad y venta.",
-      "Substack lanzado y creciendo.",
-      "Estrategia de contenido con criterio (no publicar por publicar).",
-      "Sistema de ideación y reutilización de contenido con IA.",
+      "Tu método propio convertido en programa: los módulos, las lecciones y las tres capas (formación, acompañamiento e implementación).",
+      "Tus bonos y tu precio, definidos.",
     ],
-    outcome: "Dejas de ser invisible. Los clientes empiezan a llegar a ti.",
+    outcome: "Empaquetado para venderse.",
   },
   {
     n: "3",
-    label: "MES 3",
-    title: "Tus Ventas",
-    subtitle: "El sistema que vende por ti",
+    label: "La Fórmula",
+    title: "Tu Validación",
+    subtitle: "Vendido antes de construirlo entero",
     bullets: [
-      "Manual de ventas adaptado a ti y tu perfil de avatar con mayor poder de compra.",
-      "Guion de llamada de venta para derribar objeciones de tu cliente.",
-      "El embudo de captación que mejor encaja con tu caso, montado.",
-      "Sistema de prospección más allá de tu círculo.",
+      "Sales al mercado antes de construirlo entero: con tus mensajes de venta redactados y nuestro apoyo, prevendes tu programa a clientes reales.",
+      "Consigues tus primeras ventas.",
     ],
-    outcome: "Vendes cada semana, sin presión y más allá de tu entorno.",
+    outcome: "Construyes sobre demanda probada, no sobre esperanza.",
+  },
+];
+
+const maquina = [
+  {
+    title: "Tu página de venta de alta conversión, publicada.",
+    body: "Sección a sección, con tu copy, tu historia y tu oferta, lista para vender.",
   },
   {
-    n: "4",
-    label: "MES 4",
-    title: "Tu Infraestructura con IA",
-    subtitle: "Tu máquina, llave en mano",
-    bullets: [
-      "Tu web y tu sales page que venden el programa.",
-      "Tu academia montada, donde alojas tu formación.",
-      "Notion como sistema operativo: CRM, finanzas, contenido, clientes.",
-      "Claude configurado como tu socia operativa y las automatizaciones donde tocan.",
-    ],
-    outcome: "Sales siendo dueña de toda la máquina. Sin atascarte con lo técnico.",
+    title: "Tu web con tu marca, publicada y tuya.",
+    body: "",
+  },
+  {
+    title: "Tu embudo captando clientes en automático.",
+    body: "Tu lead magnet de diagnóstico con IA que hace sentir a cada lead que le han leído la mente, tu secuencia de email marketing escrita y programada, y tu sistema de webinar para vender sin redes.",
+  },
+  {
+    title: "Tu academia, con tus módulos y tus lecciones dentro.",
+    body: "Tu plataforma propia, con la imagen profesional que tu conocimiento merece, sin pagar cuotas a nadie.",
+  },
+  {
+    title: "Tu CRM, para que ningún cliente ni ninguna venta se te escape.",
+    body: "",
   },
 ];
 
@@ -62,20 +65,34 @@ export const AntesDespues = () => {
       <div className="container-tight">
         <Reveal>
           <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-foreground">
-            Qué construimos cada mes
+            Qué construimos
           </p>
-          <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-none md:whitespace-nowrap mb-14">
-            Cuatro meses. Cuatro activos. <em className="font-serif italic text-[#9378fe]">Montados, no hablados.</em>
+          <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-4xl mb-4">
+            La Fórmula y la Máquina.{" "}
+            <em className="font-serif italic text-[#9378fe]">El método que lo define, la máquina que lo monta.</em>
           </h2>
+          <p className="font-serif italic text-xl md:text-2xl text-foreground/60 mb-14">
+            Montado, no hablado.
+          </p>
+        </Reveal>
+
+        {/* LA FÓRMULA — defines, validas y vendes */}
+        <Reveal>
+          <div className="mb-10">
+            <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.24em]" style={{ color: "#9378fe" }}>
+              La Fórmula
+            </p>
+            <p className="mt-2 text-base md:text-lg text-foreground/70">Defines, validas y vendes.</p>
+          </div>
         </Reveal>
 
         {/* Vertical timeline */}
         <div className="relative">
           <div className="space-y-10">
-            {months.map((step, idx) => (
+            {formula.map((step, idx) => (
               <Reveal key={step.n} delay={80} className="relative pl-12 md:pl-20">
                 {/* Connecting line segment that draws itself in */}
-                {idx < months.length - 1 && (
+                {idx < formula.length - 1 && (
                   <div
                     className="timeline-seg absolute left-4 md:left-6 -translate-x-1/2 top-12 md:top-14 -bottom-12 w-px"
                     style={{ background: "linear-gradient(to bottom, #9378fe, rgba(147,120,254,0.25))" }}
@@ -138,9 +155,44 @@ export const AntesDespues = () => {
           </div>
         </div>
 
+        {/* LA MÁQUINA — lo montamos todo */}
         <Reveal>
-          <p className="mt-8 italic text-sm md:text-base text-center text-[#0c0d0e]/70">
-            Máximo 2 clientas nuevas al mes.
+          <div className="mt-20 mb-10">
+            <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.24em]" style={{ color: "#9378fe" }}>
+              La Máquina
+            </p>
+            <p className="mt-2 text-base md:text-lg text-foreground/70">Lo montamos todo.</p>
+          </div>
+        </Reveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {maquina.map((m, i) => (
+            <Reveal key={m.title} delay={(i % 2) * 130}>
+              <div className="card-lift h-full rounded-xl bg-white border-2 border-[#9378fe]/25 p-8">
+                <div className="flex items-start gap-3">
+                  <span
+                    className="inline-flex items-center justify-center w-6 h-6 rounded-full flex-shrink-0 mt-0.5 text-white text-xs"
+                    style={{ background: "#9378fe" }}
+                    aria-hidden
+                  >
+                    ✓
+                  </span>
+                  <div>
+                    <h3 className="font-serif text-lg md:text-xl leading-snug text-foreground">{m.title}</h3>
+                    {m.body && <p className="mt-3 text-foreground/70 leading-relaxed">{m.body}</p>}
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal>
+          <p
+            className="mt-14 font-serif text-2xl md:text-3xl italic text-center max-w-3xl mx-auto"
+            style={{ color: "#9378fe" }}
+          >
+            Somos el equipo que te ayuda a exprimir tu conocimiento hasta convertirlo en un activo exponencial.
           </p>
 
           <div className="mt-10 flex justify-center">

@@ -30,7 +30,7 @@ export const OnlyDifference = () => {
             Sé todo lo que NO tienes que hacer. Sé lo que NO vende. Sé cómo te saboteas. Las trampas en las que caes y el ruido que te distrae.
           </p>
           <p>
-            Trabajar conmigo no tiene escapatoria: voy a derribar cada objeción y obligarte a pensar en grande. Por eso cada hora de estos 4 meses tendrá un impacto exponencial.
+            Trabajar conmigo no tiene escapatoria: voy a derribar cada objeción y obligarte a pensar en grande. Por eso cada hora de estos 90 días tendrá un impacto exponencial.
           </p>
         </Reveal>
       </div>

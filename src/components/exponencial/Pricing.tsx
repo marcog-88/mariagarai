@@ -2,43 +2,31 @@ import { Reveal } from "@/components/landing/Reveal";
 
 const groups = [
   {
-    title: "01 · Tu Programa Insignia",
+    title: "La Fórmula",
     items: [
-      "Diseño completo de tu programa de formación de alto valor: qué enseñas, a quién, a qué precio",
-      "Mi paso a paso exacto para crear tu currículum y estructurar tus lecciones",
-      "Tu manual de marca personalizado: mensaje, posicionamiento, diferenciación",
+      "Tu Plan de Negocio: tu nicho, tu avatar con capacidad de compra y tu propuesta de valor",
+      "Tu Oferta de más de 2.000€: tu método, tus módulos, tus lecciones, tus bonos y tu precio",
+      "Tu Validación: tus mensajes de venta redactados, la preventa y tus primeras ventas",
     ],
   },
   {
-    title: "02 · Tu Marca de Autoridad",
+    title: "La Máquina",
     items: [
-      "Tu LinkedIn optimizado para abrir carteras y oportunidades",
-      "Tu newsletter en Substack lanzado y creciendo",
-      "Tu estrategia de contenido mensual con sistema de reutilización con IA",
-    ],
-  },
-  {
-    title: "03 · Tus Ventas",
-    items: [
-      "Tu manual de ventas adaptado 100% a ti, con guion de objeciones reales",
-      "Tu embudo de captación montado y tu sistema de prospección más allá de tu entorno",
-      "Sistema de webinar de venta: primer webinar lanzado paso a paso",
-    ],
-  },
-  {
-    title: "04 · Tu Infraestructura con IA",
-    items: [
-      "Tu web y tu sales page que venden el programa",
-      "Tu academia montada (te enseño a montarla y te doy el sistema)",
-      "Tu Notion como sistema operativo: CRM, finanzas, contenido, clientes",
+      "Tu página de venta de alta conversión, publicada",
+      "Tu web con tu marca, publicada y tuya",
+      "Tu embudo con lead magnet de diagnóstico con IA y tu email marketing montado",
+      "Tu sistema de webinar de venta",
+      "Tu academia con tus lecciones dentro, en plataforma propia",
+      "Tu CRM, para que ningún cliente ni ninguna venta se te escape",
     ],
   },
   {
     title: "El acompañamiento",
     items: [
-      "17 sesiones 1:1 con María (60 minutos, semanales)",
-      "WhatsApp directo entre sesiones para dudas urgentes",
-      "Reunión de Socias mensual (comunidad de founders)",
+      "Sesiones 1:1 con tu asesora experta para bloquear cada activo contigo",
+      "Sesión grupal semanal",
+      "Apoyo diario en la comunidad: para dudas, logros, retos y mindset",
+      "Mínimo 3 meses de soporte tras la construcción",
     ],
   },
 ];
@@ -58,7 +46,7 @@ export const Pricing = () => {
             Qué incluye exactamente
           </p>
           <h2 className="font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-tight tracking-tight text-primary-foreground">
-            EXPONENCIAL · 4 MESES · 1:1
+            EXPONENCIAL · 90 DÍAS
           </h2>
         </Reveal>
 
@@ -86,14 +74,22 @@ export const Pricing = () => {
           <div className="mt-20 max-w-2xl">
             <p className="text-sm text-primary-foreground/50">
               Valor de mercado por separado:{" "}
-              <span className="line-through decoration-[#9378fe]/70">€18.400 – €38.000</span>
+              <span className="line-through decoration-[#9378fe]/70">€14.000 – €29.000</span>
             </p>
             <p className="mt-4 text-xs uppercase tracking-[0.24em] text-mint mb-2">Tu inversión</p>
-            <p className="font-serif text-7xl md:text-8xl text-primary-foreground">€4500</p>
+            <div className="flex items-baseline gap-4 flex-wrap">
+              <span className="font-serif text-4xl md:text-5xl text-primary-foreground/40 line-through decoration-primary-foreground/40">
+                €4500
+              </span>
+              <span className="font-serif text-7xl md:text-8xl text-primary-foreground">€3000</span>
+            </div>
+            <p className="mt-2 text-xs uppercase tracking-[0.18em] text-mint font-semibold">
+              Precio de lanzamiento
+            </p>
+            <p className="mt-3 text-sm text-primary-foreground/70">Pago único o fraccionado.</p>
             <p className="mt-1 text-xs italic text-primary-foreground/50">Precio sin IVA.</p>
             <p className="mt-0.5 text-xs italic text-primary-foreground/50">Aplicable según legislación fiscal de tu país de residencia.</p>
 
-            {/* Scarcity — elevated from an italic whisper to a visible commitment */}
             <div
               className="mt-6 inline-flex items-center gap-3 rounded-full px-5 py-3"
               style={{
@@ -101,9 +97,7 @@ export const Pricing = () => {
                 background: "rgba(147,120,254,0.08)",
               }}
             >
-              <p className="text-xs italic text-primary-foreground/50">
-                Máx. <strong>2 clientas nuevas al mes</strong> · Por aplicación
-              </p>
+              <p className="text-xs italic text-primary-foreground/50">Por aplicación</p>
             </div>
 
             <div>

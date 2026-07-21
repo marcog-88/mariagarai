@@ -4,15 +4,15 @@ import { Reveal } from "@/components/landing/Reveal";
 const cardA = [
   "Otro mes cambiando tu tiempo por dinero",
   "Otro mes disperso, sin un modelo claro",
-  "Otro mes invisible mientras otros se posicionan",
+  "Otro mes pagando cuotas por algo que nunca será tuyo",
   "El mismo techo dentro de 12 meses",
 ];
 
 const cardB = [
-  <>Un <strong>programa insignia</strong> altamente rentable ya validado</>,
-  <>Una marca de autoridad que atrae oportunidades</>,
+  <>Tu <strong>programa de más de 2.000€</strong> validado y con clientes reales pagando</>,
+  <>Tu academia, tu web y tu embudo montados y en propiedad</>,
   <>Sistemas con IA que trabajan sin ti cada hora</>,
-  <>Un negocio digital que se ve tan profesional como tú eres</>,
+  <>Un negocio que se ve tan profesional como tú eres</>,
 ];
 
 export const PreguntaReal = () => {
@@ -73,7 +73,7 @@ export const PreguntaReal = () => {
               }}
             >
               <p className="text-xs uppercase tracking-[0.18em] mb-5 font-semibold" style={{ color: "#b7a5ff" }}>
-                En 4 meses
+                En 90 días
               </p>
               <ul className="space-y-3.5">
                 {cardB.map((it, i) => (

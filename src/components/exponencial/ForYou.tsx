@@ -15,10 +15,10 @@ const cards = [
 
 const si = [
   "Ya vendes servicios, coaching o consultoría (online u offline)",
-  "Quieres dejar de vender tu tiempo y crear un programa de formación de alto valor",
+  "Quieres dejar de vender tu tiempo y crear un programa online de más de 2.000€",
   "Quieres acompañamiento personalizado, no más cursos grupales",
   "Estás abierta a aprender herramientas nuevas aunque no seas técnica",
-  "Estás dispuesta a hacer el trabajo cada semana durante 4 meses",
+  "Estás dispuesta a hacer el trabajo cada semana durante 90 días",
 ];
 
 const no = [
@@ -26,7 +26,7 @@ const no = [
   "No tienes muy claro que quieras emprender y estás explorando",
   "No tienes conocimiento o experiencia que enseñar",
   "Solo quieres vender cursos de bajo coste",
-  "No quieres trabajar tu marca personal ni ser referente",
+  "No quieres ser referente de tu tema",
   "No estás dispuesta a usar IA como infraestructura",
 ];
 

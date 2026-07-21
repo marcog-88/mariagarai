@@ -1,34 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { Reveal } from "@/components/landing/Reveal";
 
-const activos = [
-  {
-    n: "1",
-    title: "Tu Programa Insignia",
-    body: "Pivotamos tu negocio hacia un modelo de formación altamente rentable. Definimos tu método propio, tu avatar y el currículum de tu programa. Lo validamos rápido con clientes reales antes de construirlo entero.",
-  },
-  {
-    n: "2",
-    title: "Tu Autoridad",
-    body: "Construimos tu marca en LinkedIn y tu newsletter para que te posiciones como referente de tu tema. Dejas de ser invisible y empiezas a atraer clientes con mayor poder de compra.",
-  },
-  {
-    n: "3",
-    title: "Tus Ventas",
-    body: "Testamos hasta encontrar el sistema de ventas que mejor encaja contigo y lo automatizamos. Tu embudo, tu lead magnet, tu webinar de venta. Para vender cada semana sin presión y más allá de tu entorno.",
-  },
-  {
-    n: "4",
-    title: "Tu Infraestructura con IA",
-    body: "La web que vende tu programa, tus sistemas de gestión internos, el email marketing y, por supuesto, tu academia. Todo montado, paso a paso, contigo. Sin fricción técnica ni una fortuna en agencias.",
-  },
-];
-
 const comoTrabajamos = [
-  { value: "17", countTo: 17, label: "sesiones 1:1", desc: "Una sesión conmigo cada semana, de 60 minutos" },
-  { value: "1×", label: "reunión de socias al mes", desc: "En directo con todas las founders del programa" },
-  { value: "10/10", label: "Todo montado", desc: "Tu web · Tu academia · Tu embudo · Tu newsletter" },
-  { value: "∞", label: "academia para siempre", desc: "Todo el contenido y plantillas, acceso de por vida" },
+  { value: "90", countTo: 90, label: "días", desc: "De la idea al programa vendido y montado" },
+  { value: "1:1", label: "sesiones con tu asesora experta", desc: "Para revisar y bloquear cada activo contigo" },
+  { value: "1×/sem", label: "apoyo constante", desc: "Sesión grupal semanal y apoyo diario en la comunidad: para dudas, logros, retos y mindset" },
+  { value: "3+", label: "meses de soporte después", desc: "Mínimo 3 meses tras la construcción, y después todo el que tú quieras. La idea es que te vuelvas autosuficiente, y que nos tengas cerca siempre que lo necesites" },
 ];
 
 const useCountUp = (target: number, start: boolean, duration = 1200) => {
@@ -98,41 +75,16 @@ export const ParaEso = () => {
 
         <Reveal delay={120}>
           <p className="mt-10 text-lg md:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
-            En 4 meses construimos tu <strong>programa de formación online altamente rentable</strong> para ganar autoridad e ingresos escalables sin depender de tu tiempo. Todo montado, ya vendiendo, sin fricción técnica.
-          </p>
-          <p className="mt-6 text-lg md:text-xl font-semibold text-primary-foreground/90 leading-relaxed max-w-4xl">
-            Construimos cuatro activos:
-          </p>
-        </Reveal>
-
-        <ol className="mt-16 space-y-10">
-          {activos.map((a, i) => (
-            <Reveal key={a.n} as="li" delay={i * 100} className="flex gap-6">
-              <span className="font-serif text-3xl flex-shrink-0 leading-none" style={{ color: "#9378fe" }}>
-                0{a.n}
-              </span>
-              <div>
-                <h3 className="font-bold text-primary-foreground text-lg mb-2 tracking-wide uppercase">{a.title}</h3>
-                <p className="text-primary-foreground/75 leading-relaxed">{a.body}</p>
-              </div>
-            </Reveal>
-          ))}
-        </ol>
-
-        <Reveal>
-          <p className="mt-16 font-serif text-2xl md:text-3xl text-mint italic">
-            Tú, la IA y yo. El equipo que convierte tu conocimiento en un activo exponencial.
+            En 90 días construimos tu <strong>programa online de más de 2.000€</strong> para generar ingresos escalables sin depender de tu tiempo. Todo montado, ya vendiendo, sin fricción técnica.
           </p>
         </Reveal>
 
         <Reveal delay={100}>
           <div className="mt-10 max-w-4xl space-y-4 text-lg text-primary-foreground/70 leading-relaxed">
+            {/* Reescrito: el bloque original usaba la antítesis "esto no es X... es Y", prohibida por las reglas de voz. */}
             <p>
               <span className="font-semibold text-primary-foreground">Importante:</span>{" "}
-              <em>Esto no es una mentoría para hablar de tu negocio. No es una comunidad donde solo hay ruido. No es una agencia que te desconecta del proceso.</em>
-            </p>
-            <p>
-              <em>Exponencial es un programa de acompañamiento e implementación donde te damos la infraestructura de tu programa llave en mano y trabajamos contigo la estrategia de autoridad y ventas.</em>
+              <em>Exponencial es un programa de acompañamiento e implementación. Te damos la infraestructura de tu programa llave en mano y trabajamos contigo la estrategia de validación y ventas.</em>
             </p>
           </div>
         </Reveal>
@@ -143,7 +95,7 @@ export const ParaEso = () => {
               Cómo trabajamos
             </p>
             <h3 className="font-serif text-2xl md:text-3xl text-primary-foreground mb-12">
-              4 meses, codo con codo. No te llevas apuntes. Te llevas la máquina montada.
+              90 días, codo con codo. No te llevas apuntes. Te llevas la máquina montada.
             </h3>
           </Reveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">

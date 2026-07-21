@@ -3,7 +3,7 @@ import { Reveal } from "@/components/landing/Reveal";
 export const Truth = () => {
   const pills = [
     "🚫 Sin perseguir clientes",
-    "📵 Sin publicar 24/7 en redes",
+    "📵 Sin publicar en redes",
     "🔧 Sin pelearte con la parte técnica",
   ];
   return (
@@ -17,25 +17,19 @@ export const Truth = () => {
             La verdad
           </p>
           <h2 className="font-serif text-3xl md:text-5xl leading-[1.1] tracking-tight text-primary-foreground max-w-4xl">
-            Ya tienes el conocimiento. Lo que te falta es pivotar al modelo de negocio correcto{" "}
-            <em className="font-serif italic text-mint">y montar la infraestructura que lo sostiene.</em>
+            Ya tienes el conocimiento. Lo que te falta es el modelo correcto{" "}
+            <em className="font-serif italic text-mint">y la infraestructura que lo sostiene.</em>
           </h2>
         </Reveal>
         <Reveal delay={150}>
           <p className="mt-10 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            Deja de vender tu tiempo por horas y de inventarte cursos y membresías a 97€. Deja de copiar estrategias de otros y de probar un poco de todo. Deja de ver tutoriales en Youtube sobre qué plataforma usar.
+            Tu tiempo no puede ser lo único que vendes. Tus sesiones, tu consulta o tu servicio pueden seguir si quieres. Lo que añades es el activo que trabaja cuando tú no estás: tu programa online de más de 2.000€, con formación, acompañamiento e implementación. Una transformación real para un cliente con alto poder de compra.
           </p>
           <p className="mt-8 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            Eso no es creatividad, es dispersión y te mantiene estancada, ocupada e invisible.
+            Las plataformas de cursos te alquilan una habitación: pagas cada mes, decoras un espacio que nunca será tuyo y te dejan sola con el montaje. En Exponencial sales con tu casa en propiedad: tu academia con tus lecciones, tu web con tu marca, tu embudo trayendo clientes. Diseñada contigo, construida contigo, con las llaves a tu nombre desde el primer día. Sin comisiones, sin alquileres, sin permisos.
           </p>
           <p className="mt-8 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            La solución es simplificar. Transitar a un modelo de formación online altamente rentable: vendes un solo programa de alto valor que combina formación, acompañamiento e implementación. Una transformación real para un avatar con alto poder de compra.
-          </p>
-          <p className="mt-8 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            Este es el mejor modelo para consultores, terapeutas y expertos que quieren dejar de vender servicios sueltos y ser reconocidos como referentes.
-          </p>
-          <p className="mt-8 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            Y aquí está lo que cambia todo: montar esto ya no es lo que era. Antes, tener tu programa, tu web, tu academia y tus sistemas costaba meses de trabajo y miles de euros en agencias y freelancers. Hoy, usando la IA como tu socia, lo puedes montar en meses, no años. Profesional, sin gastar una fortuna, sin demoras.
+            Montar esto costaba meses y miles de euros en agencias. Hoy lo construyes tú en 90 días, con la Máquina Exponencial y apoyo experto a cada paso. Y por el camino te conviertes en una pro de la IA: sabrás mantener, cambiar y hacer crecer tu negocio sin depender de nadie. Desde ahí, el cielo es el límite.
           </p>
           <p className="mt-8 font-serif text-2xl md:text-3xl text-mint italic max-w-4xl">
             Un negocio con más ingresos, autoridad y calma.

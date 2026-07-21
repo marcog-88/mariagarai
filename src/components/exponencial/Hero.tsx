@@ -28,20 +28,26 @@ export const Hero = () => {
             }}
           >
             <span className="badge-pulse-dot rounded-full bg-[#9378fe]" style={{ width: 8, height: 8 }} aria-hidden />
-            EXPONENCIAL · 4 MESES · 1:1
+            EXPONENCIAL · 90 DÍAS
           </div>
+          <p
+            className="animate-fade-up mt-5 md:mt-6 font-serif italic text-lg md:text-2xl text-mint"
+            style={{ animationDelay: "80ms" }}
+          >
+            Tu programa online: montado, validado y en propiedad.
+          </p>
           <h1
-            className="animate-fade-up mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground"
+            className="animate-fade-up mt-4 md:mt-6 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground"
             style={{ animationDelay: "120ms" }}
           >
-            Tienes el conocimiento. Te falta la oferta que lo convierte en{" "}
-            <em className="font-serif italic text-mint">ingresos que escalan.</em>
+            Convierte tu conocimiento en un programa online de más de 2.000€,{" "}
+            <em className="font-serif italic text-mint">vendido y montado en 90 días.</em>
           </h1>
           <p
             className="animate-fade-up mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl"
             style={{ animationDelay: "240ms" }}
           >
-            Te ayudo a empaquetarlo en tu programa insignia de alto valor: la oferta, la autoridad en redes y toda la infraestructura (web, embudo, academia, email marketing) montada contigo, llave en mano.
+            Para profesionales con un conocimiento valioso: sales con tu oferta, tu academia, tu web y tu embudo de ventas montados, validados con clientes reales y en propiedad. Sin publicar en redes. Sin pagar comisiones a plataformas ni agencias.
           </p>
 
           {/* Hero mockup — below headline on mobile */}
@@ -52,7 +58,7 @@ export const Hero = () => {
             {/* Mobile: product shot — readable at small sizes */}
             <img
               src={expoMockupMobile}
-              alt="Exponencial — Tu negocio en 4 meses."
+              alt="Exponencial: tu programa online montado en 90 días."
               className="md:hidden w-full rounded-2xl object-cover"
               style={{ boxShadow: "0 30px 80px -30px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.06)" }}
               loading="eager"
@@ -60,7 +66,7 @@ export const Hero = () => {
             {/* Desktop: full collage */}
             <img
               src={expoMockup}
-              alt="Exponencial — Notion, Claude, LinkedIn y Substack como herramientas de tu negocio moderno."
+              alt="Exponencial: tu academia, tu web, tu embudo y tu CRM montados con IA."
               className="hidden md:block w-full rounded-2xl object-cover"
               style={{ boxShadow: "0 30px 80px -30px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.06)" }}
               loading="eager"

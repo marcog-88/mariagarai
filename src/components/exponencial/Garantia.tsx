@@ -3,11 +3,11 @@ import { Reveal } from "@/components/landing/Reveal";
 
 export const Garantia = () => {
   const items = [
-    "Tu oferta de alto valor validada con clientes reales",
-    "Tu LinkedIn y Substack activos y con autoridad creciente",
-    "Tu web y sales page publicadas",
-    "Tu lead magnet capturando leads automáticamente",
-    "Tu Notion y Claude funcionando como tu sistema operativo",
+    "Tu programa de más de 2.000€ validado con clientes reales",
+    "Tu academia montada con tus lecciones dentro",
+    "Tu web y tu página de venta publicadas",
+    "Tu embudo captando leads en automático",
+    "Tu email marketing y tu CRM funcionando",
   ];
 
   return (
@@ -33,7 +33,7 @@ export const Garantia = () => {
                 Si haces el trabajo, yo garantizo los resultados.
               </h2>
               <p className="mt-8 text-sm md:text-sm lg:text-base text-primary-foreground/80 leading-relaxed">
-                Me comprometo a que al final de los 4 meses tengas:
+                Me comprometo a que al final de los 90 días tengas:
               </p>
               <ul className="mt-4 space-y-3">
                 {items.map((item) => (
@@ -44,13 +44,10 @@ export const Garantia = () => {
                 ))}
               </ul>
               <p className="mt-8 text-sm md:text-sm lg:text-base text-primary-foreground/80 leading-relaxed">
-                No doy garantías de ingresos: nadie honesto las da. Sí garantizo que si haces el trabajo cada semana, sales con los 4 activos montados y funcionando.
+                No doy garantías de ingresos: nadie honesto lo hace. Sí garantizo que si haces el trabajo cada semana, sales con todo montado y funcionando.
               </p>
               <p className="mt-4 text-sm md:text-sm lg:text-base text-primary-foreground/80 leading-relaxed">
                 Si al final algo de esto no está, seguimos trabajando juntas sin coste adicional hasta que lo esté.
-              </p>
-              <p className="text-sm text-primary-foreground/60 mt-4 leading-snug italic">
-                Máximo 2 clientas nuevas al mes. Cuando los huecos están llenos, la lista de espera puede durar semanas.
               </p>
             </div>
           </div>
