@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { Reveal } from "./Reveal";
 
 const items = [
-  { value: "17", countTo: 17, label: "sesiones 1:1", desc: "Una sesión conmigo cada semana, de 60 minutos" },
-  { value: "1×", label: "reunión de socias al mes", desc: "En directo con todas las founders del programa" },
-  { value: "24/7", label: "WhatsApp directo", desc: "Acceso a mí entre sesiones para dudas urgentes" },
+  { value: "12", countTo: 12, label: "sesiones en vivo", desc: "Una sesión grupal cada semana con el equipo de asesoras" },
+  { value: "1×", label: "reunión de comunidad al mes", desc: "En directo con todas las founders del programa" },
+  { value: "24/7", label: "WhatsApp de soporte", desc: "Acceso al equipo entre sesiones para dudas urgentes" },
   { value: "∞", label: "academia para siempre", desc: "Todo el contenido y plantillas, acceso de por vida" },
 ];
 
@@ -71,7 +71,7 @@ export const ComoTrabajamos = () => {
             Cómo trabajamos
           </p>
           <h2 className="font-serif text-2xl md:text-3xl text-primary-foreground mb-12">
-            4 meses, codo con codo. No un curso que ves sola.
+            90 días, codo con codo. Formación, acompañamiento e implementación.
           </h2>
         </Reveal>
         <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">

@@ -21,8 +21,8 @@ export const Exponencial = () => {
             para vivir de tu conocimiento.
           </h2>
           <p className="mt-8 text-lg md:text-xl text-white/60 leading-relaxed max-w-2xl">
-            En 4 meses construimos tu <strong className="text-white/80 font-semibold">programa online altamente rentable</strong> para ganar autoridad e ingresos escalables sin depender de tu tiempo.{" "}
-            <span className="text-white/80">Todo montado, ya vendiendo, sin fricción técnica.</span>
+            En 90 días creamos tu <strong className="text-white/80 font-semibold">programa online de más de 2.000€</strong>: montado, validado con clientes reales y en propiedad.{" "}
+            <span className="text-white/80">Todo funcionando, ya vendiendo, sin fricción técnica.</span>
           </p>
         </Reveal>
 
@@ -56,39 +56,52 @@ export const Exponencial = () => {
 
         {/* Body — single column, full width */}
         <Reveal delay={120} className="mt-12">
-          <p className="text-lg md:text-xl text-white/80 font-semibold leading-relaxed max-w-2xl">
-            Construimos cuatro activos:
+          <div className="max-w-2xl space-y-8">
+            <div className="flex items-start gap-4">
+              <span
+                aria-hidden
+                className="flex-shrink-0 mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full"
+                style={{ background: "#9378fe" }}
+              >
+                <svg viewBox="0 0 12 12" className="h-3 w-3" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="2.5,6.2 5,8.5 9.5,3.5" />
+                </svg>
+              </span>
+              <div>
+                <p className="text-lg md:text-xl font-semibold text-white">
+                  <span style={{ color: "#9378fe" }}>LA FÓRMULA</span> · Defines, validas y vendes.
+                </p>
+                <p className="mt-2 text-base md:text-lg text-white/80 leading-relaxed">
+                  Tu plan de negocio, tu avatar con capacidad de compra y tu oferta de más de 2.000€, con tu método propio y tu currículum. Sales al mercado con nuestro apoyo, prevendes tu programa y consigues tus primeras ventas antes de construirlo entero.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span
+                aria-hidden
+                className="flex-shrink-0 mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full"
+                style={{ background: "#9378fe" }}
+              >
+                <svg viewBox="0 0 12 12" className="h-3 w-3" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="2.5,6.2 5,8.5 9.5,3.5" />
+                </svg>
+              </span>
+              <div>
+                <p className="text-lg md:text-xl font-semibold text-white">
+                  <span style={{ color: "#9378fe" }}>LA MÁQUINA</span> · Lo montamos todo.
+                </p>
+                <p className="mt-2 text-base md:text-lg text-white/80 leading-relaxed">
+                  Tu página de venta, tu web, tu embudo con lead magnet de diagnóstico con IA, tu email marketing, tu academia con tus lecciones dentro y tu CRM. Montado paso a paso contigo, tuyo para siempre, sin pagar comisiones a plataformas ni agencias.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p className="mt-10 max-w-2xl text-base md:text-lg text-white/50 leading-relaxed italic">
+            Las plataformas te alquilan una habitación. De aquí sales con tu casa en propiedad.
           </p>
-          <ul className="mt-8 md:mt-10 text-base md:text-lg text-white max-w-2xl">
-            {[
-              { main: "Tu Programa Insignia.", sub: "Diseñamos una oferta que incluye formación, acompañamiento e implementación. Definimos tu método propio, tu avatar y el currículum de tu programa. Lo validamos rápido con clientes reales antes de construirlo entero." },
-              { main: "Tu Autoridad.", sub: "Construimos tu marca en LinkedIn y tu newsletter para que te posiciones como referente de tu tema. Dejas de ser invisible y empiezas a atraer clientes en vez de perseguirlos." },
-              { main: "Tus Ventas.", sub: "Testamos hasta encontrar el sistema de ventas que mejor encaja contigo y lo automatizamos. Tu embudo, tu guión, tus objeciones resueltas. Para vender cada semana sin presión y más allá de tu entorno." },
-              { main: "Tu Infraestructura con IA.", sub: "La web que vende tu programa, tus sistemas de gestión internos, el email marketing y, por supuesto, tu academia. Todo montado, paso a paso, contigo. Sin fricción técnica ni pagar una fortuna en agencias." },
-            ].map((item) => (
-              <li key={item.main} className="flex items-start gap-2 mb-4">
-                <span
-                  aria-hidden
-                  className="flex-shrink-0 mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full"
-                  style={{ background: "#9378fe" }}
-                >
-                  <svg viewBox="0 0 12 12" className="h-3 w-3" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="2.5,6.2 5,8.5 9.5,3.5" />
-                  </svg>
-                </span>
-                <div>
-                  <span style={{ color: "#9378fe" }}>{item.main}</span>
-                  <p className="text-base mt-0.5 text-white/80">{item.sub}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-10 max-w-2xl space-y-4 text-base md:text-lg text-white/60 leading-relaxed">
+          <div className="mt-8 max-w-2xl text-base md:text-lg text-white/60 leading-relaxed">
             <p>
-              <span className="font-semibold text-white">Importante:</span> <em>No es una mentoría para hablar de tu negocio. No es una comunidad donde solo hay ruido. No es una agencia que te desconecta del proceso.</em>
-            </p>
-            <p>
-              <em>Exponencial es un programa de formación, acompañamiento e implementación donde te damos la infraestructura de tu programa "llave en mano" y trabajamos contigo la estrategia de autoridad y ventas. Sales con todo montado, no con apuntes.</em>
+              Exponencial es un programa de formación, acompañamiento e implementación: te entregamos la infraestructura de tu programa llave en mano y trabajamos contigo la estrategia y las ventas. Sales con todo montado, con tu programa validado y con tus primeras ventas hechas.
             </p>
           </div>
         </Reveal>

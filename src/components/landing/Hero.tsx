@@ -38,7 +38,7 @@ export const Hero = () => {
               className="animate-fade-up mt-8 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "150ms" }}
             >
-              Ayudo a emprendedoras y profesionales independientes a crear un <strong className="text-white font-semibold">programa online altamente rentable</strong> que les de ingresos escalables y autoridad consolidada, sin vender más horas. Mi método y la IA, para construirlo en meses, no en años.
+              Ayudo a emprendedoras y profesionales independientes a crear un <strong className="text-white font-semibold">programa online de más de 2.000€</strong> que les da ingresos escalables y autoridad consolidada, sin vender más horas. Mi método y la IA lo construyen contigo en 90 días.
             </p>
 
             <div
@@ -46,14 +46,14 @@ export const Hero = () => {
               style={{ animationDelay: "300ms" }}
             >
               <a
-                href="#programa-estrella"
+                href="/exponencial"
                 className="btn-primary-lg justify-center w-full md:w-auto !text-white"
                 style={{
                   boxShadow:
                     "0 8px 28px rgba(147, 120, 254, 0.55), 0 14px 56px rgba(147, 120, 254, 0.3)",
                 }}
               >
-                Trabaja conmigo
+                Conoce Exponencial
                 <span aria-hidden>→</span>
               </a>
             </div>
@@ -99,21 +99,21 @@ export const Hero = () => {
               className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "240ms" }}
             >
-              Ayudo a emprendedoras y profesionales independientes a crear un <strong className="text-white font-semibold">programa online altamente rentable</strong> que les de ingresos escalables y autoridad consolidada, sin vender más horas. Mi método y la IA, para construirlo en meses, no en años.
+              Ayudo a emprendedoras y profesionales independientes a crear un <strong className="text-white font-semibold">programa online de más de 2.000€</strong> que les da ingresos escalables y autoridad consolidada, sin vender más horas. Mi método y la IA lo construyen contigo en 90 días.
             </p>
             <div
               className="animate-fade-up flex items-center gap-6"
               style={{ animationDelay: "300ms" }}
             >
               <a
-                href="#programa-estrella"
+                href="/exponencial"
                 className="btn-primary-lg justify-center !text-white"
                 style={{
                   boxShadow:
                     "0 8px 28px rgba(147, 120, 254, 0.55), 0 14px 56px rgba(147, 120, 254, 0.3)",
                 }}
               >
-                Trabaja conmigo
+                Conoce Exponencial
                 <span aria-hidden>→</span>
               </a>
             </div>

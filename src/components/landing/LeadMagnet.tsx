@@ -32,7 +32,7 @@ export const LeadMagnet = () => {
           {/* Left: text + CTA */}
           <Reveal variant="left" className="min-w-0">
             <h2 className="display-md">
-              Aprende a montar tu negocio de alto valor
+              Aprende a crear tu programa online de más de 2.000€
             </h2>
 
             <div className="mt-8 md:hidden">
@@ -46,7 +46,7 @@ export const LeadMagnet = () => {
             </div>
 
             <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
-              Cada semana, en directo, trabajamos una pieza del modelo de formación online altamente rentable para escalar ingresos, impacto y autoridad: cómo diseñar tu oferta, cómo conseguir clientes que pagen más, cómo usar la IA como tu socia. Sales con algo que aplicar ese mismo día.
+              Cada semana, en directo, trabajamos una pieza del modelo: cómo definir tu oferta, cómo validarla con clientes reales, cómo montar tu infraestructura con la IA como tu socia. Sales con algo que aplicar ese mismo día.
             </p>
             <a
               href={LUMA_TALLERES}
