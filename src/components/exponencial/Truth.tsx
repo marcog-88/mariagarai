@@ -3,7 +3,7 @@ import { Reveal } from "@/components/landing/Reveal";
 export const Truth = () => {
   const pills = [
     "🚫 Sin perseguir clientes",
-    "📵 Sin publicar en redes",
+    "💸 Sin pagar comisiones",
     "🔧 Sin pelearte con la parte técnica",
   ];
   return (
@@ -17,7 +17,7 @@ export const Truth = () => {
             La verdad
           </p>
           <h2 className="font-serif text-3xl md:text-5xl leading-[1.1] tracking-tight text-primary-foreground max-w-4xl">
-            Ya tienes el conocimiento. Lo que te falta es el modelo correcto{" "}
+            Lo que te falta es el modelo correcto{" "}
             <em className="font-serif italic text-mint">y la infraestructura que lo sostiene.</em>
           </h2>
         </Reveal>
@@ -26,7 +26,7 @@ export const Truth = () => {
             Tu tiempo no puede ser lo único que vendes. Tus sesiones, tu consulta o tu servicio pueden seguir si quieres. Lo que añades es el activo que trabaja cuando tú no estás: tu programa online de más de 2.000€, con formación, acompañamiento e implementación. Una transformación real para un cliente con alto poder de compra.
           </p>
           <p className="mt-8 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            Las plataformas de cursos te alquilan una habitación: pagas cada mes, decoras un espacio que nunca será tuyo y te dejan sola con el montaje. En Exponencial sales con tu casa en propiedad: tu academia con tus lecciones, tu web con tu marca, tu embudo trayendo clientes. Diseñada contigo, construida contigo, con las llaves a tu nombre desde el primer día. Sin comisiones, sin alquileres, sin permisos.
+            Las plataformas de cursos te alquilan una habitación: pagas cada mes, decoras un espacio que nunca será tuyo y te dejan sola con el montaje. En Exponencial sales con tu casa en propiedad: tu academia con tus lecciones, tu página de venta con tu marca, tu embudo trayendo clientes. Diseñada contigo, construida contigo, con las llaves a tu nombre desde el primer día. Sin comisiones, sin alquileres, sin permisos.
           </p>
           <p className="mt-8 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
             Montar esto costaba meses y miles de euros en agencias. Hoy lo construyes tú en 90 días, con la Máquina Exponencial y apoyo experto a cada paso. Y por el camino te conviertes en una pro de la IA: sabrás mantener, cambiar y hacer crecer tu negocio sin depender de nadie. Desde ahí, el cielo es el límite.

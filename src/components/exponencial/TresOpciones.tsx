@@ -33,7 +33,7 @@ const colB = {
   sub: "90 días · Todo montado · En propiedad",
   items: [
     "Tu programa definido, validado y vendido con la Fórmula",
-    "Tu academia, tu web y tu embudo montados con la Máquina",
+    "Tu academia, tu página de venta y tu embudo montados con la Máquina",
     "Asesoría experta 1:1 y apoyo diario en comunidad",
     "Todo tuyo y funcionando en 90 días",
   ],

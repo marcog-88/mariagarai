@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "¿En qué se diferencia de Skool, Systeme o Kajabi?",
-    a: "Esas plataformas te alquilan una habitación: pagas cada mes, montas tú sola y el espacio nunca es tuyo. En Exponencial construyes tu casa: tu academia, tu web y tu embudo, con ayuda paso a paso, en propiedad y sin comisiones. Y además sales con tu programa validado y vendido, que es lo que ninguna plataforma hace por ti.",
+    a: "Esas plataformas te alquilan una habitación: pagas cada mes, montas tú sola y el espacio nunca es tuyo. En Exponencial construyes tu casa: tu academia, tu página de venta y tu embudo, con ayuda paso a paso, en propiedad y sin comisiones. Y además sales con tu programa validado y vendido, que es lo que ninguna plataforma hace por ti.",
   },
   {
     q: "¿Qué pasa cuando acaban los 90 días y el soporte?",

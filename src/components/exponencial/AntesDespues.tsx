@@ -8,9 +8,9 @@ const formula = [
     title: "Tu Plan de Negocio",
     subtitle: "Qué vendes, a quién y por qué a ti",
     bullets: [
-      "Tu nicho, tu avatar con capacidad de compra y tu propuesta de valor, definidos con criterio y por escrito.",
+      "Aterrizamos tu nicho de experta, tu avatar con mayor capacidad de compra y tu propuesta de valor.",
     ],
-    outcome: "Sabes exactamente qué vendes, a quién y por qué a ti.",
+    outcome: "Sabes exactamente qué vendes, a quién y cómo comunicarlo.",
   },
   {
     n: "2",
@@ -18,21 +18,21 @@ const formula = [
     title: "Tu Oferta de más de 2.000€",
     subtitle: "Tu método propio, empaquetado",
     bullets: [
-      "Tu método propio convertido en programa: los módulos, las lecciones y las tres capas (formación, acompañamiento e implementación).",
-      "Tus bonos y tu precio, definidos.",
+      "Diseñamos la fórmula óptima de empaquetar tu conocimiento y aterrizamos tu programa: módulos, lecciones, bonos, precio.",
+      "Sales al mercado antes de construirlo entero: con tus mensajes de venta redactados y nuestro apoyo, prevendes tu programa a clientes reales.",
     ],
-    outcome: "Empaquetado para venderse.",
+    outcome: "La mejor oferta, lista para venderse.",
   },
   {
     n: "3",
     label: "La Fórmula",
-    title: "Tu Validación",
-    subtitle: "Vendido antes de construirlo entero",
+    title: "Tu Embudo de Ventas",
+    subtitle: "Motores de captación automatizados",
     bullets: [
-      "Sales al mercado antes de construirlo entero: con tus mensajes de venta redactados y nuestro apoyo, prevendes tu programa a clientes reales.",
-      "Consigues tus primeras ventas.",
+      "Creamos un lead magnet de diagnóstico que genera un efecto wow y lanzamos un webinar que vende en directo.",
+      "Montamos las secuencias de email marketing.",
     ],
-    outcome: "Construyes sobre demanda probada, no sobre esperanza.",
+    outcome: "Leads constantes, sin perseguir a nadie.",
   },
 ];
 
@@ -42,19 +42,19 @@ const maquina = [
     body: "Sección a sección, con tu copy, tu historia y tu oferta, lista para vender.",
   },
   {
-    title: "Tu web con tu marca, publicada y tuya.",
-    body: "",
+    title: "Tu lead magnet con IA",
+    body: "Tu lead magnet de diagnóstico con IA que hace sentir a cada lead que le han leído la mente.",
   },
   {
     title: "Tu embudo captando clientes en automático.",
-    body: "Tu lead magnet de diagnóstico con IA que hace sentir a cada lead que le han leído la mente, tu secuencia de email marketing escrita y programada, y tu sistema de webinar para vender sin redes.",
+    body: "Tu secuencia de email marketing escrita y programada, y tu sistema de webinar para vender en directo.",
   },
   {
     title: "Tu academia, con tus módulos y tus lecciones dentro.",
     body: "Tu plataforma propia, con la imagen profesional que tu conocimiento merece, sin pagar cuotas a nadie.",
   },
   {
-    title: "Tu CRM, para que ningún cliente ni ninguna venta se te escape.",
+    title: "Tu CRM y panel de admin, sencillo y funcionando sin dolores de cabeza.",
     body: "",
   },
 ];
@@ -68,11 +68,11 @@ export const AntesDespues = () => {
             Qué construimos
           </p>
           <h2 className="font-serif text-[clamp(2rem,4.5vw,3.25rem)] leading-tight tracking-tight max-w-4xl mb-4">
-            La Fórmula y la Máquina.{" "}
-            <em className="font-serif italic text-[#9378fe]">El método que lo define, la máquina que lo monta.</em>
+            Tu programa online{" "}
+            <em className="font-serif italic text-[#9378fe]">montado y vendiendo.</em>
           </h2>
           <p className="font-serif italic text-xl md:text-2xl text-foreground/60 mb-14">
-            Montado, no hablado.
+            La estrategia con apoyo humano. La infraestructura con apoyo IA.
           </p>
         </Reveal>
 
@@ -192,7 +192,7 @@ export const AntesDespues = () => {
             className="mt-14 font-serif text-2xl md:text-3xl italic text-center max-w-3xl mx-auto"
             style={{ color: "#9378fe" }}
           >
-            Somos el equipo que te ayuda a exprimir tu conocimiento hasta convertirlo en un activo exponencial.
+            Convierte tu conocimiento en un activo exponencial: tu programa online, con tu método, academia propia y sistemas automatizados.
           </p>
 
           <div className="mt-10 flex justify-center">

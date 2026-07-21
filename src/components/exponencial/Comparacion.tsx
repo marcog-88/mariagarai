@@ -14,7 +14,7 @@ const sin = [
 const con = [
   "Un solo programa de más de 2.000€ que escala sin devorarte",
   "Tu programa validado y vendido antes de construirlo entero",
-  "Tu academia, tu web, tu embudo y tu CRM montados, tuyos, sin comisiones",
+  "Tu academia, tu página de venta, tu embudo y tu CRM montados, tuyos, sin comisiones",
   "Subes precios con criterio y los defiendes sin culpa",
   "Un negocio que se ve tan profesional como tú eres",
   "Eres una pro de la IA: sabes mantener y hacer crecer tu infraestructura sin depender de nadie",

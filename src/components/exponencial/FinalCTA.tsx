@@ -21,7 +21,7 @@ export const FinalCTA = () => {
         <Reveal delay={150}>
           <ul className="mt-12 max-w-3xl space-y-4 text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
             <li className="flex gap-3"><span>✨</span><span>Tu programa online de más de 2.000€ con clientes reales pagando</span></li>
-            <li className="flex gap-3"><span>🌟</span><span>Tu academia, tu web y tu embudo montados, tuyos, sin comisiones</span></li>
+            <li className="flex gap-3"><span>🌟</span><span>Tu academia, tu página de venta y tu embudo montados, tuyos, sin comisiones</span></li>
             <li className="flex gap-3"><span>⚡</span><span>La IA trabajando como tu socia operativa, y tú sabiendo manejarla como una pro</span></li>
           </ul>
         </Reveal>

@@ -4,26 +4,26 @@ const groups = [
   {
     title: "La Fórmula",
     items: [
-      "Tu Plan de Negocio: tu nicho, tu avatar con capacidad de compra y tu propuesta de valor",
-      "Tu Oferta de más de 2.000€: tu método, tus módulos, tus lecciones, tus bonos y tu precio",
-      "Tu Validación: tus mensajes de venta redactados, la preventa y tus primeras ventas",
+      "Tu Plan de Negocio: tu nicho de experta, tu avatar con mayor capacidad de compra y tu propuesta de valor",
+      "Tu Oferta de más de 2.000€: módulos, lecciones, bonos y precio, más la preventa a clientes reales con tus mensajes de venta redactados",
+      "Tu Embudo de Ventas: lead magnet de diagnóstico, webinar que vende en directo y secuencias de email marketing",
     ],
   },
   {
     title: "La Máquina",
     items: [
       "Tu página de venta de alta conversión, publicada",
-      "Tu web con tu marca, publicada y tuya",
-      "Tu embudo con lead magnet de diagnóstico con IA y tu email marketing montado",
+      "Tu lead magnet de diagnóstico con IA",
+      "Tu embudo con tu email marketing montado",
       "Tu sistema de webinar de venta",
       "Tu academia con tus lecciones dentro, en plataforma propia",
-      "Tu CRM, para que ningún cliente ni ninguna venta se te escape",
+      "Tu CRM y panel de admin, sencillo y funcionando sin dolores de cabeza",
     ],
   },
   {
     title: "El acompañamiento",
     items: [
-      "Sesiones 1:1 con tu asesora experta para bloquear cada activo contigo",
+      "Sesiones 1:1 con tu asesora experta para revisar y planear cada fase contigo",
       "Sesión grupal semanal",
       "Apoyo diario en la comunidad: para dudas, logros, retos y mindset",
       "Mínimo 3 meses de soporte tras la construcción",

@@ -4,7 +4,6 @@ export const Comparativa = () => {
   const rows = [
     { item: "Definición y validación de oferta de más de 2.000€", market: "€1.500 – €3.000" },
     { item: "Copy y estructura de página de venta de alta conversión", market: "€1.500 – €3.500" },
-    { item: "Web profesional con tu marca", market: "€1.500 – €3.000" },
     { item: "Academia montada con tus lecciones (plataforma propia)", market: "€2.000 – €4.000" },
     { item: "Lead magnet interactivo de diagnóstico con IA", market: "€2.000 – €3.000" },
     { item: "Embudo de captación + email marketing montado", market: "€1.000 – €2.500" },
@@ -65,7 +64,7 @@ export const Comparativa = () => {
                 Contratado por separado
               </p>
               <p className="font-serif text-3xl md:text-4xl text-white/45 line-through decoration-[#9378fe]/70 decoration-2">
-                €14.000 – €29.000
+                €12.500 – €26.000
               </p>
             </div>
             <div

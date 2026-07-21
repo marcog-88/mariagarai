@@ -47,7 +47,7 @@ export const Hero = () => {
             className="animate-fade-up mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl"
             style={{ animationDelay: "240ms" }}
           >
-            Para profesionales con un conocimiento valioso: sales con tu oferta, tu academia, tu web y tu embudo de ventas montados, validados con clientes reales y en propiedad. Sin publicar en redes. Sin pagar comisiones a plataformas ni agencias.
+            Para profesionales con un conocimiento valioso: sales con tu oferta, tu academia, tu página de venta y tu embudo montados, validados con clientes reales y en propiedad. Sin pagar comisiones a plataformas ni agencias.
           </p>
 
           {/* Hero mockup — below headline on mobile */}
@@ -66,7 +66,7 @@ export const Hero = () => {
             {/* Desktop: full collage */}
             <img
               src={expoMockup}
-              alt="Exponencial: tu academia, tu web, tu embudo y tu CRM montados con IA."
+              alt="Exponencial: tu academia, tu página de venta, tu embudo y tu CRM montados con IA."
               className="hidden md:block w-full rounded-2xl object-cover"
               style={{ boxShadow: "0 30px 80px -30px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.06)" }}
               loading="eager"

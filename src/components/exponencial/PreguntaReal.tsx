@@ -10,7 +10,7 @@ const cardA = [
 
 const cardB = [
   <>Tu <strong>programa de más de 2.000€</strong> validado y con clientes reales pagando</>,
-  <>Tu academia, tu web y tu embudo montados y en propiedad</>,
+  <>Tu academia, tu página de venta y tu embudo montados y en propiedad</>,
   <>Sistemas con IA que trabajan sin ti cada hora</>,
   <>Un negocio que se ve tan profesional como tú eres</>,
 ];

@@ -3,9 +3,9 @@ import { Reveal } from "@/components/landing/Reveal";
 
 const comoTrabajamos = [
   { value: "90", countTo: 90, label: "días", desc: "De la idea al programa vendido y montado" },
-  { value: "1:1", label: "sesiones con tu asesora experta", desc: "Para revisar y bloquear cada activo contigo" },
+  { value: "4", countTo: 4, label: "sesiones 1:1 con tu asesora experta", desc: "Para revisar y planear cada fase contigo" },
   { value: "1×/sem", label: "apoyo constante", desc: "Sesión grupal semanal y apoyo diario en la comunidad: para dudas, logros, retos y mindset" },
-  { value: "3+", label: "meses de soporte después", desc: "Mínimo 3 meses tras la construcción, y después todo el que tú quieras. La idea es que te vuelvas autosuficiente, y que nos tengas cerca siempre que lo necesites" },
+  { value: "3+", label: "meses de soporte después", desc: "Mínimo 3 meses tras la construcción, y después todo el que tú quieras" },
 ];
 
 const useCountUp = (target: number, start: boolean, duration = 1200) => {
@@ -75,7 +75,7 @@ export const ParaEso = () => {
 
         <Reveal delay={120}>
           <p className="mt-10 text-lg md:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl">
-            En 90 días construimos tu <strong>programa online de más de 2.000€</strong> para generar ingresos escalables sin depender de tu tiempo. Todo montado, ya vendiendo, sin fricción técnica.
+            En 90 días construimos tu <strong>programa de formación online de alto valor</strong> para generar ingresos escalables y convertirte en autoridad en tu nicho. Todo montado, ya vendiendo, sin pagar comisiones de por vida a plataformas ni agencias.
           </p>
         </Reveal>
 

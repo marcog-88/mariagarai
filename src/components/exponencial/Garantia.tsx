@@ -5,7 +5,7 @@ export const Garantia = () => {
   const items = [
     "Tu programa de más de 2.000€ validado con clientes reales",
     "Tu academia montada con tus lecciones dentro",
-    "Tu web y tu página de venta publicadas",
+    "Tu página de venta publicada",
     "Tu embudo captando leads en automático",
     "Tu email marketing y tu CRM funcionando",
   ];
