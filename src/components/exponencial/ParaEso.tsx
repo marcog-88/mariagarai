@@ -86,6 +86,9 @@ export const ParaEso = () => {
               <span className="font-semibold text-primary-foreground">Importante:</span>{" "}
               <em>Exponencial es un programa de acompañamiento e implementación. Te damos la infraestructura de tu programa llave en mano y trabajamos contigo la estrategia de validación y ventas.</em>
             </p>
+            <p>
+              <em>Las plataformas de cursos te alquilan una habitación: pagas cada mes, decoras un espacio que nunca será tuyo y te dejan sola con el montaje. En Exponencial sales con tu casa en propiedad: tu academia con tus lecciones, tu página de venta con tu marca, tu embudo trayendo clientes. Diseñada contigo, construida contigo, con las llaves a tu nombre desde el primer día. Sin comisiones, sin alquileres, sin permisos.</em>
+            </p>
           </div>
         </Reveal>
 

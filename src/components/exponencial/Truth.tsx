@@ -23,13 +23,13 @@ export const Truth = () => {
         </Reveal>
         <Reveal delay={150}>
           <p className="mt-10 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            Tu tiempo no puede ser lo único que vendes. Tus sesiones, tu consulta o tu servicio pueden seguir si quieres. Lo que añades es el activo que trabaja cuando tú no estás: tu programa online de más de 2.000€, con formación, acompañamiento e implementación. Una transformación real para un cliente con alto poder de compra.
+            Cuando das sesiones, pasas consulta o vendes tu servicio estás cambiando tu tiempo por dinero. Y eso tiene un techo. Lo que te falta es un activo digital que te dé ingresos escalables y consolide tu autoridad en tu nicho.
           </p>
           <p className="mt-8 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            Las plataformas de cursos te alquilan una habitación: pagas cada mes, decoras un espacio que nunca será tuyo y te dejan sola con el montaje. En Exponencial sales con tu casa en propiedad: tu academia con tus lecciones, tu página de venta con tu marca, tu embudo trayendo clientes. Diseñada contigo, construida contigo, con las llaves a tu nombre desde el primer día. Sin comisiones, sin alquileres, sin permisos.
+            No vendes información, vendes una transformación de cero a héroe por la que tu cliente está dispuesto a pagar un precio más alto.
           </p>
           <p className="mt-8 max-w-4xl text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
-            Montar esto costaba meses y miles de euros en agencias. Hoy lo construyes tú en 90 días, con la Máquina Exponencial y apoyo experto a cada paso. Y por el camino te conviertes en una pro de la IA: sabrás mantener, cambiar y hacer crecer tu negocio sin depender de nadie. Desde ahí, el cielo es el límite.
+            Montar esto costaba meses y miles de euros en agencias o comisiones a plataformas. Hoy lo construyes tú en 90 días, con la Máquina Exponencial y apoyo experto a cada paso. Y por el camino te conviertes en una pro de la IA: sabrás mantener, cambiar y hacer crecer tu negocio sin depender de nadie. Desde ahí, el cielo es el límite.
           </p>
           <p className="mt-8 font-serif text-2xl md:text-3xl text-mint italic max-w-4xl">
             Un negocio con más ingresos, autoridad y calma.

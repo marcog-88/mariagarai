@@ -30,18 +30,12 @@ export const Hero = () => {
             <span className="badge-pulse-dot rounded-full bg-[#9378fe]" style={{ width: 8, height: 8 }} aria-hidden />
             EXPONENCIAL · 90 DÍAS
           </div>
-          <p
-            className="animate-fade-up mt-5 md:mt-6 font-serif italic text-lg md:text-2xl text-mint"
-            style={{ animationDelay: "80ms" }}
-          >
-            Tu programa online: montado, validado y en propiedad.
-          </p>
           <h1
-            className="animate-fade-up mt-4 md:mt-6 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground"
+            className="animate-fade-up mt-6 md:mt-0 font-serif text-[2rem] md:text-[clamp(2.75rem,6vw,5rem)] leading-[1.15] md:leading-[1.05] tracking-tight text-primary-foreground"
             style={{ animationDelay: "120ms" }}
           >
-            Convierte tu conocimiento en un programa online de más de 2.000€,{" "}
-            <em className="font-serif italic text-mint">vendido y montado en 90 días.</em>
+            Monta y vende tu programa de formación online{" "}
+            <em className="font-serif italic text-mint">en 90 días.</em>
           </h1>
           <p
             className="animate-fade-up mt-10 text-sm md:text-base lg:text-xl text-primary-foreground/80 leading-relaxed max-w-4xl"
