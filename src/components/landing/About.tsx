@@ -52,15 +52,6 @@ export const About = () => {
               a un avatar específico.
             </p>
             <p>
-              Usando la Inteligencia artificial como mi socia, monté una infraestructura que
-              se viera profesional, sin gastar en agencias ni demorarme meses.
-            </p>
-            <p>
-              Simplifiqué mi negocio y construí un programa más transformador y altamente
-              rentable que me da más autoridad y calma, sin perseguir clientes ni publicar
-              constantemente en redes.
-            </p>
-            <p>
               <strong className="text-foreground">Resultado: ingresos escalables, agenda más vacía, satisfacción plena.</strong>
             </p>
             <p>

@@ -18,11 +18,10 @@ export const Exponencial = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight leading-tight text-white">
             La fórmula{" "}
             <em className="italic" style={{ color: "#9378fe" }}>EXPONENCIAL</em>{" "}
-            para vivir de tu conocimiento.
+            para monetizar tu conocimiento
           </h2>
           <p className="mt-8 text-lg md:text-xl text-white/60 leading-relaxed max-w-2xl">
-            En 90 días creamos tu <strong className="text-white/80 font-semibold">programa online de más de 2.000€</strong>: montado, validado con clientes reales y en propiedad.{" "}
-            <span className="text-white/80">Todo funcionando, ya vendiendo, sin fricción técnica.</span>
+            En 90 días tienes tu <strong className="text-white/80 font-semibold">programa de formación online</strong> que vendes a más de 2.000€. Tu conocimiento empaquetado con una infraestructura profesional y sin quebraderos técnicos.
           </p>
         </Reveal>
 
@@ -96,14 +95,14 @@ export const Exponencial = () => {
               </div>
             </div>
           </div>
-          <p className="mt-10 max-w-2xl text-base md:text-lg text-white/50 leading-relaxed italic">
-            Las plataformas te alquilan una habitación. De aquí sales con tu casa en propiedad.
-          </p>
           <div className="mt-8 max-w-2xl text-base md:text-lg text-white/60 leading-relaxed">
             <p>
               Exponencial es un programa de formación, acompañamiento e implementación: te entregamos la infraestructura de tu programa llave en mano y trabajamos contigo la estrategia y las ventas. Sales con todo montado, con tu programa validado y con tus primeras ventas hechas.
             </p>
           </div>
+          <p className="mt-8 max-w-2xl text-base md:text-lg text-white/50 leading-relaxed italic">
+            Las plataformas como Skool o Systeme te alquilan una habitación. De aquí sales con tu casa en propiedad, ya amueblada, hecha por y para ti. ¿Ves la diferencia?
+          </p>
         </Reveal>
 
         {/* CTA */}
