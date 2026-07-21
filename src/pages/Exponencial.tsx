@@ -37,10 +37,10 @@ const Exponencial = () => (
     <PorQueAhora />
     <Comparativa />
     <TresOpciones />
+    <Bonuses />
     <Garantia />
     <Pricing />
     <PreguntaReal />
-    <Bonuses />
     <FAQ />
     <FinalCTA />
     <Footer />
