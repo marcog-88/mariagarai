@@ -9,6 +9,7 @@ const formula = [
     subtitle: "Qué vendes, a quién y por qué a ti",
     bullets: [
       "Aterrizamos tu nicho de experta, tu avatar con mayor capacidad de compra y tu propuesta de valor.",
+      "Definimos el mejor modelo de negocio para convertirte en una referente de autoridad exponencial en tu mercado.",
     ],
     outcome: "Sabes exactamente qué vendes, a quién y cómo comunicarlo.",
   },
@@ -30,7 +31,7 @@ const formula = [
     subtitle: "Motores de captación automatizados",
     bullets: [
       "Creamos un lead magnet de diagnóstico que genera un efecto wow y lanzamos un webinar que vende en directo.",
-      "Montamos las secuencias de email marketing.",
+      "Montamos las secuencias de email marketing que te traen llamadas de venta todas las semanas.",
     ],
     outcome: "Leads constantes, sin perseguir a nadie.",
   },
