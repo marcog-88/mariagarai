@@ -98,9 +98,7 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
 
             <li>
               <a
-                href="https://haztegrande.substack.com/embed"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#newsletter"
                 className={`group relative flex items-center gap-1.5 text-sm transition-colors duration-200 ease-out hover:text-accent ${
                   onDark ? "text-white/75" : "text-foreground/70"
                 }`}
@@ -217,9 +215,7 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
               style={{ transitionDelay: open ? "300ms" : "0ms" }}
             >
               <a
-                href="https://haztegrande.substack.com/embed"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#newsletter"
                 className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
                 onClick={() => setOpen(false)}
               >
