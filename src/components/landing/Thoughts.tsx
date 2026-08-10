@@ -1,16 +1,15 @@
 import { Reveal } from "./Reveal";
 
 const desires = [
-  "Un negocio que te dé calma y autoridad.",
-  "Simplificar tu caos.",
+  "Un negocio que te de calma y autoridad.",
+  "Pasar de idea a realidad.",
   "Menos reuniones de Zoom.",
   "Simplicidad y alta rentabilidad.",
-  "Ser referente, no invisible.",
-  "Montar algo sólido que se vea profesional.",
+  "Ser referente en tu sector.",
   "__Un programa que transforme vidas.__",
   "Sentir orgullo por lo que has creado.",
-  "Vender cada semana sin presión.",
   "Que los clientes te encuentren.",
+  "Exprimir todo tu potencial.",
   "Aprovechar la IA a tu favor.",
 ];
 
@@ -49,7 +48,7 @@ export const Thoughts = () => {
               );
             })}
             <Reveal as="p" variant="scale" className="font-bold text-accent !mt-12 text-4xl md:text-6xl">
-              Disfrutar trabajando. Ser dueña de tu tiempo.
+              Disfrutar trabajando. Ser dueño de tu tiempo.
             </Reveal>
           </div>
         </div>

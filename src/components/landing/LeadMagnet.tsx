@@ -24,7 +24,7 @@ export const LeadMagnet = () => {
               style={{ width: 8, height: 8 }}
               aria-hidden
             />
-            Live<span className="hidden sm:inline"> · Martes 6pm España</span>
+            Gratis<span className="hidden sm:inline"> · Taller en Vivo</span>
           </a>
         </Reveal>
 
@@ -32,7 +32,7 @@ export const LeadMagnet = () => {
           {/* Left: text + CTA */}
           <Reveal variant="left" className="min-w-0">
             <h2 className="display-md">
-              Aprende a crear tu programa online de más de 2.000€
+              El mejor modelo de negocio digital para expertos
             </h2>
 
             <div className="mt-8 md:hidden">
@@ -46,7 +46,8 @@ export const LeadMagnet = () => {
             </div>
 
             <p className="mt-6 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
-              Cada semana, en directo, trabajamos una pieza del modelo: cómo definir tu oferta, cómo validarla con clientes reales, cómo montar tu infraestructura con la IA como tu socia. Sales con algo que aplicar ese mismo día.
+              Para profesionales de la salud, juristas, consultores, coaches, profesores y mentores.<br />
+              Cada día, en directo, te enseño cómo empaquetar lo que sabes en un curso online: cómo ponerle precio, cómo validarlo con clientes y cómo usar la IA para montar tu infraestructura. Descubre si a ti también te encaja.
             </p>
             <a
               href={LUMA_TALLERES}
@@ -71,7 +72,7 @@ export const LeadMagnet = () => {
           </Reveal>
         </div>
         <p className="mt-6 text-sm text-foreground/55 italic">
-          +300 founders ya han pasado por el Live.
+          Sales con algo que aplicar ese mismo día.
         </p>
       </div>
     </section>

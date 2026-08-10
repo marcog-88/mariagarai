@@ -17,50 +17,31 @@ export const About = () => {
         >
           <Reveal>
             <p className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em] text-accent">
-              Esta es mi historia
+              Quién está detrás
             </p>
             <h2 className="display-md">
-              Más de una década en corporate.{" "}
-              <span className="font-serif italic text-accent md:block">
-                <span className="md:hidden"><br />Y aun así, salir al mercado fue un desastre.</span>
-                <span className="hidden md:inline">Y aun así, salir al mercado fue un desastre.</span>
-              </span>
+              ¡Hola! Soy María Garai.
             </h2>
           </Reveal>
           <Reveal delay={150} className="mt-10 space-y-6 text-lg md:text-xl lg:text-sm text-foreground/75 leading-relaxed">
             <p>
-              ONU. Procter &amp; Gamble. Startups tech. Títulos rimbombantes y sueldo de
-              seis cifras. Pero cuando reuní el coraje de soltar la jaula de oro me hice
-              pequeña.
+              El modelo de trabajo tradicional no es para mí. Jurista de formación. Dejé
+              una carrera internacional en la ONU y el mundo corporativo para abrir mi
+              propio camino.
             </p>
             <p>
-              Tenía el conocimiento, pero vendía servicios sueltos, por debajo de mi valor.
+              Esto es lo que pienso: hay otra forma de vivir de tu conocimiento que no sea
+              intercambiando tu tiempo por dinero, ya sea por cuenta ajena o propia.
             </p>
             <p>
-              Copiaba lo que otros hacían y probaba cosas, pero sin claridad. Me daba miedo
-              sonar como todos, pero tampoco quería ennicharme. Vivía persiguiendo clientes,
-              pero abrumada entre reuniones de Zoom.
+              El negocio de educación online es un mercado de 250 mil millones de dólares
+              que crece cada año. La oportunidad en el mundo hispano es inmensa: en todos
+              los sectores hay espacio para voces referentes que entreguen su valor a escala
+              y tengan un impacto, autoridad e ingresos exponenciales.
             </p>
             <p>
-              Toqué fondo. Pasé por burnout. Me desesperé.
-            </p>
-            <p>
-              El punto de inflexión llegó cuando trabajé mi mentalidad y estrategia para
-              apostar por el mejor modelo de negocio para expertos que venden servicios.
-              Dejé de vender mi tiempo y cursos a 97€ y decidí crear un solo programa de
-              formación que empaquetara mi conocimiento y resolviera un problema muy concreto
-              a un avatar específico.
-            </p>
-            <p>
-              <strong className="text-foreground">Resultado: ingresos escalables, agenda más vacía, satisfacción plena.</strong>
-            </p>
-            <p>
-              Esto es exactamente lo que te enseño a hacer.
-            </p>
-            <p>
-              Haberla cagado tanto tiene una ventaja: conozco tu caos, sé dónde fallas y
-              sé cómo ayudarte a salir de ahí. Mi misión es ayudarte a pivotar a un modelo
-              de negocio donde puedas brillar y vivir de lo tuyo, sin años de prueba y error.
+              Mi misión es ponértelo fácil: ayudarte a diseñar, montar y vender un curso
+              online que te permita llegar a más personas y volverte exponencial.
             </p>
           </Reveal>
         </div>
