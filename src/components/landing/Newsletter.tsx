@@ -19,7 +19,7 @@ export const Newsletter = () => {
           </h2>
           <p className="mt-8 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-4xl">
             Artículos sobre estrategia y mentalidad para dejar de jugar en
-            pequeño y vivir de lo tuyo, sin años de prueba y error.
+            pequeño y vivir de lo tuyo, a tu manera, sin años de prueba y error.
           </p>
         </Reveal>
 

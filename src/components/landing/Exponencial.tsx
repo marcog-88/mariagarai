@@ -16,12 +16,10 @@ export const Exponencial = () => {
             Trabaja conmigo
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight leading-tight text-white">
-            La fórmula{" "}
-            <em className="italic" style={{ color: "#9378fe" }}>EXPONENCIAL</em>{" "}
-            para monetizar tu conocimiento
+            Crea y lanza tu curso online en 90 días
           </h2>
           <p className="mt-8 text-lg md:text-xl text-white/60 leading-relaxed max-w-2xl">
-            En 90 días tienes tu <strong className="text-white/80 font-semibold">programa de formación online</strong> que vendes a más de 2.000€. Tu conocimiento empaquetado con una infraestructura profesional y sin quebraderos técnicos.
+            El sistema para crear y lanzar tu curso online con toda la infraestructura digital montada, sin mareos técnicos.
           </p>
         </Reveal>
 
@@ -68,10 +66,10 @@ export const Exponencial = () => {
               </span>
               <div>
                 <p className="text-lg md:text-xl font-semibold text-white">
-                  <span style={{ color: "#9378fe" }}>LA FÓRMULA</span> · Defines, validas y vendes.
+                  <span style={{ color: "#9378fe" }}>FASE 1: LA FÓRMULA</span> · Diseñamos y validamos.
                 </p>
                 <p className="mt-2 text-base md:text-lg text-white/80 leading-relaxed">
-                  Tu plan de negocio, tu avatar con capacidad de compra y tu oferta de más de 2.000€, con tu método propio y tu currículum. Sales al mercado con nuestro apoyo, prevendes tu programa y consigues tus primeras ventas antes de construirlo entero.
+                  Definimos tu plan de negocio, tu avatar con mayor capacidad de compra, tu programa por dentro y su precio. Te ayudamos a salir al mercado y conseguir tus primeras ventas, sin redes ni anuncios.
                 </p>
               </div>
             </div>
@@ -87,17 +85,17 @@ export const Exponencial = () => {
               </span>
               <div>
                 <p className="text-lg md:text-xl font-semibold text-white">
-                  <span style={{ color: "#9378fe" }}>LA MÁQUINA</span> · Lo montamos todo.
+                  <span style={{ color: "#9378fe" }}>FASE 2: LA MÁQUINA</span> · Lo montamos todo.
                 </p>
                 <p className="mt-2 text-base md:text-lg text-white/80 leading-relaxed">
-                  Tu página de venta, tu web, tu embudo con lead magnet de diagnóstico con IA, tu email marketing, tu academia con tus lecciones dentro y tu CRM. Montado paso a paso contigo, tuyo para siempre, sin pagar comisiones a plataformas ni agencias.
+                  Tu página de venta, tu embudo de captación automatizado, tu email marketing, tu academia con tus lecciones dentro y tu CRM para gestionar alumnos. Montado paso a paso contigo, con ayuda de la IA, tuyo para siempre, sin pagar comisiones a plataformas ni agencias.
                 </p>
               </div>
             </div>
           </div>
           <div className="mt-8 max-w-2xl text-base md:text-lg text-white/60 leading-relaxed">
             <p>
-              Exponencial es un programa de formación, acompañamiento e implementación: te entregamos la infraestructura de tu programa llave en mano y trabajamos contigo la estrategia y las ventas. Sales con todo montado, con tu programa validado y con tus primeras ventas hechas.
+              Exponencial te ofrece algo que no existe en el mercado: te entregamos la infraestructura de tu programa llave en mano y trabajamos contigo la estrategia y las ventas. Sales con todo montado, con tu programa validado y con tus primeras ventas hechas.
             </p>
           </div>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-white/50 leading-relaxed italic">
