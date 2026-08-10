@@ -17,7 +17,7 @@ export const CTA = () => {
         </Reveal>
         <Reveal delay={150}>
           <p className="mt-10 max-w-4xl text-lg md:text-xl text-primary-foreground leading-relaxed">
-            Reserva una llamada y lo vemos juntas.
+            Para expertos con un conocimiento valioso que quieran monetizarlo con un curso online rentable y profesional.
           </p>
         </Reveal>
 
@@ -33,9 +33,12 @@ export const CTA = () => {
                   "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
               }}
             >
-              Reservar llamada a coste 0
+              Reserva llamada de valoración
               <span aria-hidden>↗</span>
             </a>
+            <p className="mt-4 text-sm italic text-primary-foreground/50">
+              Evaluamos tu caso a coste cero.
+            </p>
           </div>
         </Reveal>
       </div>
