@@ -21,6 +21,12 @@ export const Hero = () => {
               fetchPriority="high"
               decoding="sync"
             />
+            <p
+              className="animate-fade-up mb-8 font-sans text-xs md:text-sm font-semibold uppercase tracking-widest text-accent"
+              style={{ animationDelay: "0ms" }}
+            >
+              Tu conocimiento es Exponencial
+            </p>
             <h1
               className="animate-fade-up font-serif text-[clamp(2.5rem,8vw,3.5rem)] md:text-[clamp(2.75rem,5vw,4.5rem)] leading-[1.05] tracking-tight text-white"
               style={{ animationDelay: "80ms" }}
@@ -32,7 +38,7 @@ export const Hero = () => {
               className="animate-fade-up mt-8 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "150ms" }}
             >
-              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio.
+              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio. Sin bloqueos técnicos ni dudas al venderlo.
             </p>
 
             <div
@@ -62,6 +68,12 @@ export const Hero = () => {
           <div className="flex flex-col justify-between w-full lg:w-[58%] pt-0 pb-8">
             {/* Headline group */}
             <div>
+              <p
+                className="animate-fade-up mb-10 font-sans text-sm font-semibold uppercase tracking-widest text-accent"
+                style={{ animationDelay: "0ms" }}
+              >
+                Tu conocimiento es Exponencial
+              </p>
               <span
                 className="animate-fade-up font-serif text-[clamp(2.5rem,3.5vw,3.75rem)] leading-[1.05] tracking-tight text-white"
                 style={{ animationDelay: "80ms" }}
@@ -79,7 +91,7 @@ export const Hero = () => {
               className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "240ms" }}
             >
-              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio.
+              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio. Sin bloqueos técnicos ni dudas al venderlo.
             </p>
             <div
               className="animate-fade-up flex items-center gap-6"
