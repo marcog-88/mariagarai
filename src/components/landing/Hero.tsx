@@ -32,7 +32,7 @@ export const Hero = () => {
               className="animate-fade-up mt-8 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "150ms" }}
             >
-              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que se vea profesional y sea rentable.
+              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio.
             </p>
 
             <div
@@ -79,7 +79,7 @@ export const Hero = () => {
               className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "240ms" }}
             >
-              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que se vea profesional y sea rentable.
+              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio.
             </p>
             <div
               className="animate-fade-up flex items-center gap-6"

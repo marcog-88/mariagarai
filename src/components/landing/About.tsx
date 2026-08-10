@@ -30,18 +30,32 @@ export const About = () => {
               propio camino.
             </p>
             <p>
+              No fue fácil. Los negocios digitales son confusos y aún teniendo mucho que
+              ofrecer, es fácil dispersarse, sabotearse y abrumarse entre tanto ruido.
+            </p>
+            <p>
+              En mis primeros años como emprendedora, probé varios sectores y modelos de
+              negocio, me formé en ventas y aprendí a construir activos digitales con IA.
+            </p>
+            <p>
+              Así fundé Exponencial, donde ayudamos a expertos a crear y lanzar un curso
+              online, sin años de prueba y error, para que puedan salir del modelo de
+              trabajo tradicional y crear el suyo propio.
+            </p>
+            <p>
               Esto es lo que pienso: hay otra forma de vivir de tu conocimiento que no sea
               intercambiando tu tiempo por dinero, ya sea por cuenta ajena o propia.
             </p>
             <p>
-              El negocio de educación online es un mercado de 250 mil millones de dólares
-              que crece cada año. La oportunidad en el mundo hispano es inmensa: en todos
-              los sectores hay espacio para voces referentes que entreguen su valor a escala
-              y tengan un impacto, autoridad e ingresos exponenciales.
+              La educación online es un mercado de 250 mil millones de dólares que crece
+              cada año. La oportunidad en el mundo hispano es inmensa: en todos los sectores
+              hay espacio para voces referentes que entreguen su valor a escala y tengan un
+              impacto, autoridad e ingresos exponenciales.
             </p>
             <p>
-              Mi misión es ponértelo fácil: ayudarte a diseñar, montar y vender un curso
-              online que te permita llegar a más personas y volverte exponencial.
+              Mi misión es que te hagas más grande y apuestes por ti. Para ello, te ayudo
+              a diseñar, montar y vender un curso online que te permita llegar a más
+              personas y volverte exponencial.
             </p>
           </Reveal>
         </div>
