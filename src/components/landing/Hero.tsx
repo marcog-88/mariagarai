@@ -87,29 +87,27 @@ export const Hero = () => {
                 ese curso online que tienes en mente
               </em>
             </div>
-            <div>
-              <p
-                className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
-                style={{ animationDelay: "240ms" }}
+            <p
+              className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
+              style={{ animationDelay: "240ms" }}
+            >
+              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio. Sin bloqueos técnicos ni dudas al venderlo.
+            </p>
+            <div
+              className="animate-fade-up mb-24 flex items-center gap-6"
+              style={{ animationDelay: "300ms" }}
+            >
+              <a
+                href="/exponencial"
+                className="btn-primary-lg justify-center !text-white"
+                style={{
+                  boxShadow:
+                    "0 8px 28px rgba(147, 120, 254, 0.55), 0 14px 56px rgba(147, 120, 254, 0.3)",
+                }}
               >
-                Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio. Sin bloqueos técnicos ni dudas al venderlo.
-              </p>
-              <div
-                className="animate-fade-up mt-10 flex items-center gap-6"
-                style={{ animationDelay: "300ms" }}
-              >
-                <a
-                  href="/exponencial"
-                  className="btn-primary-lg justify-center !text-white"
-                  style={{
-                    boxShadow:
-                      "0 8px 28px rgba(147, 120, 254, 0.55), 0 14px 56px rgba(147, 120, 254, 0.3)",
-                  }}
-                >
-                  Conoce Exponencial
-                  <span aria-hidden>→</span>
-                </a>
-              </div>
+                Conoce Exponencial
+                <span aria-hidden>→</span>
+              </a>
             </div>
           </div>
 

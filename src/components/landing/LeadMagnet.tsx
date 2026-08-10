@@ -49,7 +49,7 @@ export const LeadMagnet = () => {
               Para profesionales de la salud, juristas, consultores, coaches, profesores y mentores.
             </p>
             <p className="mt-4 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
-              Cada día, en directo, te enseño cómo empaquetar lo que sabes en un curso online: cómo ponerle precio, cómo validarlo con clientes y cómo usar la IA para montar tu infraestructura. Descubre si a ti también te encaja.
+              Cada día, en directo, te enseño cómo empaquetar lo que sabes en un curso online: cómo ponerle precio, cómo validarlo con clientes y cómo usar la IA para montar tu infraestructura. Ven a descubrir cómo hacerlo en tu negocio.
             </p>
             <a
               href={LUMA_TALLERES}
