@@ -19,7 +19,7 @@ export const Exponencial = () => {
             Crea y lanza tu curso online en 90 días
           </h2>
           <p className="mt-8 text-lg md:text-xl text-white/60 leading-relaxed max-w-2xl">
-            El sistema para crear y lanzar tu curso online con toda la infraestructura digital montada, sin mareos técnicos.
+            El sistema para empaquetar tu conocimiento en un curso online con toda la infraestructura digital montada, sin bloqueos técnicos ni dudas al venderlo.
           </p>
         </Reveal>
 
