@@ -21,12 +21,6 @@ export const Hero = () => {
               fetchPriority="high"
               decoding="sync"
             />
-            <p
-              className="animate-fade-up mb-8 font-sans text-xs md:text-sm font-semibold uppercase tracking-widest text-accent"
-              style={{ animationDelay: "0ms" }}
-            >
-              Tu conocimiento es exponencial
-            </p>
             <h1
               className="animate-fade-up font-serif text-[clamp(2.5rem,8vw,3.5rem)] md:text-[clamp(2.75rem,5vw,4.5rem)] leading-[1.05] tracking-tight text-white"
               style={{ animationDelay: "80ms" }}
@@ -58,14 +52,6 @@ export const Hero = () => {
               </a>
             </div>
 
-            <p
-              className="animate-fade-up mt-10 text-xs md:text-sm italic font-light text-white/35 leading-relaxed whitespace-nowrap"
-              style={{ animationDelay: "450ms" }}
-            >
-              <span className="text-white/70">ONU</span> ·{" "}
-              <span className="text-white/70">Procter &amp; Gamble</span> ·{" "}
-              <span className="text-white/70">Startups</span> · +10 años<span className="hidden md:inline"> de experiencia</span>
-            </p>
           </div>
         </div>
 
@@ -76,12 +62,6 @@ export const Hero = () => {
           <div className="flex flex-col justify-between w-full lg:w-[58%] pt-0 pb-8">
             {/* Headline group */}
             <div>
-              <p
-                className="animate-fade-up mb-10 font-sans text-sm font-semibold uppercase tracking-widest text-accent"
-                style={{ animationDelay: "0ms" }}
-              >
-                Tu conocimiento es exponencial
-              </p>
               <span
                 className="animate-fade-up font-serif text-[clamp(2.5rem,3.5vw,3.75rem)] leading-[1.05] tracking-tight text-white"
                 style={{ animationDelay: "80ms" }}
@@ -117,14 +97,6 @@ export const Hero = () => {
                 <span aria-hidden>→</span>
               </a>
             </div>
-            <p
-              className="animate-fade-up text-xs italic font-light text-white/35 leading-relaxed whitespace-nowrap"
-              style={{ animationDelay: "450ms" }}
-            >
-              <span className="text-white/70">ONU</span> ·{" "}
-              <span className="text-white/70">Procter &amp; Gamble</span> ·{" "}
-              <span className="text-white/70">Startups</span> · +10 años de experiencia
-            </p>
           </div>
 
           {/* Portrait column — full-body cutout, top-aligned */}
