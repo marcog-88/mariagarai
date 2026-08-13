@@ -2,7 +2,11 @@ import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
-const LUMA_LIVE = "/eventos";
+// Events moved to laexponencial.com (Phase 1 migration, Session 5). This nav
+// serves both /construye and /redes-que-venden (redes/Nav.tsx re-exports it),
+// so leaving the old relative /eventos here would have left dead Live links on
+// two surviving routes.
+const LUMA_LIVE = "https://www.laexponencial.com/eventos";
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);

@@ -1,3 +1,20 @@
 {
+  "redirects": [
+    {
+      "source": "/eventos/:slug",
+      "destination": "https://www.laexponencial.com/eventos/:slug",
+      "statusCode": 301
+    },
+    {
+      "source": "/eventos",
+      "destination": "https://www.laexponencial.com/eventos",
+      "statusCode": 301
+    },
+    {
+      "source": "/disena-tu-oferta",
+      "destination": "https://www.laexponencial.com/disena-tu-curso",
+      "statusCode": 301
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
