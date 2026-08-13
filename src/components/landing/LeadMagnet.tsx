@@ -1,7 +1,12 @@
 import mockup from "@/assets/talleres-live-mockup.png";
 import { Reveal } from "./Reveal";
 
-const LUMA_TALLERES = "https://www.mariagarai.com/eventos";
+// Events moved to laexponencial.com (Phase 1 migration, Session 5). This is a
+// homepage body CTA rather than a nav link — repointed for the same reason the
+// navs were: the /eventos 301 would have caught it, but a redirect is the net
+// for external inbound links, not for our own site linking at a route we just
+// deleted.
+const LUMA_TALLERES = "https://www.laexponencial.com/eventos";
 
 export const LeadMagnet = () => {
   return (

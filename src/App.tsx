@@ -16,9 +16,6 @@ const Construye = lazy(() => import("./pages/Construye.tsx"));
 const RedesQueVenden = lazy(() => import("./pages/RedesQueVenden.tsx"));
 const OfertaPrivadaConstruye = lazy(() => import("./pages/OfertaPrivadaConstruye.tsx"));
 const Exponencial = lazy(() => import("./pages/Exponencial.tsx"));
-const Eventos = lazy(() => import("./pages/Eventos.tsx"));
-const EventoDetalle = lazy(() => import("./pages/EventoDetalle.tsx"));
-const DisenatuOferta = lazy(() => import("./pages/DisenatuOferta.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -40,10 +37,10 @@ const App = () => (
             <Route path="/redes-que-venden" element={<RedesQueVenden />} />
             <Route path="/oferta-privada-construye" element={<OfertaPrivadaConstruye />} />
             <Route path="/exponencial" element={<Exponencial />} />
-            <Route path="/eventos" element={<Eventos />} />
-            <Route path="/eventos/:slug" element={<EventoDetalle />} />
-            {/* Unlisted lead magnet — not in nav or sitemap */}
-            <Route path="/disena-tu-oferta" element={<DisenatuOferta />} />
+            {/* /eventos, /eventos/:slug and /disena-tu-oferta moved to
+                laexponencial.com (Phase 1 migration, Session 5). They are now
+                301 redirects in vercel.json — which Vercel applies BEFORE the
+                SPA catch-all rewrite, so they never reach this router. */}
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { Logo } from "../construye/Logo";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
-const LUMA_LIVE = "/eventos";
+// Events moved to laexponencial.com (Phase 1 migration, Session 5).
+const LUMA_LIVE = "https://www.laexponencial.com/eventos";
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -60,18 +61,6 @@ export const Nav = () => {
                   style={{ width: 7, height: 7, background: "#f43f5e" }}
                 />
                 Live
-                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-mint transition-transform duration-200 ease-out group-hover:scale-x-100" />
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.laexponencial.com/"
-                className={`group relative text-sm transition-colors duration-200 ease-out hover:text-[#9378fe] ${
-                  onDark ? "text-primary-foreground/70" : "text-foreground/70"
-                }`}
-              >
-                Academia
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-mint transition-transform duration-200 ease-out group-hover:scale-x-100" />
               </a>
             </li>
@@ -161,21 +150,6 @@ export const Nav = () => {
                 open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
               }`}
               style={{ transitionDelay: open ? "180ms" : "0ms" }}
-            >
-              <a
-                href="https://www.laexponencial.com/"
-                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
-                onClick={() => setOpen(false)}
-              >
-                Academia
-              </a>
-            </li>
-
-            <li
-              className={`transition-all duration-500 ease-out ${
-                open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
-              }`}
-              style={{ transitionDelay: open ? "240ms" : "0ms" }}
             >
               <a
                 href="https://haztegrande.substack.com/embed"

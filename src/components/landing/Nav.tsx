@@ -2,7 +2,12 @@ import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
-const LUMA_LIVE = "https://www.mariagarai.com/eventos";
+// Events moved to laexponencial.com (Phase 1 migration, Session 5). Pointed
+// straight at the new domain rather than leaning on the /eventos 301 in
+// vercel.json — that redirect is a safety net for inbound external links
+// (LinkedIn, Substack, bookmarks), not a substitute for our own nav being
+// correct. Same constant updated in construye/Nav.tsx and exponencial/Nav.tsx.
+const LUMA_LIVE = "https://www.laexponencial.com/eventos";
 
 export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +29,9 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
 
   // Over the dark hero (top of page) the nav is transparent with light text;
   // once scrolled it becomes the standard light bar.
-  // forceLight=true (e.g. /eventos light header) always uses dark text.
+  // forceLight=true always uses dark text. No caller passes it since /eventos
+  // moved to laexponencial.com (Session 5) — kept rather than removed so this
+  // destructive session doesn't also change the component's public signature.
   const onDark = !forceLight && !scrolled && !open;
 
   return (
@@ -80,18 +87,6 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
                   style={{ width: 7, height: 7, background: "#f43f5e" }}
                 />
                 Live
-                <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.laexponencial.com/"
-                className={`group relative flex items-center gap-1.5 text-sm transition-colors duration-200 ease-out hover:text-accent ${
-                  onDark ? "text-white/75" : "text-foreground/70"
-                }`}
-              >
-                Academia
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
               </a>
             </li>
@@ -198,21 +193,6 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
                 open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
               }`}
               style={{ transitionDelay: open ? "240ms" : "0ms" }}
-            >
-              <a
-                href="https://www.laexponencial.com/"
-                className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
-                onClick={() => setOpen(false)}
-              >
-                Academia
-              </a>
-            </li>
-
-            <li
-              className={`transition-all duration-500 ease-out ${
-                open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
-              }`}
-              style={{ transitionDelay: open ? "300ms" : "0ms" }}
             >
               <a
                 href="#newsletter"

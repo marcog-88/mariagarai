@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 
-const HIDE_ON_MOBILE = ["/exponencial", "/eventos/"];
+const HIDE_ON_MOBILE = ["/exponencial"];
 
 export default function WhatsAppBubble() {
   const { pathname } = useLocation();
