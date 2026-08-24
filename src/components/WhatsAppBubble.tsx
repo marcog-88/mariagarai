@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 
-const HIDE_ON_MOBILE = ["/exponencial"];
+// /exponencial retired (Phase 1 migration) — no routes currently need this.
+const HIDE_ON_MOBILE: string[] = [];
 
 export default function WhatsAppBubble() {
   const { pathname } = useLocation();

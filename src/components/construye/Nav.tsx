@@ -7,6 +7,9 @@ const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 // so leaving the old relative /eventos here would have left dead Live links on
 // two surviving routes.
 const LUMA_LIVE = "https://www.laexponencial.com/eventos";
+// /exponencial retired here too — its page and components were deleted,
+// laexponencial.com is the only live sales page now.
+const LA_EXPONENCIAL = "https://www.laexponencial.com/";
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -51,7 +54,9 @@ export const Nav = () => {
           <ul className="hidden md:flex items-center gap-10">
             <li>
               <a
-                href="/exponencial"
+                href={LA_EXPONENCIAL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group relative flex items-center gap-1.5 text-sm transition-colors duration-200 ease-out hover:text-[#9378fe] ${
                   onDark ? "text-primary-foreground/70" : "text-foreground/70"
                 }`}
@@ -145,7 +150,9 @@ export const Nav = () => {
               style={{ transitionDelay: open ? "120ms" : "0ms" }}
             >
               <a
-                href="/exponencial"
+                href={LA_EXPONENCIAL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
                 onClick={() => setOpen(false)}
               >

@@ -6,8 +6,11 @@ const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 // straight at the new domain rather than leaning on the /eventos 301 in
 // vercel.json — that redirect is a safety net for inbound external links
 // (LinkedIn, Substack, bookmarks), not a substitute for our own nav being
-// correct. Same constant updated in construye/Nav.tsx and exponencial/Nav.tsx.
+// correct. Same constant updated in construye/Nav.tsx.
 const LUMA_LIVE = "https://www.laexponencial.com/eventos";
+// /exponencial retired here too — its page and components were deleted,
+// laexponencial.com is the only live sales page now.
+const LA_EXPONENCIAL = "https://www.laexponencial.com/";
 
 export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
   const [scrolled, setScrolled] = useState(false);
@@ -62,7 +65,9 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
           <ul className="hidden md:flex items-center gap-10">
             <li>
               <a
-                href="/exponencial"
+                href={LA_EXPONENCIAL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group relative flex items-center gap-1.5 text-sm transition-colors duration-200 ease-out hover:text-accent ${
                   onDark ? "text-white/75" : "text-foreground/70"
                 }`}
@@ -158,7 +163,9 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
               style={{ transitionDelay: open ? "120ms" : "0ms" }}
             >
               <a
-                href="/exponencial"
+                href={LA_EXPONENCIAL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
                 onClick={() => setOpen(false)}
               >

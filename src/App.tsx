@@ -15,7 +15,7 @@ const CookiePolicy = lazy(() => import("./pages/CookiePolicy.tsx"));
 const Construye = lazy(() => import("./pages/Construye.tsx"));
 const RedesQueVenden = lazy(() => import("./pages/RedesQueVenden.tsx"));
 const OfertaPrivadaConstruye = lazy(() => import("./pages/OfertaPrivadaConstruye.tsx"));
-const Exponencial = lazy(() => import("./pages/Exponencial.tsx"));
+const DisenatuOferta = lazy(() => import("./pages/DisenatuOferta.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -36,11 +36,17 @@ const App = () => (
             <Route path="/construye" element={<Construye />} />
             <Route path="/redes-que-venden" element={<RedesQueVenden />} />
             <Route path="/oferta-privada-construye" element={<OfertaPrivadaConstruye />} />
-            <Route path="/exponencial" element={<Exponencial />} />
-            {/* /eventos, /eventos/:slug and /disena-tu-oferta moved to
-                laexponencial.com (Phase 1 migration, Session 5). They are now
-                301 redirects in vercel.json — which Vercel applies BEFORE the
-                SPA catch-all rewrite, so they never reach this router. */}
+            <Route path="/disena-tu-oferta" element={<DisenatuOferta />} />
+            {/* /eventos and /eventos/:slug moved to laexponencial.com (Phase 1
+                migration, Session 5). They are 301 redirects in vercel.json —
+                which Vercel applies BEFORE the SPA catch-all rewrite, so they
+                never reach this router.
+                /exponencial also 301s to laexponencial.com now (same reason) —
+                that page and its components were retired here, laexponencial.com
+                is the only live sales page.
+                /disena-tu-oferta was restored as its own page (not a redirect):
+                it now lives independently here AND at laexponencial.com/disena-tu-curso,
+                intentionally duplicated so each can be edited separately. */}
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

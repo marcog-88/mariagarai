@@ -1,5 +1,9 @@
 import portrait from "@/assets/maria-hero-cutout.webp";
 
+// /exponencial retired here (Phase 1 migration) — laexponencial.com is now the
+// only live sales page. Repointed the same way LeadMagnet.tsx was in Session 5.
+const LA_EXPONENCIAL = "https://www.laexponencial.com/";
+
 export const Hero = () => {
   return (
     <section
@@ -46,7 +50,9 @@ export const Hero = () => {
               style={{ animationDelay: "300ms" }}
             >
               <a
-                href="/exponencial"
+                href={LA_EXPONENCIAL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary-lg justify-center w-full md:w-auto !text-white"
                 style={{
                   boxShadow:
@@ -98,7 +104,9 @@ export const Hero = () => {
               style={{ animationDelay: "300ms" }}
             >
               <a
-                href="/exponencial"
+                href={LA_EXPONENCIAL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary-lg justify-center !text-white"
                 style={{
                   boxShadow:

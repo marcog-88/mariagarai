@@ -1,6 +1,10 @@
 import expoMockup from "@/assets/exponencial-premium-card.webp";
 import { Reveal } from "./Reveal";
 
+// /exponencial retired here (Phase 1 migration) — laexponencial.com is now the
+// only live sales page.
+const LA_EXPONENCIAL = "https://www.laexponencial.com/";
+
 export const Exponencial = () => {
   return (
     <section
@@ -40,7 +44,7 @@ export const Exponencial = () => {
                   "radial-gradient(60% 50% at 50% 0%, rgba(147,120,254,0.18) 0%, transparent 100%)",
               }}
             />
-            <a href="/exponencial" className="block w-full">
+            <a href={LA_EXPONENCIAL} target="_blank" rel="noopener noreferrer" className="block w-full">
               <img
                 src={expoMockup}
                 alt="Exponencial — Notion, Claude, LinkedIn y Substack."
@@ -106,7 +110,9 @@ export const Exponencial = () => {
         {/* CTA */}
         <Reveal delay={280} className="mt-10">
           <a
-            href="/exponencial"
+            href={LA_EXPONENCIAL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary w-full md:w-auto justify-center whitespace-nowrap border-2 border-[#0c0d0e] !text-[#0c0d0e]"
             style={{
               boxShadow:

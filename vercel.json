@@ -11,8 +11,8 @@
       "statusCode": 301
     },
     {
-      "source": "/disena-tu-oferta",
-      "destination": "https://www.laexponencial.com/disena-tu-curso",
+      "source": "/exponencial",
+      "destination": "https://www.laexponencial.com/",
       "statusCode": 301
     }
   ],
