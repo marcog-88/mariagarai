@@ -1,4 +1,3 @@
-import expoMockup from "@/assets/exponencial-premium-card.webp";
 import { Reveal } from "./Reveal";
 
 // /exponencial retired here (Phase 1 migration) — laexponencial.com is now the
@@ -27,33 +26,6 @@ export const Exponencial = () => {
           </p>
         </Reveal>
 
-        {/* Mockup image — right after title/subhead */}
-        <Reveal variant="scale" delay={150} className="mt-12">
-          <div
-            className="relative rounded-2xl overflow-hidden"
-            style={{
-              boxShadow:
-                "0 0 0 1px rgba(147,120,254,0.15), 0 24px 60px -12px rgba(147,120,254,0.45), 0 8px 32px -8px rgba(147,120,254,0.25)",
-            }}
-          >
-            <div
-              aria-hidden
-              className="absolute -inset-px rounded-2xl pointer-events-none"
-              style={{
-                background:
-                  "radial-gradient(60% 50% at 50% 0%, rgba(147,120,254,0.18) 0%, transparent 100%)",
-              }}
-            />
-            <a href={LA_EXPONENCIAL} target="_blank" rel="noopener noreferrer" className="block w-full">
-              <img
-                src={expoMockup}
-                alt="Exponencial — Notion, Claude, LinkedIn y Substack."
-                className="w-full block"
-                loading="lazy"
-              />
-            </a>
-          </div>
-        </Reveal>
 
         {/* Body — single column, full width */}
         <Reveal delay={120} className="mt-12">
