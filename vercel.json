@@ -29,6 +29,9 @@
   "rewrites": [
     { "source": "/oferta-privada-construye", "destination": "/__retired" },
     { "source": "/redes-que-venden", "destination": "/__retired" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/:path((?!oferta-privada-construye$|redes-que-venden$).*)",
+      "destination": "/index.html"
+    }
   ]
 }
