@@ -14,6 +14,16 @@
       "source": "/exponencial",
       "destination": "https://www.laexponencial.com/",
       "statusCode": 301
+    },
+    {
+      "source": "/construye",
+      "destination": "https://www.laexponencial.com/lanzadera",
+      "statusCode": 301
+    },
+    {
+      "source": "/disena-tu-oferta",
+      "destination": "https://www.laexponencial.com/disena-tu-curso",
+      "statusCode": 301
     }
   ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]

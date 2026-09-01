@@ -12,10 +12,6 @@ const Legal = lazy(() => import("./pages/Legal.tsx"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.tsx"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService.tsx"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy.tsx"));
-const Construye = lazy(() => import("./pages/Construye.tsx"));
-const RedesQueVenden = lazy(() => import("./pages/RedesQueVenden.tsx"));
-const OfertaPrivadaConstruye = lazy(() => import("./pages/OfertaPrivadaConstruye.tsx"));
-const DisenatuOferta = lazy(() => import("./pages/DisenatuOferta.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -33,20 +29,19 @@ const App = () => (
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
-            <Route path="/construye" element={<Construye />} />
-            <Route path="/redes-que-venden" element={<RedesQueVenden />} />
-            <Route path="/oferta-privada-construye" element={<OfertaPrivadaConstruye />} />
-            <Route path="/disena-tu-oferta" element={<DisenatuOferta />} />
-            {/* /eventos and /eventos/:slug moved to laexponencial.com (Phase 1
-                migration, Session 5). They are 301 redirects in vercel.json —
-                which Vercel applies BEFORE the SPA catch-all rewrite, so they
-                never reach this router.
-                /exponencial also 301s to laexponencial.com now (same reason) —
-                that page and its components were retired here, laexponencial.com
-                is the only live sales page.
-                /disena-tu-oferta was restored as its own page (not a redirect):
-                it now lives independently here AND at laexponencial.com/disena-tu-curso,
-                intentionally duplicated so each can be edited separately. */}
+            {/* /eventos, /eventos/:slug and /exponencial moved to
+                laexponencial.com earlier (Phase 1 migration, Session 5) —
+                301 redirects in vercel.json, applied BEFORE the SPA catch-all
+                rewrite, so they never reach this router. */}
+            {/* Retired 2026-09-01 — these pages no longer live on
+                mariagarai.com:
+                /construye and /disena-tu-oferta MOVED to laexponencial.com
+                (as /lanzadera and /disena-tu-curso) and 301 there via
+                vercel.json, which Vercel applies BEFORE the SPA catch-all
+                rewrite, so they never reach this router.
+                /oferta-privada-construye and /redes-que-venden were retired
+                permanently — no redirect, they 404 and drop out of the index.
+                All retired code is archived under _archive/retired-2026-09/. */}
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
