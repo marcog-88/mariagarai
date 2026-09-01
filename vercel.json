@@ -26,12 +26,5 @@
       "statusCode": 301
     }
   ],
-  "rewrites": [
-    { "source": "/oferta-privada-construye", "destination": "/__retired" },
-    { "source": "/redes-que-venden", "destination": "/__retired" },
-    {
-      "source": "/:path((?!oferta-privada-construye$|redes-que-venden$).*)",
-      "destination": "/index.html"
-    }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
