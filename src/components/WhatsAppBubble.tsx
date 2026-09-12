@@ -9,7 +9,7 @@ export default function WhatsAppBubble() {
 
   return (
     <a
-      href="https://wa.me/34617785485?text=Hola%20Mar%C3%ADa%2C%20tengo%20una%20pregunta"
+      href="https://wa.me/34600489349?text=Hola%20Mar%C3%ADa%2C%20tengo%20una%20pregunta"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
