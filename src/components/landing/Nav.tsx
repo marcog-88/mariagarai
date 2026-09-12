@@ -86,12 +86,12 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
                   onDark ? "text-white/75" : "text-foreground/70"
                 }`}
               >
+                Live
                 <span
                   aria-hidden
                   className="badge-pulse-dot inline-block rounded-full"
                   style={{ width: 7, height: 7, background: "#f43f5e" }}
                 />
-                Live
                 <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-200 ease-out group-hover:scale-x-100" />
               </a>
             </li>
@@ -186,12 +186,12 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
                 className="inline-flex items-center gap-3 font-serif text-3xl text-white transition-colors hover:text-[#9378fe]"
                 onClick={() => setOpen(false)}
               >
+                Live
                 <span
                   aria-hidden
                   className="badge-pulse-dot inline-block rounded-full"
                   style={{ width: 9, height: 9, background: "#f43f5e" }}
                 />
-                Live
               </a>
             </li>
 
