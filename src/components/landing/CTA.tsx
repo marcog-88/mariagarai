@@ -17,7 +17,7 @@ export const CTA = () => {
         </Reveal>
         <Reveal delay={150}>
           <p className="mt-10 max-w-4xl text-lg md:text-xl text-primary-foreground leading-relaxed">
-            Para expertos con un conocimiento valioso que quieran monetizarlo con un curso online rentable y profesional.
+            Para expertos con un conocimiento valioso que quieran monetizarlo con un programa online rentable y profesional.
           </p>
         </Reveal>
 

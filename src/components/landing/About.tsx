@@ -54,7 +54,7 @@ export const About = () => {
             </p>
             <p>
               Mi misión es que te hagas más grande y apuestes por ti. Para ello, te ayudo
-              a diseñar, montar y vender un curso online que te permita llegar a más
+              a diseñar, montar y vender un programa online que te permita llegar a más
               personas y volverte exponencial.
             </p>
           </Reveal>

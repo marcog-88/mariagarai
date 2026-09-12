@@ -36,7 +36,7 @@ export const Hero = () => {
               style={{ animationDelay: "80ms" }}
             >
               Te ayudo a crear y lanzar{" "}
-              <em className="font-serif italic text-accent block">ese curso online que tienes en mente</em>
+              <em className="font-serif italic text-accent block">ese programa online que tienes en mente</em>
             </h1>
             <p
               className="animate-fade-up mt-8 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
@@ -90,7 +90,7 @@ export const Hero = () => {
                 className="animate-fade-up mt-3 font-serif italic text-accent text-[clamp(3rem,4.2vw,4.5rem)] leading-[1.02] tracking-tight block"
                 style={{ animationDelay: "160ms" }}
               >
-                ese curso online que tienes en mente
+                ese programa online que tienes en mente
               </em>
             </div>
             <p

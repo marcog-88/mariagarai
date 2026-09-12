@@ -19,10 +19,10 @@ export const Exponencial = () => {
             Trabaja conmigo
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight leading-tight text-white">
-            Crea y lanza tu curso online en 90 días
+            Crea y lanza tu programa online en 90 días
           </h2>
           <p className="mt-8 text-lg md:text-xl text-white/60 leading-relaxed max-w-2xl">
-            El sistema para empaquetar tu conocimiento en un curso online con toda la infraestructura digital montada, sin bloqueos técnicos ni dudas al venderlo.
+            El sistema para empaquetar tu conocimiento en un programa online con toda la infraestructura digital montada, sin bloqueos técnicos ni dudas al venderlo.
           </p>
         </Reveal>
 
