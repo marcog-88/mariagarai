@@ -36,13 +36,13 @@ export const Hero = () => {
               style={{ animationDelay: "80ms" }}
             >
               Te ayudo a crear y lanzar{" "}
-              <em className="font-serif italic text-accent block">ese programa online que tienes en mente</em>
+              <em className="font-serif italic text-accent block">ese negocio digital que tienes en mente</em>
             </h1>
             <p
               className="animate-fade-up mt-8 max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "150ms" }}
             >
-              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio. Sin bloqueos técnicos ni dudas al venderlo.
+              Vamos a construir un programa de formación y acompañamiento con el que puedas empaquetar tu conocimiento, convertirte en referente y romper el techo de tus ingresos.
             </p>
 
             <div
@@ -90,14 +90,14 @@ export const Hero = () => {
                 className="animate-fade-up mt-3 font-serif italic text-accent text-[clamp(3rem,4.2vw,4.5rem)] leading-[1.02] tracking-tight block"
                 style={{ animationDelay: "160ms" }}
               >
-                ese programa online que tienes en mente
+                ese negocio digital que tienes en mente
               </em>
             </div>
             <p
               className="animate-fade-up max-w-xl font-sans text-[clamp(0.875rem,1.8vw,1.125rem)] font-normal text-white/75 leading-normal"
               style={{ animationDelay: "240ms" }}
             >
-              Conviértete en referente en tu sector y escala tus ingresos con un curso de educación online que te de más paz, autonomía y rentabilidad en tu negocio. Sin bloqueos técnicos ni dudas al venderlo.
+              Vamos a construir un programa de formación y acompañamiento con el que puedas empaquetar tu conocimiento, convertirte en referente y romper el techo de tus ingresos.
             </p>
             <div
               className="animate-fade-up mb-24 flex items-center gap-6"

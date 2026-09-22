@@ -5,7 +5,7 @@ import { Exponencial } from "@/components/landing/Exponencial";
 import { LeadMagnet } from "@/components/landing/LeadMagnet";
 import { Newsletter } from "@/components/landing/Newsletter";
 import { About } from "@/components/landing/About";
-import { Testimonials } from "@/components/landing/Testimonials";
+import { ForWho } from "@/components/landing/ForWho";
 import { CTA } from "@/components/landing/CTA";
 import { Footer } from "@/components/landing/Footer";
 import { Speaking } from "@/components/home/Speaking";
@@ -19,7 +19,7 @@ const Index = () => {
       <About />
       <Thoughts />
       <Exponencial />
-      <Testimonials />
+      <ForWho />
       <Newsletter />
       <Speaking />
       <CTA />

@@ -45,7 +45,7 @@ export const Exponencial = () => {
                   <span style={{ color: "#9378fe" }}>FASE 1: LA FÓRMULA</span> · Diseñamos y validamos.
                 </p>
                 <p className="mt-2 text-base md:text-lg text-white/80 leading-relaxed">
-                  Definimos tu plan de negocio, tu avatar con mayor capacidad de compra, tu programa por dentro y su precio. Te ayudamos a salir al mercado y conseguir tus primeras ventas, sin redes ni anuncios.
+                  Definimos tu plan de negocio, tu perfil de cliente ideal, tu oferta y su precio. Te ayudamos a salir al mercado y conseguir tus primeras ventas, sin redes ni anuncios.
                 </p>
               </div>
             </div>
@@ -64,14 +64,14 @@ export const Exponencial = () => {
                   <span style={{ color: "#9378fe" }}>FASE 2: LA MÁQUINA</span> · Lo montamos todo.
                 </p>
                 <p className="mt-2 text-base md:text-lg text-white/80 leading-relaxed">
-                  Tu página de venta, tu embudo de captación automatizado, tu email marketing, tu academia con tus lecciones dentro y tu CRM para gestionar alumnos. Montado paso a paso contigo, con ayuda de la IA, tuyo para siempre, sin pagar comisiones a plataformas ni agencias.
+                  Toda la parte digital que tu negocio requiere. Tu página de venta, tu embudo de captación automatizado, tu email marketing, tu academia con lecciones dentro y tus sistemas de gestión. Montado paso a paso contigo, tuyo para siempre, sin pagar comisiones a plataformas ni agencias.
                 </p>
               </div>
             </div>
           </div>
           <div className="mt-8 max-w-2xl text-base md:text-lg text-white/60 leading-relaxed">
             <p>
-              Exponencial te ofrece algo que no existe en el mercado: te entregamos la infraestructura de tu programa llave en mano y trabajamos contigo la estrategia y las ventas. Sales con todo montado, con tu programa validado y con tus primeras ventas hechas.
+              Exponencial te ofrece algo que no existe en el mercado: te entregamos la infraestructura de tu programa llave en mano y trabajamos contigo la estrategia y las ventas. No sales con apuntes, sino con todo ya montado, tu programa validado y tus primeras ventas hechas.
             </p>
           </div>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-white/50 leading-relaxed italic">
@@ -91,7 +91,7 @@ export const Exponencial = () => {
                 "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
             }}
           >
-            Conoce la Fórmula Exponencial →
+            Conoce Exponencial →
           </a>
           <p className="mt-8 text-xs italic text-white/40">Plazas limitadas · Por aplicación</p>
         </Reveal>
