@@ -15,3 +15,6 @@ Any AI agent working in this repo: first read `KIMI_HANDOFF_BRIEF.md` in the `ma
 5. **301 redirects to laexponencial.com** (old `/eventos`, lead magnet paths) are load-bearing — old links live in sent emails and LinkedIn/Substack posts. Never remove or break them.
 6. **Vercel:** this project builds previews, but SSO protection blocks anonymous checks against preview URLs. Verify on production after merge.
 7. Session flow: one branch per session off main, `git add` only named files, PR, merge, confirm merge commit on main. When in doubt, ask Marco.
+
+## Change requests from the admin assistant
+María can ask the Exponencial admin assistant for any change to this site. It files an issue here labelled `platform-request`, and `.github/workflows/platform-request.yml` has Claude Code build it as a PR. Small changes can auto-merge (repo variable `AUTO_MERGE_REQUESTS=true`, a fresh `npm run build`, a second Claude review). Requests labelled `structural`, and anything touching config, dependencies, `vercel.json` or `.github/`, wait for Marco. `consultar-marco` = held until Marco adds `platform-request`. Needs the `ANTHROPIC_API_KEY` repo secret.
