@@ -1,68 +1,61 @@
 import mariaSpeaker from "@/assets/maria-street-suit.png";
 import { Reveal } from "@/components/landing/Reveal";
+import { BTN_LIGHT, CONTAINER, Dot, H2, SectionLabel } from "./primitives";
+
+const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
+
+const talks = [
+  {
+    title: "Del conocimiento al negocio propio.",
+    body: "Cómo transformar una especialidad profesional en un programa, una metodología y una nueva oportunidad empresarial.",
+  },
+  {
+    title: "IA para profesionales que no vienen del mundo técnico.",
+    body: "Cómo integrar herramientas de inteligencia artificial en procesos y modelos de negocio con criterio práctico.",
+  },
+  {
+    title: "Autoridad profesional que genera oportunidades.",
+    body: "Cómo utilizar tu posicionamiento, LinkedIn y los canales de contenido para desarrollar una voz reconocible y apoyar tu estrategia comercial.",
+  },
+];
 
 export const Speaking = () => {
   return (
-    <section
-      className="py-24 md:py-32"
-      style={{ background: "#f9f9f7" }}
-    >
-      <div className="container-tight">
-        <Reveal>
-          <p
-            className="mb-10 text-xs md:text-sm font-medium uppercase tracking-[0.24em]"
-            style={{ color: "#9378fe" }}
-          >
-            Conferencias y Formación
-          </p>
-        </Reveal>
-        <div className="grid md:grid-cols-2 gap-12 items-stretch">
-
-          {/* Left column */}
-          <Reveal variant="left" className="order-2 md:order-1">
-            <h2 className="display-md" style={{ color: "#0c0d0e" }}>
-              Hablo en tu Evento
-            </h2>
-            {/* Mobile-only image: shows between h2 and body */}
-            <div className="md:hidden mt-8 rounded-[1.25rem] overflow-hidden aspect-[4/3]">
-              <img
-                src={mariaSpeaker}
-                alt="María Garaí, retrato profesional"
-                className="w-full h-full object-cover object-[50%_22%]"
-                loading="lazy"
-              />
-            </div>
-            <p className="mt-6 text-base leading-relaxed" style={{ color: "#666" }}>
-              Disponible para eventos corporativos, conferencias y formaciones de equipo.
+    <section className="border-t border-[#e6e4df] bg-[#f9f9f7] py-24 lg:py-[152px]">
+      <div className={`${CONTAINER} flex flex-col gap-10`}>
+        <SectionLabel>Conferencias y Formación</SectionLabel>
+        <div className="grid items-center gap-12 lg:grid-cols-[1fr_380px] lg:gap-16">
+          <Reveal variant="left" className="flex min-w-0 flex-col gap-6">
+            <h2 className={`m-0 text-[#0c0d0e] ${H2}`}>Hablo en tu Evento</h2>
+            <p className="m-0 text-[18px] leading-[1.6] text-[#666666] sm:text-[20px]">
+              Participo en conferencias, encuentros profesionales y formaciones de equipos donde hablamos del futuro del trabajo, los nuevos modelos de negocio y las oportunidades que abre la inteligencia artificial.
             </p>
-            <ul className="mt-4 space-y-2 text-base leading-relaxed" style={{ color: "#666" }}>
-              <li>🚀 Revolucionando la formación online<span className="hidden md:inline">: el mejor modelo de negocio para expertos que venden servicios.</span></li>
-              <li>🤖 IA aplicada a negocios<span className="hidden md:inline">: cómo usar IA sin ser técnico para automatizar procesos</span></li>
-              <li>📲 Redes que venden<span className="hidden md:inline">: cómo convertir LinkedIn y Substack en tu canal de ventas</span></li>
+            <ul className="m-0 flex list-none flex-col gap-[18px] p-0 text-[16px] leading-[1.6] text-[#666666] sm:text-[17px]">
+              {talks.map((t) => (
+                <li key={t.title} className="flex gap-3">
+                  <Dot />
+                  <span>
+                    <strong className="block font-semibold text-[#0c0d0e]">{t.title}</strong>
+                    {t.body}
+                  </span>
+                </li>
+              ))}
             </ul>
-            <div className="mt-10">
-              <a
-                href="https://tidycal.com/mariagarai/exploracion"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-full md:w-auto justify-center md:justify-start items-center gap-2 rounded-full px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white transition-opacity hover:opacity-90"
-                style={{ background: "#9378fe", boxShadow: "4px 4px 0 0 #0c0d0e" }}
-              >
+            <div>
+              <a href={TIDYCAL} target="_blank" rel="noopener noreferrer" className={BTN_LIGHT}>
                 Contáctame ↗
               </a>
             </div>
           </Reveal>
 
-          {/* Right column: speaking photo — desktop only */}
-          <Reveal variant="scale" delay={150} className="hidden md:block relative rounded-[1.25rem] overflow-hidden md:order-2 self-stretch">
+          <Reveal variant="scale" delay={150} className="min-w-0 overflow-hidden rounded-2xl">
             <img
               src={mariaSpeaker}
-              alt="María Garaí, retrato profesional"
-              className="absolute inset-0 w-full h-full object-cover object-[50%_22%]"
+              alt="María Garai, retrato profesional"
+              className="block h-auto w-full"
               loading="lazy"
             />
           </Reveal>
-
         </div>
       </div>
     </section>

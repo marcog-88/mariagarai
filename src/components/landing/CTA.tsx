@@ -1,45 +1,29 @@
 import { Reveal } from "./Reveal";
+import { BTN_DARK } from "@/components/home/primitives";
+
+const TIDYCAL = "https://tidycal.com/mariagarai/exploracion";
 
 export const CTA = () => {
   return (
-    <section
-      id="cta"
-      className="relative overflow-hidden pt-28 pb-12 md:py-40 border-t border-border"
-      style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
-    >
-      <div aria-hidden className="aurora" />
-      <div className="container-tight relative">
+    <section id="cta" className="bg-[#0c0d0e] px-6 py-28 text-center text-[#f9f9f7] sm:px-8 lg:py-44">
+      <div className="mx-auto flex max-w-[900px] flex-col items-center gap-7">
         <Reveal variant="blur">
-          <h2 className="display text-primary-foreground max-w-5xl">
-            Es momento de{" "}
-            <em className="font-serif italic text-accent md:block">volverte exponencial.</em>
+          <h2 className="m-0 font-serif text-[44px] leading-[1.02] tracking-[-0.01em] sm:text-[60px] lg:text-[72px]">
+            Es momento de <span className="italic text-[#9378fe]">volverte exponencial.</span>
           </h2>
         </Reveal>
         <Reveal delay={150}>
-          <p className="mt-10 max-w-4xl text-lg md:text-xl text-primary-foreground leading-relaxed">
-            Para expertos con un conocimiento valioso que quieran monetizarlo con un programa online rentable y profesional.
+          <p className="m-0 max-w-[680px] text-[18px] leading-[1.6] text-[#f9f9f7]/80 sm:text-[20px]">
+            Si quieres desarrollar un programa propio y construir una nueva línea de negocio alrededor de tus conocimientos, exploremos el potencial de tu proyecto.
           </p>
         </Reveal>
-
-        <Reveal delay={300}>
-          <div className="mt-16 md:mt-20">
-            <a
-              href="https://tidycal.com/mariagarai/exploracion"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary w-full md:w-auto border-2 border-[#0c0d0e] !text-[#0c0d0e]"
-              style={{
-                boxShadow:
-                  "4px 4px 0 0 #0c0d0e, 8px 8px 28px rgba(147, 120, 254, 0.6), 14px 14px 56px rgba(147, 120, 254, 0.35)",
-              }}
-            >
-              Reserva llamada de valoración
-              <span aria-hidden>↗</span>
-            </a>
-            <p className="mt-4 text-sm italic text-primary-foreground/50">
-              Evaluamos tu caso a coste cero.
-            </p>
-          </div>
+        <Reveal delay={300} className="flex flex-col items-center gap-7">
+          <a href={TIDYCAL} target="_blank" rel="noopener noreferrer" className={BTN_DARK}>
+            Reserva llamada de valoración <span aria-hidden>↗</span>
+          </a>
+          <p className="m-0 max-w-[560px] text-[15px] leading-[1.6] text-[#f9f9f7]/60">
+            Una conversación de 30 minutos para conocer tu punto de partida, entender qué quieres construir y valorar si Exponencial encaja contigo.
+          </p>
         </Reveal>
       </div>
     </section>

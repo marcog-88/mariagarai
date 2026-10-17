@@ -1,5 +1,6 @@
 import mockup from "@/assets/talleres-live-mockup.png";
 import { Reveal } from "./Reveal";
+import { BTN_LIGHT, CONTAINER, H2, SectionLabel } from "@/components/home/primitives";
 
 // Events moved to laexponencial.com (Phase 1 migration, Session 5). This is a
 // homepage body CTA rather than a nav link — repointed for the same reason the
@@ -10,77 +11,47 @@ const LUMA_TALLERES = "https://www.laexponencial.com/eventos";
 
 export const LeadMagnet = () => {
   return (
-    <section className="py-24 md:py-32 bg-[#f9f9f7]">
-      <div className="container-tight">
-        {/* Pill — above the two columns so image aligns with h2 */}
-        <Reveal>
-          <a
-            href={LUMA_TALLERES}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mb-8 inline-flex items-center gap-2 self-start rounded-full px-3 py-1.5 md:px-4 text-[10px] md:text-xs uppercase tracking-[0.12em] md:tracking-[0.24em] text-foreground transition-opacity hover:opacity-70"
-            style={{
-              border: "1px solid rgba(147,120,254,0.6)",
-              background: "#ffffff",
-            }}
-          >
-            <span
-              className="badge-pulse-dot rounded-full bg-red-500 flex-shrink-0"
-              style={{ width: 8, height: 8 }}
-              aria-hidden
-            />
-            Gratis<span className="hidden sm:inline"> · Taller en Vivo</span>
-          </a>
-        </Reveal>
+    <section className="bg-[#f9f9f7] py-24 lg:py-40">
+      <div className={`${CONTAINER} flex flex-col gap-8`}>
+        <SectionLabel>Miércoles · Taller en vivo</SectionLabel>
 
-        <div className="grid md:grid-cols-[1fr_42%] lg:grid-cols-[1fr_40%] gap-12 md:gap-16 lg:gap-24 md:items-stretch">
-          {/* Left: text + CTA */}
-          <Reveal variant="left" className="min-w-0">
-            <h2 className="display-md">
-              El mejor modelo de negocio digital para expertos
-            </h2>
-
-            <div className="mt-8 md:hidden">
-              <img
-                src={mockup}
-                alt="Exponencial Live — sesión grupal con María Garaí y participantes"
-                className="w-full h-auto rounded-2xl"
-                style={{ filter: "drop-shadow(0px 6px 20px rgba(0,0,0,0.13))" }}
-                loading="lazy"
-              />
+        <div className="grid gap-12 lg:grid-cols-[1fr_380px] lg:items-stretch lg:gap-24">
+          <Reveal variant="left" className="flex min-w-0 flex-col gap-5">
+            <h2 className={`m-0 ${H2}`}>De Experto a Negocio</h2>
+            <p className="mt-1 mb-0 text-[18px] italic leading-[1.6] text-[#0c0d0e]/60 sm:text-[20px]">
+              Cada miércoles en directo.
+            </p>
+            <div className="my-5 space-y-5 text-[18px] leading-[1.6] text-[#0c0d0e]/75 sm:text-[20px]">
+              <p className="m-0">
+                Una clase práctica cada miércoles para profesionales que quieren convertir sus conocimientos en un programa propio y desarrollar un negocio alrededor de él.
+              </p>
+              <p className="m-0">
+                Hablamos de metodología, ofertas de alto valor, ventas, infraestructura digital e IA aplicada. Sin fórmulas mágicas ni necesidad de convertirte en especialista en todo.
+              </p>
+              <p className="m-0">
+                Cada semana abordamos un problema distinto y trabajamos sobre ejemplos y herramientas que puedes aplicar a tu proyecto.
+              </p>
             </div>
-
-            <p className="mt-6 text-lg md:text-xl text-foreground/60 leading-relaxed max-w-2xl italic">
-              Para profesionales de la salud, juristas, consultores, coaches, profesores y mentores.
-            </p>
-            <p className="mt-4 text-lg md:text-xl text-foreground/75 leading-relaxed max-w-2xl">
-              Cada semana, en directo, te enseño cómo empaquetar lo que sabes en un programa online: cómo ponerle precio, cómo validarlo con clientes y cómo usar la IA para montar tu infraestructura. Ven a descubrir cómo hacerlo en tu negocio.
-            </p>
-            <a
-              href={LUMA_TALLERES}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-10 block w-full md:inline-block md:w-auto text-center rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg font-medium text-white whitespace-nowrap transition-opacity hover:opacity-90"
-              style={{ background: "#9378fe", boxShadow: "4px 4px 0 0 #0c0d0e" }}
-            >
-              Inscríbete gratis →
-            </a>
+            <div className="mt-5">
+              <a href={LUMA_TALLERES} target="_blank" rel="noopener noreferrer" className={BTN_LIGHT}>
+                Inscríbete gratis →
+              </a>
+            </div>
           </Reveal>
 
-          {/* Right: mockup image (desktop) — fills column height */}
-          <Reveal variant="right" delay={150} className="hidden md:block relative rounded-2xl overflow-hidden self-stretch min-h-0">
+          <Reveal
+            variant="right"
+            delay={150}
+            className="relative min-w-0 overflow-hidden rounded-2xl shadow-[0_6px_20px_rgba(0,0,0,0.13)] lg:min-h-[360px]"
+          >
             <img
               src={mockup}
-              alt="Taller en vivo — sesión grupal con María Garaí y participantes"
-              className="absolute inset-0 w-full h-full object-cover rounded-2xl"
-              style={{ filter: "drop-shadow(0px 6px 20px rgba(0,0,0,0.13))" }}
+              alt="Taller en vivo, sesión grupal con María Garai y participantes"
+              className="block h-auto w-full object-cover lg:absolute lg:inset-0 lg:h-full"
               loading="lazy"
             />
           </Reveal>
         </div>
-        <p className="mt-6 text-sm text-foreground/55 italic">
-          Sales con algo que aplicar ese mismo día.
-        </p>
       </div>
     </section>
   );
