@@ -8,11 +8,20 @@ const LA_EXPONENCIAL = "https://www.laexponencial.com/";
 export const Hero = () => {
   return (
     // pt = fixed 64px Nav + the design's 88px.
-    <section id="top" className="overflow-hidden bg-[#0c0d0e] pt-[120px] text-white lg:pt-[152px]">
+    <section id="top" className="overflow-hidden bg-[#0c0d0e] pt-[120px] pb-24 text-white lg:pt-[152px] lg:pb-0">
       <div className={`${CONTAINER} grid gap-12 lg:grid-cols-[1fr_380px] lg:items-stretch`}>
         {/* Copy column */}
         <div className="flex min-w-0 flex-col justify-between gap-10 lg:pb-24">
           <div className="lg:h-[236px]">
+            {/* Mobile/tablet avatar (below lg): round crop instead of the full cutout. */}
+            <img
+              src={portrait}
+              alt="María Garai"
+              className="animate-fade-up mb-6 h-28 w-28 rounded-full object-cover object-top ring-2 ring-[#9378fe]/60 ring-offset-2 ring-offset-[#0c0d0e] md:h-44 md:w-44 lg:hidden"
+              loading="eager"
+              fetchPriority="high"
+              decoding="sync"
+            />
             <p
               className="animate-fade-up mb-8 text-[13px] font-semibold leading-normal uppercase tracking-[0.1em] text-[#9378fe] sm:text-[14px] lg:mb-10"
               style={{ animationDelay: "0ms" }}
@@ -53,7 +62,7 @@ export const Hero = () => {
 
         {/* Portrait column */}
         <div
-          className="flex min-w-0 items-start justify-center"
+          className="hidden min-w-0 items-start justify-center lg:flex"
           style={{
             background:
               "radial-gradient(60% 70% at 50% 55%, rgba(147,120,254,0.28) 0%, rgba(147,120,254,0.10) 55%, transparent 80%)",
@@ -64,7 +73,7 @@ export const Hero = () => {
             alt="María Garai"
             width={683}
             height={1024}
-            className="animate-fade-up block h-auto w-full max-w-[320px] lg:max-w-[460px]"
+            className="animate-fade-up block h-auto w-full max-w-[460px]"
             style={{ animationDelay: "200ms" }}
             loading="eager"
             fetchPriority="high"
