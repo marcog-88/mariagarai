@@ -17,20 +17,18 @@ export const Hero = () => {
             <img
               src={portrait}
               alt="María Garai"
-              className="animate-fade-up mb-6 h-28 w-28 rounded-full object-cover object-top ring-2 ring-[#9378fe]/60 ring-offset-2 ring-offset-[#0c0d0e] md:h-44 md:w-44 lg:hidden"
+              className="mb-6 h-28 w-28 rounded-full object-cover object-top ring-2 ring-[#9378fe]/60 ring-offset-2 ring-offset-[#0c0d0e] md:h-44 md:w-44 lg:hidden"
               loading="eager"
               fetchPriority="high"
               decoding="sync"
             />
             <p
-              className="animate-fade-up mb-8 text-[13px] font-semibold leading-normal uppercase tracking-[0.1em] text-[#9378fe] sm:text-[14px] lg:mb-10"
-              style={{ animationDelay: "0ms" }}
+              className="mb-8 text-[13px] font-semibold leading-normal uppercase tracking-[0.1em] text-[#9378fe] sm:text-[14px] lg:mb-10"
             >
               FUNDADORA DE EXPONENCIAL · CONSULTORA DE NEGOCIO
             </p>
             <h1
-              className="animate-fade-up m-0 font-serif text-[40px] leading-[1.05] tracking-[-0.01em] text-white sm:text-[48px] lg:text-[60px]"
-              style={{ animationDelay: "80ms" }}
+              className="m-0 font-serif text-[40px] leading-[1.05] tracking-[-0.01em] text-white sm:text-[48px] lg:text-[60px]"
             >
               Tu siguiente etapa profesional puede ser mucho más&nbsp;
               <em className="font-serif italic tracking-[-0.01em] text-[#9378fe] text-[48px] sm:text-[58px] lg:text-[72px]">
@@ -39,12 +37,11 @@ export const Hero = () => {
             </h1>
           </div>
           <p
-            className="animate-fade-up m-0 max-w-[576px] text-[16px] leading-normal text-white/75 sm:text-[18px]"
-            style={{ animationDelay: "150ms" }}
+            className="m-0 max-w-[576px] text-[16px] leading-normal text-white/75 sm:text-[18px]"
           >
             Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.
           </p>
-          <div className="animate-fade-up" style={{ animationDelay: "300ms" }}>
+          <div>
             <a
               href={LA_EXPONENCIAL}
               target="_blank"
@@ -73,8 +70,7 @@ export const Hero = () => {
             alt="María Garai"
             width={683}
             height={1024}
-            className="animate-fade-up block h-auto w-full max-w-[460px]"
-            style={{ animationDelay: "200ms" }}
+            className="block h-auto w-full max-w-[460px]"
             loading="eager"
             fetchPriority="high"
             decoding="sync"

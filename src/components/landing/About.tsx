@@ -7,7 +7,7 @@ const STRONG = "m-0 text-[16px] leading-[1.7] font-semibold text-[#0c0d0e] sm:te
 /** Photo slot: the pictures arrive later, keep it visibly a placeholder. */
 const PhotoPlaceholder = ({ label }: { label: string }) => (
   <div
-    className="box-border flex aspect-[4/5] w-full items-center justify-center rounded-2xl p-6 text-center text-[15px] text-[#4a4258] shadow-[0_6px_20px_rgba(0,0,0,0.08)]"
+    className="mx-auto box-border flex aspect-[4/5] w-full max-w-[240px] items-center justify-center rounded-2xl p-6 sm:max-w-[300px] lg:max-w-none text-center text-[15px] text-[#4a4258] shadow-[0_6px_20px_rgba(0,0,0,0.08)]"
     style={{ background: "linear-gradient(160deg, #f1edff 0%, #e4dcff 100%)" }}
   >
     {label}
@@ -31,8 +31,7 @@ export const About = () => {
               <p className={BODY}>Soy jurista de formación y he desarrollado mi carrera entre Naciones Unidas, la Unión Europea, Procter &amp; Gamble y el mundo de las startups, trabajando en proyectos y equipos internacionales en ocho países.</p>
               <p className={STRONG}>Hasta que decidí emprender.</p>
               <p className={BODY}>Ahí descubrí que construir un negocio propio es una disciplina completamente distinta. No basta con tener conocimientos, trabajar mucho o acumular cursos. Hay que encontrar una oportunidad de mercado, convertirla en una oferta, posicionarla con autoridad y construir los sistemas digitales para venderla a desconocidos.</p>
-              <p className={BODY}>Probé diferentes modelos de negocio, profundicé en ventas y empecé a trabajar con herramientas digitales e inteligencia artificial. Por el camino entendí algo que hoy está en el centro de todo lo que hacemos en Exponencial:</p>
-              <p className={STRONG}>La cuestión no es pasar de cuenta ajena a propia, sino pasar del modelo de vender tu tiempo a ser dueño de negocio. Y&nbsp;lo mejor es empezar empaquetando lo que ya sabes en un programa de formación y acompañamiento de alto valor.</p>
+              <p className={BODY}>La cuestión no es pasar de cuenta ajena a propia, sino pasar del modelo de vender tu tiempo a ser dueño de negocio. Y&nbsp;lo mejor es empezar empaquetando lo que ya sabes en un programa de formación y acompañamiento de alto valor.</p>
             </Reveal>
           </div>
           <Reveal variant="right" className="min-w-0">
