@@ -18,10 +18,10 @@ const Index = () => {
     <main className="min-h-screen bg-background text-foreground">
       <Nav />
       <Hero />
-      <Trayectoria />
       <DisenaTuPrograma />
       <LeadMagnet />
       <About />
+      <Trayectoria />
       <Thoughts />
       <Exponencial />
       <ForWho />
