@@ -2,10 +2,14 @@ import { useLocation } from "react-router-dom";
 
 // /exponencial retired (Phase 1 migration) — no routes currently need this.
 const HIDE_ON_MOBILE: string[] = [];
+// Standalone pages where the bubble would cover the content (e.g. the last
+// card of the Instagram links page on a phone).
+const HIDE_ALWAYS = ["/links"];
 
 export default function WhatsAppBubble() {
   const { pathname } = useLocation();
   const hideOnMobile = HIDE_ON_MOBILE.some((p) => pathname.startsWith(p));
+  if (HIDE_ALWAYS.some((p) => pathname.startsWith(p))) return null;
 
   return (
     <a

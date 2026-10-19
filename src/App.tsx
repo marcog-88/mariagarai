@@ -12,6 +12,7 @@ const Legal = lazy(() => import("./pages/Legal.tsx"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.tsx"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService.tsx"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy.tsx"));
+const Links = lazy(() => import("./pages/Links.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,8 @@ const App = () => (
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
+            {/* Instagram bio link page (Linktree-style), noindex. */}
+            <Route path="/links" element={<Links />} />
             {/* /eventos, /eventos/:slug and /exponencial moved to
                 laexponencial.com earlier (Phase 1 migration, Session 5) —
                 301 redirects in vercel.json, applied BEFORE the SPA catch-all
