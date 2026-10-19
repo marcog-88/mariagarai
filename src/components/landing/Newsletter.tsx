@@ -14,10 +14,10 @@ export const Newsletter = () => {
           </h2>
           <div className="my-5 space-y-5 text-[18px] leading-[1.6] text-[#0c0d0e]/70 sm:text-[20px]">
             <p className="m-0">
-              Hazte Grande es mi espacio para escribir sobre ambición, decisiones, emprendimiento y la parte menos visible de construir una vida y una carrera a tu manera.
+              Hazte Grande es mi espacio para escribir sobre ambición, decisiones, emprendimiento y la parte más caótica de construir una vida y una carrera a tu manera.
             </p>
             <p className="m-0">
-              Estrategia, mentalidad, experiencias personales y reflexiones para quienes saben que todavía tienen mucho por construir y no quieren quedarse pequeños por el camino.
+              Estrategia, mentalidad, experiencias personales y reflexiones para quienes tienen ambición y ganas de superarse cada día.
             </p>
           </div>
         </Reveal>

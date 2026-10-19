@@ -29,20 +29,18 @@ export const Hero = () => {
               FUNDADORA DE EXPONENCIAL · CONSULTORA DE NEGOCIO
             </p>
             <h1
-              className="animate-fade-up m-0 font-serif text-[40px] leading-[1.05] tracking-[-0.01em] text-white sm:text-[48px] lg:text-[60px]"
+              className="animate-fade-up m-0 font-serif text-[48px] leading-[1.05] tracking-[-0.01em] text-white sm:text-[60px] lg:text-[72px]"
               style={{ animationDelay: "80ms" }}
             >
-              Tu siguiente etapa profesional puede ser mucho más&nbsp;
-              <em className="font-serif italic tracking-[-0.01em] text-[#9378fe] text-[48px] sm:text-[58px] lg:text-[72px]">
-                grande
-              </em>
+              De profesional a dueño de&nbsp;
+              <em className="font-serif italic tracking-[-0.01em] text-[#9378fe]">negocio.</em>
             </h1>
           </div>
           <p
             className="animate-fade-up m-0 max-w-[576px] text-[16px] leading-normal text-white/75 sm:text-[18px]"
             style={{ animationDelay: "150ms" }}
           >
-            Ayudo a profesionales con trayectoria a construir un modelo de negocio más rentable, que escale sus ingresos y les posicione como referentes en su sector, sin perseguir clientes ni publicar su vida en redes.
+            Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.
           </p>
           <div className="animate-fade-up" style={{ animationDelay: "300ms" }}>
             <a
@@ -55,7 +53,7 @@ export const Hero = () => {
                   "0 8px 28px rgba(147, 120, 254, 0.55), 0 14px 56px rgba(147, 120, 254, 0.3)",
               }}
             >
-              Conoce Exponencial <span aria-hidden>→</span>
+              Trabaja Conmigo <span aria-hidden>→</span>
             </a>
           </div>
         </div>

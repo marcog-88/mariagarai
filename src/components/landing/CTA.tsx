@@ -14,7 +14,7 @@ export const CTA = () => {
         </Reveal>
         <Reveal delay={150}>
           <p className="m-0 max-w-[680px] text-[18px] leading-[1.6] text-[#f9f9f7]/80 sm:text-[20px]">
-            Si quieres desarrollar un programa propio y construir una nueva línea de negocio alrededor de tus conocimientos, exploremos el potencial de tu proyecto.
+            Si quieres desarrollar un programa propio y construir una nueva línea de negocio alrededor de tus conocimientos, hablemos.
           </p>
         </Reveal>
         <Reveal delay={300} className="flex flex-col items-center gap-7">
