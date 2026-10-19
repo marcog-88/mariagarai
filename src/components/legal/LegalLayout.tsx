@@ -11,7 +11,7 @@ interface LegalLayoutProps {
 
 export const LegalLayout = ({ title, updated, children }: LegalLayoutProps) => {
   useEffect(() => {
-    document.title = `${title} · María Garaí`;
+    document.title = `${title} · María Garai`;
     window.scrollTo(0, 0);
   }, [title]);
 
@@ -19,7 +19,7 @@ export const LegalLayout = ({ title, updated, children }: LegalLayoutProps) => {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="border-b border-border">
         <div className="container-tight py-5 flex items-center justify-between">
-          <Link to="/" className="flex items-center" aria-label="María Garaí — Inicio">
+          <Link to="/" className="flex items-center" aria-label="María Garai — Inicio">
             <Logo className="block h-5 [&>svg]:h-full [&>svg]:w-auto" />
           </Link>
           <Link to="/" className="text-sm text-foreground/60 hover:text-foreground transition-colors">

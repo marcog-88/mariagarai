@@ -7,7 +7,7 @@ interface LogoProps {
 export const Logo = ({ className }: LogoProps) => {
   return (
     <span
-      aria-label="María Garaí"
+      aria-label="María Garai"
       role="img"
       className={className}
       // The SVG uses fill="currentColor" so it inherits text color.
