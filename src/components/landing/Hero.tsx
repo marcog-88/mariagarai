@@ -29,11 +29,13 @@ export const Hero = () => {
               FUNDADORA DE EXPONENCIAL · CONSULTORA DE NEGOCIO
             </p>
             <h1
-              className="animate-fade-up m-0 font-serif text-[48px] leading-[1.05] tracking-[-0.01em] text-white sm:text-[60px] lg:text-[72px]"
+              className="animate-fade-up m-0 font-serif text-[40px] leading-[1.05] tracking-[-0.01em] text-white sm:text-[48px] lg:text-[60px]"
               style={{ animationDelay: "80ms" }}
             >
-              De profesional a dueño de&nbsp;
-              <em className="font-serif italic tracking-[-0.01em] text-[#9378fe]">negocio.</em>
+              Tu siguiente etapa profesional puede ser mucho más&nbsp;
+              <em className="font-serif italic tracking-[-0.01em] text-[#9378fe] text-[48px] sm:text-[58px] lg:text-[72px]">
+                grande
+              </em>
             </h1>
           </div>
           <p
