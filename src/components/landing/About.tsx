@@ -1,21 +1,26 @@
+import fotoQuien1 from "@/assets/maria-quien-1.webp";
+import fotoQuien2 from "@/assets/maria-quien-2.webp";
 import { Reveal } from "./Reveal";
 import { CONTAINER, H2, SectionLabel } from "@/components/home/primitives";
 
 const BODY = "m-0 text-[16px] leading-[1.7] text-[#0c0d0e]/75 sm:text-[17px]";
 const STRONG = "m-0 text-[16px] leading-[1.7] font-semibold text-[#0c0d0e] sm:text-[17px]";
 
-/** Photo slot: the pictures arrive later, keep it visibly a placeholder. */
-const PhotoPlaceholder = ({ label }: { label: string }) => (
-  <div
-    className="mx-auto box-border flex aspect-[4/5] w-full max-w-[240px] items-center justify-center rounded-2xl p-6 sm:max-w-[300px] lg:max-w-none text-center text-[15px] text-[#4a4258] shadow-[0_6px_20px_rgba(0,0,0,0.08)]"
-    style={{ background: "linear-gradient(160deg, #f1edff 0%, #e4dcff 100%)" }}
-  >
-    {label}
-  </div>
+/** 4:5 portrait, smaller on mobile. `focus` keeps the face in the crop. */
+const Photo = ({ src, focus }: { src: string; focus: string }) => (
+  <img
+    src={src}
+    alt="María Garai"
+    width={900}
+    height={1350}
+    loading="lazy"
+    className="mx-auto block aspect-[4/5] w-full max-w-[240px] rounded-2xl object-cover shadow-[0_6px_20px_rgba(0,0,0,0.08)] sm:max-w-[300px] lg:max-w-none"
+    style={{ objectPosition: focus }}
+  />
 );
 
 // Same 1152px column as the other sections. The bio is split in two blocks,
-// each beside a photo slot, so the lines stay a readable length (20 oct 2026).
+// each beside a photo, so the lines stay a readable length (20 oct 2026).
 export const About = () => {
   return (
     <section id="about" className="bg-white py-24 lg:py-40">
@@ -35,14 +40,14 @@ export const About = () => {
             </Reveal>
           </div>
           <Reveal variant="right" className="min-w-0">
-            <PhotoPlaceholder label="[Foto 1 de María]" />
+            <Photo src={fotoQuien1} focus="50% 20%" />
           </Reveal>
         </div>
 
         {/* Block 2: photo left, text right (text first on mobile) */}
         <div className="grid items-center gap-12 lg:grid-cols-[380px_1fr] lg:gap-24">
           <Reveal variant="left" className="order-2 min-w-0 lg:order-1">
-            <PhotoPlaceholder label="[Foto 2 de María]" />
+            <Photo src={fotoQuien2} focus="50% 30%" />
           </Reveal>
           <Reveal delay={150} className="order-1 flex min-w-0 flex-col gap-6 lg:order-2">
             <p className={BODY}>No necesitas convertirte en experto en programación, marketing, automatizaciones y tecnología para conseguirlo.</p>
