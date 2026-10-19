@@ -16,9 +16,9 @@ const pillars = [
   },
   {
     n: "02",
-    title: "Tu infraestructura digital y operativa",
+    title: "Tu infraestructura comercial y operativa",
     body: [
-      "Construimos contigo el entorno digital necesario para entregar tu programa: plataforma, procesos, accesos, automatizaciones y organización interna.",
+      "Construimos contigo el entorno digital para entregar tu programa: plataforma, procesos, automatizaciones y organización interna.",
       "Integramos la IA donde aporta valor y utilizamos nuestro Program OS para ayudarte a organizar los procesos y las rutinas de tu negocio.",
     ],
   },
@@ -46,10 +46,10 @@ export const Exponencial = () => {
             <span className="italic text-[#9378fe]">vaya más allá de tus horas.</span>
           </h2>
           <p className="m-0 text-[18px] leading-[1.6] text-white/85 sm:text-[20px]">
-            Exponencial es un programa de seis meses en el que mi equipo y yo te ayudamos a transformar tus conocimientos en un programa propio y construimos contigo la infraestructura digital y comercial necesaria para convertirlo en una nueva línea de negocio.
+            Exponencial es un programa de seis meses en el que mi equipo y yo te ayudamos a transformar tus conocimientos en un programa propio y construimos contigo la infraestructura digital y comercial necesaria para convertirlo en una línea de negocio muy rentable.
           </p>
           <p className="m-0 text-[16px] leading-[1.6] text-white/65 sm:text-[18px]">
-            No tienes que llegar con una metodología perfectamente definida ni con toda la parte técnica resuelta. Partimos de tus conocimientos, capacidades y objetivos para construir un proyecto con fundamento.
+            No tienes que llegar con una metodología definida ni las ideas listas. Partimos de tu trayectoria y tu potencial para sentar las bases de tu negocio y crear los activos digitales que lo escalen.
           </p>
         </Reveal>
 
@@ -70,21 +70,12 @@ export const Exponencial = () => {
           ))}
         </Reveal>
 
-        <Reveal className="flex max-w-[900px] flex-col gap-5 border-t border-[rgba(147,120,254,0.25)] pt-12">
-          <h3 className="m-0 font-serif text-[30px] leading-[1.15] text-white sm:text-[36px]">
-            Estrategia, acompañamiento e implementación en el mismo equipo.
-          </h3>
-          <p className="m-0 text-[16px] leading-[1.65] text-white/70 sm:text-[17px]">
-            Durante seis meses combinamos sesiones individuales conmigo, sesiones grupales de estrategia, ventas e IA aplicada, acompañamiento continuado y trabajo técnico de implementación.
-          </p>
-          <p className="mb-0 mt-2 font-serif text-[24px] italic leading-[1.3] text-[#9378fe] sm:text-[30px]">
-            No inviertes únicamente en aprender a construir un negocio. Inviertes en construirlo.
-          </p>
-        </Reveal>
+        {/* Thin divider only: the «Estrategia, acompañamiento…» block was removed (19 oct 2026). */}
+        <div aria-hidden className="max-w-[900px] border-t border-[rgba(147,120,254,0.25)] pt-12" />
 
         <Reveal className="flex flex-col items-start gap-3.5">
           <a href={LA_EXPONENCIAL} target="_blank" rel="noopener noreferrer" className={BTN_DARK}>
-            Descubre el programa Exponencial →
+            Conoce Exponencial →
           </a>
           <p className="m-0 text-[13px] tracking-[0.08em] text-white/50">
             Programa de seis meses · Acceso mediante valoración previa

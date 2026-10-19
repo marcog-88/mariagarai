@@ -16,17 +16,15 @@ export const About = () => {
             <h2 className={`mb-4 mt-0 ${H2}`}>¡Hola! Soy María Garai.</h2>
           </Reveal>
           <Reveal delay={150} className="flex flex-col gap-6">
-            <p className={BODY}>Soy jurista de formación y he desarrollado mi carrera entre Naciones Unidas, la Unión Europea, P&amp;G y el mundo de las startups, trabajando en proyectos y equipos internacionales en ocho países.</p>
-            <p className={BODY}>Durante años conocí el mundo profesional desde dentro: las grandes organizaciones, los procesos corporativos, los objetivos comerciales, la presión por conseguir resultados y las oportunidades que aparecen cuando aprendes a combinar estrategia y ejecución.</p>
+            <p className={BODY}>Soy jurista de formación y he desarrollado mi carrera entre Naciones Unidas, la Unión Europea, Procter &amp; Gamble y el mundo de las startups, trabajando en proyectos y equipos internacionales en ocho países.</p>
             <p className={STRONG}>Hasta que decidí emprender.</p>
-            <p className={BODY}>Y descubrí que construir un negocio propio es una disciplina completamente distinta. No basta con tener conocimientos, trabajar mucho o acumular cursos. Hay que encontrar una oportunidad real, convertirla en una oferta, aprender a venderla y construir los sistemas que permitan llevarla a la práctica.</p>
+            <p className={BODY}>Ahí descubrí que construir un negocio propio es una disciplina completamente distinta. No basta con tener conocimientos, trabajar mucho o acumular cursos. Hay que encontrar una oportunidad de mercado, convertirla en una oferta, posicionarla con autoridad y construir los sistemas digitales para venderla a desconocidos.</p>
             <p className={BODY}>Probé diferentes modelos de negocio, profundicé en ventas y empecé a trabajar con herramientas digitales e inteligencia artificial. Por el camino entendí algo que hoy está en el centro de todo lo que hacemos en Exponencial:</p>
-            <p className={STRONG}>No necesitas empezar otra carrera desde cero para construir algo propio. Puedes desarrollar una nueva línea de negocio a partir de los conocimientos, capacidades e intereses profesionales que ya tienes.</p>
-            <p className={BODY}>Y tampoco necesitas convertirte en experto en programación, marketing, automatizaciones y tecnología para conseguirlo.</p>
-            <p className={BODY}>Por eso creamos Exponencial: para unir el trabajo estratégico con la implementación y ayudar a profesionales a desarrollar su propio programa, construir su infraestructura digital y poner en marcha un sistema comercial.</p>
-            <p className={BODY}>Quiero que más profesionales puedan decidir cómo desarrollar su carrera, crear algo que lleve su nombre y ampliar las posibilidades de vivir de lo que saben.</p>
-            <p className={BODY}>No se trata de trabajar menos por arte de magia ni de abandonar necesariamente tu profesión. Se trata de construir más opciones y dejar de depender de una única manera de generar ingresos.</p>
-            <p className={STRONG}>Mi misión es ayudarte a construir esa siguiente etapa profesional. Y, por el camino, hacerte grande.</p>
+            <p className={STRONG}>La cuestión no es pasar de cuenta ajena a propia, sino pasar del modelo de vender tu tiempo a ser dueño de negocio. Y&nbsp;lo mejor es empezar empaquetando lo que ya sabes en un programa de formación y acompañamiento de alto valor.</p>
+            <p className={BODY}>No necesitas convertirte en experto en programación, marketing, automatizaciones y tecnología para conseguirlo.</p>
+            <p className={BODY}>Por eso creé Exponencial: para unir el trabajo estratégico con la implementación y ayudar a profesionales a desarrollar su propio programa, construir su infraestructura digital y un sistema comercial multi-canal.</p>
+            <p className={BODY}>Quiero que más profesionales puedan decidir cómo desarrollar su carrera, crear algo que lleve su nombre y ampliar las posibilidades de vivir muy bien de lo que saben.</p>
+            <p className={BODY}>Mi misión es ayudarte a construir esa siguiente etapa profesional. Y, por el camino, hacerte grande.</p>
           </Reveal>
         </div>
 

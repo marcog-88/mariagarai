@@ -10,6 +10,9 @@ export const CONTAINER = "mx-auto w-full max-w-[1216px] px-6 sm:px-8";
 /** Section H2: 60px serif on desktop, scaled down proportionally. */
 export const H2 = "font-serif text-[40px] sm:text-[48px] lg:text-[60px] leading-[1.05] tracking-[-0.01em]";
 
+/** 56px variant (Diseña tu Programa, Taller, A quién puedo ayudar). */
+export const H2_56 = "font-serif text-[40px] sm:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.01em]";
+
 /** Purple pill with the solid offset shadow used on light backgrounds. */
 export const BTN_LIGHT =
   "inline-flex items-center justify-center gap-3 rounded-full bg-[#9378fe] px-7 py-3.5 sm:px-8 sm:py-4 text-[16px] sm:text-[18px] font-medium leading-normal text-white shadow-[4px_4px_0_0_#0c0d0e] transition-transform duration-300 hover:-translate-y-px";

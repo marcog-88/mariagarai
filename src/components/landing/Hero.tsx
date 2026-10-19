@@ -42,7 +42,7 @@ export const Hero = () => {
             className="animate-fade-up m-0 max-w-[576px] text-[16px] leading-normal text-white/75 sm:text-[18px]"
             style={{ animationDelay: "150ms" }}
           >
-            Ayudo a profesionales con trayectoria a construir un modelo de negocio más rentable, que escale sus ingresos y les posicione como referentes en su sector, sin perseguir clientes ni publicar su vida en redes.
+            Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.
           </p>
           <div className="animate-fade-up" style={{ animationDelay: "300ms" }}>
             <a
@@ -55,7 +55,7 @@ export const Hero = () => {
                   "0 8px 28px rgba(147, 120, 254, 0.55), 0 14px 56px rgba(147, 120, 254, 0.3)",
               }}
             >
-              Conoce Exponencial <span aria-hidden>→</span>
+              Trabaja Conmigo <span aria-hidden>→</span>
             </a>
           </div>
         </div>
