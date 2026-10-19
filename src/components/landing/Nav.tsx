@@ -57,7 +57,7 @@ export const Nav = ({ forceLight = false }: { forceLight?: boolean } = {}) => {
             className={`flex items-center transition-colors duration-300 ${
               onDark ? "text-white" : "text-foreground"
             }`}
-            aria-label="María Garaí"
+            aria-label="María Garai"
           >
             <Logo className="block h-4 md:h-5 [&>svg]:h-full [&>svg]:w-auto" />
           </a>
