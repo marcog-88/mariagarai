@@ -1,4 +1,8 @@
-import portrait from "@/assets/maria-hero-cutout.webp";
+// Same white-shirt cutout as before, rebuilt from the full-resolution original
+// (maria-garantia.webp) with a clean edge on the trousers; two widths so phones
+// load ~32 KB and retina desktops ~69 KB.
+import portrait520 from "@/assets/maria-hero-520.webp";
+import portrait940 from "@/assets/maria-hero-940.webp";
 import logoNacionesUnidas from "@/assets/logos/logo-naciones-unidas.png";
 import logoPG from "@/assets/logos/logo-pg.png";
 import logoWWF from "@/assets/logos/logo-wwf.png";
@@ -29,7 +33,15 @@ export const Hero = () => (
           grande
         </div>
         <figure className="pd-hero__fig">
-          <img src={portrait} alt="María Garai" width={683} height={1024} fetchPriority="high" />
+          <img
+            src={portrait520}
+            srcSet={`${portrait520} 520w, ${portrait940} 940w`}
+            sizes="(max-width: 700px) 260px, 470px"
+            alt="María Garai"
+            width={520}
+            height={779}
+            fetchPriority="high"
+          />
         </figure>
       </div>
 
