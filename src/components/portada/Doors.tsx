@@ -1,38 +1,96 @@
-import type { ReactNode } from "react";
-import captura from "@/assets/disena-tu-programa-captura.webp";
-import talleres from "@/assets/talleres-live-mockup.png";
-import haztegrande from "@/assets/hg-mini-logo.png";
+import mariaCutout from "@/assets/maria-hero-cutout.webp";
+import mariaCafe from "@/assets/maria-quien-2.webp";
 import { DISENA_TU_PROGRAMA, EVENTOS, EXTERNAL, SUBSTACK } from "./links";
 
-/** Laptop drawn in CSS around a screen. */
-const Laptop = ({ children }: { children: ReactNode }) => (
-  <div className="pd-laptop">
-    <div className="pd-laptop__screen">
-      <div>{children}</div>
+/**
+ * Card visuals are drawn in HTML/CSS (see "Card visuals" in portada.css), not
+ * images, so they stay sharp and light. They're decorative: each card's own
+ * heading and text carry the content for screen readers.
+ */
+
+/** The free tool, in the new Diseña tu programa style on laexponencial.com. */
+const ToolVisual = () => (
+  <div className="pd-viz pd-viz--tool" aria-hidden>
+    <div className="pd-tool__top">
+      <span className="pd-tool__wm">
+        E<em>X</em>PONENCIAL<em>.</em>
+      </span>
+      <span className="pd-tool__free">✦ Gratis</span>
     </div>
-    <div className="pd-laptop__base" aria-hidden />
+    <p className="pd-tool__h">
+      Empaqueta <em>lo que ya sabes</em>
+    </p>
+    <div className="pd-tool__gets">
+      <span className="pd-tool__get">
+        <i className="p">♛</i>Tu programa insignia: módulos, formato y precio
+      </span>
+    </div>
+    <span className="pd-tool__sticker">Resultado en 30 seg</span>
+    <div className="pd-tool__band">
+      <span>
+        {[0, 1].map((k) => (
+          <span key={k}>
+            <b>Nicho</b>
+            <i>✦</i>
+            <b>Programa</b>
+            <i>✦</i>
+            <b>Precio</b>
+            <i>✦</i>
+            <b>Lanzamiento</b>
+            <i>✦</i>
+          </span>
+        ))}
+      </span>
+    </div>
   </div>
 );
 
-/**
- * Hazte Grande front page, drawn in CSS so it carries the current newsletter
- * name and logo (the old Carreras Modernas mockup image is retired). The
- * newsletter branding may change again: edit it here.
- */
-const HazteGrandeScreen = () => (
-  <div className="pd-hg">
-    <div className="pd-hg__top">
-      <span>
-        <img src={haztegrande} alt="" /> Hazte Grande
-      </span>
-      <span className="pd-hg__sub">Subscribe</span>
-    </div>
-    <div className="pd-hg__mid">
-      <img src={haztegrande} alt="" />
-      <p className="pd-hg__title">
-        Hazte Grande<span>Newsletter</span>
+/** The Wednesday workshop as a live show hosted by María (no stock photo). */
+const LiveVisual = () => (
+  <div className="pd-viz pd-viz--live" aria-hidden>
+    <div className="pd-live__ring" />
+    <img className="pd-live__img" src={mariaCutout} alt="" loading="lazy" />
+    <span className="pd-live__badge">
+      <i />
+      EN DIRECTO
+    </span>
+    <span className="pd-live__eq">
+      <i />
+      <i />
+      <i />
+      <i />
+    </span>
+    <div className="pd-live__tt">
+      <small>Exponencial Live</small>
+      <p>
+        De profesional a <em>dueño de negocio</em>
       </p>
-      <p className="pd-hg__tag">Crea un negocio al servicio de una vida grande.</p>
+    </div>
+    <div className="pd-live__info">
+      <span>Cada miércoles · 17:00 h</span>
+      <span>Online · Gratis</span>
+    </div>
+  </div>
+);
+
+/** Hazte Grande as a magazine cover, with a real post title as the cover line. */
+const NewsletterVisual = () => (
+  <div className="pd-viz pd-viz--news" aria-hidden>
+    <div className="pd-mag__cover">
+      <img src={mariaCafe} alt="" loading="lazy" />
+      <span className="pd-mag__mast">Hazte Grande</span>
+      <span className="pd-mag__by">
+        <span>Por María Garai</span>
+        <span>Cada semana</span>
+      </span>
+      <span className="pd-mag__line">Mi psiquiatra me dijo las 3 palabras más importantes de mi vida</span>
+    </div>
+    <div className="pd-mag__side">
+      <small>Newsletter</small>
+      <p>
+        Tu futuro te quiere <em>más grande.</em>
+      </p>
+      <span>Hazte coach. Pero vuelve al Derecho.</span>
     </div>
   </div>
 );
@@ -40,12 +98,8 @@ const HazteGrandeScreen = () => (
 export const Doors = () => (
   <div className="pd-doors">
     <article className="pd-door">
-      <div className="pd-door__ph" style={{ position: "relative" }}>
-        <div className="pd-dev">
-          <Laptop>
-            <img src={captura} alt="Captura de la herramienta Diseña tu Programa" className="h-full w-full object-cover object-top" loading="lazy" />
-          </Laptop>
-        </div>
+      <div className="pd-door__ph">
+        <ToolVisual />
       </div>
       <div className="pd-door__in">
         <span className="pd-eyebrow">Herramienta gratuita</span>
@@ -61,7 +115,7 @@ export const Doors = () => (
 
     <article className="pd-door">
       <div className="pd-door__ph">
-        <img src={talleres} alt="Taller en vivo, sesión grupal con María Garai y participantes" loading="lazy" />
+        <LiveVisual />
       </div>
       <div className="pd-door__in">
         <span className="pd-eyebrow">Cada miércoles · Taller en vivo</span>
@@ -76,17 +130,8 @@ export const Doors = () => (
     </article>
 
     <article className="pd-door">
-      <div className="pd-door__ph" style={{ position: "relative" }}>
-        <div className="pd-dev" aria-label="Hazte Grande en ordenador y móvil" role="img">
-          <Laptop>
-            <HazteGrandeScreen />
-          </Laptop>
-          <div className="pd-phone">
-            <div>
-              <HazteGrandeScreen />
-            </div>
-          </div>
-        </div>
+      <div className="pd-door__ph">
+        <NewsletterVisual />
       </div>
       <div className="pd-door__in">
         <span className="pd-eyebrow">Hazte Grande · Newsletter</span>
