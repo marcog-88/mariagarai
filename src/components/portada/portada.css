@@ -1402,11 +1402,12 @@ body:has(.pd) {
   inset: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, rgba(11, 12, 15, 0.8) 100%);
 }
+/* Masthead and byline sit low, over the dark fade, so they never cover the face. */
 .pd-mag__mast {
   position: absolute;
   left: 0;
   right: 0;
-  top: 4%;
+  bottom: 17%;
   text-align: center;
   font: 800 8cqw/0.9 "Poppins", var(--pd-sans);
   letter-spacing: -0.045em;
@@ -1417,13 +1418,13 @@ body:has(.pd) {
   position: absolute;
   left: 6%;
   right: 6%;
-  top: 17%;
+  bottom: 41%;
   display: flex;
   justify-content: space-between;
   font: 700 1.3cqw/1 var(--pd-sans);
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #4a4e58;
+  color: rgba(255, 255, 255, 0.85);
   z-index: 2;
 }
 .pd-mag__line {

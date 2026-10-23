@@ -90,7 +90,7 @@ const NewsletterVisual = () => (
       <p>
         Tu futuro te quiere <em>más grande.</em>
       </p>
-      <span>Hazte coach. Pero vuelve al Derecho.</span>
+      <span>Por María Garai, cada viernes en tu bandeja de entrada.</span>
     </div>
   </div>
 );
