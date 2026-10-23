@@ -5,6 +5,7 @@ import { Wishes } from "@/components/portada/Wishes";
 import { Doors } from "@/components/portada/Doors";
 import { TrabajaConmigo } from "@/components/portada/TrabajaConmigo";
 import { About } from "@/components/portada/About";
+import { Cositas } from "@/components/portada/Cositas";
 import { Closing, ForWho, NewsletterSpeaking } from "@/components/portada/Closing";
 
 // "Portada con firma" home (oct 2026): direction D of the María Garai
@@ -20,6 +21,7 @@ const Index = () => {
         <Doors />
         <TrabajaConmigo />
         <About />
+        <Cositas />
         <ForWho />
         <NewsletterSpeaking />
         <Closing />

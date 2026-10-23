@@ -1402,11 +1402,12 @@ body:has(.pd) {
   inset: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, rgba(11, 12, 15, 0.8) 100%);
 }
+/* Masthead and byline sit low, over the dark fade, so they never cover the face. */
 .pd-mag__mast {
   position: absolute;
   left: 0;
   right: 0;
-  top: 4%;
+  bottom: 17%;
   text-align: center;
   font: 800 8cqw/0.9 "Poppins", var(--pd-sans);
   letter-spacing: -0.045em;
@@ -1417,13 +1418,13 @@ body:has(.pd) {
   position: absolute;
   left: 6%;
   right: 6%;
-  top: 17%;
+  bottom: 41%;
   display: flex;
   justify-content: space-between;
   font: 700 1.3cqw/1 var(--pd-sans);
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #4a4e58;
+  color: rgba(255, 255, 255, 0.85);
   z-index: 2;
 }
 .pd-mag__line {
@@ -1649,10 +1650,11 @@ body:has(.pd) {
   object-position: 60% 35%;
 }
 .pd-bento__tile--3 img {
-  object-position: 50% 20%;
+  /* Landscape photo: keep María (right) with the bookshelves behind her. */
+  object-position: 74% 40%;
 }
 .pd-bento__tile--4 img {
-  object-position: 42% 30%;
+  object-position: 50% 25%;
 }
 
 .pd-journey {
@@ -2439,5 +2441,150 @@ body:has(.pd) {
   .pd *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+/* ---------- cosas de mí (polaroids, María's pick) ---------- */
+.pd-cositas {
+  padding-block: 8px 152px;
+}
+.pd-cositas__h2 {
+  font-family: var(--pd-serif);
+  font-size: clamp(40px, 5.6vw, 80px);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  max-width: 900px;
+}
+.pd-cositas__h2 em {
+  color: var(--pd-violet);
+}
+.pd-cositas__hint {
+  margin-top: 14px;
+  color: var(--pd-mute);
+  font-size: 16px;
+}
+/* Smaller polaroids: four per row inside ~880px. */
+.pd-cositas__board {
+  margin-top: 48px;
+  max-width: 880px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 190px), 1fr));
+  gap: 26px 20px;
+  align-items: start;
+}
+.pd-pola {
+  position: relative;
+  background: #fff;
+  padding: 10px 10px 14px;
+  border-radius: 4px;
+  box-shadow: 0 14px 30px -18px rgba(11, 12, 15, 0.5);
+  transition: transform 0.3s;
+}
+.pd-pola:nth-child(odd) { transform: rotate(-2deg); }
+.pd-pola:nth-child(even) { transform: rotate(1.8deg); }
+.pd-pola:nth-child(3n) { transform: rotate(-0.6deg); }
+.pd-pola:hover,
+.pd-pola[open] {
+  transform: rotate(0) translateY(-4px);
+  z-index: 2;
+}
+.pd-pola summary {
+  list-style: none;
+  cursor: pointer;
+  display: block;
+}
+.pd-pola summary::-webkit-details-marker {
+  display: none;
+}
+.pd-pola summary:focus-visible {
+  outline: 2px solid var(--pd-violet);
+  outline-offset: 6px;
+}
+.pd-pola__tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 70px;
+  height: 20px;
+  transform: translateX(-50%) rotate(-4deg);
+  border-radius: 2px;
+  opacity: 0.9;
+}
+.pd-pola:nth-child(4n + 1) .pd-pola__tape { background: #d0fcd0; }
+.pd-pola:nth-child(4n + 2) .pd-pola__tape { background: #ffe58a; }
+.pd-pola:nth-child(4n + 3) .pd-pola__tape { background: #ffc2dd; }
+.pd-pola:nth-child(4n) .pd-pola__tape { background: var(--pd-lilac); }
+.pd-pola__ph {
+  display: block;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.pd-pola__ph img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.pd-pola__sticker {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 21px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.pd-pola__cap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 10px;
+}
+.pd-pola__t {
+  font: italic 400 22px/1.05 var(--pd-serif);
+}
+.pd-pola__more {
+  font: 600 11px/1 var(--pd-sans);
+  color: var(--pd-violet-text);
+  white-space: nowrap;
+}
+.pd-pola[open] .pd-pola__more {
+  visibility: hidden;
+}
+.pd-pola p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--pd-mute);
+}
+.pd-pola a {
+  color: var(--pd-violet-text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+/* Phones: two per row. */
+@media (max-width: 640px) {
+  .pd-cositas__board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 14px;
+  }
+  .pd-pola {
+    padding: 8px 8px 12px;
+  }
+  .pd-pola__t {
+    font-size: 18px;
+  }
+  .pd-pola__sticker {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
   }
 }

@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useRef } from "react";
-import retrato from "@/assets/maria-bio-retrato.webp";
+import chaqueta from "@/assets/maria-bio-chaqueta.webp";
 import terraza from "@/assets/maria-bio-terraza.webp";
-import calle from "@/assets/maria-bio-calle.webp";
-import conferencia from "@/assets/maria-bio-conferencia.webp";
+import libros from "@/assets/maria-bio-libros.webp";
+import escribiendo from "@/assets/maria-bio-escribiendo.webp";
 import logoNacionesUnidas from "@/assets/logos/logo-naciones-unidas.png";
 import logoPG from "@/assets/logos/logo-pg.png";
 import logoWWF from "@/assets/logos/logo-wwf.png";
@@ -45,11 +45,13 @@ const words = (text: string) =>
     ),
   );
 
+// Order = tile position: 1 big, 2 wide, 3-4 small. The hero portrait and the
+// conference photo were dropped here (both already appear elsewhere on the page).
 const photos = [
-  { src: retrato, alt: "María Garai", px: 0.1 },
+  { src: chaqueta, alt: "María Garai en la calle con chaqueta rosa", px: 0.1 },
   { src: terraza, alt: "María Garai trabajando en una terraza", px: 0.06 },
-  { src: calle, alt: "María Garai en la calle", px: 0.14 },
-  { src: conferencia, alt: "María Garai dando una conferencia", px: 0.08 },
+  { src: libros, alt: "María Garai en una librería", px: 0.14 },
+  { src: escribiendo, alt: "María Garai escribiendo en un cuaderno", px: 0.08 },
 ];
 
 export const About = () => {
