@@ -32,7 +32,7 @@ const pillars = [
 export const TrabajaConmigo = () => (
   <section className="pd-prog" id="trabaja-conmigo">
     <img src={monograma} alt="" className="pd-prog__m" aria-hidden />
-    <span className="pd-label pd-label--dark">Trabaja conmigo</span>
+    <span className="pd-label pd-label--dark">Mentoría 1:1</span>
     <h2 className="pd-prog__h2">
       Te ayudo a convertir lo que sabes en un negocio que vaya <em>más allá de tus horas.</em>
     </h2>
