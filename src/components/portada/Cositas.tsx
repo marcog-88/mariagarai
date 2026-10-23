@@ -3,9 +3,9 @@ import fotoHippie from "@/assets/cosa-hippie.webp";
 import fotoObsesion from "@/assets/cosa-obsesion.webp";
 import fotoNovela from "@/assets/cosa-novela.webp";
 import fotoViajes from "@/assets/cosa-viajes.webp";
+import fotoBilbao from "@/assets/cosa-bilbao.webp";
 // PROVISIONAL (already on the site) until María sends their own photo.
 import fotoHazteGrande from "@/assets/maria-bio-retrato.webp";
-import fotoBilbao from "@/assets/maria-bio-chaqueta.webp";
 import fotoFoodie from "@/assets/maria-quien-2.webp";
 import fotoArte from "@/assets/maria-bio-conferencia.webp";
 
@@ -62,6 +62,7 @@ const COSITAS: { emoji: string; title: string; text: ReactNode; img: string; pos
     emoji: "📍",
     title: "De Bilbao al mundo",
     img: fotoBilbao,
+    pos: "62% 50%",
     text: "Soy de Bilbao. He vivido en Lisboa, Ginebra, Oxford, Venecia, Copenhague, Lovaina y Maastricht.",
   },
   {
