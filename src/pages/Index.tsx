@@ -1,34 +1,29 @@
-import { Nav } from "@/components/landing/Nav";
-import { Hero } from "@/components/landing/Hero";
-import { Thoughts } from "@/components/landing/Thoughts";
-import { Exponencial } from "@/components/landing/Exponencial";
-import { LeadMagnet } from "@/components/landing/LeadMagnet";
-import { Newsletter } from "@/components/landing/Newsletter";
-import { About } from "@/components/landing/About";
-import { ForWho } from "@/components/landing/ForWho";
-import { CTA } from "@/components/landing/CTA";
-import { Footer } from "@/components/landing/Footer";
-import { Speaking } from "@/components/home/Speaking";
-import { DisenaTuPrograma } from "@/components/home/DisenaTuPrograma";
-import { Trayectoria } from "@/components/home/Trayectoria";
+import "@/components/portada/portada.css";
+import { Nav } from "@/components/portada/Nav";
+import { Hero } from "@/components/portada/Hero";
+import { Wishes } from "@/components/portada/Wishes";
+import { Doors } from "@/components/portada/Doors";
+import { TrabajaConmigo } from "@/components/portada/TrabajaConmigo";
+import { About } from "@/components/portada/About";
+import { Closing, ForWho, NewsletterSpeaking } from "@/components/portada/Closing";
 
-// Section order follows docs/mariagarai-home-diseno.html (Oct 2026 redesign).
+// "Portada con firma" home (oct 2026): direction D of the María Garai
+// Redesign artifact, aligned with laexponencial.com v2. All styles are scoped
+// to .pd in components/portada/portada.css.
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="pd" id="top">
       <Nav />
       <Hero />
-      <DisenaTuPrograma />
-      <LeadMagnet />
-      <About />
-      <Trayectoria />
-      <Thoughts />
-      <Exponencial />
-      <ForWho />
-      <Newsletter />
-      <Speaking />
-      <CTA />
-      <Footer dark />
+      <Wishes />
+      <div className="pd-wrap">
+        <Doors />
+        <TrabajaConmigo />
+        <About />
+        <ForWho />
+        <NewsletterSpeaking />
+        <Closing />
+      </div>
     </main>
   );
 };
