@@ -4,10 +4,9 @@ import fotoObsesion from "@/assets/cosa-obsesion.webp";
 import fotoNovela from "@/assets/cosa-novela.webp";
 import fotoViajes from "@/assets/cosa-viajes.webp";
 import fotoBilbao from "@/assets/cosa-bilbao.webp";
-// PROVISIONAL (already on the site) until María sends their own photo.
-import fotoHazteGrande from "@/assets/maria-bio-retrato.webp";
-import fotoFoodie from "@/assets/maria-quien-2.webp";
-import fotoArte from "@/assets/maria-bio-conferencia.webp";
+import fotoHazteGrande from "@/assets/cosa-hazte-grande.webp";
+import fotoFoodie from "@/assets/cosa-foodie.webp";
+import fotoArte from "@/assets/cosa-arte.webp";
 
 // "Cosas de mí que tal vez te sorprendan" (oct 2026): a playful, personal
 // break under "Quién está detrás", as polaroids (María chose option 2). Each
@@ -35,6 +34,7 @@ const COSITAS: { emoji: string; title: string; text: ReactNode; img: string; pos
     emoji: "💜",
     title: "El origen de Hazte Grande",
     img: fotoHazteGrande,
+    pos: "50% 22%",
     text: "Tuve anorexia a los 12 y estuve ingresada 6 meses. De ahí nació mi filosofía Hazte Grande.",
   },
   {
@@ -75,6 +75,7 @@ const COSITAS: { emoji: string; title: string; text: ReactNode; img: string; pos
     emoji: "💃",
     title: "Mi vena artística",
     img: fotoArte,
+    pos: "45% 55%",
     text: "Hice teatro y ballet. Adoro las manualidades. Y sueño con bailar flamenco. Pero lo que más me gusta es cantar con mi padre y su guitarra.",
   },
 ];
