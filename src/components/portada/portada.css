@@ -1650,7 +1650,8 @@ body:has(.pd) {
   object-position: 60% 35%;
 }
 .pd-bento__tile--3 img {
-  object-position: 50% 20%;
+  /* Landscape photo: keep María (right) with the bookshelves behind her. */
+  object-position: 74% 40%;
 }
 .pd-bento__tile--4 img {
   object-position: 50% 25%;

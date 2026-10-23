@@ -11,7 +11,7 @@ const COSITAS: { emoji: string; title: string; text: ReactNode }[] = [
   {
     emoji: "🌿",
     title: "Mi lado hippie",
-    text: "Tengo un lado hierbas. Monté un negocio de coaching y retiros con terapias de psicodélicos.",
+    text: "Tengo un lado hippie. Monté un negocio de coaching y retiros con terapias de psicodélicos.",
   },
   {
     emoji: "🧘‍♀️",
@@ -48,7 +48,7 @@ const COSITAS: { emoji: string; title: string; text: ReactNode }[] = [
   {
     emoji: "☕",
     title: "Foodie y Coffee Snob",
-    text: "Me encanta comer el restaurantes, probar cafeterías y hacerme listas en Google Maps. AH y me chifla la tortilla de patata.",
+    text: "Me encanta comer en restaurantes, probar cafeterías y hacerme listas en Google Maps. Ah, y me chifla la tortilla de patata.",
   },
   {
     emoji: "💃",

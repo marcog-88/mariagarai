@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useRef } from "react";
 import chaqueta from "@/assets/maria-bio-chaqueta.webp";
 import terraza from "@/assets/maria-bio-terraza.webp";
-import cafe from "@/assets/maria-bio-cafe.webp";
+import libros from "@/assets/maria-bio-libros.webp";
 import escribiendo from "@/assets/maria-bio-escribiendo.webp";
 import logoNacionesUnidas from "@/assets/logos/logo-naciones-unidas.png";
 import logoPG from "@/assets/logos/logo-pg.png";
@@ -50,7 +50,7 @@ const words = (text: string) =>
 const photos = [
   { src: chaqueta, alt: "María Garai en la calle con chaqueta rosa", px: 0.1 },
   { src: terraza, alt: "María Garai trabajando en una terraza", px: 0.06 },
-  { src: cafe, alt: "María Garai sonriendo en una cafetería", px: 0.14 },
+  { src: libros, alt: "María Garai en una librería", px: 0.14 },
   { src: escribiendo, alt: "María Garai escribiendo en un cuaderno", px: 0.08 },
 ];
 
