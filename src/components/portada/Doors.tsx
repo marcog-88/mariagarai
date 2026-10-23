@@ -1,4 +1,4 @@
-import mariaCutout from "@/assets/maria-hero-cutout.webp";
+import mariaCutout from "@/assets/maria-hero-520.webp";
 import mariaCafe from "@/assets/maria-quien-2.webp";
 import { DISENA_TU_PROGRAMA, EVENTOS, EXTERNAL, SUBSTACK } from "./links";
 
