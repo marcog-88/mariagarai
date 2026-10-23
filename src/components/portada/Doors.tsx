@@ -96,7 +96,7 @@ const NewsletterVisual = () => (
 );
 
 export const Doors = () => (
-  <div className="pd-doors">
+  <div className="pd-doors" id="empieza">
     <article className="pd-door">
       <div className="pd-door__ph">
         <ToolVisual />

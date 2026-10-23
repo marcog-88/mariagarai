@@ -8,6 +8,15 @@
    global tokens (AGENTS.md rule 3). Colours live in the variable block on
    the page wrapper. */
 
+/* index.css gives html and body `overflow-x: hidden`, which turns body into a
+   scroll container and silently disables every position: sticky inside it
+   (the nav and the wishes deck). On this page only, `clip` keeps sideways
+   overflow hidden without creating that scroll container. */
+html:has(.pd),
+body:has(.pd) {
+  overflow-x: clip;
+}
+
 .pd {
   --pd-paper: #f5f6f8;
   --pd-sand: #eceef2;
@@ -479,63 +488,543 @@
   max-width: 16ch;
 }
 
-/* ---------- esto es lo que quieres ---------- */
+/* ---------- esto es lo que quieres: a deck of wishes ----------
+   Desktop: the section pins for ~1.5 screens of scrolling while one card per
+   wish is dealt onto the pile (Wishes.tsx drives it). Phones and reduced
+   motion: no pinning at all, the cards are a horizontal swipe row. A "Saltar"
+   link skips straight past the section. */
 .pd-want {
   background: var(--pd-lilac);
+  position: relative;
 }
-.pd-want .pd-wrap {
+.pd-deck__track {
+  height: 250vh;
+}
+#empieza {
+  scroll-margin-top: 80px;
+}
+.pd-deck__stage {
+  position: sticky;
+  top: 72px;
+  height: calc(100vh - 72px);
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  gap: 72px;
-  align-items: start;
-  padding-block: 120px;
+  gap: 64px;
+  align-items: center;
+}
+.pd-deck__left {
+  display: grid;
+  gap: 22px;
+  justify-items: start;
 }
 .pd-want__h2 {
   font-family: var(--pd-serif);
   font-size: clamp(40px, 5vw, 76px);
   line-height: 1;
   letter-spacing: -0.025em;
-  margin-top: 16px;
 }
 .pd-want__h2 em {
   color: var(--pd-violet-text);
 }
-.pd-tags {
+.pd-deck__count {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding-top: 8px;
+  align-items: baseline;
+  gap: 10px;
+  font: 600 13px/1 var(--pd-sans);
+  color: var(--pd-mute);
 }
-.pd-tag {
-  appearance: none;
-  font: 500 15px/1.35 var(--pd-sans);
-  color: var(--pd-text);
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(11, 12, 15, 0.12);
-  border-radius: 10px;
-  padding: 14px 20px;
-  cursor: pointer;
-  text-align: left;
-  transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
-}
-.pd-tag:hover {
-  border-color: rgba(11, 12, 15, 0.35);
-  transform: translateY(-1px);
-}
-.pd-tag[aria-pressed="true"] {
-  background: var(--pd-ink);
-  color: #fff;
-  border-color: var(--pd-ink);
-}
-.pd-tag--last {
-  background: rgba(147, 120, 254, 0.14);
+.pd-deck__count b {
+  font-family: var(--pd-serif);
+  font-weight: 400;
+  font-size: 44px;
   color: var(--pd-violet-text);
-  border-color: rgba(147, 120, 254, 0.4);
+  font-variant-numeric: tabular-nums;
+  min-width: 1.4em;
 }
-.pd-tag--last[aria-pressed="true"] {
+.pd-deck__bars {
+  display: flex;
+  gap: 4px;
+  width: min(260px, 100%);
+}
+.pd-deck__bars i {
+  flex: 1;
+  height: 4px;
+  border-radius: 9px;
+  background: rgba(91, 63, 214, 0.18);
+  transition: background-color 0.3s;
+}
+.pd-deck__bars i.is-on {
   background: var(--pd-violet);
-  border-color: var(--pd-violet);
+}
+.pd-deck__skip {
+  font: 600 13px/1 var(--pd-sans);
+  color: var(--pd-mute);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(11, 12, 15, 0.2);
+  padding-bottom: 3px;
+}
+.pd-deck__skip:hover {
+  color: var(--pd-text);
+}
+.pd-deck__pile {
+  position: relative;
+  height: min(400px, 52vh);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pd-wish {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 18px;
+  background: #fff;
+  border: 1px solid rgba(11, 12, 15, 0.08);
+  border-radius: 28px;
+  padding: clamp(24px, 3vw, 40px);
+  box-shadow: 0 30px 60px -30px rgba(42, 31, 85, 0.45);
+  transform-origin: 50% 120%;
+  transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.5s;
+}
+.pd-wish.is-waiting {
+  transform: translateY(110%) rotate(8deg);
+  opacity: 0;
+}
+.pd-wish__n {
+  font: 700 12px/1 var(--pd-sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--pd-violet-text);
+}
+.pd-wish__t {
+  margin-top: 10px !important;
+  font-family: var(--pd-serif);
+  font-size: clamp(28px, 3.3vw, 46px);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+.pd-wish--last {
+  background: radial-gradient(70% 90% at 85% 0%, rgba(110, 90, 255, 0.35), transparent 70%), var(--pd-ink);
+  border-color: var(--pd-ink);
   color: #fff;
+}
+.pd-wish--last .pd-wish__n {
+  color: var(--pd-violet-soft);
+}
+.pd-wish--last .pd-wish__t em {
+  color: var(--pd-violet);
+}
+
+/* swipe row: phones, and anyone who prefers reduced motion */
+.pd-deck--swipe .pd-deck__track {
+  height: auto;
+}
+.pd-deck--swipe .pd-deck__stage {
+  position: static;
+  height: auto;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  padding-block: 88px;
+}
+.pd-deck--swipe .pd-deck__pile {
+  height: auto;
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-inline: calc(-1 * max(24px, env(safe-area-inset-left, 0px)));
+  padding: 6px max(24px, env(safe-area-inset-left, 0px)) 24px;
+  scrollbar-width: none;
+}
+.pd-deck--swipe .pd-deck__pile::-webkit-scrollbar {
+  display: none;
+}
+.pd-deck--swipe .pd-wish {
+  position: relative;
+  inset: auto;
+  flex: 0 0 min(82%, 420px);
+  min-height: 300px;
+  scroll-snap-align: start;
+  transform: none !important;
+  opacity: 1 !important;
+  box-shadow: 0 18px 36px -24px rgba(42, 31, 85, 0.45);
+}
+.pd-deck--swipe .pd-deck__skip {
+  display: none;
+}
+.pd-deck__hint {
+  display: none;
+  font: 600 13px/1 var(--pd-sans);
+  color: var(--pd-mute);
+}
+.pd-deck--swipe .pd-deck__hint {
+  display: block;
+}
+
+/* ---- the small icon animations (they play when a card is on top / in view) ---- */
+.pd-ico {
+  position: relative;
+  width: clamp(88px, 9vw, 132px);
+  aspect-ratio: 1;
+  border-radius: 22px;
+  background: var(--pd-lilac);
+  overflow: hidden;
+}
+.pd-wish--last .pd-ico {
+  background: rgba(147, 120, 254, 0.18);
+}
+.pd-ico > * {
+  position: absolute;
+}
+.pd-ico--idea i {
+  left: 50%;
+  top: 50%;
+  width: 18%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--pd-violet);
+  transform: translate(-50%, -50%);
+}
+.pd-ico--idea b {
+  left: 30%;
+  top: 33%;
+  width: 40%;
+  height: 22%;
+  border-left: 6px solid #fff;
+  border-bottom: 6px solid #fff;
+  border-radius: 2px;
+  transform: rotate(-45deg) scale(0);
+}
+.is-on .pd-ico--idea i {
+  animation: pd-grow 1.6s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+.is-on .pd-ico--idea b {
+  animation: pd-pop 0.5s 0.9s cubic-bezier(0.2, 0.7, 0.2, 1.4) forwards;
+}
+@keyframes pd-grow {
+  to {
+    width: 62%;
+  }
+}
+@keyframes pd-pop {
+  to {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+.pd-ico--zoom .g {
+  inset: 16%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6%;
+}
+.pd-ico--zoom .g span {
+  border-radius: 5px;
+  background: var(--pd-violet-text);
+}
+.is-on .pd-ico--zoom .g span {
+  animation: pd-clear 0.4s forwards;
+}
+.is-on .pd-ico--zoom .g span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.is-on .pd-ico--zoom .g span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.is-on .pd-ico--zoom .g span:nth-child(6) {
+  animation-delay: 0.45s;
+}
+.is-on .pd-ico--zoom .g span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.is-on .pd-ico--zoom .g span:nth-child(8) {
+  animation-delay: 0.75s;
+}
+.is-on .pd-ico--zoom .g span:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.is-on .pd-ico--zoom .g span:nth-child(3),
+.is-on .pd-ico--zoom .g span:nth-child(5) {
+  animation: none;
+  background: var(--pd-violet);
+}
+@keyframes pd-clear {
+  to {
+    opacity: 0.12;
+    transform: scale(0.7);
+  }
+}
+.pd-ico--switch .t {
+  left: 18%;
+  right: 18%;
+  top: 38%;
+  height: 24%;
+  border-radius: 999px;
+  background: #cfc8ea;
+  transition: background-color 0.4s 0.4s;
+}
+.pd-ico--switch .k {
+  left: 21%;
+  top: 41%;
+  height: 18%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: left 0.5s 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.is-on .pd-ico--switch .t {
+  background: var(--pd-violet);
+}
+.is-on .pd-ico--switch .k {
+  left: 61%;
+}
+.pd-ico--chart svg {
+  inset: 14%;
+  width: 72%;
+  height: 72%;
+  overflow: visible;
+}
+.pd-ico--chart path {
+  fill: none;
+  stroke: var(--pd-violet-text);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 160;
+  stroke-dashoffset: 160;
+}
+.pd-ico--chart circle {
+  fill: var(--pd-violet);
+  opacity: 0;
+}
+.is-on .pd-ico--chart path {
+  animation: pd-draw 1.4s 0.2s cubic-bezier(0.6, 0, 0.2, 1) forwards;
+}
+.is-on .pd-ico--chart circle {
+  animation: pd-fade 0.3s 1.5s forwards;
+}
+@keyframes pd-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes pd-fade {
+  to {
+    opacity: 1;
+  }
+}
+.pd-ico--mods span {
+  left: 18%;
+  width: 64%;
+  height: 12%;
+  border-radius: 6px;
+  background: #cfc8ea;
+  overflow: hidden;
+}
+.pd-ico--mods span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0;
+  border-radius: 6px;
+  background: var(--pd-violet-text);
+}
+.pd-ico--mods span:nth-child(1) {
+  top: 24%;
+}
+.pd-ico--mods span:nth-child(2) {
+  top: 44%;
+}
+.pd-ico--mods span:nth-child(3) {
+  top: 64%;
+}
+.is-on .pd-ico--mods span::after {
+  animation: pd-fill 0.7s forwards;
+}
+.is-on .pd-ico--mods span:nth-child(2)::after {
+  animation-delay: 0.5s;
+}
+.is-on .pd-ico--mods span:nth-child(3)::after {
+  animation-delay: 1s;
+}
+@keyframes pd-fill {
+  to {
+    width: 100%;
+  }
+}
+.pd-ico--star svg {
+  inset: 18%;
+  width: 64%;
+  height: 64%;
+}
+.pd-ico--star path {
+  fill: var(--pd-violet);
+  transform-origin: 50% 50%;
+  transform: scale(0.4) rotate(-30deg);
+  opacity: 0.4;
+}
+.is-on .pd-ico--star path {
+  animation: pd-star 1s cubic-bezier(0.2, 0.7, 0.2, 1.5) forwards;
+}
+@keyframes pd-star {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.pd-ico--ripple i,
+.pd-ico--ripple b {
+  left: 50%;
+  top: 50%;
+  width: 16%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.pd-ico--ripple i {
+  border: 3px solid var(--pd-violet);
+}
+.pd-ico--ripple b {
+  background: var(--pd-violet-text);
+}
+.is-on .pd-ico--ripple i {
+  animation: pd-rip 2s infinite;
+}
+.is-on .pd-ico--ripple i:nth-child(2) {
+  animation-delay: 0.66s;
+}
+.is-on .pd-ico--ripple i:nth-child(3) {
+  animation-delay: 1.33s;
+}
+@keyframes pd-rip {
+  from {
+    width: 16%;
+    opacity: 1;
+  }
+  to {
+    width: 90%;
+    opacity: 0;
+  }
+}
+.pd-ico--ring svg {
+  inset: 14%;
+  width: 72%;
+  height: 72%;
+  transform: rotate(-90deg);
+}
+.pd-ico--ring circle {
+  fill: none;
+  stroke-width: 9;
+}
+.pd-ico--ring .bg {
+  stroke: #cfc8ea;
+}
+.pd-ico--ring .fg {
+  stroke: var(--pd-violet-text);
+  stroke-linecap: round;
+  stroke-dasharray: 226;
+  stroke-dashoffset: 226;
+}
+.is-on .pd-ico--ring .fg {
+  animation: pd-ring 1.6s cubic-bezier(0.6, 0, 0.2, 1) forwards;
+}
+@keyframes pd-ring {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.pd-ico--ai .sp {
+  left: 50%;
+  top: 38%;
+  width: 30%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  background: var(--pd-violet-text);
+  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+}
+.pd-ico--ai .dots {
+  left: 30%;
+  right: 30%;
+  top: 68%;
+  display: flex;
+  justify-content: space-between;
+}
+.pd-ico--ai .dots span {
+  width: 18%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--pd-violet);
+  opacity: 0.3;
+}
+.is-on .pd-ico--ai .sp {
+  animation: pd-spin 2.4s linear infinite;
+}
+.is-on .pd-ico--ai .dots span {
+  animation: pd-typ 1.2s infinite;
+}
+.is-on .pd-ico--ai .dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.is-on .pd-ico--ai .dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes pd-spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes pd-typ {
+  50% {
+    opacity: 1;
+    transform: translateY(-30%);
+  }
+}
+.pd-ico--clock .face {
+  inset: 16%;
+  border-radius: 50%;
+  border: 5px solid var(--pd-violet);
+}
+.pd-ico--clock .hh,
+.pd-ico--clock .mm {
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  border-radius: 5px;
+  background: #fff;
+  transform-origin: 50% 0;
+}
+.pd-ico--clock .hh {
+  height: 20%;
+  transform: translateX(-50%) rotate(140deg);
+}
+.pd-ico--clock .mm {
+  height: 28%;
+  transform: translateX(-50%) rotate(200deg);
+}
+.is-on .pd-ico--clock .mm {
+  animation: pd-mins 1.8s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+.is-on .pd-ico--clock .hh {
+  animation: pd-hrs 1.8s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+@keyframes pd-mins {
+  from {
+    transform: translateX(-50%) rotate(-520deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(180deg);
+  }
+}
+@keyframes pd-hrs {
+  from {
+    transform: translateX(-50%) rotate(-40deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(120deg);
+  }
 }
 
 /* ---------- doors (tool, taller, newsletter) ---------- */
@@ -1517,7 +2006,6 @@
 /* ---------- responsive ---------- */
 @media (max-width: 960px) {
   .pd-under,
-  .pd-want .pd-wrap,
   .pd-who,
   .pd-news,
   .pd-end__row {
