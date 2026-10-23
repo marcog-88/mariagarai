@@ -2442,3 +2442,148 @@ body:has(.pd) {
     transition: none !important;
   }
 }
+
+/* ---------- cositas de mí (toggles, brand colours) ---------- */
+.pd-cositas {
+  padding-block: 24px 120px;
+}
+.pd-cositas__h2 {
+  font-family: var(--pd-serif);
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  max-width: 860px;
+}
+.pd-cositas__h2 em {
+  color: var(--pd-violet);
+}
+.pd-cositas__sub {
+  margin-top: 14px;
+  color: var(--pd-mute);
+  font-size: 17px;
+}
+.pd-cositas__grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  gap: 16px;
+  align-items: start;
+}
+.pd-cosita {
+  border-radius: 20px;
+  padding: 20px 20px 18px;
+  border: 1px solid rgba(11, 12, 15, 0.06);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.pd-cosita:hover,
+.pd-cosita[open] {
+  box-shadow: 0 18px 36px -24px rgba(11, 12, 15, 0.45);
+}
+.pd-cosita:hover {
+  transform: translateY(-3px);
+}
+.pd-cosita summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.pd-cosita summary::-webkit-details-marker {
+  display: none;
+}
+.pd-cosita summary:focus-visible {
+  outline: 2px solid var(--pd-violet);
+  outline-offset: 6px;
+  border-radius: 8px;
+}
+.pd-cosita__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pd-cosita__emoji {
+  font-size: 34px;
+  line-height: 1;
+}
+.pd-cosita__plus {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.75);
+  font: 500 20px/1 var(--pd-sans);
+  color: var(--pd-ink);
+  transition: transform 0.25s;
+}
+.pd-cosita[open] .pd-cosita__plus {
+  transform: rotate(45deg);
+}
+.pd-cosita__n {
+  font: 600 11px/1 var(--pd-sans);
+  letter-spacing: 0.16em;
+  opacity: 0.6;
+}
+.pd-cosita__t {
+  font: 400 26px/1.08 var(--pd-serif);
+}
+.pd-cosita p {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(11, 12, 15, 0.12);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.pd-cosita a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+/* Brand palette, one per card: soft tints plus violet and ink for contrast. */
+.pd-cosita--1 { background: #d0fcd0; }
+.pd-cosita--2 { background: var(--pd-lilac); }
+.pd-cosita--3 { background: var(--pd-violet); color: #fff; }
+.pd-cosita--4 { background: #fff4c8; }
+.pd-cosita--5 { background: #ffe1ee; }
+.pd-cosita--6 { background: var(--pd-card); }
+.pd-cosita--7 { background: #ffe8c7; }
+.pd-cosita--8 { background: var(--pd-ink); color: var(--pd-on-ink); }
+.pd-cosita--3 .pd-cosita__plus,
+.pd-cosita--8 .pd-cosita__plus {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+.pd-cosita--3 p,
+.pd-cosita--8 p {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+/* Phones: two columns so the eight cards stay compact. */
+@media (max-width: 640px) {
+  .pd-cositas__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .pd-cosita {
+    padding: 14px 14px 12px;
+    border-radius: 16px;
+  }
+  .pd-cosita summary {
+    gap: 10px;
+  }
+  .pd-cosita__emoji {
+    font-size: 26px;
+  }
+  .pd-cosita__plus {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+  }
+  .pd-cosita__t {
+    font-size: 19px;
+  }
+  .pd-cosita p {
+    font-size: 14px;
+  }
+}
