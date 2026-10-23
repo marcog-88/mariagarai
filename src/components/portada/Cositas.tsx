@@ -1,10 +1,10 @@
 import type { ReactNode } from "react";
-// PROVISIONAL photos (already on the site) until María adds one per card.
-import fotoHippie from "@/assets/maria-bio-terraza.webp";
-import fotoObsesion from "@/assets/maria-bio-libros.webp";
+import fotoHippie from "@/assets/cosa-hippie.webp";
+import fotoObsesion from "@/assets/cosa-obsesion.webp";
+import fotoNovela from "@/assets/cosa-novela.webp";
+import fotoViajes from "@/assets/cosa-viajes.webp";
+// PROVISIONAL (already on the site) until María sends their own photo.
 import fotoHazteGrande from "@/assets/maria-bio-retrato.webp";
-import fotoNovela from "@/assets/maria-bio-escribiendo.webp";
-import fotoViajes from "@/assets/maria-bio-calle.webp";
 import fotoBilbao from "@/assets/maria-bio-chaqueta.webp";
 import fotoFoodie from "@/assets/maria-quien-2.webp";
 import fotoArte from "@/assets/maria-bio-conferencia.webp";
@@ -17,11 +17,12 @@ import fotoArte from "@/assets/maria-bio-conferencia.webp";
 
 const NOVELA_URL = "https://www.amazon.es/Desnudas-Hacia-Amor-revoluci%C3%B3n-personal/dp/8409614618";
 
-const COSITAS: { emoji: string; title: string; text: ReactNode; img: string }[] = [
+const COSITAS: { emoji: string; title: string; text: ReactNode; img: string; pos?: string }[] = [
   {
     emoji: "🌿",
     title: "Mi lado hippie",
     img: fotoHippie,
+    pos: "50% 45%",
     text: "Tengo un lado hippie. Monté un negocio de coaching y retiros con terapias de psicodélicos.",
   },
   {
@@ -40,6 +41,7 @@ const COSITAS: { emoji: string; title: string; text: ReactNode; img: string }[] 
     emoji: "📖",
     title: "Escribí una novela",
     img: fotoNovela,
+    pos: "50% 40%",
     text: (
       <>
         Adoro escribir. Escribí una novela de romance bastante autobiográfica. Gustó mucho.{" "}
@@ -53,6 +55,7 @@ const COSITAS: { emoji: string; title: string; text: ReactNode; img: string }[] 
     emoji: "✈️",
     title: "Viajo sola",
     img: fotoViajes,
+    pos: "62% 72%",
     text: "Me gusta viajar sola. India, Nepal, Tailandia, China...",
   },
   {
@@ -87,7 +90,7 @@ export const Cositas = () => (
           <summary>
             <span className="pd-pola__tape" aria-hidden />
             <span className="pd-pola__ph">
-              <img src={c.img} alt="" loading="lazy" />
+              <img src={c.img} alt="" loading="lazy" style={c.pos ? { objectPosition: c.pos } : undefined} />
               <span className="pd-pola__sticker" aria-hidden>
                 {c.emoji}
               </span>
