@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-// "Cositas de mí que tal vez te sorprendan" (oct 2026): a playful, personal
+// "Cosas de mí que tal vez te sorprendan" (oct 2026): a playful, personal
 // break under "Quién está detrás". Each card is a <details> toggle: the title
 // shows, the text opens on click. Copy is María's, verbatim; the short card
 // titles were drafted by Claude and approved by her.
@@ -57,12 +57,19 @@ const COSITAS: { emoji: string; title: string; text: ReactNode }[] = [
   },
 ];
 
+const n2 = (i: number) => String(i + 1).padStart(2, "0");
+
+/**
+ * A light "postdata" under the mission: a hairline, a small label and the
+ * cards straight on the page background. No box and no big headline, so it
+ * doesn't repeat the lilac block that follows (A quién puedo ayudar).
+ */
 export const Cositas = () => (
   <section className="pd-cositas" aria-labelledby="cositas-title">
-    <h2 id="cositas-title" className="pd-cositas__h2">
-      Cositas de mí que tal vez <em>te sorprendan</em>
-    </h2>
-    <p className="pd-cositas__sub">Haz clic y verás.</p>
+    <p id="cositas-title" className="pd-cositas__ps">
+      <span aria-hidden>✨</span> Cosas de mí que tal vez <em>te sorprendan</em>
+      <span className="pd-cositas__hint">Haz clic y verás.</span>
+    </p>
     <div className="pd-cositas__grid">
       {COSITAS.map((c, i) => (
         <details key={c.title} className={`pd-cosita pd-cosita--${i + 1}`}>
@@ -75,7 +82,7 @@ export const Cositas = () => (
                 +
               </span>
             </span>
-            <span className="pd-cosita__n">{String(i + 1).padStart(2, "0")}</span>
+            <span className="pd-cosita__n">{n2(i)}</span>
             <span className="pd-cosita__t">{c.title}</span>
           </summary>
           <p>{c.text}</p>

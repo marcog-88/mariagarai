@@ -2446,25 +2446,26 @@ body:has(.pd) {
 
 /* ---------- cositas de mí (toggles, brand colours) ---------- */
 .pd-cositas {
-  padding-block: 24px 120px;
+  padding-block: 0 152px;
 }
-.pd-cositas__h2 {
-  font-family: var(--pd-serif);
-  font-size: clamp(36px, 5vw, 64px);
-  line-height: 1.02;
-  letter-spacing: -0.015em;
-  max-width: 860px;
+.pd-cositas__ps {
+  border-top: 1px solid var(--pd-line);
+  padding-top: 28px;
+  font: 400 clamp(24px, 2.4vw, 30px)/1.15 var(--pd-serif);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
 }
-.pd-cositas__h2 em {
-  color: var(--pd-violet);
+.pd-cositas__ps em {
+  color: var(--pd-violet-text);
 }
-.pd-cositas__sub {
-  margin-top: 14px;
+.pd-cositas__hint {
+  font: 500 14px/1.3 var(--pd-sans);
   color: var(--pd-mute);
-  font-size: 17px;
 }
 .pd-cositas__grid {
-  margin-top: 40px;
+  margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
   gap: 16px;
