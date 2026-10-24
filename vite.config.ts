@@ -79,7 +79,7 @@ ${urls.join("\n")}
 };
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig(({ mode, isSsrBuild }) => ({
   server: {
     host: "::",
     port: Number(process.env.PORT) || 8080,
@@ -94,15 +94,19 @@ export default defineConfig(({ mode }) => ({
     },
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime"],
   },
-  build: {
-    rollupOptions: {
-      output: {
-        // Only React gets its own long-lived chunk. (Listing libraries here
-        // forces them into the bundle even when no page imports them.)
-        manualChunks: {
-          "vendor-react": ["react", "react-dom", "react-router-dom"],
+  build: isSsrBuild
+    ? // `npm run build` step 2: the prerender bundle (src/entry-server.tsx),
+      // consumed and deleted by scripts/prerender.mjs.
+      { outDir: "dist-ssr", emptyOutDir: true }
+    : {
+        rollupOptions: {
+          output: {
+            // Only React gets its own long-lived chunk. (Listing libraries here
+            // forces them into the bundle even when no page imports them.)
+            manualChunks: {
+              "vendor-react": ["react", "react-dom", "react-router-dom"],
+            },
+          },
         },
       },
-    },
-  },
 }));
