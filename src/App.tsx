@@ -12,8 +12,10 @@ const CookiePolicy = lazy(() => import("./pages/CookiePolicy.tsx"));
 const Links = lazy(() => import("./pages/Links.tsx"));
 
 // Per-route <title>/description/canonical/robots live in src/seo/routes.ts.
-const App = () => (
-  <BrowserRouter>
+// AppRoutes is router-agnostic so the build can prerender it with a
+// StaticRouter (src/entry-server.tsx); the browser wraps it in BrowserRouter.
+export const AppRoutes = () => (
+  <>
     <RouteMeta />
     <WhatsAppBubble />
     <Suspense fallback={null}>
@@ -38,6 +40,12 @@ const App = () => (
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
+  </>
+);
+
+const App = () => (
+  <BrowserRouter>
+    <AppRoutes />
   </BrowserRouter>
 );
 

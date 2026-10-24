@@ -18,7 +18,8 @@ export interface PageMeta {
   file: string;
 }
 
-const HOME_DESCRIPTION =
+// The home lead, trimmed in #38 so search results don't cut it (158 chars).
+export const HOME_DESCRIPTION =
   "Ayudo a profesionales con experiencia a construir un negocio rentable alrededor de un programa propio que escale sus ingresos y les posicione como referentes.";
 
 export const ROUTE_META: Record<string, PageMeta> = {
