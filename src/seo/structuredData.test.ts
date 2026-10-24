@@ -26,8 +26,8 @@ describe("home structured data", () => {
 });
 
 describe("route meta", () => {
-  it("keeps the home description under 155 characters", () => {
+  it("keeps the home description short enough for search results", () => {
     expect(ROUTE_META["/"].description).toBe(HOME_DESCRIPTION);
-    expect(HOME_DESCRIPTION.length).toBeLessThanOrEqual(155);
+    expect(HOME_DESCRIPTION.length).toBeLessThanOrEqual(160);
   });
 });

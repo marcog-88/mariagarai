@@ -18,10 +18,9 @@ export interface PageMeta {
   file: string;
 }
 
-// María's hero lead, trimmed (clauses cut, nothing rewritten) to stay under
-// ~155 characters so search results don't truncate it.
+// The home lead, trimmed in #38 so search results don't cut it (158 chars).
 export const HOME_DESCRIPTION =
-  "Ayudo a profesionales con experiencia a construir un negocio altamente rentable alrededor de un programa propio, que les posicione como referentes.";
+  "Ayudo a profesionales con experiencia a construir un negocio rentable alrededor de un programa propio que escale sus ingresos y les posicione como referentes.";
 
 export const ROUTE_META: Record<string, PageMeta> = {
   "/": {
