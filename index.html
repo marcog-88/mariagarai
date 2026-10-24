@@ -3,47 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title, description, canonical, og:* and twitter:* are rewritten per
+         route at build time from src/seo/routes.ts (see vite.config.ts). -->
     <title>María Garai | Exponencial</title>
     <meta name="description" content="Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.">
     <meta name="author" content="María Garai" />
+    <meta name="theme-color" content="#0b0c0f" />
     <link rel="canonical" href="https://www.mariagarai.com/" />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Caveat&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,800&family=Epilogue:wght@500;600&family=Poppins:wght@700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Caveat&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,800&family=Epilogue:wght@500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet" /></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,800&family=Epilogue:wght@500;600&family=Poppins:wght@700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,800&family=Epilogue:wght@500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet" /></noscript>
 
-    
-    
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="María Garai" />
+    <meta property="og:url" content="https://www.mariagarai.com/" />
+    <meta property="og:title" content="María Garai · Fundadora de Exponencial y consultora de negocio">
+    <meta property="og:description" content="Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.">
+    <meta property="og:image" content="https://www.mariagarai.com/og-image.png?v=3">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="María Garai · Exponencial">
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="og:title" content="María Garai · Fundadora de Exponencial y consultora de negocio">
-  <meta name="twitter:title" content="María Garai · Fundadora de Exponencial y consultora de negocio">
-  <meta property="og:description" content="Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.">
-  <meta name="twitter:description" content="Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.">
-  <meta property="og:image" content="https://www.mariagarai.com/og-image.png?v=3">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:image" content="https://www.mariagarai.com/og-image.png?v=3">
+    <meta name="twitter:title" content="María Garai · Fundadora de Exponencial y consultora de negocio">
+    <meta name="twitter:description" content="Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.">
+    <meta name="twitter:image" content="https://www.mariagarai.com/og-image.png?v=3">
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "María Garai",
-      "url": "https://www.mariagarai.com/",
-      "jobTitle": "Fundadora de Exponencial · Consultora de negocio",
-      "description": "Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.",
-      "knowsAbout": ["Exponencial", "Negocios boutique", "IA", "Solopreneurship", "Mentoría a founders"],
-      "inLanguage": "es"
-    }
-  </script>
-</head>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "María Garai",
+        "url": "https://www.mariagarai.com/",
+        "jobTitle": "Fundadora de Exponencial · Consultora de negocio",
+        "description": "Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.",
+        "knowsAbout": ["Exponencial", "Modelos de negocio", "Programas de formación y acompañamiento", "IA aplicada a negocio"],
+        "sameAs": [
+          "https://www.laexponencial.com/",
+          "https://haztegrande.substack.com",
+          "https://www.instagram.com/_mariagarai_/",
+          "https://www.linkedin.com/in/mariagarai/",
+          "https://www.youtube.com/@MariaGarai"
+        ],
+        "inLanguage": "es"
+      }
+    </script>
+  </head>
 
   <body>
     <div id="root"></div>
