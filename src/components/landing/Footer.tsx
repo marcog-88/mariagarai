@@ -13,13 +13,13 @@ export const Footer = () => {
   return (
     <footer className="py-12 border-t border-border">
       <div className="container-tight flex flex-wrap items-center justify-between gap-6">
-        <a href="#top" className="flex items-center text-foreground" aria-label="María Garai, volver arriba">
+        <Link to="/" className="flex items-center text-foreground" aria-label="María Garai, inicio">
           <Logo className="block h-5 [&>svg]:h-full [&>svg]:w-auto" />
-        </a>
+        </Link>
         <ul className="flex flex-wrap gap-4 text-sm text-foreground/60">
           {LEGAL_LINKS.map((l) => (
             <li key={l.to}>
-              <Link to={l.to} className="hover:text-foreground transition-colors">
+              <Link to={l.to} className="inline-flex min-h-[44px] items-center hover:text-foreground transition-colors">
                 {l.label}
               </Link>
             </li>

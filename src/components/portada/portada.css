@@ -86,26 +86,6 @@ body:has(.pd) {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
-/* Keyboard skip link: hidden until focused. */
-.pd-skip {
-  position: absolute;
-  left: 16px;
-  top: -64px;
-  z-index: 100;
-  padding: 10px 16px;
-  border-radius: 999px;
-  background: var(--pd-ink);
-  color: #fff !important;
-  font-weight: 500;
-  text-decoration: none;
-  transition: top 0.15s;
-}
-.pd-skip:focus {
-  top: 12px;
-}
-.pd main:focus {
-  outline: none;
-}
 
 /* ---------- buttons + labels ---------- */
 .pd-btn {
@@ -521,6 +501,7 @@ body:has(.pd) {
 }
 .pd-deck__track {
   height: 250vh;
+  height: 250svh;
 }
 #empieza {
   scroll-margin-top: 80px;
@@ -529,6 +510,7 @@ body:has(.pd) {
   position: sticky;
   top: 72px;
   height: calc(100vh - 72px);
+  height: calc(100svh - 72px);
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   gap: 64px;
@@ -591,6 +573,7 @@ body:has(.pd) {
 .pd-deck__pile {
   position: relative;
   height: min(400px, 52vh);
+  height: min(400px, 52svh);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2606,5 +2589,98 @@ body:has(.pd) {
     width: 32px;
     height: 32px;
     font-size: 18px;
+  }
+}
+
+/* ---------- UX chrome pass (oct 2026) ----------
+   Skip link, ≥44px tap areas, narrow-screen buttons, swipe-row bleed and
+   scrollbar, doors centring, Substack embed height, room for the WhatsApp
+   bubble. No visual change to text sizes or colours. */
+.pd .pd-skip {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  z-index: 10000;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: var(--pd-ink);
+  color: #fff;
+  font: 700 14px/1 var(--pd-sans);
+  text-decoration: none;
+  transform: translateY(-200%);
+}
+.pd .pd-skip:focus {
+  transform: none;
+}
+.pd-anchor {
+  scroll-margin-top: 80px;
+  outline: none;
+}
+
+/* tap areas: an invisible 44px-tall hit box centred on the text */
+.pd-link,
+.pd-deck__skip,
+.pd-mast a,
+.pd-foot a {
+  position: relative;
+}
+.pd-link::after,
+.pd-deck__skip::after,
+.pd-mast a::after,
+.pd-foot a::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: 50%;
+  height: 44px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 399px) {
+  .pd-btn {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .pd-doors {
+    margin-inline: auto;
+  }
+}
+
+/* the swipe row bleeds to the screen edge: match .pd-wrap's 32px from 640px */
+@media (min-width: 640px) {
+  .pd-deck--swipe .pd-deck__pile {
+    margin-inline: -32px;
+    padding-inline: 32px;
+  }
+}
+/* mouse users get a thin visible scrollbar (no swipe gesture to discover it) */
+@media (pointer: fine) {
+  .pd-deck--swipe .pd-deck__pile {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(91, 63, 214, 0.35) transparent;
+  }
+  .pd-deck--swipe .pd-deck__pile::-webkit-scrollbar {
+    display: block;
+    height: 6px;
+  }
+  .pd-deck--swipe .pd-deck__pile::-webkit-scrollbar-thumb {
+    background: rgba(91, 63, 214, 0.35);
+    border-radius: 9px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* the stacked Substack form (email over button) needs the extra height */
+  .pd-news iframe {
+    height: 260px;
+  }
+  /* keep the legal links clear of the fixed WhatsApp bubble */
+  .pd-foot {
+    padding-bottom: 96px;
   }
 }

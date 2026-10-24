@@ -8,8 +8,8 @@ import portrait from "@/assets/maria-hero-cutout.webp";
 
 // --- URLs (edit here) --------------------------------------------------------
 // Corporate to Founder OS waitlist page doesn't exist yet. While empty, the
-// card stays visible but isn't a link.
-const WAITLIST_URL = "";
+// card is hidden (it looked clickable but did nothing); set the URL to show it.
+const WAITLIST_URL: string = "";
 const DISENA_TU_PROGRAMA_URL = "https://www.laexponencial.com/disena-tu-programa";
 const EVENTOS_URL = "https://www.laexponencial.com/eventos";
 const LA_EXPONENCIAL_URL = "https://www.laexponencial.com/";
@@ -87,7 +87,7 @@ const SubstackIcon = ({ className }: { className?: string }) => (
 const SocialPill = ({ href, icon, children }: { href: string; icon: ReactNode; children: ReactNode }) => (
   <a
     href={href}
-    className="inline-flex items-center justify-center gap-2 rounded-full border border-[#ddd8ce] bg-white px-4 py-2.5 text-[14px] font-medium leading-[normal] text-[#0c0d0e] no-underline transition-colors hover:border-[#9378fe]"
+    className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border border-[#ddd8ce] bg-white px-4 py-2.5 text-[14px] font-medium leading-[normal] text-[#0c0d0e] no-underline transition-colors hover:border-[#9378fe]"
   >
     {icon}
     {children}
@@ -127,14 +127,16 @@ const Links = () => {
       </header>
 
       <main className="mx-auto -mt-10 flex max-w-[440px] flex-col gap-3.5 px-4 pb-12">
-        <FeaturedCard
-          href={WAITLIST_URL}
-          pill="Nuevo · Lista de espera"
-          title="Corporate to"
-          accent="Founder OS"
-          text="El sistema operativo para diseñar tu oferta, optimizar tus redes para vender y gestionar tu nueva rutina laboral."
-          cta="Únete a la lista de espera"
-        />
+        {WAITLIST_URL && (
+          <FeaturedCard
+            href={WAITLIST_URL}
+            pill="Nuevo · Lista de espera"
+            title="Corporate to"
+            accent="Founder OS"
+            text="El sistema operativo para diseñar tu oferta, optimizar tus redes para vender y gestionar tu nueva rutina laboral."
+            cta="Únete a la lista de espera"
+          />
+        )}
         <WhiteCard
           href={DISENA_TU_PROGRAMA_URL}
           label="Herramienta gratuita"

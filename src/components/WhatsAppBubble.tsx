@@ -1,15 +1,21 @@
 import { useLocation } from "react-router-dom";
+import { ROUTE_META } from "@/seo/routes";
 
 // /exponencial retired (Phase 1 migration) — no routes currently need this.
 const HIDE_ON_MOBILE: string[] = [];
 // Standalone pages where the bubble would cover the content (e.g. the last
 // card of the Instagram links page on a phone).
 const HIDE_ALWAYS = ["/links"];
+// The SPA's real routes come from src/seo/routes.ts. Anything else renders
+// the 404 page, where the bubble is just noise.
+const KNOWN_ROUTES = Object.keys(ROUTE_META);
 
 export default function WhatsAppBubble() {
   const { pathname } = useLocation();
   const hideOnMobile = HIDE_ON_MOBILE.some((p) => pathname.startsWith(p));
   if (HIDE_ALWAYS.some((p) => pathname.startsWith(p))) return null;
+  const path = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
+  if (!KNOWN_ROUTES.includes(path)) return null;
 
   return (
     <a
@@ -17,8 +23,9 @@ export default function WhatsAppBubble() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
-      className={`fixed bottom-6 right-6 z-[9998] flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-transform duration-200 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#25D366] ${hideOnMobile ? "hidden lg:flex" : "flex"}`}
-      style={{ backgroundColor: "#25D366" }}
+      className={`fixed right-6 z-[9998] flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-transform duration-200 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#25D366] ${hideOnMobile ? "hidden lg:flex" : "flex"}`}
+      // Clear the iPhone home indicator: 24px, or the safe area + 12px if larger.
+      style={{ backgroundColor: "#25D366", bottom: "max(24px, calc(env(safe-area-inset-bottom, 0px) + 12px))" }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

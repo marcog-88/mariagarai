@@ -18,7 +18,7 @@ const Index = () => {
         Saltar al contenido
       </a>
       <Nav />
-      <main id="contenido" tabIndex={-1}>
+      <main id="contenido" tabIndex={-1} className="pd-anchor">
         <Hero />
         <Wishes />
         <div className="pd-wrap">
