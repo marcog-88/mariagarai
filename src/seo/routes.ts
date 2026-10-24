@@ -19,7 +19,7 @@ export interface PageMeta {
 }
 
 const HOME_DESCRIPTION =
-  "Ayudo a profesionales con experiencia a construir un modelo de negocio altamente rentable alrededor de un programa propio, que escale sus ingresos y les posicione como referentes en su sector.";
+  "Ayudo a profesionales con experiencia a construir un negocio rentable alrededor de un programa propio que escale sus ingresos y les posicione como referentes.";
 
 export const ROUTE_META: Record<string, PageMeta> = {
   "/": {
