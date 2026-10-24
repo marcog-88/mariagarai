@@ -17,13 +17,13 @@ export const Footer = ({ dark = false }: { dark?: boolean } = {}) => {
     return (
       <footer className="border-t border-white/[0.08] bg-[#0c0d0e] px-6 py-10 sm:px-8">
         <div className="mx-auto flex max-w-[1152px] flex-wrap items-center justify-between gap-5">
-          <a href="#top" className="flex items-center text-white" aria-label="María Garai">
+          <Link to="/" className="flex items-center text-white" aria-label="María Garai, inicio">
             <Logo className="block h-[18px] [&>svg]:h-full [&>svg]:w-auto" />
-          </a>
+          </Link>
           <ul className="m-0 flex list-none flex-wrap gap-6 p-0 text-sm">
             {LEGAL_LINKS.map((l) => (
               <li key={l.to}>
-                <Link to={l.to} className="text-white/60 transition-colors hover:text-white">
+                <Link to={l.to} className="inline-flex min-h-[44px] items-center text-white/60 transition-colors hover:text-white">
                   {l.label}
                 </Link>
               </li>
@@ -38,13 +38,13 @@ export const Footer = ({ dark = false }: { dark?: boolean } = {}) => {
   return (
     <footer className="py-12 border-t border-border">
       <div className="container-tight flex flex-wrap items-center justify-between gap-6">
-        <a href="#top" className="flex items-center text-foreground" aria-label="María Garai">
+        <Link to="/" className="flex items-center text-foreground" aria-label="María Garai, inicio">
           <Logo className="block h-5 [&>svg]:h-full [&>svg]:w-auto" />
-        </a>
+        </Link>
         <ul className="flex flex-wrap gap-4 text-sm text-foreground/60">
           {LEGAL_LINKS.map((l) => (
             <li key={l.to}>
-              <Link to={l.to} className="hover:text-foreground transition-colors">
+              <Link to={l.to} className="inline-flex min-h-[44px] items-center hover:text-foreground transition-colors">
                 {l.label}
               </Link>
             </li>

@@ -14,7 +14,11 @@ import { Closing, ForWho, NewsletterSpeaking } from "@/components/portada/Closin
 const Index = () => {
   return (
     <main className="pd" id="top">
+      <a href="#contenido" className="pd-skip">
+        Saltar al contenido
+      </a>
       <Nav />
+      <div id="contenido" tabIndex={-1} className="pd-anchor" />
       <Hero />
       <Wishes />
       <div className="pd-wrap">
