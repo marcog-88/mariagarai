@@ -3,9 +3,9 @@ import chaqueta from "@/assets/maria-bio-chaqueta.webp";
 import terraza from "@/assets/maria-bio-terraza.webp";
 import libros from "@/assets/maria-bio-libros.webp";
 import escribiendo from "@/assets/maria-bio-escribiendo.webp";
-import logoNacionesUnidas from "@/assets/logos/logo-naciones-unidas.png";
-import logoPG from "@/assets/logos/logo-pg.png";
-import logoWWF from "@/assets/logos/logo-wwf.png";
+import logoNacionesUnidas from "@/assets/logos/logo-naciones-unidas.webp";
+import logoPG from "@/assets/logos/logo-pg.webp";
+import logoWWF from "@/assets/logos/logo-wwf.webp";
 
 // "Quién está detrás": photo wall, then María's bio as four cards on a violet
 // line that fills as you read (approved direction D, B + C). Her paragraphs are
@@ -156,9 +156,9 @@ export const About = () => {
               <p>Soy jurista de formación y he desarrollado mi carrera entre Naciones Unidas, la Unión Europea, Procter &amp; Gamble y el mundo de las startups, trabajando en proyectos y equipos internacionales en ocho países.</p>
             </div>
             <div className="pd-story__logos">
-              <img src={logoNacionesUnidas} alt="Naciones Unidas" loading="lazy" />
-              <img src={logoPG} alt="Procter & Gamble" loading="lazy" />
-              <img src={logoWWF} alt="World Wildlife Fund" loading="lazy" />
+              <img src={logoNacionesUnidas} alt="Naciones Unidas" width={122} height={120} loading="lazy" />
+              <img src={logoPG} alt="Procter & Gamble" width={120} height={120} loading="lazy" />
+              <img src={logoWWF} alt="World Wildlife Fund" width={86} height={120} loading="lazy" />
               <span>Startups</span>
             </div>
           </article>
