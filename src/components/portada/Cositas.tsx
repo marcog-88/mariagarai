@@ -45,7 +45,7 @@ const COSITAS: { emoji: string; title: string; text: ReactNode; img: string; pos
     text: (
       <>
         Adoro escribir. Escribí una novela de romance bastante autobiográfica. Gustó mucho.{" "}
-        <a href={NOVELA_URL} target="_blank" rel="noopener noreferrer">
+        <a href={NOVELA_URL} target="_blank" rel="noopener noreferrer" aria-label="Mírala aquí: la novela en Amazon (se abre en una pestaña nueva)">
           Mírala aquí
         </a>
       </>

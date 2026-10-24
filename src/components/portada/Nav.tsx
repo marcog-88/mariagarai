@@ -18,6 +18,25 @@ export const Nav = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // The phone menu closes on Escape and when the viewport grows past the
+  // breakpoint where the inline links come back (860px in portada.css).
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    const wide = window.matchMedia("(min-width: 861px)");
+    const onWide = () => {
+      if (wide.matches) setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    wide.addEventListener("change", onWide);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      wide.removeEventListener("change", onWide);
+    };
+  }, [open]);
+
   const close = () => setOpen(false);
 
   return (

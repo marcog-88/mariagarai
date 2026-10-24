@@ -1,14 +1,15 @@
-import { useEffect, type CSSProperties, type ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { Globe, Instagram, Linkedin, Youtube } from "lucide-react";
 import portrait from "@/assets/maria-hero-cutout.webp";
+import { usePageMeta } from "@/lib/usePageMeta";
 
 // Instagram bio link page (Linktree-style). Design: docs/links-diseno.html
 // (390px, 19 oct 2026). Copy is María's, verbatim. Standalone: no Nav/Footer.
 
 // --- URLs (edit here) --------------------------------------------------------
 // Corporate to Founder OS waitlist page doesn't exist yet. While empty, the
-// card stays visible but isn't a link.
-const WAITLIST_URL = "";
+// card is hidden (it looked clickable but did nothing); set the URL to show it.
+const WAITLIST_URL: string = "";
 const DISENA_TU_PROGRAMA_URL = "https://www.laexponencial.com/disena-tu-programa";
 const EVENTOS_URL = "https://www.laexponencial.com/eventos";
 const LA_EXPONENCIAL_URL = "https://www.laexponencial.com/";
@@ -83,7 +84,7 @@ const SubstackIcon = ({ className }: { className?: string }) => (
 const SocialPill = ({ href, icon, children }: { href: string; icon: ReactNode; children: ReactNode }) => (
   <a
     href={href}
-    className="inline-flex items-center justify-center gap-2 rounded-full border border-[#ddd8ce] bg-white px-4 py-2.5 text-[14px] font-medium leading-[normal] text-[#0c0d0e] no-underline transition-colors hover:border-[#9378fe]"
+    className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border border-[#ddd8ce] bg-white px-4 py-2.5 text-[14px] font-medium leading-[normal] text-[#0c0d0e] no-underline transition-colors hover:border-[#9378fe]"
   >
     {icon}
     {children}
@@ -95,22 +96,7 @@ const ICON = "h-4 w-4";
 // --- Page ----------------------------------------------------------------------
 const Links = () => {
   // SEO: own title + description, and noindex so it doesn't compete with the home.
-  useEffect(() => {
-    const prevTitle = document.title;
-    document.title = "María Garai · Links";
-    const desc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    const prevDesc = desc?.content;
-    if (desc) desc.content = BIO;
-    const robots = document.createElement("meta");
-    robots.name = "robots";
-    robots.content = "noindex";
-    document.head.appendChild(robots);
-    return () => {
-      document.title = prevTitle;
-      if (desc && prevDesc !== undefined) desc.content = prevDesc;
-      document.head.removeChild(robots);
-    };
-  }, []);
+  usePageMeta({ title: "María Garai · Links", description: BIO, noindex: true });
 
   return (
     <div className="min-h-screen bg-[#f9f9f7] font-sans text-[#0c0d0e]">
@@ -140,14 +126,16 @@ const Links = () => {
       </header>
 
       <main className="mx-auto -mt-10 flex max-w-[440px] flex-col gap-3.5 px-4 pb-12">
-        <FeaturedCard
-          href={WAITLIST_URL}
-          pill="Nuevo · Lista de espera"
-          title="Corporate to"
-          accent="Founder OS"
-          text="El sistema operativo para diseñar tu oferta, optimizar tus redes para vender y gestionar tu nueva rutina laboral."
-          cta="Únete a la lista de espera"
-        />
+        {WAITLIST_URL && (
+          <FeaturedCard
+            href={WAITLIST_URL}
+            pill="Nuevo · Lista de espera"
+            title="Corporate to"
+            accent="Founder OS"
+            text="El sistema operativo para diseñar tu oferta, optimizar tus redes para vender y gestionar tu nueva rutina laboral."
+            cta="Únete a la lista de espera"
+          />
+        )}
         <WhiteCard
           href={DISENA_TU_PROGRAMA_URL}
           label="Herramienta gratuita"

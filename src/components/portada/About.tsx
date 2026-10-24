@@ -156,9 +156,9 @@ export const About = () => {
               <p>Soy jurista de formación y he desarrollado mi carrera entre Naciones Unidas, la Unión Europea, Procter &amp; Gamble y el mundo de las startups, trabajando en proyectos y equipos internacionales en ocho países.</p>
             </div>
             <div className="pd-story__logos">
-              <img src={logoNacionesUnidas} alt="Naciones Unidas" loading="lazy" />
-              <img src={logoPG} alt="Procter & Gamble" loading="lazy" />
-              <img src={logoWWF} alt="World Wildlife Fund" loading="lazy" />
+              <img src={logoNacionesUnidas} alt="Naciones Unidas" width={383} height={378} loading="lazy" />
+              <img src={logoPG} alt="Procter & Gamble" width={226} height={226} loading="lazy" />
+              <img src={logoWWF} alt="World Wildlife Fund" width={180} height={253} loading="lazy" />
               <span>Startups</span>
             </div>
           </article>

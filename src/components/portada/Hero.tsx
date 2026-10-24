@@ -74,9 +74,9 @@ export const Hero = () => (
       <div className="pd-wrap">
         <span className="pd-eyebrow">He trabajado y colaborado con:</span>
         <div className="pd-logos">
-          <img src={logoNacionesUnidas} alt="Naciones Unidas" loading="lazy" />
-          <img src={logoPG} alt="Procter & Gamble" loading="lazy" />
-          <img src={logoWWF} alt="World Wildlife Fund" loading="lazy" />
+          <img src={logoNacionesUnidas} alt="Naciones Unidas" width={383} height={378} loading="lazy" />
+          <img src={logoPG} alt="Procter & Gamble" width={226} height={226} loading="lazy" />
+          <img src={logoWWF} alt="World Wildlife Fund" width={180} height={253} loading="lazy" />
           <span className="pd-logos__txt">Startup Tech</span>
           <span className="pd-logos__num">
             +15<small>Negocios de clientes trabajados</small>
