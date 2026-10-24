@@ -32,12 +32,12 @@ const pillars = [
 export const TrabajaConmigo = () => (
   <section className="pd-prog" id="trabaja-conmigo">
     <img src={monograma} alt="" className="pd-prog__m" aria-hidden />
-    <span className="pd-label pd-label--dark">Mentoría 1:1</span>
+    <span className="pd-label pd-label--dark">Mentoría VIP</span>
     <h2 className="pd-prog__h2">
       Te ayudo a convertir lo que sabes en un negocio que vaya <em>más allá de tus horas.</em>
     </h2>
     <p className="pd-prog__intro">
-      Exponencial es un programa de seis meses en el que mi equipo y yo te ayudamos a transformar tus conocimientos en un programa propio y construimos contigo la infraestructura digital y comercial necesaria para convertirlo en una línea de negocio muy rentable.
+      La Mentoría VIP de Exponencial es un acompañamiento 1:1 en el que mi equipo y yo te ayudamos a transformar tus conocimientos en un programa propio y construimos contigo la infraestructura digital y comercial necesaria para convertirlo en una línea de negocio muy rentable.
     </p>
     <p className="pd-prog__intro">
       No tienes que llegar con una metodología definida ni las ideas listas. Partimos de tu trayectoria y tu potencial para sentar las bases de tu negocio y crear los activos digitales que lo escalen.
@@ -64,7 +64,7 @@ export const TrabajaConmigo = () => (
       <a href={LA_EXPONENCIAL} {...EXTERNAL} className="pd-btn pd-btn--v">
         Conoce Exponencial <span aria-hidden>→</span>
       </a>
-      <small>Programa de seis meses · Acceso mediante valoración previa</small>
+      <small>Plazas limitadas · Acceso mediante valoración previa</small>
     </div>
   </section>
 );

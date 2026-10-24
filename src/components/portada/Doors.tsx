@@ -22,7 +22,7 @@ const ToolVisual = () => (
     </p>
     <div className="pd-tool__gets">
       <span className="pd-tool__get">
-        <i className="p">♛</i>Tu programa insignia: módulos, formato y precio
+        <i className="p">♛</i>Tu programa online: módulos, formato y precio
       </span>
     </div>
     <span className="pd-tool__sticker">Resultado en 30 seg</span>

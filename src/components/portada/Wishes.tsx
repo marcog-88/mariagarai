@@ -151,7 +151,7 @@ export const Wishes = () => {
             <div className="pd-deck__left">
               <span className="pd-label">Esto es lo que quieres</span>
               <h2 className="pd-want__h2" id="pd-want-h">
-                Un negocio que te de paz y <em>autoridad.</em>
+                Un negocio que te dé paz y <em>autoridad.</em>
               </h2>
               <div className="pd-deck__count" aria-hidden>
                 <b>{pad(idx + 1)}</b>

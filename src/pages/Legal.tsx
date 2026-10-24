@@ -1,7 +1,7 @@
 import { LegalLayout } from "@/components/legal/LegalLayout";
 
 const Legal = () => (
-  <LegalLayout title="Aviso Legal" updated="28 de abril de 2026">
+  <LegalLayout title="Aviso Legal" updated="24 de octubre de 2026">
     <section>
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">1. Datos identificativos</h2>
       <p>
@@ -9,10 +9,10 @@ const Legal = () => (
         de la Información y de Comercio Electrónico (LSSI-CE), se informa de los siguientes datos:
       </p>
       <ul className="list-disc pl-6 space-y-1 mt-3">
-        <li><strong>Titular:</strong> María Garaí [Apellido]</li>
+        <li><strong>Titular:</strong> María Garai [Apellido]</li>
         <li><strong>NIF:</strong> [Número de identificación fiscal]</li>
         <li><strong>Domicilio:</strong> [Dirección postal], España</li>
-        <li><strong>Email de contacto:</strong> [hola@mariagarai.com]</li>
+        <li><strong>Email de contacto:</strong> <a href="mailto:hola@mariagarai.com" className="underline underline-offset-2 hover:text-foreground">hola@mariagarai.com</a></li>
         <li><strong>Sitio web:</strong> mariagarai.com</li>
       </ul>
     </section>
@@ -20,9 +20,9 @@ const Legal = () => (
     <section>
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">2. Objeto</h2>
       <p>
-        El presente sitio web tiene por objeto ofrecer información sobre los servicios de coaching,
-        formación y contenido editorial prestados por la titular, así como facilitar la suscripción a
-        la newsletter Carreras Modernas.
+        El presente sitio web tiene por objeto ofrecer información sobre los programas de formación y
+        acompañamiento, la consultoría de negocio y el contenido editorial de la titular, así como
+        facilitar la suscripción a la newsletter Hazte Grande.
       </p>
     </section>
 
@@ -39,7 +39,7 @@ const Legal = () => (
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">4. Propiedad intelectual</h2>
       <p>
         Todos los contenidos del sitio web (textos, imágenes, diseño, código, marca) son propiedad de
-        María Garaí o de sus legítimos titulares y están protegidos por la normativa de propiedad
+        María Garai o de sus legítimos titulares y están protegidos por la normativa de propiedad
         intelectual e industrial. Queda prohibida su reproducción sin autorización expresa.
       </p>
     </section>

@@ -1,30 +1,28 @@
 import { LegalLayout } from "@/components/legal/LegalLayout";
 
 const PrivacyPolicy = () => (
-  <LegalLayout title="Política de Privacidad" updated="28 de abril de 2026">
+  <LegalLayout title="Política de Privacidad" updated="24 de octubre de 2026">
     <section>
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">1. Responsable del tratamiento</h2>
       <p>
         El responsable del tratamiento de los datos personales recogidos en este sitio web es
-        <strong> María Garaí</strong>, con NIF [NIF] y domicilio en [dirección], España. Email de
-        contacto: [hola@mariagarai.com].
+        <strong> María Garai</strong>, con NIF [NIF] y domicilio en [dirección], España. Email de
+        contacto: <a href="mailto:hola@mariagarai.com" className="underline underline-offset-2 hover:text-foreground">hola@mariagarai.com</a>.
       </p>
     </section>
 
     <section>
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">2. Datos que recogemos</h2>
       <ul className="list-disc pl-6 space-y-1">
-        <li>Dirección de correo electrónico (al suscribirte a la newsletter).</li>
-        <li>Nombre y mensaje (si nos contactas a través del formulario).</li>
-        <li>Datos de navegación anónimos (a través de cookies analíticas, si las aceptas).</li>
+        <li>Dirección de correo electrónico (al suscribirte a la newsletter a través de Substack).</li>
+        <li>Nombre, teléfono y mensaje (si nos escribes por email o por WhatsApp).</li>
       </ul>
     </section>
 
     <section>
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">3. Finalidad y base legal</h2>
       <p>
-        Tratamos tus datos para enviarte la newsletter Carreras Modernas, responder a tus consultas y
-        analizar el uso del sitio web. La base legal es tu <strong>consentimiento expreso</strong>
+        Tratamos tus datos para enviarte la newsletter Hazte Grande y responder a tus consultas. La base legal es tu <strong>consentimiento expreso</strong>
         (art. 6.1.a RGPD), que puedes retirar en cualquier momento.
       </p>
     </section>
@@ -52,7 +50,7 @@ const PrivacyPolicy = () => (
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">6. Tus derechos</h2>
       <p>
         Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, supresión,
-        oposición, limitación y portabilidad escribiendo a [hola@mariagarai.com]. También tienes
+        oposición, limitación y portabilidad escribiendo a <a href="mailto:hola@mariagarai.com" className="underline underline-offset-2 hover:text-foreground">hola@mariagarai.com</a>. También tienes
         derecho a presentar una reclamación ante la Agencia Española de Protección de Datos
         (www.aepd.es).
       </p>
