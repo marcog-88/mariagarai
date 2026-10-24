@@ -148,7 +148,7 @@ const Links = () => {
           href={EVENTOS_URL}
           label="Cada miércoles en directo"
           title="Eventos y Clase Semanal"
-          text="Ofertas de alto valor, sistemas de ventas, infraestructura digital y Claude como co-fundador. Conoce mi método y resuelve tus dudas."
+          text="Ofertas de alto valor, sistemas de ventas, infraestructura digital e IA aplicada a tu negocio. Conoce mi método y resuelve tus dudas."
           cta="Inscríbete gratis"
         />
         <FeaturedCard
@@ -163,7 +163,7 @@ const Links = () => {
           href={SUBSTACK_URL}
           label="Newsletter"
           title="Hazte Grande"
-          text="Ambición, carreras modernas y emprendimiento. Confidencias sobre el proceso de construir una vida y un negocio más grandes."
+          text="Ambición, crecimiento profesional y emprendimiento. Confidencias sobre el proceso de construir una vida y un negocio más grandes."
           cta="Suscríbete gratis"
         />
 

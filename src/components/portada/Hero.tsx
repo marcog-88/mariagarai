@@ -77,7 +77,7 @@ export const Hero = () => (
           <img src={logoNacionesUnidas} alt="Naciones Unidas" width={122} height={120} loading="lazy" />
           <img src={logoPG} alt="Procter & Gamble" width={120} height={120} loading="lazy" />
           <img src={logoWWF} alt="World Wildlife Fund" width={86} height={120} loading="lazy" />
-          <span className="pd-logos__txt">Startup Tech</span>
+          <span className="pd-logos__txt">Startups</span>
           <span className="pd-logos__num">
             +15<small>Negocios de clientes trabajados</small>
           </span>

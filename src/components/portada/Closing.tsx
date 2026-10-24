@@ -129,7 +129,7 @@ export const ForWho = () => {
             </li>
           ))}
         </ul>
-        <p className="pd-who__close">En Exponencial trabajamos de forma individual, con acompañamiento cercano y visión a largo plazo.</p>
+        <p className="pd-who__close">En Exponencial trabajamos en grupos reducidos y en 1:1, con acompañamiento cercano y visión a largo plazo.</p>
         <div>
           <a href={TIDYCAL} {...EXTERNAL} className="pd-btn">
             Reservar llamada <span className="pd-arrow" aria-hidden>→</span>
