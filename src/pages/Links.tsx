@@ -1,4 +1,4 @@
-import { useEffect, type CSSProperties, type ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { Globe, Instagram, Linkedin, Youtube } from "lucide-react";
 import portrait from "@/assets/maria-hero-cutout.webp";
 
@@ -94,24 +94,7 @@ const ICON = "h-4 w-4";
 
 // --- Page ----------------------------------------------------------------------
 const Links = () => {
-  // SEO: own title + description, and noindex so it doesn't compete with the home.
-  useEffect(() => {
-    const prevTitle = document.title;
-    document.title = "María Garai · Links";
-    const desc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    const prevDesc = desc?.content;
-    if (desc) desc.content = BIO;
-    const robots = document.createElement("meta");
-    robots.name = "robots";
-    robots.content = "noindex";
-    document.head.appendChild(robots);
-    return () => {
-      document.title = prevTitle;
-      if (desc && prevDesc !== undefined) desc.content = prevDesc;
-      document.head.removeChild(robots);
-    };
-  }, []);
-
+  // Title, description and noindex come from src/seo/routes.ts (RouteMeta).
   return (
     <div className="min-h-screen bg-[#f9f9f7] font-sans text-[#0c0d0e]">
       <header className="flex flex-col items-center gap-3.5 rounded-b-[32px] bg-[#0c0d0e] px-6 pb-[72px] pt-12 text-center text-white">

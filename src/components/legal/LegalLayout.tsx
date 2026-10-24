@@ -10,8 +10,8 @@ interface LegalLayoutProps {
 }
 
 export const LegalLayout = ({ title, updated, children }: LegalLayoutProps) => {
+  // <title> and description come from src/seo/routes.ts (RouteMeta).
   useEffect(() => {
-    document.title = `${title} · María Garai`;
     window.scrollTo(0, 0);
   }, [title]);
 
