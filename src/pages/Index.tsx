@@ -13,20 +13,25 @@ import { Closing, ForWho, NewsletterSpeaking } from "@/components/portada/Closin
 // to .pd in components/portada/portada.css.
 const Index = () => {
   return (
-    <main className="pd" id="top">
+    <div className="pd" id="top">
+      <a className="pd-skip" href="#contenido">
+        Saltar al contenido
+      </a>
       <Nav />
-      <Hero />
-      <Wishes />
-      <div className="pd-wrap">
-        <Doors />
-        <TrabajaConmigo />
-        <About />
-        <Cositas />
-        <ForWho />
-        <NewsletterSpeaking />
-        <Closing />
-      </div>
-    </main>
+      <main id="contenido" tabIndex={-1}>
+        <Hero />
+        <Wishes />
+        <div className="pd-wrap">
+          <Doors />
+          <TrabajaConmigo />
+          <About />
+          <Cositas />
+          <ForWho />
+          <NewsletterSpeaking />
+          <Closing />
+        </div>
+      </main>
+    </div>
   );
 };
 

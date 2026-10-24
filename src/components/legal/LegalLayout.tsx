@@ -16,10 +16,10 @@ export const LegalLayout = ({ title, updated, children }: LegalLayoutProps) => {
   }, [title]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div id="top" className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="border-b border-border">
         <div className="container-tight py-5 flex items-center justify-between">
-          <Link to="/" className="flex items-center" aria-label="María Garai — Inicio">
+          <Link to="/" className="flex items-center" aria-label="María Garai, inicio">
             <Logo className="block h-5 [&>svg]:h-full [&>svg]:w-auto" />
           </Link>
           <Link to="/" className="text-sm text-foreground/60 hover:text-foreground transition-colors">

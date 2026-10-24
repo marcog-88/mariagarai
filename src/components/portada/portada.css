@@ -86,6 +86,26 @@ body:has(.pd) {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+/* Keyboard skip link: hidden until focused. */
+.pd-skip {
+  position: absolute;
+  left: 16px;
+  top: -64px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--pd-ink);
+  color: #fff !important;
+  font-weight: 500;
+  text-decoration: none;
+  transition: top 0.15s;
+}
+.pd-skip:focus {
+  top: 12px;
+}
+.pd main:focus {
+  outline: none;
+}
 
 /* ---------- buttons + labels ---------- */
 .pd-btn {

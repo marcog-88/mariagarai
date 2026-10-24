@@ -1,4 +1,5 @@
 import type { CSSProperties, ReactNode } from "react";
+import { Link } from "react-router-dom";
 import { Globe, Instagram, Linkedin, Youtube } from "lucide-react";
 import portrait from "@/assets/maria-hero-cutout.webp";
 
@@ -22,7 +23,10 @@ const BIO =
   "Para quienes se reinventan de profesionales a dueños de negocio. Estrategia y mindset para vivir muy bien de tu conocimiento.";
 
 // --- Building blocks -----------------------------------------------------------
-const LABEL = "m-0 text-[11px] font-medium uppercase leading-[normal] tracking-[0.22em] text-[#9378fe]";
+// #9378fe on the dark header; the darker #5b3fd6 on light cards (AA contrast for 11px text).
+const LABEL_BASE = "m-0 text-[11px] font-medium uppercase leading-[normal] tracking-[0.22em]";
+const LABEL = `${LABEL_BASE} text-[#9378fe]`;
+const LABEL_ON_LIGHT = `${LABEL_BASE} text-[#5b3fd6]`;
 
 const CardButton = ({ children, glow = false }: { children: ReactNode; glow?: boolean }) => (
   <span
@@ -66,7 +70,7 @@ const FeaturedCard = ({ href, pill, title, accent, text, cta }: { href: string; 
 
 const WhiteCard = ({ href, label, title, text, cta }: { href: string; label: string; title: string; text: string; cta: string }) => (
   <CardLink href={href} className={CARD_WHITE}>
-    <p className={LABEL}>{label}</p>
+    <p className={LABEL_ON_LIGHT}>{label}</p>
     <h2 className="m-0 font-serif text-[28px] font-normal leading-[1.1]">{title}</h2>
     <p className="m-0 text-[15px] leading-[1.55] text-[#0c0d0e]/70">{text}</p>
     <CardButton>{cta}</CardButton>
@@ -162,7 +166,7 @@ const Links = () => {
         />
 
         <div className="mt-[18px] flex flex-col items-center gap-3.5">
-          <p className={LABEL}>Encuéntrame en</p>
+          <p className={LABEL_ON_LIGHT}>Encuéntrame en</p>
           <div className="flex flex-wrap justify-center gap-2">
             <SocialPill href={WEB_URL} icon={<Globe aria-hidden className={ICON} />}>Web</SocialPill>
             <SocialPill href={INSTAGRAM_URL} icon={<Instagram aria-hidden className={ICON} />}>Instagram</SocialPill>
@@ -172,7 +176,12 @@ const Links = () => {
           </div>
         </div>
 
-        <p className="mb-0 mt-6 text-center text-[12px] text-[#0c0d0e]/45">© 2026 María Garai · Exponencial</p>
+        <p className="mb-0 mt-6 text-center text-[12px] text-[#0c0d0e]/60">© 2026 María Garai · Exponencial</p>
+        <nav aria-label="Legal" className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-[12px] text-[#0c0d0e]/60">
+          <Link to="/legal" className="hover:text-[#0c0d0e]">Aviso legal</Link>
+          <Link to="/privacy-policy" className="hover:text-[#0c0d0e]">Privacidad</Link>
+          <Link to="/cookie-policy" className="hover:text-[#0c0d0e]">Cookies</Link>
+        </nav>
       </main>
     </div>
   );

@@ -18,6 +18,20 @@ export const Nav = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Phone menu: Escape closes it, and it never stays open behind the desktop nav.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    const wide = window.matchMedia("(min-width: 861px)");
+    const onWide = () => wide.matches && setOpen(false);
+    window.addEventListener("keydown", onKey);
+    wide.addEventListener("change", onWide);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      wide.removeEventListener("change", onWide);
+    };
+  }, [open]);
+
   const close = () => setOpen(false);
 
   return (
