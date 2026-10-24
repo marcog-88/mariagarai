@@ -9,7 +9,7 @@ const Legal = () => (
         de la Información y de Comercio Electrónico (LSSI-CE), se informa de los siguientes datos:
       </p>
       <ul className="list-disc pl-6 space-y-1 mt-3">
-        <li><strong>Titular:</strong> María Garai [Apellido]</li>
+        <li><strong>Titular:</strong> María Garaí</li>
         <li><strong>NIF:</strong> [Número de identificación fiscal]</li>
         <li><strong>Domicilio:</strong> [Dirección postal], España</li>
         <li><strong>Email de contacto:</strong> <a href="mailto:hola@mariagarai.com" className="underline underline-offset-2 hover:text-foreground">hola@mariagarai.com</a></li>
@@ -39,7 +39,7 @@ const Legal = () => (
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">4. Propiedad intelectual</h2>
       <p>
         Todos los contenidos del sitio web (textos, imágenes, diseño, código, marca) son propiedad de
-        María Garai o de sus legítimos titulares y están protegidos por la normativa de propiedad
+        María Garaí o de sus legítimos titulares y están protegidos por la normativa de propiedad
         intelectual e industrial. Queda prohibida su reproducción sin autorización expresa.
       </p>
     </section>
