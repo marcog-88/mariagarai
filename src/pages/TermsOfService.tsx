@@ -13,7 +13,7 @@ const TermsOfService = () => (
     <section>
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">2. Servicios ofrecidos</h2>
       <p>
-        A través de este sitio web, María Garai ofrece contenido editorial, suscripción a una
+        A través de este sitio web, María Garaí ofrece contenido editorial, suscripción a una
         newsletter gratuita y la posibilidad de contratar programas de formación y acompañamiento y
         consultoría de negocio. Las condiciones específicas de cada servicio se comunicarán antes de la
         contratación.
@@ -33,7 +33,7 @@ const TermsOfService = () => (
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">4. Propiedad intelectual</h2>
       <p>
         Todos los contenidos publicados (textos, imágenes, vídeos, marca y diseño) son propiedad de
-        María Garai. Queda prohibida su reproducción, distribución o transformación sin autorización
+        María Garaí. Queda prohibida su reproducción, distribución o transformación sin autorización
         expresa por escrito.
       </p>
     </section>
@@ -41,7 +41,7 @@ const TermsOfService = () => (
     <section>
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">5. Limitación de responsabilidad</h2>
       <p>
-        El contenido del sitio tiene carácter informativo y orientativo. María Garai no garantiza
+        El contenido del sitio tiene carácter informativo y orientativo. María Garaí no garantiza
         resultados específicos derivados de la aplicación de los consejos publicados ni se
         responsabiliza de decisiones tomadas en base a los mismos.
       </p>

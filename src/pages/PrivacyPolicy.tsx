@@ -6,7 +6,7 @@ const PrivacyPolicy = () => (
       <h2 className="text-xl font-semibold text-foreground mt-8 mb-3">1. Responsable del tratamiento</h2>
       <p>
         El responsable del tratamiento de los datos personales recogidos en este sitio web es
-        <strong> María Garai</strong>, con NIF [NIF] y domicilio en [dirección], España. Email de
+        <strong> María Garaí</strong>, con NIF [NIF] y domicilio en [dirección], España. Email de
         contacto: <a href="mailto:hola@mariagarai.com" className="underline underline-offset-2 hover:text-foreground">hola@mariagarai.com</a>.
       </p>
     </section>
