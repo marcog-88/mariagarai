@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Logo } from "@/components/landing/Logo";
 import { Footer } from "@/components/landing/Footer";
 import { useEffect } from "react";
-import { usePageMeta } from "@/lib/usePageMeta";
 
 interface LegalLayoutProps {
   title: string;
@@ -11,13 +10,13 @@ interface LegalLayoutProps {
 }
 
 export const LegalLayout = ({ title, updated, children }: LegalLayoutProps) => {
-  usePageMeta({ title: `${title} · María Garai` });
+  // <title> and description come from src/seo/routes.ts (RouteMeta).
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [title]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div id="top" className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="border-b border-border">
         <div className="container-tight py-5 flex items-center justify-between">
           <Link to="/" className="flex items-center" aria-label="María Garai, inicio">

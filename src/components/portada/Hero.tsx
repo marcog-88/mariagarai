@@ -3,9 +3,9 @@
 // load ~32 KB and retina desktops ~69 KB.
 import portrait520 from "@/assets/maria-hero-520.webp";
 import portrait940 from "@/assets/maria-hero-940.webp";
-import logoNacionesUnidas from "@/assets/logos/logo-naciones-unidas.png";
-import logoPG from "@/assets/logos/logo-pg.png";
-import logoWWF from "@/assets/logos/logo-wwf.png";
+import logoNacionesUnidas from "@/assets/logos/logo-naciones-unidas.webp";
+import logoPG from "@/assets/logos/logo-pg.webp";
+import logoWWF from "@/assets/logos/logo-wwf.webp";
 import { DISENA_TU_PROGRAMA, EVENTOS, EXTERNAL, LA_EXPONENCIAL } from "./links";
 
 /** Editorial index beside the intro. "Hablo en tu Evento" was dropped (oct 2026). */
@@ -74,9 +74,9 @@ export const Hero = () => (
       <div className="pd-wrap">
         <span className="pd-eyebrow">He trabajado y colaborado con:</span>
         <div className="pd-logos">
-          <img src={logoNacionesUnidas} alt="Naciones Unidas" width={383} height={378} loading="lazy" />
-          <img src={logoPG} alt="Procter & Gamble" width={226} height={226} loading="lazy" />
-          <img src={logoWWF} alt="World Wildlife Fund" width={180} height={253} loading="lazy" />
+          <img src={logoNacionesUnidas} alt="Naciones Unidas" width={122} height={120} loading="lazy" />
+          <img src={logoPG} alt="Procter & Gamble" width={120} height={120} loading="lazy" />
+          <img src={logoWWF} alt="World Wildlife Fund" width={86} height={120} loading="lazy" />
           <span className="pd-logos__txt">Startup Tech</span>
           <span className="pd-logos__num">
             +15<small>Negocios de clientes trabajados</small>

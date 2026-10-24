@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
-import { usePageMeta } from "@/lib/usePageMeta";
 
-// Unknown and retired paths land here. Vercel serves them with a real 404
-// status (dist/404.html, see scripts/copy-404.mjs); noindex is a second guard
-// so crawlers drop them even if a stale URL is served with a 200.
+// Unknown and retired paths land here. Vercel serves them dist/404.html
+// (HTTP 404 + noindex, written by the build from src/seo/routes.ts);
+// RouteMeta keeps the title and noindex on client-side navigation.
 const NotFound = () => {
-  usePageMeta({ title: "Página no encontrada · María Garai", noindex: true });
-
   return (
     <main className="flex min-h-screen items-center justify-center bg-[#f9f9f7] px-6 text-[#0c0d0e]">
       <div className="max-w-xl text-center">

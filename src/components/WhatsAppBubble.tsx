@@ -1,13 +1,14 @@
 import { useLocation } from "react-router-dom";
+import { ROUTE_META } from "@/seo/routes";
 
 // /exponencial retired (Phase 1 migration) — no routes currently need this.
 const HIDE_ON_MOBILE: string[] = [];
 // Standalone pages where the bubble would cover the content (e.g. the last
 // card of the Instagram links page on a phone).
 const HIDE_ALWAYS = ["/links"];
-// The SPA's real routes (keep in sync with App.tsx). Anything else renders the
-// 404 page, where the bubble is just noise.
-const KNOWN_ROUTES = ["/", "/legal", "/privacy-policy", "/terms-of-service", "/cookie-policy", "/links"];
+// The SPA's real routes come from src/seo/routes.ts. Anything else renders
+// the 404 page, where the bubble is just noise.
+const KNOWN_ROUTES = Object.keys(ROUTE_META);
 
 export default function WhatsAppBubble() {
   const { pathname } = useLocation();

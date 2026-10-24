@@ -8,10 +8,10 @@ history.
 
 | Old route (mariagarai.com) | Status | New home |
 |---|---|---|
-| `/construye` | moved | `laexponencial.com/lanzadera` (301 in `vercel.json`) |
-| `/disena-tu-oferta` | moved | `laexponencial.com/disena-tu-curso` (301 in `vercel.json`) |
-| `/oferta-privada-construye` | permanently retired | none — returns 404 |
-| `/redes-que-venden` | permanently retired | none — returns 404 |
+| `/construye` | moved | `laexponencial.com/` (301 in `vercel.json`; `/lanzadera` itself now redirects to the home) |
+| `/disena-tu-oferta` | moved | `laexponencial.com/disena-tu-programa` (301 in `vercel.json`) |
+| `/oferta-privada-construye` | permanently retired | none — HTTP 404 (`404.html`, noindex) |
+| `/redes-que-venden` | permanently retired | none — HTTP 404 (`404.html`, noindex) |
 
 ## Contents
 
@@ -23,6 +23,8 @@ history.
 - `lib/disena/` — prompt/types/PDF logic for the `/disena-tu-oferta` tool
   (laexponencial has its own copy under `app/api/disena`)
 - `api/disena.js` — Vercel serverless function backing the old disena tool
+- `assets/` — images and videos only the retired pages (and the pre-Oct 2026
+  home) used; moved out of `src/assets` on 2026-10-24
 
 If any of these pages comes back, restore from here rather than rewriting from
 scratch.
